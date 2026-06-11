@@ -441,7 +441,8 @@ scale = Vector2(1.046875, 1.109375)
 texture = ExtResource("2_sugp2")
 
 [node name="TerrainGrassBlockTop23" type="Sprite2D" parent="." unique_id=1625097288]
-position = Vector2(-566, 547)
+position = Vector2(-565.5, 547)
+scale = Vector2(0.984375, 1)
 texture = ExtResource("3_jyhfs")
 
 [node name="TerrainGrassBlockTop24" type="Sprite2D" parent="." unique_id=1012264298]
