@@ -1,12 +1,13 @@
 [gd_scene format=3 uid="uid://de6orvpo2ehos"]
 
-[ext_resource type="Texture2D" uid="uid://bbypf44jrhghh" path="res://assets/kenney_new-platformer-pack-1.1/Sprites/Characters/Default/character_purple_idle.png" id="1_3vyb7"]
-[ext_resource type="Script" uid="uid://baq1uxn1j4sj1" path="res://scenes/character_purple_idle.gd" id="2_g2els"]
+[ext_resource type="Script" uid="uid://gcv1m7775m2f" path="res://scenes/player.gd" id="1_3vyb7"]
+[ext_resource type="Texture2D" uid="uid://bectxxd45qici" path="res://assets/kenney_new-platformer-pack-1.1/Sprites/Characters/Default/character_purple_front.png" id="2_g2els"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_g2els"]
 size = Vector2(92, 105)
 
 [node name="Player" type="CharacterBody2D" unique_id=1741513001]
+script = ExtResource("1_3vyb7")
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=2046307810]
 
@@ -14,7 +15,6 @@ size = Vector2(92, 105)
 position = Vector2(138, 134.5)
 shape = SubResource("RectangleShape2D_g2els")
 
-[node name="CharacterPurpleIdle" type="Sprite2D" parent="." unique_id=1519591851]
-position = Vector2(137, 117)
-texture = ExtResource("1_3vyb7")
-script = ExtResource("2_g2els")
+[node name="CharacterPurpleFront" type="Sprite2D" parent="." unique_id=1512344953]
+position = Vector2(139, 118)
+texture = ExtResource("2_g2els")
