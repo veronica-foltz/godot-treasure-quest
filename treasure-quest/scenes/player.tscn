@@ -1,0 +1,18 @@
+[gd_scene format=3 uid="uid://de6orvpo2ehos"]
+
+[ext_resource type="Texture2D" uid="uid://bbypf44jrhghh" path="res://assets/kenney_new-platformer-pack-1.1/Sprites/Characters/Default/character_purple_idle.png" id="1_3vyb7"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_g2els"]
+size = Vector2(92, 105)
+
+[node name="Player" type="CharacterBody2D" unique_id=1741513001]
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=2046307810]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1613868887]
+position = Vector2(138, 134.5)
+shape = SubResource("RectangleShape2D_g2els")
+
+[node name="CharacterPurpleIdle" type="Sprite2D" parent="." unique_id=1519591851]
+position = Vector2(138, 119)
+texture = ExtResource("1_3vyb7")
