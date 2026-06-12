@@ -137,8 +137,8 @@ scale = Vector2(1.1855468, 0.89453137)
 texture = ExtResource("1_tbgi4")
 
 [node name="BackgroundClouds5" type="Sprite2D" parent="." unique_id=924701691]
-position = Vector2(-446.75, 140.99998)
-scale = Vector2(1.1699218, 1.1875)
+position = Vector2(-446.75, 141.99998)
+scale = Vector2(1.1699218, 1.1796875)
 texture = ExtResource("5_tbgi4")
 
 [node name="BackgroundFadeDesert6" type="Sprite2D" parent="." unique_id=924371709]
