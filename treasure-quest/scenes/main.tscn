@@ -7,7 +7,7 @@
 [ext_resource type="Texture2D" uid="uid://6lvh1oeocpah" path="res://assets/kenney_new-platformer-pack-1.1/Sprites/Backgrounds/Default/background_clouds.png" id="5_tbgi4"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_0wfyh"]
-size = Vector2(4518.5, 132)
+size = Vector2(5118, 132)
 
 [node name="Main" type="Node2D" unique_id=1243034358]
 
@@ -182,14 +182,14 @@ scale = Vector2(1.2167972, 1.140625)
 texture = ExtResource("5_tbgi4")
 
 [node name="Player" parent="." unique_id=1741513001 instance=ExtResource("1_o5qli")]
-position = Vector2(-21, 321)
+position = Vector2(-25, 332)
 
 [node name="Camera2D" type="Camera2D" parent="Player" unique_id=2012581898]
 
 [node name="Ground" type="StaticBody2D" parent="." unique_id=2007761626]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Ground" unique_id=1291790232]
-position = Vector2(2259.75, 583)
+position = Vector2(1960, 583)
 shape = SubResource("RectangleShape2D_0wfyh")
 
 [node name="TerrainGrassBlockBottom" type="Sprite2D" parent="Ground/CollisionShape2D" unique_id=1282877831]
