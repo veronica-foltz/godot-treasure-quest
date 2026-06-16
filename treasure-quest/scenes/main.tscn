@@ -22,7 +22,7 @@ scale = Vector2(1.1835936, 1.1523438)
 texture = ExtResource("5_tbgi4")
 
 [node name="BackgroundFadeDesert2" type="Sprite2D" parent="." unique_id=802997249]
-position = Vector2(450, 400.00003)
+position = Vector2(451.00003, 400)
 scale = Vector2(1.175781, 0.89453137)
 texture = ExtResource("1_tbgi4")
 
@@ -185,6 +185,8 @@ texture = ExtResource("5_tbgi4")
 position = Vector2(-25, 332)
 
 [node name="Camera2D" type="Camera2D" parent="Player" unique_id=2012581898]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Player" unique_id=1130506178]
 
 [node name="Ground" type="StaticBody2D" parent="." unique_id=2007761626]
 
