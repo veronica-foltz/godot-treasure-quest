@@ -16,3 +16,8 @@ func _physics_process(delta):
 	else:
 		velocity.x = move_toward(velocity.x, 0, SPEED)
 	move_and_slide()
+
+
+func _on_bee_body_entered(body):
+	if body.name == "Player":
+		body.position = Vector2(100, 300)

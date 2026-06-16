@@ -1,0 +1,18 @@
+[gd_scene format=3 uid="uid://c2xn1le6ou7tt"]
+
+[ext_resource type="Texture2D" uid="uid://xtik11tucqgv" path="res://assets/kenney_new-platformer-pack-1.1/Sprites/Enemies/Default/bee_a.png" id="1_1q2x0"]
+[ext_resource type="Script" uid="uid://e64q84qv2rvo" path="res://scenes/bee.gd" id="1_vie5o"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_1q2x0"]
+size = Vector2(57, 51)
+
+[node name="Bee" type="Area2D" unique_id=1861813214]
+position = Vector2(99, 79)
+script = ExtResource("1_vie5o")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=383119151]
+texture = ExtResource("1_1q2x0")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=800453385]
+position = Vector2(0.5, 0)
+shape = SubResource("RectangleShape2D_1q2x0")
