@@ -941,6 +941,6 @@ scale = Vector2(1.046875, 1.109375)
 texture = ExtResource("2_sugp2")
 
 [node name="BackgroundSolidSky" type="Sprite2D" parent="." unique_id=669525859]
-position = Vector2(1959.5, -521.5)
+position = Vector2(1954, -516)
 scale = Vector2(19.972656, 4.2851563)
 texture = ExtResource("6_tefeu")
