@@ -5,6 +5,7 @@
 [ext_resource type="Texture2D" uid="uid://crhw0x5wd4db8" path="res://assets/kenney_new-platformer-pack-1.1/Sprites/Tiles/Default/terrain_grass_block_bottom.png" id="2_sugp2"]
 [ext_resource type="Texture2D" uid="uid://o32oy35axt0d" path="res://assets/kenney_new-platformer-pack-1.1/Sprites/Tiles/Default/terrain_grass_block_top.png" id="3_jyhfs"]
 [ext_resource type="Texture2D" uid="uid://6lvh1oeocpah" path="res://assets/kenney_new-platformer-pack-1.1/Sprites/Backgrounds/Default/background_clouds.png" id="5_tbgi4"]
+[ext_resource type="Texture2D" uid="uid://fx08c0garmvt" path="res://assets/kenney_new-platformer-pack-1.1/Sprites/Backgrounds/Default/background_solid_sky.png" id="6_tefeu"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_0wfyh"]
 size = Vector2(5118, 132)
@@ -938,3 +939,8 @@ texture = ExtResource("2_sugp2")
 position = Vector2(104, 614.99994)
 scale = Vector2(1.046875, 1.109375)
 texture = ExtResource("2_sugp2")
+
+[node name="BackgroundSolidSky" type="Sprite2D" parent="." unique_id=669525859]
+position = Vector2(1959.5, -521.5)
+scale = Vector2(19.972656, 4.2851563)
+texture = ExtResource("6_tefeu")
