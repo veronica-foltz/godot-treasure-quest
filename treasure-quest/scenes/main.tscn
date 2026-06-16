@@ -4,6 +4,7 @@
 [ext_resource type="Texture2D" uid="uid://iugy5n1ikd8v" path="res://assets/kenney_new-platformer-pack-1.1/Sprites/Backgrounds/Default/background_fade_desert.png" id="1_tbgi4"]
 [ext_resource type="Texture2D" uid="uid://crhw0x5wd4db8" path="res://assets/kenney_new-platformer-pack-1.1/Sprites/Tiles/Default/terrain_grass_block_bottom.png" id="2_sugp2"]
 [ext_resource type="Texture2D" uid="uid://o32oy35axt0d" path="res://assets/kenney_new-platformer-pack-1.1/Sprites/Tiles/Default/terrain_grass_block_top.png" id="3_jyhfs"]
+[ext_resource type="Script" uid="uid://e64q84qv2rvo" path="res://scenes/bee.gd" id="4_trceg"]
 [ext_resource type="Texture2D" uid="uid://xtik11tucqgv" path="res://assets/kenney_new-platformer-pack-1.1/Sprites/Enemies/Default/bee_a.png" id="5_85g3d"]
 [ext_resource type="Texture2D" uid="uid://6lvh1oeocpah" path="res://assets/kenney_new-platformer-pack-1.1/Sprites/Backgrounds/Default/background_clouds.png" id="5_tbgi4"]
 [ext_resource type="Texture2D" uid="uid://fx08c0garmvt" path="res://assets/kenney_new-platformer-pack-1.1/Sprites/Backgrounds/Default/background_solid_sky.png" id="6_tefeu"]
@@ -14,7 +15,7 @@
 [ext_resource type="PackedScene" uid="uid://drao7adjsjkjt" path="res://scenes/coin.tscn" id="11_ya4ey"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_eb6dy"]
-size = Vector2(72, 61)
+size = Vector2(57.5, 55)
 
 [sub_resource type="Animation" id="Animation_o6xl0"]
 length = 0.001
@@ -30,6 +31,54 @@ tracks/0/keys = {
 "update": 0,
 "values": [Vector2(450, 390)]
 }
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("../Bee2:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(519, 370)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("../bee3/CollisionShape2D:script")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [null]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("CollisionShape2D:position")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(1023.25, -8.5)]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("Sprite2D:position")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(1026, -6)]
+}
 
 [sub_resource type="Animation" id="Animation_tipki"]
 resource_name = "fly"
@@ -42,16 +91,71 @@ tracks/0/path = NodePath(".:position")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
-"times": PackedFloat32Array(1, 2, 3.01, 4.02, 4.99, 6.04),
-"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1),
+"times": PackedFloat32Array(1, 2, 3, 3.01, 4.02, 4.0333333, 4.99, 5, 6.0333333, 6.04),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
 "update": 0,
-"values": [Vector2(450, 390), Vector2(434, 390), Vector2(474, 394), Vector2(427, 393), Vector2(432.55896, 392.2749), Vector2(387, 393)]
+"values": [Vector2(552, 364), Vector2(381, 355), Vector2(501, 351), Vector2(474, 394), Vector2(427, 393), Vector2(321, 327), Vector2(432.55896, 392.2749), Vector2(538, 349), Vector2(330, 334), Vector2(387, 393)]
+}
+
+[sub_resource type="Animation" id="Animation_trceg"]
+resource_name = "fly2"
+length = 10.0
+loop_mode = 1
+step = 2.0
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("../Bee2:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(1, 2.0666666, 3.0333333, 4.0333333),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 0,
+"values": [Vector2(356, 361), Vector2(534, 357), Vector2(356, 361), Vector2(559, 350)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("../bee3/CollisionShape2D:script")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [null]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("CollisionShape2D:position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(7.711076),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(1023.25, -8.5)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("Sprite2D:position")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(948.7759, -1.5484924)]
 }
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_85g3d"]
 _data = {
 &"RESET": SubResource("Animation_o6xl0"),
-&"fly": SubResource("Animation_tipki")
+&"fly": SubResource("Animation_tipki"),
+&"fly2": SubResource("Animation_trceg")
 }
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_0wfyh"]
@@ -296,40 +400,42 @@ texture = ExtResource("5_tbgi4")
 
 [node name="bee2" type="Area2D" parent="." unique_id=89107306]
 position = Vector2(450, 390)
+script = ExtResource("4_trceg")
 
 [node name="Sprite2D" type="Sprite2D" parent="bee2" unique_id=1972468748]
-position = Vector2(1026, -2)
+position = Vector2(1026, -6)
 texture = ExtResource("5_85g3d")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="bee2" unique_id=1492506151]
-position = Vector2(1026, -2)
+position = Vector2(1023.25, -8.5)
 shape = SubResource("RectangleShape2D_eb6dy")
 
 [node name="AnimationPlayer2" type="AnimationPlayer" parent="bee2" unique_id=1720882157]
 libraries/ = SubResource("AnimationLibrary_85g3d")
-autoplay = &"fly"
+autoplay = &"fly2"
 
 [node name="bee3" type="Area2D" parent="." unique_id=1729765571]
 position = Vector2(450, 390)
+script = ExtResource("4_trceg")
 
 [node name="Sprite2D" type="Sprite2D" parent="bee3" unique_id=1980599073]
-position = Vector2(1903, -3)
+position = Vector2(1026, -6)
 texture = ExtResource("5_85g3d")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="bee3" unique_id=1364659941]
-position = Vector2(1903, -3)
+position = Vector2(1023.25, -8.5)
 shape = SubResource("RectangleShape2D_eb6dy")
 
 [node name="AnimationPlayer2" type="AnimationPlayer" parent="bee3" unique_id=1612316382]
 libraries/ = SubResource("AnimationLibrary_85g3d")
-autoplay = &"fly"
+autoplay = &"fly2"
 
 [node name="Bee2" parent="." unique_id=677262093 instance=ExtResource("7_o6xl0")]
-position = Vector2(450, 390)
+position = Vector2(519, 370)
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="Bee2" unique_id=2016556717]
 libraries/ = SubResource("AnimationLibrary_85g3d")
-autoplay = &"fly"
+autoplay = &"fly2"
 
 [node name="Player" parent="." unique_id=1741513001 instance=ExtResource("1_o5qli")]
 position = Vector2(-25, 332)
@@ -1337,13 +1443,6 @@ position = Vector2(4559, 616.75)
 scale = Vector2(1.4375026, 1.0390636)
 texture = ExtResource("2_sugp2")
 
-[node name="Bee" parent="." unique_id=1861813214 instance=ExtResource("7_o6xl0")]
-position = Vector2(450, 390)
-
-[node name="AnimationPlayer" type="AnimationPlayer" parent="Bee" unique_id=1222666725]
-libraries/ = SubResource("AnimationLibrary_85g3d")
-autoplay = &"fly"
-
 [node name="cactus" parent="." unique_id=980895354 instance=ExtResource("8_choun")]
 position = Vector2(784, 376)
 
@@ -1351,9 +1450,13 @@ position = Vector2(784, 376)
 position = Vector2(685, 265)
 
 [node name="singleBlock" parent="." unique_id=283766367 instance=ExtResource("10_eb6dy")]
-position = Vector2(577, 385)
+position = Vector2(584, 390)
 
 [node name="coin" parent="." unique_id=118956412 instance=ExtResource("11_ya4ey")]
 position = Vector2(767, 208)
 
 [connection signal="body_entered" from="bee2" to="Bee2" method="_on_bee_2_body_entered"]
+[connection signal="body_entered" from="bee2" to="bee2" method="_on_body_entered"]
+[connection signal="body_entered" from="bee3" to="bee2" method="_on_bee_3_body_entered"]
+[connection signal="body_entered" from="Bee2" to="Bee2" method="_on_body_entered"]
+[connection signal="body_entered" from="Bee2" to="bee2" method="_on_bee_2_body_entered"]
