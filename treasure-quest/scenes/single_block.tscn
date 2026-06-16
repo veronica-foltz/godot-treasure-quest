@@ -1,0 +1,16 @@
+[gd_scene format=3 uid="uid://c6hs1ou20hs2g"]
+
+[ext_resource type="Texture2D" uid="uid://dcql8ghthlu5s" path="res://assets/kenney_new-platformer-pack-1.1/Sprites/Tiles/Default/block_coin.png" id="1_xvcpq"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_q4obp"]
+size = Vector2(64.5, 65.5)
+
+[node name="singleBlock" type="StaticBody2D" unique_id=283766367]
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1984394418]
+position = Vector2(173, 82)
+texture = ExtResource("1_xvcpq")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1335541904]
+position = Vector2(172.75, 83.25)
+shape = SubResource("RectangleShape2D_q4obp")

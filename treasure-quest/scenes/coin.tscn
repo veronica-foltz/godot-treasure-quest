@@ -1,0 +1,20 @@
+[gd_scene format=3 uid="uid://drao7adjsjkjt"]
+
+[ext_resource type="Script" uid="uid://s5dh3bjmo6ha" path="res://scenes/coin.gd" id="1_i64fm"]
+[ext_resource type="Texture2D" uid="uid://bs5eh77ag5ak" path="res://assets/kenney_new-platformer-pack-1.1/Sprites/Tiles/Default/coin_gold.png" id="2_11l1o"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_d14el"]
+size = Vector2(36, 40)
+
+[node name="coin" type="Area2D" unique_id=118956412]
+script = ExtResource("1_i64fm")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=127827704]
+position = Vector2(142, 81)
+texture = ExtResource("2_11l1o")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1169308596]
+position = Vector2(142, 81)
+shape = SubResource("RectangleShape2D_d14el")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

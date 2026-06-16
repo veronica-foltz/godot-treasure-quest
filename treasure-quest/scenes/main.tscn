@@ -7,6 +7,47 @@
 [ext_resource type="Texture2D" uid="uid://6lvh1oeocpah" path="res://assets/kenney_new-platformer-pack-1.1/Sprites/Backgrounds/Default/background_clouds.png" id="5_tbgi4"]
 [ext_resource type="Texture2D" uid="uid://fx08c0garmvt" path="res://assets/kenney_new-platformer-pack-1.1/Sprites/Backgrounds/Default/background_solid_sky.png" id="6_tefeu"]
 [ext_resource type="PackedScene" uid="uid://c2xn1le6ou7tt" path="res://scenes/bee.tscn" id="7_o6xl0"]
+[ext_resource type="PackedScene" uid="uid://cgm27125xuuwp" path="res://scenes/cactus.tscn" id="8_choun"]
+[ext_resource type="PackedScene" uid="uid://g2idt2aguukj" path="res://scenes/block.tscn" id="9_ya4ey"]
+[ext_resource type="PackedScene" uid="uid://c6hs1ou20hs2g" path="res://scenes/single_block.tscn" id="10_eb6dy"]
+
+[sub_resource type="Animation" id="Animation_o6xl0"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(450, 390)]
+}
+
+[sub_resource type="Animation" id="Animation_tipki"]
+resource_name = "fly"
+length = 7.0333333
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(1, 2, 3.01, 4.02, 4.99, 6.04),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1),
+"update": 0,
+"values": [Vector2(450, 390), Vector2(434, 390), Vector2(474, 394), Vector2(427, 393), Vector2(432.55896, 392.2749), Vector2(387, 393)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_85g3d"]
+_data = {
+&"RESET": SubResource("Animation_o6xl0"),
+&"fly": SubResource("Animation_tipki")
+}
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_0wfyh"]
 size = Vector2(6893, 132)
@@ -247,6 +288,13 @@ texture = ExtResource("1_tbgi4")
 position = Vector2(6142.617, 147)
 scale = Vector2(1.1787723, 1.140625)
 texture = ExtResource("5_tbgi4")
+
+[node name="Bee2" parent="." unique_id=677262093 instance=ExtResource("7_o6xl0")]
+position = Vector2(450, 390)
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Bee2" unique_id=2016556717]
+libraries/ = SubResource("AnimationLibrary_85g3d")
+autoplay = &"fly"
 
 [node name="Player" parent="." unique_id=1741513001 instance=ExtResource("1_o5qli")]
 position = Vector2(-25, 332)
@@ -1256,3 +1304,19 @@ texture = ExtResource("2_sugp2")
 
 [node name="Bee" parent="." unique_id=1861813214 instance=ExtResource("7_o6xl0")]
 position = Vector2(450, 390)
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Bee" unique_id=1222666725]
+libraries/ = SubResource("AnimationLibrary_85g3d")
+autoplay = &"fly"
+
+[node name="Bee3" parent="." unique_id=1947870867 instance=ExtResource("7_o6xl0")]
+position = Vector2(1222, 370)
+
+[node name="cactus" parent="." unique_id=980895354 instance=ExtResource("8_choun")]
+position = Vector2(784, 376)
+
+[node name="block" parent="." unique_id=1049242802 instance=ExtResource("9_ya4ey")]
+position = Vector2(685, 265)
+
+[node name="singleBlock" parent="." unique_id=283766367 instance=ExtResource("10_eb6dy")]
+position = Vector2(577, 385)
