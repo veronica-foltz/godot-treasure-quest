@@ -269,17 +269,23 @@ texture = ExtResource("4_jbj1t")
 position = Vector2(1509, 6)
 texture = ExtResource("4_jbj1t")
 
+[node name="SignRight" type="Sprite2D" parent="SignRight/SignRight/SignRight" unique_id=720606346]
+position = Vector2(-4686, -7)
+texture = ExtResource("4_jbj1t")
+
 [node name="SignExit" type="Sprite2D" parent="SignRight/SignRight" unique_id=1188775087]
 position = Vector2(3346, 3)
 scale = Vector2(1, 1.125)
 texture = ExtResource("15_dp3eg")
 
 [node name="Player" parent="." unique_id=1741513001 instance=ExtResource("1_o5qli")]
-position = Vector2(-25, 332)
+position = Vector2(-226, 302)
 
 [node name="Camera2D" type="Camera2D" parent="Player" unique_id=2012581898]
+position = Vector2(218, -7)
 
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Player" unique_id=1130506178]
+[node name="AnimatedSprite2D2" type="AnimatedSprite2D" parent="Player" unique_id=1130506178]
+position = Vector2(53, 4)
 
 [node name="Ground" type="StaticBody2D" parent="." unique_id=2007761626]
 
@@ -1281,16 +1287,13 @@ scale = Vector2(1.4375026, 1.0390636)
 texture = ExtResource("2_sugp2")
 
 [node name="cactus" parent="." unique_id=980895354 instance=ExtResource("8_choun")]
-position = Vector2(935, 373)
+position = Vector2(934, 376)
 
 [node name="block" parent="." unique_id=1049242802 instance=ExtResource("9_ya4ey")]
 position = Vector2(685, 265)
 
 [node name="singleBlock" parent="." unique_id=283766367 instance=ExtResource("10_eb6dy")]
 position = Vector2(584, 390)
-
-[node name="coin" parent="." unique_id=118956412 instance=ExtResource("11_ya4ey")]
-position = Vector2(767, 208)
 
 [node name="frog" parent="." unique_id=786113660 instance=ExtResource("11_eb6dy")]
 position = Vector2(548, 496)
@@ -1381,3 +1384,48 @@ position = Vector2(5003, 290)
 
 [node name="Bee6" parent="." unique_id=1121822336 instance=ExtResource("7_o6xl0")]
 position = Vector2(5715, 328)
+
+[node name="coin" parent="." unique_id=373368927 instance=ExtResource("11_ya4ey")]
+position = Vector2(1563, 386)
+
+[node name="coin2" parent="." unique_id=1916709478 instance=ExtResource("11_ya4ey")]
+position = Vector2(910, 273)
+
+[node name="coin3" parent="." unique_id=1899084878 instance=ExtResource("11_ya4ey")]
+position = Vector2(1687, 288)
+
+[node name="coin4" parent="." unique_id=822982597 instance=ExtResource("11_ya4ey")]
+position = Vector2(1932, 194)
+
+[node name="coin5" parent="." unique_id=1608430184 instance=ExtResource("11_ya4ey")]
+position = Vector2(2027, 194)
+
+[node name="coin6" parent="." unique_id=497996512 instance=ExtResource("11_ya4ey")]
+position = Vector2(2551, 363)
+
+[node name="coin7" parent="." unique_id=1232976023 instance=ExtResource("11_ya4ey")]
+position = Vector2(2880, 364)
+
+[node name="coin8" parent="." unique_id=297234295 instance=ExtResource("11_ya4ey")]
+position = Vector2(3368, 251)
+
+[node name="coin9" parent="." unique_id=30047884 instance=ExtResource("11_ya4ey")]
+position = Vector2(3807, 40)
+
+[node name="coin10" parent="." unique_id=250335073 instance=ExtResource("11_ya4ey")]
+position = Vector2(3913, -77)
+
+[node name="coin11" parent="." unique_id=1578681108 instance=ExtResource("11_ya4ey")]
+position = Vector2(4153, -143)
+
+[node name="coin12" parent="." unique_id=316244947 instance=ExtResource("11_ya4ey")]
+position = Vector2(4243, -143)
+
+[node name="coin13" parent="." unique_id=676137836 instance=ExtResource("11_ya4ey")]
+position = Vector2(5226, 370)
+
+[node name="coin14" parent="." unique_id=1040212018 instance=ExtResource("11_ya4ey")]
+position = Vector2(5350, 369)
+
+[node name="coin15" parent="." unique_id=118956412 instance=ExtResource("11_ya4ey")]
+position = Vector2(292, 394)

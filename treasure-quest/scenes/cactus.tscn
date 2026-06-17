@@ -1,11 +1,13 @@
 [gd_scene format=3 uid="uid://cgm27125xuuwp"]
 
+[ext_resource type="Script" uid="uid://cq0vukaq01h1i" path="res://scenes/cactus.gd" id="1_3uwn4"]
 [ext_resource type="Texture2D" uid="uid://bcqsqewmk6be4" path="res://assets/kenney_new-platformer-pack-1.1/Sprites/Tiles/Default/cactus.png" id="1_fy5iu"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_fy5iu"]
 size = Vector2(78, 81.5)
 
 [node name="cactus" type="Area2D" unique_id=980895354]
+script = ExtResource("1_3uwn4")
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=1650532013]
 position = Vector2(117, 96)
@@ -15,3 +17,5 @@ texture = ExtResource("1_fy5iu")
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=2056249376]
 position = Vector2(118, 97.25)
 shape = SubResource("RectangleShape2D_fy5iu")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
