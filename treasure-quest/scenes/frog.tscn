@@ -1,0 +1,46 @@
+[gd_scene format=3 uid="uid://dy0i5gkv2fmdm"]
+
+[ext_resource type="Script" uid="uid://dltp4ktepjmtp" path="res://scenes/frog.gd" id="1_1g2vb"]
+[ext_resource type="Texture2D" uid="uid://5rqg2ufh4obc" path="res://assets/kenney_new-platformer-pack-1.1/Sprites/Enemies/Default/frog_idle.png" id="1_slgur"]
+[ext_resource type="Texture2D" uid="uid://b3bggtx0vp4e" path="res://assets/kenney_new-platformer-pack-1.1/Sprites/Enemies/Default/frog_jump.png" id="2_byod8"]
+[ext_resource type="Texture2D" uid="uid://dy6f2lx080bg6" path="res://assets/kenney_new-platformer-pack-1.1/Sprites/Enemies/Default/frog_rest.png" id="3_j38ec"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_5cyyp"]
+size = Vector2(3, 13)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_rd326"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_slgur")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_byod8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_j38ec")
+}, {
+"duration": 1.0,
+"texture": ExtResource("1_slgur")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[node name="frog" type="Area2D" unique_id=786113660]
+script = ExtResource("1_1g2vb")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=450322831]
+position = Vector2(0.5, 7.5)
+shape = SubResource("RectangleShape2D_5cyyp")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1276450294]
+position = Vector2(4, 1)
+scale = Vector2(0.640625, 0.66406256)
+sprite_frames = SubResource("SpriteFrames_rd326")
+autoplay = "default"
+frame = 1
+frame_progress = 0.38310775
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

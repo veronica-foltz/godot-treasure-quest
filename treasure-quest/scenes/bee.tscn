@@ -2,17 +2,41 @@
 
 [ext_resource type="Texture2D" uid="uid://xtik11tucqgv" path="res://assets/kenney_new-platformer-pack-1.1/Sprites/Enemies/Default/bee_a.png" id="1_1q2x0"]
 [ext_resource type="Script" uid="uid://e64q84qv2rvo" path="res://scenes/bee.gd" id="1_vie5o"]
+[ext_resource type="Texture2D" uid="uid://6htj8ns73rc4" path="res://assets/kenney_new-platformer-pack-1.1/Sprites/Enemies/Default/bee_b.png" id="3_qf6nb"]
+[ext_resource type="Texture2D" uid="uid://d2oxt4qurx6g7" path="res://assets/kenney_new-platformer-pack-1.1/Sprites/Enemies/Default/bee_rest.png" id="4_oynbf"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_1q2x0"]
 size = Vector2(57, 51)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_vie5o"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_1q2x0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_qf6nb")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_oynbf")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
 
 [node name="Bee" type="Area2D" unique_id=1861813214]
 position = Vector2(99, 79)
 script = ExtResource("1_vie5o")
 
-[node name="Sprite2D" type="Sprite2D" parent="." unique_id=383119151]
-texture = ExtResource("1_1q2x0")
-
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=800453385]
 position = Vector2(0.5, 0)
 shape = SubResource("RectangleShape2D_1q2x0")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1123756517]
+sprite_frames = SubResource("SpriteFrames_vie5o")
+autoplay = "default"
+frame = 2
+frame_progress = 0.39760494
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

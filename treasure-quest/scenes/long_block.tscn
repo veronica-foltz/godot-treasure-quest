@@ -1,0 +1,30 @@
+[gd_scene format=3 uid="uid://dskjib78vhv4y"]
+
+[ext_resource type="Texture2D" uid="uid://7d1d7raq2gls" path="res://assets/kenney_new-platformer-pack-1.1/Sprites/Tiles/Default/block_planks.png" id="1_muh70"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_iwmuh"]
+size = Vector2(257, 52)
+
+[node name="long block" type="StaticBody2D" unique_id=43475073]
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1567910396]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=825236390]
+position = Vector2(118.5, 16)
+shape = SubResource("RectangleShape2D_iwmuh")
+
+[node name="BlockPlanks" type="Sprite2D" parent="." unique_id=273731601]
+position = Vector2(22, 17)
+texture = ExtResource("1_muh70")
+
+[node name="BlockPlanks2" type="Sprite2D" parent="." unique_id=1214104490]
+position = Vector2(86, 17)
+texture = ExtResource("1_muh70")
+
+[node name="BlockPlanks3" type="Sprite2D" parent="." unique_id=1231278793]
+position = Vector2(148, 17)
+texture = ExtResource("1_muh70")
+
+[node name="BlockPlanks4" type="Sprite2D" parent="." unique_id=1815442598]
+position = Vector2(212, 18)
+texture = ExtResource("1_muh70")

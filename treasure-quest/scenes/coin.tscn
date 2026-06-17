@@ -6,6 +6,15 @@
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_d14el"]
 size = Vector2(36, 40)
 
+[sub_resource type="Animation" id="Animation_i64fm"]
+resource_name = "flip"
+loop_mode = 1
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_11l1o"]
+_data = {
+&"flip": SubResource("Animation_i64fm")
+}
+
 [node name="coin" type="Area2D" unique_id=118956412]
 script = ExtResource("1_i64fm")
 
@@ -16,5 +25,8 @@ texture = ExtResource("2_11l1o")
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1169308596]
 position = Vector2(142, 81)
 shape = SubResource("RectangleShape2D_d14el")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=587154535]
+libraries/ = SubResource("AnimationLibrary_11l1o")
 
 [connection signal="body_entered" from="." to="." method="_on_body_entered"]

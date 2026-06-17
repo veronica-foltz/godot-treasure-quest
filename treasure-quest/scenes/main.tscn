@@ -4,159 +4,18 @@
 [ext_resource type="Texture2D" uid="uid://iugy5n1ikd8v" path="res://assets/kenney_new-platformer-pack-1.1/Sprites/Backgrounds/Default/background_fade_desert.png" id="1_tbgi4"]
 [ext_resource type="Texture2D" uid="uid://crhw0x5wd4db8" path="res://assets/kenney_new-platformer-pack-1.1/Sprites/Tiles/Default/terrain_grass_block_bottom.png" id="2_sugp2"]
 [ext_resource type="Texture2D" uid="uid://o32oy35axt0d" path="res://assets/kenney_new-platformer-pack-1.1/Sprites/Tiles/Default/terrain_grass_block_top.png" id="3_jyhfs"]
-[ext_resource type="Script" uid="uid://e64q84qv2rvo" path="res://scenes/bee.gd" id="4_trceg"]
-[ext_resource type="Texture2D" uid="uid://xtik11tucqgv" path="res://assets/kenney_new-platformer-pack-1.1/Sprites/Enemies/Default/bee_a.png" id="5_85g3d"]
+[ext_resource type="Texture2D" uid="uid://dcn0k3ep2sbju" path="res://assets/kenney_new-platformer-pack-1.1/Sprites/Tiles/Default/sign_right.png" id="4_jbj1t"]
 [ext_resource type="Texture2D" uid="uid://6lvh1oeocpah" path="res://assets/kenney_new-platformer-pack-1.1/Sprites/Backgrounds/Default/background_clouds.png" id="5_tbgi4"]
 [ext_resource type="Texture2D" uid="uid://fx08c0garmvt" path="res://assets/kenney_new-platformer-pack-1.1/Sprites/Backgrounds/Default/background_solid_sky.png" id="6_tefeu"]
 [ext_resource type="PackedScene" uid="uid://c2xn1le6ou7tt" path="res://scenes/bee.tscn" id="7_o6xl0"]
 [ext_resource type="PackedScene" uid="uid://cgm27125xuuwp" path="res://scenes/cactus.tscn" id="8_choun"]
 [ext_resource type="PackedScene" uid="uid://g2idt2aguukj" path="res://scenes/block.tscn" id="9_ya4ey"]
 [ext_resource type="PackedScene" uid="uid://c6hs1ou20hs2g" path="res://scenes/single_block.tscn" id="10_eb6dy"]
+[ext_resource type="PackedScene" uid="uid://dy0i5gkv2fmdm" path="res://scenes/frog.tscn" id="11_eb6dy"]
 [ext_resource type="PackedScene" uid="uid://drao7adjsjkjt" path="res://scenes/coin.tscn" id="11_ya4ey"]
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_eb6dy"]
-size = Vector2(57.5, 55)
-
-[sub_resource type="Animation" id="Animation_o6xl0"]
-length = 0.001
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath(".:position")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 0,
-"values": [Vector2(450, 390)]
-}
-tracks/1/type = "value"
-tracks/1/imported = false
-tracks/1/enabled = true
-tracks/1/path = NodePath("../Bee2:position")
-tracks/1/interp = 1
-tracks/1/loop_wrap = true
-tracks/1/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 0,
-"values": [Vector2(519, 370)]
-}
-tracks/2/type = "value"
-tracks/2/imported = false
-tracks/2/enabled = true
-tracks/2/path = NodePath("../bee3/CollisionShape2D:script")
-tracks/2/interp = 1
-tracks/2/loop_wrap = true
-tracks/2/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 0,
-"values": [null]
-}
-tracks/3/type = "value"
-tracks/3/imported = false
-tracks/3/enabled = true
-tracks/3/path = NodePath("CollisionShape2D:position")
-tracks/3/interp = 1
-tracks/3/loop_wrap = true
-tracks/3/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 0,
-"values": [Vector2(1023.25, -8.5)]
-}
-tracks/4/type = "value"
-tracks/4/imported = false
-tracks/4/enabled = true
-tracks/4/path = NodePath("Sprite2D:position")
-tracks/4/interp = 1
-tracks/4/loop_wrap = true
-tracks/4/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 0,
-"values": [Vector2(1026, -6)]
-}
-
-[sub_resource type="Animation" id="Animation_tipki"]
-resource_name = "fly"
-length = 7.0333333
-loop_mode = 1
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath(".:position")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(1, 2, 3, 3.01, 4.02, 4.0333333, 4.99, 5, 6.0333333, 6.04),
-"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
-"update": 0,
-"values": [Vector2(552, 364), Vector2(381, 355), Vector2(501, 351), Vector2(474, 394), Vector2(427, 393), Vector2(321, 327), Vector2(432.55896, 392.2749), Vector2(538, 349), Vector2(330, 334), Vector2(387, 393)]
-}
-
-[sub_resource type="Animation" id="Animation_trceg"]
-resource_name = "fly2"
-length = 10.0
-loop_mode = 1
-step = 2.0
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("../Bee2:position")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(1, 2.0666666, 3.0333333, 4.0333333),
-"transitions": PackedFloat32Array(1, 1, 1, 1),
-"update": 0,
-"values": [Vector2(356, 361), Vector2(534, 357), Vector2(356, 361), Vector2(559, 350)]
-}
-tracks/1/type = "value"
-tracks/1/imported = false
-tracks/1/enabled = true
-tracks/1/path = NodePath("../bee3/CollisionShape2D:script")
-tracks/1/interp = 1
-tracks/1/loop_wrap = true
-tracks/1/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 0,
-"values": [null]
-}
-tracks/2/type = "value"
-tracks/2/imported = false
-tracks/2/enabled = true
-tracks/2/path = NodePath("CollisionShape2D:position")
-tracks/2/interp = 1
-tracks/2/loop_wrap = true
-tracks/2/keys = {
-"times": PackedFloat32Array(7.711076),
-"transitions": PackedFloat32Array(1),
-"update": 0,
-"values": [Vector2(1023.25, -8.5)]
-}
-tracks/3/type = "value"
-tracks/3/imported = false
-tracks/3/enabled = true
-tracks/3/path = NodePath("Sprite2D:position")
-tracks/3/interp = 1
-tracks/3/loop_wrap = true
-tracks/3/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 0,
-"values": [Vector2(948.7759, -1.5484924)]
-}
-
-[sub_resource type="AnimationLibrary" id="AnimationLibrary_85g3d"]
-_data = {
-&"RESET": SubResource("Animation_o6xl0"),
-&"fly": SubResource("Animation_tipki"),
-&"fly2": SubResource("Animation_trceg")
-}
+[ext_resource type="PackedScene" uid="uid://dskjib78vhv4y" path="res://scenes/long_block.tscn" id="13_muem4"]
+[ext_resource type="Texture2D" uid="uid://coafrcakqq520" path="res://assets/kenney_new-platformer-pack-1.1/Sprites/Tiles/Default/sign_exit.png" id="15_dp3eg"]
+[ext_resource type="PackedScene" uid="uid://ibpxnfnciwq0" path="res://scenes/saw.tscn" id="16_0ld40"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_0wfyh"]
 size = Vector2(6893, 132)
@@ -398,44 +257,22 @@ position = Vector2(6142.617, 147)
 scale = Vector2(1.1787723, 1.140625)
 texture = ExtResource("5_tbgi4")
 
-[node name="bee2" type="Area2D" parent="." unique_id=89107306]
-position = Vector2(450, 390)
-script = ExtResource("4_trceg")
+[node name="SignRight" type="Sprite2D" parent="." unique_id=1068579584]
+position = Vector2(1353, 484)
+texture = ExtResource("4_jbj1t")
 
-[node name="Sprite2D" type="Sprite2D" parent="bee2" unique_id=1972468748]
-position = Vector2(1026, -6)
-texture = ExtResource("5_85g3d")
+[node name="SignRight" type="Sprite2D" parent="SignRight" unique_id=1097033047]
+position = Vector2(1507, 1)
+texture = ExtResource("4_jbj1t")
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="bee2" unique_id=1492506151]
-position = Vector2(1023.25, -8.5)
-shape = SubResource("RectangleShape2D_eb6dy")
+[node name="SignRight" type="Sprite2D" parent="SignRight/SignRight" unique_id=1126403362]
+position = Vector2(1509, 6)
+texture = ExtResource("4_jbj1t")
 
-[node name="AnimationPlayer2" type="AnimationPlayer" parent="bee2" unique_id=1720882157]
-libraries/ = SubResource("AnimationLibrary_85g3d")
-autoplay = &"fly2"
-
-[node name="bee3" type="Area2D" parent="." unique_id=1729765571]
-position = Vector2(450, 390)
-script = ExtResource("4_trceg")
-
-[node name="Sprite2D" type="Sprite2D" parent="bee3" unique_id=1980599073]
-position = Vector2(1026, -6)
-texture = ExtResource("5_85g3d")
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="bee3" unique_id=1364659941]
-position = Vector2(1023.25, -8.5)
-shape = SubResource("RectangleShape2D_eb6dy")
-
-[node name="AnimationPlayer2" type="AnimationPlayer" parent="bee3" unique_id=1612316382]
-libraries/ = SubResource("AnimationLibrary_85g3d")
-autoplay = &"fly2"
-
-[node name="Bee2" parent="." unique_id=677262093 instance=ExtResource("7_o6xl0")]
-position = Vector2(519, 370)
-
-[node name="AnimationPlayer" type="AnimationPlayer" parent="Bee2" unique_id=2016556717]
-libraries/ = SubResource("AnimationLibrary_85g3d")
-autoplay = &"fly2"
+[node name="SignExit" type="Sprite2D" parent="SignRight/SignRight" unique_id=1188775087]
+position = Vector2(3346, 3)
+scale = Vector2(1, 1.125)
+texture = ExtResource("15_dp3eg")
 
 [node name="Player" parent="." unique_id=1741513001 instance=ExtResource("1_o5qli")]
 position = Vector2(-25, 332)
@@ -985,7 +822,7 @@ scale = Vector2(0.96875, 1)
 texture = ExtResource("3_jyhfs")
 
 [node name="TerrainGrassBlockTop58" type="Sprite2D" parent="TerrainGrassBlockTop54" unique_id=1927759204]
-position = Vector2(1006.04834, -0.99993896)
+position = Vector2(1007.4838, 0)
 scale = Vector2(1.2777286, 1)
 texture = ExtResource("3_jyhfs")
 
@@ -1444,7 +1281,7 @@ scale = Vector2(1.4375026, 1.0390636)
 texture = ExtResource("2_sugp2")
 
 [node name="cactus" parent="." unique_id=980895354 instance=ExtResource("8_choun")]
-position = Vector2(784, 376)
+position = Vector2(935, 373)
 
 [node name="block" parent="." unique_id=1049242802 instance=ExtResource("9_ya4ey")]
 position = Vector2(685, 265)
@@ -1455,8 +1292,92 @@ position = Vector2(584, 390)
 [node name="coin" parent="." unique_id=118956412 instance=ExtResource("11_ya4ey")]
 position = Vector2(767, 208)
 
-[connection signal="body_entered" from="bee2" to="bee2" method="_on_body_entered"]
-[connection signal="body_entered" from="bee2" to="Bee2" method="_on_bee_2_body_entered"]
-[connection signal="body_entered" from="bee3" to="bee2" method="_on_bee_3_body_entered"]
-[connection signal="body_entered" from="Bee2" to="bee2" method="_on_bee_2_body_entered"]
-[connection signal="body_entered" from="Bee2" to="Bee2" method="_on_body_entered"]
+[node name="frog" parent="." unique_id=786113660 instance=ExtResource("11_eb6dy")]
+position = Vector2(548, 496)
+
+[node name="long block" parent="." unique_id=43475073 instance=ExtResource("13_muem4")]
+position = Vector2(1855, 299)
+
+[node name="singleBlock2" parent="." unique_id=1468456463 instance=ExtResource("10_eb6dy")]
+position = Vector2(1622, 311)
+
+[node name="singleBlock3" parent="." unique_id=241284240 instance=ExtResource("10_eb6dy")]
+position = Vector2(1542, 391)
+
+[node name="singleBlock4" parent="." unique_id=1624427558 instance=ExtResource("10_eb6dy")]
+position = Vector2(3053, 383)
+
+[node name="block2" parent="." unique_id=175822238 instance=ExtResource("9_ya4ey")]
+position = Vector2(3147, 258)
+
+[node name="singleBlock5" parent="." unique_id=40452987 instance=ExtResource("10_eb6dy")]
+position = Vector2(3346, 223)
+
+[node name="long block2" parent="." unique_id=1756698211 instance=ExtResource("13_muem4")]
+position = Vector2(3582, 213)
+
+[node name="singleBlock6" parent="." unique_id=2084166463 instance=ExtResource("10_eb6dy")]
+position = Vector2(3701, 71)
+
+[node name="singleBlock7" parent="." unique_id=1492480913 instance=ExtResource("10_eb6dy")]
+position = Vector2(3777, -12)
+
+[node name="singleBlock8" parent="." unique_id=576698950 instance=ExtResource("10_eb6dy")]
+position = Vector2(3856, -92)
+
+[node name="long block3" parent="." unique_id=304379870 instance=ExtResource("13_muem4")]
+position = Vector2(4079, -108)
+
+[node name="singleBlock9" parent="." unique_id=1033818374 instance=ExtResource("10_eb6dy")]
+position = Vector2(4249, -76)
+
+[node name="singleBlock10" parent="." unique_id=1246616225 instance=ExtResource("10_eb6dy")]
+position = Vector2(4385, 63)
+
+[node name="singleBlock11" parent="." unique_id=1041731600 instance=ExtResource("10_eb6dy")]
+position = Vector2(4506, 214)
+
+[node name="singleBlock12" parent="." unique_id=1352919781 instance=ExtResource("10_eb6dy")]
+position = Vector2(4627, 349)
+
+[node name="frog2" parent="." unique_id=705512488 instance=ExtResource("11_eb6dy")]
+position = Vector2(2262, 494)
+
+[node name="frog3" parent="." unique_id=803883919 instance=ExtResource("11_eb6dy")]
+position = Vector2(3689, 178)
+
+[node name="frog4" parent="." unique_id=129216697 instance=ExtResource("11_eb6dy")]
+position = Vector2(5538, 504)
+
+[node name="Bee" parent="." unique_id=1861813214 instance=ExtResource("7_o6xl0")]
+position = Vector2(1347, 372)
+
+[node name="saw" parent="." unique_id=169050000 instance=ExtResource("16_0ld40")]
+position = Vector2(2231, 249)
+
+[node name="saw2" parent="." unique_id=469795173 instance=ExtResource("16_0ld40")]
+position = Vector2(2394, 349)
+
+[node name="saw3" parent="." unique_id=1591230699 instance=ExtResource("16_0ld40")]
+position = Vector2(3041, 345)
+
+[node name="Bee2" parent="." unique_id=1864044598 instance=ExtResource("7_o6xl0")]
+position = Vector2(2704, 378)
+
+[node name="Bee3" parent="." unique_id=823164614 instance=ExtResource("7_o6xl0")]
+position = Vector2(4194, -273)
+
+[node name="Bee4" parent="." unique_id=1291688334 instance=ExtResource("7_o6xl0")]
+position = Vector2(4647, -107)
+
+[node name="Bee5" parent="." unique_id=1230274726 instance=ExtResource("7_o6xl0")]
+position = Vector2(4906, 151)
+
+[node name="saw4" parent="." unique_id=838631159 instance=ExtResource("16_0ld40")]
+position = Vector2(4761, 33)
+
+[node name="saw5" parent="." unique_id=722752826 instance=ExtResource("16_0ld40")]
+position = Vector2(5003, 290)
+
+[node name="Bee6" parent="." unique_id=1121822336 instance=ExtResource("7_o6xl0")]
+position = Vector2(5715, 328)
