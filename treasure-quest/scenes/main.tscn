@@ -1455,8 +1455,8 @@ position = Vector2(584, 390)
 [node name="coin" parent="." unique_id=118956412 instance=ExtResource("11_ya4ey")]
 position = Vector2(767, 208)
 
-[connection signal="body_entered" from="bee2" to="Bee2" method="_on_bee_2_body_entered"]
 [connection signal="body_entered" from="bee2" to="bee2" method="_on_body_entered"]
+[connection signal="body_entered" from="bee2" to="Bee2" method="_on_bee_2_body_entered"]
 [connection signal="body_entered" from="bee3" to="bee2" method="_on_bee_3_body_entered"]
-[connection signal="body_entered" from="Bee2" to="Bee2" method="_on_body_entered"]
 [connection signal="body_entered" from="Bee2" to="bee2" method="_on_bee_2_body_entered"]
+[connection signal="body_entered" from="Bee2" to="Bee2" method="_on_body_entered"]
