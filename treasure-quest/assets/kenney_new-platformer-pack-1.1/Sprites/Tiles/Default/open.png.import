@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dvp6fyiy2rncj"
-path="res://.godot/imported/door_closed_top.png-6fcfcb8a6304266f435e65f875ad1447.ctex"
+uid="uid://cur83wucngvva"
+path="res://.godot/imported/open.png-9db88088a84026dc412ec389dfc00e0d.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/kenney_new-platformer-pack-1.1/Sprites/Tiles/Default/door_closed_top.png"
-dest_files=["res://.godot/imported/door_closed_top.png-6fcfcb8a6304266f435e65f875ad1447.ctex"]
+source_file="res://assets/kenney_new-platformer-pack-1.1/Sprites/Tiles/Default/open.png"
+dest_files=["res://.godot/imported/open.png-9db88088a84026dc412ec389dfc00e0d.ctex"]
 
 [params]
 

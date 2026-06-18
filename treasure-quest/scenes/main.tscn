@@ -258,6 +258,46 @@ position = Vector2(6142.617, 147)
 scale = Vector2(1.1787723, 1.140625)
 texture = ExtResource("5_tbgi4")
 
+[node name="BackgroundFadeDesert24" type="Sprite2D" parent="." unique_id=1519977280]
+position = Vector2(6439.3413, 406.00012)
+scale = Vector2(1.140102, 0.89453137)
+texture = ExtResource("1_tbgi4")
+
+[node name="BackgroundClouds24" type="Sprite2D" parent="." unique_id=2070510917]
+position = Vector2(6438.168, 149)
+scale = Vector2(1.1419357, 1.140625)
+texture = ExtResource("5_tbgi4")
+
+[node name="BackgroundFadeDesert25" type="Sprite2D" parent="." unique_id=271982462]
+position = Vector2(6716.47, 404.25006)
+scale = Vector2(1.0689603, 0.89648366)
+texture = ExtResource("1_tbgi4")
+
+[node name="BackgroundClouds25" type="Sprite2D" parent="." unique_id=25036572]
+position = Vector2(6717.8335, 148.50012)
+scale = Vector2(1.0618576, 1.1367188)
+texture = ExtResource("5_tbgi4")
+
+[node name="BackgroundFadeDesert26" type="Sprite2D" parent="." unique_id=1927176548]
+position = Vector2(6990.1245, 404.75006)
+scale = Vector2(1.0689603, 0.9003902)
+texture = ExtResource("1_tbgi4")
+
+[node name="BackgroundClouds26" type="Sprite2D" parent="." unique_id=1599460004]
+position = Vector2(6990.124, 148.00006)
+scale = Vector2(1.0654091, 1.125)
+texture = ExtResource("5_tbgi4")
+
+[node name="BackgroundFadeDesert27" type="Sprite2D" parent="." unique_id=1805468504]
+position = Vector2(7268.323, 406.75006)
+scale = Vector2(1.1044738, 0.9082027)
+texture = ExtResource("1_tbgi4")
+
+[node name="BackgroundClouds27" type="Sprite2D" parent="." unique_id=412648249]
+position = Vector2(7267.1875, 148)
+scale = Vector2(1.1062502, 1.140625)
+texture = ExtResource("5_tbgi4")
+
 [node name="ExitDoor" parent="." unique_id=1702446062 instance=ExtResource("17_muem4")]
 position = Vector2(6151, 422)
 
@@ -830,46 +870,6 @@ texture = ExtResource("3_jyhfs")
 position = Vector2(1842.9352, -0.99993896)
 scale = Vector2(0.96875, 1)
 texture = ExtResource("3_jyhfs")
-
-[node name="BackgroundFadeDesert20" type="Sprite2D" parent="TerrainGrassBlockTop54/TerrainGrassBlockTop54" unique_id=1519977280]
-position = Vector2(183.27306, -143.99994)
-scale = Vector2(1.2148434, 0.89453137)
-texture = ExtResource("1_tbgi4")
-
-[node name="BackgroundClouds20" type="Sprite2D" parent="TerrainGrassBlockTop54/TerrainGrassBlockTop54" unique_id=2070510917]
-position = Vector2(182.02306, -401.00006)
-scale = Vector2(1.2167972, 1.140625)
-texture = ExtResource("5_tbgi4")
-
-[node name="BackgroundFadeDesert21" type="Sprite2D" parent="TerrainGrassBlockTop54/TerrainGrassBlockTop54" unique_id=271982462]
-position = Vector2(478.56995, -145.74998)
-scale = Vector2(1.1390378, 0.89648366)
-texture = ExtResource("1_tbgi4")
-
-[node name="BackgroundClouds21" type="Sprite2D" parent="TerrainGrassBlockTop54/TerrainGrassBlockTop54" unique_id=25036572]
-position = Vector2(480.02255, -401.49994)
-scale = Vector2(1.1314695, 1.1367188)
-texture = ExtResource("5_tbgi4")
-
-[node name="BackgroundFadeDesert22" type="Sprite2D" parent="TerrainGrassBlockTop54/TerrainGrassBlockTop54" unique_id=1927176548]
-position = Vector2(770.1637, -145.25002)
-scale = Vector2(1.1390378, 0.9003902)
-texture = ExtResource("1_tbgi4")
-
-[node name="BackgroundClouds22" type="Sprite2D" parent="TerrainGrassBlockTop54/TerrainGrassBlockTop54" unique_id=1599460004]
-position = Vector2(770.1632, -402)
-scale = Vector2(1.1352538, 1.125)
-texture = ExtResource("5_tbgi4")
-
-[node name="BackgroundFadeDesert23" type="Sprite2D" parent="TerrainGrassBlockTop54/TerrainGrassBlockTop54" unique_id=1805468504]
-position = Vector2(1066.6007, -143.25002)
-scale = Vector2(1.1768795, 0.9082027)
-texture = ExtResource("1_tbgi4")
-
-[node name="BackgroundClouds23" type="Sprite2D" parent="TerrainGrassBlockTop54/TerrainGrassBlockTop54" unique_id=412648249]
-position = Vector2(1065.3903, -402.00006)
-scale = Vector2(1.1787723, 1.140625)
-texture = ExtResource("5_tbgi4")
 
 [node name="TerrainGrassBlockTop52" type="Sprite2D" parent="TerrainGrassBlockTop54/TerrainGrassBlockTop54" unique_id=2129783837]
 position = Vector2(1089.5283, 1.999939)

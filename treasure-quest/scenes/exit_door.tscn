@@ -1,8 +1,8 @@
 [gd_scene format=3 uid="uid://dorfhiic1mp0m"]
 
 [ext_resource type="Script" uid="uid://b1aiywm83mdgs" path="res://exit_door.gd" id="1_lxrmt"]
-[ext_resource type="Texture2D" uid="uid://dvp6fyiy2rncj" path="res://assets/kenney_new-platformer-pack-1.1/Sprites/Tiles/Default/door_closed_top.png" id="2_6m21m"]
-[ext_resource type="Texture2D" uid="uid://cur83wucngvva" path="res://assets/kenney_new-platformer-pack-1.1/Sprites/Tiles/Default/door_open_top.png" id="3_sojrm"]
+[ext_resource type="Texture2D" uid="uid://dvp6fyiy2rncj" path="res://assets/kenney_new-platformer-pack-1.1/Sprites/Tiles/Default/closed.png" id="2_6m21m"]
+[ext_resource type="Texture2D" uid="uid://cur83wucngvva" path="res://assets/kenney_new-platformer-pack-1.1/Sprites/Tiles/Default/open.png" id="3_sojrm"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_fn25g"]
 animations = [{

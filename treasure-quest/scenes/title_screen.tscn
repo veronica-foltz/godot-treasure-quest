@@ -1,0 +1,37 @@
+[gd_scene format=3 uid="uid://cxnn0skoljy0p"]
+
+[ext_resource type="Texture2D" uid="uid://b07u23uuvpfh1" path="res://images/Treasure Quest TP.png" id="1_fgkus"]
+[ext_resource type="Script" uid="uid://bxopkgittyjjn" path="res://scenes/title_screen.gd" id="1_sa3yf"]
+
+[node name="TitleScreen" type="Control" unique_id=1037495461]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("1_sa3yf")
+
+[node name="Label" type="Label" parent="." unique_id=875223643]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 23.0
+
+[node name="TextureRect" type="TextureRect" parent="Label" unique_id=1882813566]
+layout_mode = 0
+offset_right = 58.0
+offset_bottom = 40.0
+
+[node name="TreasureQuestTp" type="Sprite2D" parent="." unique_id=2116117992]
+position = Vector2(574, 362.99997)
+scale = Vector2(0.74609375, 0.7001953)
+texture = ExtResource("1_fgkus")
+
+[node name="Button" type="Button" parent="." unique_id=89611878]
+layout_mode = 0
+offset_left = 490.0
+offset_top = 415.0
+offset_right = 684.0
+offset_bottom = 476.0
+theme_override_font_sizes/font_size = 26
+text = "Start Game"
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]

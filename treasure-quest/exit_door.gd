@@ -4,11 +4,12 @@ extends Area2D
 
 func _ready():
 
-	$AnimatedSprite2D.play("closed")
+	$AnimatedSprite2D.frame = 0
 
 func _on_body_entered(body):
 
 	if body.name == "Player":
-		$AnimatedSprite2D.play("open")
+		print("DOOR TOUCHED:", body.name)
+		$AnimatedSprite2D.frame = 1
 		await get_tree().create_timer(0.5).timeout
 		get_tree().change_scene_to_file(next_level)
