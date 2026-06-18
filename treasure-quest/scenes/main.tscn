@@ -17,6 +17,7 @@
 [ext_resource type="Texture2D" uid="uid://coafrcakqq520" path="res://assets/kenney_new-platformer-pack-1.1/Sprites/Tiles/Default/sign_exit.png" id="15_dp3eg"]
 [ext_resource type="PackedScene" uid="uid://ibpxnfnciwq0" path="res://scenes/saw.tscn" id="16_0ld40"]
 [ext_resource type="PackedScene" uid="uid://dorfhiic1mp0m" path="res://scenes/exit_door.tscn" id="17_muem4"]
+[ext_resource type="AudioStream" uid="uid://ci4xy1m2rd2xi" path="res://assets/music/tatamusic-game-gaming-minecraft-background-music-377647.mp3" id="18_dp3eg"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_0wfyh"]
 size = Vector2(8010, 132)
@@ -1644,3 +1645,7 @@ position = Vector2(5350, 369)
 
 [node name="coin15" parent="." unique_id=118956412 instance=ExtResource("11_ya4ey")]
 position = Vector2(292, 394)
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="." unique_id=1643732254]
+stream = ExtResource("18_dp3eg")
+autoplay = true

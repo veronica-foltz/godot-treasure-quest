@@ -1,7 +1,8 @@
 [gd_scene format=3 uid="uid://cxnn0skoljy0p"]
 
-[ext_resource type="Texture2D" uid="uid://b07u23uuvpfh1" path="res://images/Treasure Quest TP.png" id="1_fgkus"]
+[ext_resource type="Texture2D" uid="uid://b07u23uuvpfh1" path="res://assets/images/Treasure Quest TP.png" id="1_fgkus"]
 [ext_resource type="Script" uid="uid://bxopkgittyjjn" path="res://scenes/title_screen.gd" id="1_sa3yf"]
+[ext_resource type="AudioStream" uid="uid://ci4xy1m2rd2xi" path="res://assets/music/tatamusic-game-gaming-minecraft-background-music-377647.mp3" id="3_s4lrb"]
 
 [node name="TitleScreen" type="Control" unique_id=1037495461]
 layout_mode = 3
@@ -33,5 +34,9 @@ offset_right = 684.0
 offset_bottom = 476.0
 theme_override_font_sizes/font_size = 26
 text = "Start Game"
+
+[node name="Music" type="AudioStreamPlayer2D" parent="." unique_id=2110437924]
+stream = ExtResource("3_s4lrb")
+autoplay = true
 
 [connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
