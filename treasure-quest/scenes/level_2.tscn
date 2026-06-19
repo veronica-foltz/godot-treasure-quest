@@ -6,11 +6,11 @@
 [node name="Level2" type="Node2D" unique_id=1685866390]
 
 [node name="TerrainStoneHorizontalMiddle" type="Sprite2D" parent="." unique_id=196681097]
-position = Vector2(32, 330)
+position = Vector2(32, 553)
 texture = ExtResource("1_jm1iu")
 
 [node name="TerrainStoneBlockCenter" type="Sprite2D" parent="." unique_id=92147814]
-position = Vector2(32, 390)
+position = Vector2(32, 613)
 texture = ExtResource("2_pbc48")
 
 [node name="TerrainStoneHorizontalMiddle" type="Sprite2D" parent="TerrainStoneBlockCenter" unique_id=950926707]
