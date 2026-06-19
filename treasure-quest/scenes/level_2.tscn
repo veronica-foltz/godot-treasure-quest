@@ -5,34 +5,1552 @@
 
 [node name="Level2" type="Node2D" unique_id=1685866390]
 
-[node name="TerrainStoneHorizontalMiddle" type="Sprite2D" parent="." unique_id=196681097]
-position = Vector2(32, 553)
+[node name="ColorRect" type="ColorRect" parent="." unique_id=1172111720]
+offset_top = -974.0
+offset_right = 12285.0
+offset_bottom = 520.0
+color = Color(0, 0, 0, 1)
+
+[node name="TerrainStoneHorizontalMiddle9" type="Sprite2D" parent="." unique_id=1068619712]
+position = Vector2(33, 553)
 texture = ExtResource("1_jm1iu")
+
+[node name="TerrainStoneHorizontalMiddle2" type="Sprite2D" parent="." unique_id=950926707]
+position = Vector2(97, 553)
+texture = ExtResource("1_jm1iu")
+
+[node name="TerrainStoneBlockCenter2" type="Sprite2D" parent="." unique_id=543804872]
+position = Vector2(96, 613)
+texture = ExtResource("2_pbc48")
+
+[node name="TerrainStoneHorizontalMiddle3" type="Sprite2D" parent="." unique_id=1853729326]
+position = Vector2(160, 553)
+texture = ExtResource("1_jm1iu")
+
+[node name="TerrainStoneHorizontalMiddle4" type="Sprite2D" parent="." unique_id=1860472747]
+position = Vector2(224, 553)
+texture = ExtResource("1_jm1iu")
+
+[node name="TerrainStoneBlockCenter4" type="Sprite2D" parent="." unique_id=1536721611]
+position = Vector2(224, 613)
+texture = ExtResource("2_pbc48")
+
+[node name="TerrainStoneBlockCenter3" type="Sprite2D" parent="." unique_id=561942931]
+position = Vector2(160, 613)
+texture = ExtResource("2_pbc48")
+
+[node name="TerrainStoneHorizontalMiddle5" type="Sprite2D" parent="." unique_id=1756598120]
+position = Vector2(351, 553)
+texture = ExtResource("1_jm1iu")
+
+[node name="TerrainStoneBlockCenter5" type="Sprite2D" parent="." unique_id=834383892]
+position = Vector2(351, 613)
+texture = ExtResource("2_pbc48")
+
+[node name="TerrainStoneHorizontalMiddle6" type="Sprite2D" parent="." unique_id=1291848652]
+position = Vector2(415, 553)
+texture = ExtResource("1_jm1iu")
+
+[node name="TerrainStoneHorizontalMiddle7" type="Sprite2D" parent="." unique_id=845581404]
+position = Vector2(479, 553)
+texture = ExtResource("1_jm1iu")
+
+[node name="TerrainStoneBlockCenter6" type="Sprite2D" parent="." unique_id=1370311410]
+position = Vector2(479, 613)
+texture = ExtResource("2_pbc48")
+
+[node name="TerrainStoneBlockCenter7" type="Sprite2D" parent="." unique_id=1204124954]
+position = Vector2(415, 613)
+texture = ExtResource("2_pbc48")
+
+[node name="TerrainStoneHorizontalMiddle8" type="Sprite2D" parent="." unique_id=2041753443]
+position = Vector2(287, 553)
+texture = ExtResource("1_jm1iu")
+
+[node name="TerrainStoneBlockCenter8" type="Sprite2D" parent="." unique_id=1076978175]
+position = Vector2(287, 613)
+texture = ExtResource("2_pbc48")
+
+[node name="TerrainStoneHorizontalMiddle58" type="Sprite2D" parent="." unique_id=396711783]
+position = Vector2(542, 553)
+texture = ExtResource("1_jm1iu")
+
+[node name="TerrainStoneHorizontalMiddle59" type="Sprite2D" parent="." unique_id=998868482]
+position = Vector2(606, 553)
+texture = ExtResource("1_jm1iu")
+
+[node name="TerrainStoneBlockCenter57" type="Sprite2D" parent="." unique_id=669591224]
+position = Vector2(605, 613)
+texture = ExtResource("2_pbc48")
+
+[node name="TerrainStoneHorizontalMiddle60" type="Sprite2D" parent="." unique_id=1818220462]
+position = Vector2(669, 553)
+texture = ExtResource("1_jm1iu")
+
+[node name="TerrainStoneHorizontalMiddle61" type="Sprite2D" parent="." unique_id=398717607]
+position = Vector2(733, 553)
+texture = ExtResource("1_jm1iu")
+
+[node name="TerrainStoneBlockCenter58" type="Sprite2D" parent="." unique_id=2106024321]
+position = Vector2(733, 613)
+texture = ExtResource("2_pbc48")
+
+[node name="TerrainStoneBlockCenter59" type="Sprite2D" parent="." unique_id=530547212]
+position = Vector2(669, 613)
+texture = ExtResource("2_pbc48")
+
+[node name="TerrainStoneHorizontalMiddle62" type="Sprite2D" parent="." unique_id=656099737]
+position = Vector2(860, 553)
+texture = ExtResource("1_jm1iu")
+
+[node name="TerrainStoneBlockCenter60" type="Sprite2D" parent="." unique_id=776002450]
+position = Vector2(860, 613)
+texture = ExtResource("2_pbc48")
+
+[node name="TerrainStoneHorizontalMiddle63" type="Sprite2D" parent="." unique_id=1727783786]
+position = Vector2(924, 553)
+texture = ExtResource("1_jm1iu")
+
+[node name="TerrainStoneHorizontalMiddle64" type="Sprite2D" parent="." unique_id=1823692269]
+position = Vector2(988, 553)
+texture = ExtResource("1_jm1iu")
+
+[node name="TerrainStoneBlockCenter61" type="Sprite2D" parent="." unique_id=1648811343]
+position = Vector2(988, 613)
+texture = ExtResource("2_pbc48")
+
+[node name="TerrainStoneBlockCenter62" type="Sprite2D" parent="." unique_id=230878981]
+position = Vector2(924, 613)
+texture = ExtResource("2_pbc48")
+
+[node name="TerrainStoneHorizontalMiddle65" type="Sprite2D" parent="." unique_id=1322503351]
+position = Vector2(796, 553)
+texture = ExtResource("1_jm1iu")
+
+[node name="TerrainStoneBlockCenter63" type="Sprite2D" parent="." unique_id=908447292]
+position = Vector2(796, 613)
+texture = ExtResource("2_pbc48")
+
+[node name="TerrainStoneBlockCenter64" type="Sprite2D" parent="." unique_id=209842903]
+position = Vector2(541, 613)
+texture = ExtResource("2_pbc48")
 
 [node name="TerrainStoneBlockCenter" type="Sprite2D" parent="." unique_id=92147814]
 position = Vector2(32, 613)
 texture = ExtResource("2_pbc48")
 
-[node name="TerrainStoneHorizontalMiddle" type="Sprite2D" parent="TerrainStoneBlockCenter" unique_id=950926707]
-position = Vector2(64, -60)
+[node name="TerrainStoneHorizontalMiddle10" type="Sprite2D" parent="." unique_id=1256738237]
+position = Vector2(1051, 553)
 texture = ExtResource("1_jm1iu")
 
-[node name="TerrainStoneBlockCenter" type="Sprite2D" parent="TerrainStoneBlockCenter" unique_id=543804872]
-position = Vector2(64, 0)
+[node name="TerrainStoneHorizontalMiddle11" type="Sprite2D" parent="." unique_id=1718619990]
+position = Vector2(1115, 553)
+texture = ExtResource("1_jm1iu")
+
+[node name="TerrainStoneBlockCenter9" type="Sprite2D" parent="." unique_id=612407995]
+position = Vector2(1114, 613)
 texture = ExtResource("2_pbc48")
 
-[node name="TerrainStoneHorizontalMiddle2" type="Sprite2D" parent="TerrainStoneBlockCenter" unique_id=1853729326]
-position = Vector2(128, -60)
+[node name="TerrainStoneHorizontalMiddle12" type="Sprite2D" parent="." unique_id=1788547540]
+position = Vector2(1178, 553)
 texture = ExtResource("1_jm1iu")
 
-[node name="TerrainStoneBlockCenter2" type="Sprite2D" parent="TerrainStoneBlockCenter" unique_id=561942931]
-position = Vector2(128, 0)
+[node name="TerrainStoneHorizontalMiddle13" type="Sprite2D" parent="." unique_id=854893252]
+position = Vector2(1242, 553)
+texture = ExtResource("1_jm1iu")
+
+[node name="TerrainStoneBlockCenter10" type="Sprite2D" parent="." unique_id=579446261]
+position = Vector2(1242, 613)
 texture = ExtResource("2_pbc48")
 
-[node name="TerrainStoneHorizontalMiddle" type="Sprite2D" parent="TerrainStoneBlockCenter/TerrainStoneBlockCenter2" unique_id=1860472747]
-position = Vector2(64, -60)
+[node name="TerrainStoneBlockCenter11" type="Sprite2D" parent="." unique_id=627509937]
+position = Vector2(1178, 613)
+texture = ExtResource("2_pbc48")
+
+[node name="TerrainStoneHorizontalMiddle14" type="Sprite2D" parent="." unique_id=1418210978]
+position = Vector2(1369, 553)
 texture = ExtResource("1_jm1iu")
 
-[node name="TerrainStoneBlockCenter" type="Sprite2D" parent="TerrainStoneBlockCenter/TerrainStoneBlockCenter2" unique_id=1536721611]
-position = Vector2(64, 0)
+[node name="TerrainStoneBlockCenter12" type="Sprite2D" parent="." unique_id=1744858525]
+position = Vector2(1369, 613)
+texture = ExtResource("2_pbc48")
+
+[node name="TerrainStoneHorizontalMiddle15" type="Sprite2D" parent="." unique_id=836068540]
+position = Vector2(1433, 553)
+texture = ExtResource("1_jm1iu")
+
+[node name="TerrainStoneHorizontalMiddle16" type="Sprite2D" parent="." unique_id=420634186]
+position = Vector2(1497, 553)
+texture = ExtResource("1_jm1iu")
+
+[node name="TerrainStoneBlockCenter13" type="Sprite2D" parent="." unique_id=2067987959]
+position = Vector2(1497, 613)
+texture = ExtResource("2_pbc48")
+
+[node name="TerrainStoneBlockCenter14" type="Sprite2D" parent="." unique_id=1770285980]
+position = Vector2(1433, 613)
+texture = ExtResource("2_pbc48")
+
+[node name="TerrainStoneHorizontalMiddle17" type="Sprite2D" parent="." unique_id=2030482946]
+position = Vector2(1305, 553)
+texture = ExtResource("1_jm1iu")
+
+[node name="TerrainStoneBlockCenter15" type="Sprite2D" parent="." unique_id=135326016]
+position = Vector2(1305, 613)
+texture = ExtResource("2_pbc48")
+
+[node name="TerrainStoneBlockCenter16" type="Sprite2D" parent="." unique_id=1278577809]
+position = Vector2(1050, 613)
+texture = ExtResource("2_pbc48")
+
+[node name="TerrainStoneHorizontalMiddle18" type="Sprite2D" parent="." unique_id=986664425]
+position = Vector2(1561, 553)
+texture = ExtResource("1_jm1iu")
+
+[node name="TerrainStoneHorizontalMiddle19" type="Sprite2D" parent="." unique_id=2078363469]
+position = Vector2(1625, 553)
+texture = ExtResource("1_jm1iu")
+
+[node name="TerrainStoneBlockCenter17" type="Sprite2D" parent="." unique_id=866937322]
+position = Vector2(1624, 613)
+texture = ExtResource("2_pbc48")
+
+[node name="TerrainStoneHorizontalMiddle20" type="Sprite2D" parent="." unique_id=201540531]
+position = Vector2(1688, 553)
+texture = ExtResource("1_jm1iu")
+
+[node name="TerrainStoneHorizontalMiddle21" type="Sprite2D" parent="." unique_id=1139259037]
+position = Vector2(1752, 553)
+texture = ExtResource("1_jm1iu")
+
+[node name="TerrainStoneBlockCenter18" type="Sprite2D" parent="." unique_id=1874525103]
+position = Vector2(1752, 613)
+texture = ExtResource("2_pbc48")
+
+[node name="TerrainStoneBlockCenter19" type="Sprite2D" parent="." unique_id=492998050]
+position = Vector2(1688, 613)
+texture = ExtResource("2_pbc48")
+
+[node name="TerrainStoneHorizontalMiddle22" type="Sprite2D" parent="." unique_id=1599079837]
+position = Vector2(1879, 553)
+texture = ExtResource("1_jm1iu")
+
+[node name="TerrainStoneBlockCenter20" type="Sprite2D" parent="." unique_id=110002236]
+position = Vector2(1879, 613)
+texture = ExtResource("2_pbc48")
+
+[node name="TerrainStoneHorizontalMiddle23" type="Sprite2D" parent="." unique_id=1924336372]
+position = Vector2(1943, 553)
+texture = ExtResource("1_jm1iu")
+
+[node name="TerrainStoneHorizontalMiddle24" type="Sprite2D" parent="." unique_id=597445923]
+position = Vector2(2007, 553)
+texture = ExtResource("1_jm1iu")
+
+[node name="TerrainStoneBlockCenter21" type="Sprite2D" parent="." unique_id=1949988960]
+position = Vector2(2007, 613)
+texture = ExtResource("2_pbc48")
+
+[node name="TerrainStoneBlockCenter22" type="Sprite2D" parent="." unique_id=1660241872]
+position = Vector2(1943, 613)
+texture = ExtResource("2_pbc48")
+
+[node name="TerrainStoneHorizontalMiddle25" type="Sprite2D" parent="." unique_id=50241854]
+position = Vector2(1815, 553)
+texture = ExtResource("1_jm1iu")
+
+[node name="TerrainStoneBlockCenter23" type="Sprite2D" parent="." unique_id=455867754]
+position = Vector2(1815, 613)
+texture = ExtResource("2_pbc48")
+
+[node name="TerrainStoneBlockCenter24" type="Sprite2D" parent="." unique_id=1645222107]
+position = Vector2(1560, 613)
+texture = ExtResource("2_pbc48")
+
+[node name="TerrainStoneHorizontalMiddle26" type="Sprite2D" parent="." unique_id=1105301417]
+position = Vector2(2070, 553)
+texture = ExtResource("1_jm1iu")
+
+[node name="TerrainStoneHorizontalMiddle27" type="Sprite2D" parent="." unique_id=1598123271]
+position = Vector2(2134, 553)
+texture = ExtResource("1_jm1iu")
+
+[node name="TerrainStoneBlockCenter25" type="Sprite2D" parent="." unique_id=1145113183]
+position = Vector2(2133, 613)
+texture = ExtResource("2_pbc48")
+
+[node name="TerrainStoneHorizontalMiddle28" type="Sprite2D" parent="." unique_id=189597317]
+position = Vector2(2197, 553)
+texture = ExtResource("1_jm1iu")
+
+[node name="TerrainStoneHorizontalMiddle29" type="Sprite2D" parent="." unique_id=1181833365]
+position = Vector2(2261, 553)
+texture = ExtResource("1_jm1iu")
+
+[node name="TerrainStoneBlockCenter26" type="Sprite2D" parent="." unique_id=1670903091]
+position = Vector2(2261, 613)
+texture = ExtResource("2_pbc48")
+
+[node name="TerrainStoneBlockCenter27" type="Sprite2D" parent="." unique_id=1716714596]
+position = Vector2(2197, 613)
+texture = ExtResource("2_pbc48")
+
+[node name="TerrainStoneHorizontalMiddle30" type="Sprite2D" parent="." unique_id=569110147]
+position = Vector2(2388, 553)
+texture = ExtResource("1_jm1iu")
+
+[node name="TerrainStoneBlockCenter28" type="Sprite2D" parent="." unique_id=313620368]
+position = Vector2(2388, 613)
+texture = ExtResource("2_pbc48")
+
+[node name="TerrainStoneHorizontalMiddle31" type="Sprite2D" parent="." unique_id=90931327]
+position = Vector2(2452, 553)
+texture = ExtResource("1_jm1iu")
+
+[node name="TerrainStoneHorizontalMiddle32" type="Sprite2D" parent="." unique_id=1103704941]
+position = Vector2(2516, 553)
+texture = ExtResource("1_jm1iu")
+
+[node name="TerrainStoneBlockCenter29" type="Sprite2D" parent="." unique_id=2043106218]
+position = Vector2(2516, 613)
+texture = ExtResource("2_pbc48")
+
+[node name="TerrainStoneBlockCenter30" type="Sprite2D" parent="." unique_id=486125677]
+position = Vector2(2452, 613)
+texture = ExtResource("2_pbc48")
+
+[node name="TerrainStoneHorizontalMiddle33" type="Sprite2D" parent="." unique_id=1671316337]
+position = Vector2(2324, 553)
+texture = ExtResource("1_jm1iu")
+
+[node name="TerrainStoneBlockCenter31" type="Sprite2D" parent="." unique_id=132942050]
+position = Vector2(2324, 613)
+texture = ExtResource("2_pbc48")
+
+[node name="TerrainStoneBlockCenter32" type="Sprite2D" parent="." unique_id=1062429813]
+position = Vector2(2069, 613)
+texture = ExtResource("2_pbc48")
+
+[node name="TerrainStoneHorizontalMiddle34" type="Sprite2D" parent="." unique_id=470562162]
+position = Vector2(2579, 553)
+texture = ExtResource("1_jm1iu")
+
+[node name="TerrainStoneHorizontalMiddle35" type="Sprite2D" parent="." unique_id=1405910493]
+position = Vector2(2643, 553)
+texture = ExtResource("1_jm1iu")
+
+[node name="TerrainStoneBlockCenter33" type="Sprite2D" parent="." unique_id=1374022751]
+position = Vector2(2642, 613)
+texture = ExtResource("2_pbc48")
+
+[node name="TerrainStoneHorizontalMiddle36" type="Sprite2D" parent="." unique_id=134791982]
+position = Vector2(2706, 553)
+texture = ExtResource("1_jm1iu")
+
+[node name="TerrainStoneHorizontalMiddle37" type="Sprite2D" parent="." unique_id=2128037792]
+position = Vector2(2770, 553)
+texture = ExtResource("1_jm1iu")
+
+[node name="TerrainStoneBlockCenter34" type="Sprite2D" parent="." unique_id=1824345027]
+position = Vector2(2770, 613)
+texture = ExtResource("2_pbc48")
+
+[node name="TerrainStoneBlockCenter35" type="Sprite2D" parent="." unique_id=1434543616]
+position = Vector2(2706, 613)
+texture = ExtResource("2_pbc48")
+
+[node name="TerrainStoneHorizontalMiddle38" type="Sprite2D" parent="." unique_id=1522329727]
+position = Vector2(2897, 553)
+texture = ExtResource("1_jm1iu")
+
+[node name="TerrainStoneBlockCenter36" type="Sprite2D" parent="." unique_id=1693030669]
+position = Vector2(2897, 613)
+texture = ExtResource("2_pbc48")
+
+[node name="TerrainStoneHorizontalMiddle39" type="Sprite2D" parent="." unique_id=1572972260]
+position = Vector2(2961, 553)
+texture = ExtResource("1_jm1iu")
+
+[node name="TerrainStoneHorizontalMiddle40" type="Sprite2D" parent="." unique_id=1555306484]
+position = Vector2(3025, 553)
+texture = ExtResource("1_jm1iu")
+
+[node name="TerrainStoneBlockCenter37" type="Sprite2D" parent="." unique_id=1056942685]
+position = Vector2(3025, 613)
+texture = ExtResource("2_pbc48")
+
+[node name="TerrainStoneBlockCenter38" type="Sprite2D" parent="." unique_id=2069578762]
+position = Vector2(2961, 613)
+texture = ExtResource("2_pbc48")
+
+[node name="TerrainStoneHorizontalMiddle41" type="Sprite2D" parent="." unique_id=1584115224]
+position = Vector2(2833, 553)
+texture = ExtResource("1_jm1iu")
+
+[node name="TerrainStoneBlockCenter39" type="Sprite2D" parent="." unique_id=1953985510]
+position = Vector2(2833, 613)
+texture = ExtResource("2_pbc48")
+
+[node name="TerrainStoneBlockCenter40" type="Sprite2D" parent="." unique_id=621161671]
+position = Vector2(2578, 613)
+texture = ExtResource("2_pbc48")
+
+[node name="TerrainStoneHorizontalMiddle42" type="Sprite2D" parent="." unique_id=1751247309]
+position = Vector2(3088, 553)
+texture = ExtResource("1_jm1iu")
+
+[node name="TerrainStoneHorizontalMiddle43" type="Sprite2D" parent="." unique_id=1478156538]
+position = Vector2(3152, 553)
+texture = ExtResource("1_jm1iu")
+
+[node name="TerrainStoneBlockCenter41" type="Sprite2D" parent="." unique_id=808694274]
+position = Vector2(3151, 613)
+texture = ExtResource("2_pbc48")
+
+[node name="TerrainStoneHorizontalMiddle44" type="Sprite2D" parent="." unique_id=1494675722]
+position = Vector2(3215, 553)
+texture = ExtResource("1_jm1iu")
+
+[node name="TerrainStoneHorizontalMiddle45" type="Sprite2D" parent="." unique_id=1488101165]
+position = Vector2(3279, 553)
+texture = ExtResource("1_jm1iu")
+
+[node name="TerrainStoneBlockCenter42" type="Sprite2D" parent="." unique_id=1927284997]
+position = Vector2(3279, 613)
+texture = ExtResource("2_pbc48")
+
+[node name="TerrainStoneBlockCenter43" type="Sprite2D" parent="." unique_id=1439160740]
+position = Vector2(3215, 613)
+texture = ExtResource("2_pbc48")
+
+[node name="TerrainStoneHorizontalMiddle46" type="Sprite2D" parent="." unique_id=1787652761]
+position = Vector2(3406, 553)
+texture = ExtResource("1_jm1iu")
+
+[node name="TerrainStoneBlockCenter44" type="Sprite2D" parent="." unique_id=266875779]
+position = Vector2(3406, 613)
+texture = ExtResource("2_pbc48")
+
+[node name="TerrainStoneHorizontalMiddle47" type="Sprite2D" parent="." unique_id=1794434851]
+position = Vector2(3470, 553)
+texture = ExtResource("1_jm1iu")
+
+[node name="TerrainStoneHorizontalMiddle48" type="Sprite2D" parent="." unique_id=759734729]
+position = Vector2(3534, 553)
+texture = ExtResource("1_jm1iu")
+
+[node name="TerrainStoneBlockCenter45" type="Sprite2D" parent="." unique_id=1630274926]
+position = Vector2(3534, 613)
+texture = ExtResource("2_pbc48")
+
+[node name="TerrainStoneBlockCenter46" type="Sprite2D" parent="." unique_id=555925079]
+position = Vector2(3470, 613)
+texture = ExtResource("2_pbc48")
+
+[node name="TerrainStoneHorizontalMiddle49" type="Sprite2D" parent="." unique_id=1027537527]
+position = Vector2(3342, 553)
+texture = ExtResource("1_jm1iu")
+
+[node name="TerrainStoneBlockCenter47" type="Sprite2D" parent="." unique_id=1242205149]
+position = Vector2(3342, 613)
+texture = ExtResource("2_pbc48")
+
+[node name="TerrainStoneBlockCenter48" type="Sprite2D" parent="." unique_id=1917359124]
+position = Vector2(3087, 613)
+texture = ExtResource("2_pbc48")
+
+[node name="TerrainStoneHorizontalMiddle50" type="Sprite2D" parent="." unique_id=1807058670]
+position = Vector2(3597, 553)
+texture = ExtResource("1_jm1iu")
+
+[node name="TerrainStoneHorizontalMiddle51" type="Sprite2D" parent="." unique_id=1408648912]
+position = Vector2(3661, 553)
+texture = ExtResource("1_jm1iu")
+
+[node name="TerrainStoneBlockCenter49" type="Sprite2D" parent="." unique_id=217580241]
+position = Vector2(3660, 613)
+texture = ExtResource("2_pbc48")
+
+[node name="TerrainStoneHorizontalMiddle52" type="Sprite2D" parent="." unique_id=744376874]
+position = Vector2(3724, 553)
+texture = ExtResource("1_jm1iu")
+
+[node name="TerrainStoneHorizontalMiddle53" type="Sprite2D" parent="." unique_id=1664908217]
+position = Vector2(3788, 553)
+texture = ExtResource("1_jm1iu")
+
+[node name="TerrainStoneBlockCenter50" type="Sprite2D" parent="." unique_id=1438855435]
+position = Vector2(3788, 613)
+texture = ExtResource("2_pbc48")
+
+[node name="TerrainStoneBlockCenter51" type="Sprite2D" parent="." unique_id=2023056561]
+position = Vector2(3724, 613)
+texture = ExtResource("2_pbc48")
+
+[node name="TerrainStoneHorizontalMiddle54" type="Sprite2D" parent="." unique_id=1641396783]
+position = Vector2(3915, 553)
+texture = ExtResource("1_jm1iu")
+
+[node name="TerrainStoneBlockCenter52" type="Sprite2D" parent="." unique_id=1432919586]
+position = Vector2(3915, 613)
+texture = ExtResource("2_pbc48")
+
+[node name="TerrainStoneHorizontalMiddle55" type="Sprite2D" parent="." unique_id=1652101724]
+position = Vector2(3979, 553)
+texture = ExtResource("1_jm1iu")
+
+[node name="TerrainStoneHorizontalMiddle56" type="Sprite2D" parent="." unique_id=1615307316]
+position = Vector2(4043, 553)
+texture = ExtResource("1_jm1iu")
+
+[node name="TerrainStoneBlockCenter53" type="Sprite2D" parent="." unique_id=1834428124]
+position = Vector2(4043, 613)
+texture = ExtResource("2_pbc48")
+
+[node name="TerrainStoneBlockCenter54" type="Sprite2D" parent="." unique_id=366782875]
+position = Vector2(3979, 613)
+texture = ExtResource("2_pbc48")
+
+[node name="TerrainStoneHorizontalMiddle57" type="Sprite2D" parent="." unique_id=823454614]
+position = Vector2(3851, 553)
+texture = ExtResource("1_jm1iu")
+
+[node name="TerrainStoneBlockCenter55" type="Sprite2D" parent="." unique_id=1162924848]
+position = Vector2(3851, 613)
+texture = ExtResource("2_pbc48")
+
+[node name="TerrainStoneBlockCenter56" type="Sprite2D" parent="." unique_id=1542644973]
+position = Vector2(3596, 613)
+texture = ExtResource("2_pbc48")
+
+[node name="TerrainStoneHorizontalMiddle9" type="Sprite2D" parent="TerrainStoneBlockCenter56" unique_id=891623614]
+position = Vector2(511, -60)
+texture = ExtResource("1_jm1iu")
+
+[node name="TerrainStoneHorizontalMiddle2" type="Sprite2D" parent="TerrainStoneBlockCenter56" unique_id=1763393840]
+position = Vector2(575, -60)
+texture = ExtResource("1_jm1iu")
+
+[node name="TerrainStoneBlockCenter2" type="Sprite2D" parent="TerrainStoneBlockCenter56" unique_id=1022367804]
+position = Vector2(574, 0)
+texture = ExtResource("2_pbc48")
+
+[node name="TerrainStoneHorizontalMiddle3" type="Sprite2D" parent="TerrainStoneBlockCenter56" unique_id=1415845197]
+position = Vector2(638, -60)
+texture = ExtResource("1_jm1iu")
+
+[node name="TerrainStoneHorizontalMiddle4" type="Sprite2D" parent="TerrainStoneBlockCenter56" unique_id=198818292]
+position = Vector2(702, -60)
+texture = ExtResource("1_jm1iu")
+
+[node name="TerrainStoneBlockCenter4" type="Sprite2D" parent="TerrainStoneBlockCenter56" unique_id=250270784]
+position = Vector2(702, 0)
+texture = ExtResource("2_pbc48")
+
+[node name="TerrainStoneBlockCenter3" type="Sprite2D" parent="TerrainStoneBlockCenter56" unique_id=578590196]
+position = Vector2(638, 0)
+texture = ExtResource("2_pbc48")
+
+[node name="TerrainStoneHorizontalMiddle5" type="Sprite2D" parent="TerrainStoneBlockCenter56" unique_id=1236860062]
+position = Vector2(829, -60)
+texture = ExtResource("1_jm1iu")
+
+[node name="TerrainStoneBlockCenter5" type="Sprite2D" parent="TerrainStoneBlockCenter56" unique_id=441998199]
+position = Vector2(829, 0)
+texture = ExtResource("2_pbc48")
+
+[node name="TerrainStoneHorizontalMiddle6" type="Sprite2D" parent="TerrainStoneBlockCenter56" unique_id=1477743161]
+position = Vector2(893, -60)
+texture = ExtResource("1_jm1iu")
+
+[node name="TerrainStoneHorizontalMiddle7" type="Sprite2D" parent="TerrainStoneBlockCenter56" unique_id=1961081085]
+position = Vector2(957, -60)
+texture = ExtResource("1_jm1iu")
+
+[node name="TerrainStoneBlockCenter6" type="Sprite2D" parent="TerrainStoneBlockCenter56" unique_id=639490455]
+position = Vector2(957, 0)
+texture = ExtResource("2_pbc48")
+
+[node name="TerrainStoneBlockCenter7" type="Sprite2D" parent="TerrainStoneBlockCenter56" unique_id=83436186]
+position = Vector2(893, 0)
+texture = ExtResource("2_pbc48")
+
+[node name="TerrainStoneHorizontalMiddle8" type="Sprite2D" parent="TerrainStoneBlockCenter56" unique_id=1762878855]
+position = Vector2(765, -60)
+texture = ExtResource("1_jm1iu")
+
+[node name="TerrainStoneBlockCenter8" type="Sprite2D" parent="TerrainStoneBlockCenter56" unique_id=820264236]
+position = Vector2(765, 0)
+texture = ExtResource("2_pbc48")
+
+[node name="TerrainStoneHorizontalMiddle58" type="Sprite2D" parent="TerrainStoneBlockCenter56" unique_id=792215524]
+position = Vector2(1020, -60)
+texture = ExtResource("1_jm1iu")
+
+[node name="TerrainStoneHorizontalMiddle59" type="Sprite2D" parent="TerrainStoneBlockCenter56" unique_id=77738362]
+position = Vector2(1084, -60)
+texture = ExtResource("1_jm1iu")
+
+[node name="TerrainStoneBlockCenter57" type="Sprite2D" parent="TerrainStoneBlockCenter56" unique_id=587085142]
+position = Vector2(1083, 0)
+texture = ExtResource("2_pbc48")
+
+[node name="TerrainStoneHorizontalMiddle60" type="Sprite2D" parent="TerrainStoneBlockCenter56" unique_id=245474462]
+position = Vector2(1147, -60)
+texture = ExtResource("1_jm1iu")
+
+[node name="TerrainStoneHorizontalMiddle61" type="Sprite2D" parent="TerrainStoneBlockCenter56" unique_id=600213510]
+position = Vector2(1211, -60)
+texture = ExtResource("1_jm1iu")
+
+[node name="TerrainStoneBlockCenter58" type="Sprite2D" parent="TerrainStoneBlockCenter56" unique_id=1976016338]
+position = Vector2(1211, 0)
+texture = ExtResource("2_pbc48")
+
+[node name="TerrainStoneBlockCenter59" type="Sprite2D" parent="TerrainStoneBlockCenter56" unique_id=123687136]
+position = Vector2(1147, 0)
+texture = ExtResource("2_pbc48")
+
+[node name="TerrainStoneHorizontalMiddle62" type="Sprite2D" parent="TerrainStoneBlockCenter56" unique_id=1446131253]
+position = Vector2(1338, -60)
+texture = ExtResource("1_jm1iu")
+
+[node name="TerrainStoneBlockCenter60" type="Sprite2D" parent="TerrainStoneBlockCenter56" unique_id=200155662]
+position = Vector2(1338, 0)
+texture = ExtResource("2_pbc48")
+
+[node name="TerrainStoneHorizontalMiddle63" type="Sprite2D" parent="TerrainStoneBlockCenter56" unique_id=1629716684]
+position = Vector2(1402, -60)
+texture = ExtResource("1_jm1iu")
+
+[node name="TerrainStoneHorizontalMiddle64" type="Sprite2D" parent="TerrainStoneBlockCenter56" unique_id=1770020803]
+position = Vector2(1466, -60)
+texture = ExtResource("1_jm1iu")
+
+[node name="TerrainStoneBlockCenter61" type="Sprite2D" parent="TerrainStoneBlockCenter56" unique_id=228887700]
+position = Vector2(1466, 0)
+texture = ExtResource("2_pbc48")
+
+[node name="TerrainStoneBlockCenter62" type="Sprite2D" parent="TerrainStoneBlockCenter56" unique_id=1879514755]
+position = Vector2(1402, 0)
+texture = ExtResource("2_pbc48")
+
+[node name="TerrainStoneHorizontalMiddle65" type="Sprite2D" parent="TerrainStoneBlockCenter56" unique_id=694712211]
+position = Vector2(1274, -60)
+texture = ExtResource("1_jm1iu")
+
+[node name="TerrainStoneBlockCenter63" type="Sprite2D" parent="TerrainStoneBlockCenter56" unique_id=1130805990]
+position = Vector2(1274, 0)
+texture = ExtResource("2_pbc48")
+
+[node name="TerrainStoneBlockCenter64" type="Sprite2D" parent="TerrainStoneBlockCenter56" unique_id=53626366]
+position = Vector2(1019, 0)
+texture = ExtResource("2_pbc48")
+
+[node name="TerrainStoneBlockCenter" type="Sprite2D" parent="TerrainStoneBlockCenter56" unique_id=1198162082]
+position = Vector2(510, 0)
+texture = ExtResource("2_pbc48")
+
+[node name="TerrainStoneHorizontalMiddle10" type="Sprite2D" parent="TerrainStoneBlockCenter56" unique_id=143498861]
+position = Vector2(1529, -60)
+texture = ExtResource("1_jm1iu")
+
+[node name="TerrainStoneHorizontalMiddle11" type="Sprite2D" parent="TerrainStoneBlockCenter56" unique_id=726660277]
+position = Vector2(1593, -60)
+texture = ExtResource("1_jm1iu")
+
+[node name="TerrainStoneBlockCenter9" type="Sprite2D" parent="TerrainStoneBlockCenter56" unique_id=114987035]
+position = Vector2(1592, 0)
+texture = ExtResource("2_pbc48")
+
+[node name="TerrainStoneHorizontalMiddle12" type="Sprite2D" parent="TerrainStoneBlockCenter56" unique_id=1009215652]
+position = Vector2(1656, -60)
+texture = ExtResource("1_jm1iu")
+
+[node name="TerrainStoneHorizontalMiddle13" type="Sprite2D" parent="TerrainStoneBlockCenter56" unique_id=2006422628]
+position = Vector2(1720, -60)
+texture = ExtResource("1_jm1iu")
+
+[node name="TerrainStoneBlockCenter10" type="Sprite2D" parent="TerrainStoneBlockCenter56" unique_id=931631791]
+position = Vector2(1720, 0)
+texture = ExtResource("2_pbc48")
+
+[node name="TerrainStoneBlockCenter11" type="Sprite2D" parent="TerrainStoneBlockCenter56" unique_id=564538949]
+position = Vector2(1656, 0)
+texture = ExtResource("2_pbc48")
+
+[node name="TerrainStoneHorizontalMiddle14" type="Sprite2D" parent="TerrainStoneBlockCenter56" unique_id=1970242869]
+position = Vector2(1847, -60)
+texture = ExtResource("1_jm1iu")
+
+[node name="TerrainStoneBlockCenter12" type="Sprite2D" parent="TerrainStoneBlockCenter56" unique_id=1639814639]
+position = Vector2(1847, 0)
+texture = ExtResource("2_pbc48")
+
+[node name="TerrainStoneHorizontalMiddle15" type="Sprite2D" parent="TerrainStoneBlockCenter56" unique_id=1150287641]
+position = Vector2(1911, -60)
+texture = ExtResource("1_jm1iu")
+
+[node name="TerrainStoneHorizontalMiddle16" type="Sprite2D" parent="TerrainStoneBlockCenter56" unique_id=2030305749]
+position = Vector2(1975, -60)
+texture = ExtResource("1_jm1iu")
+
+[node name="TerrainStoneBlockCenter13" type="Sprite2D" parent="TerrainStoneBlockCenter56" unique_id=1996163999]
+position = Vector2(1975, 0)
+texture = ExtResource("2_pbc48")
+
+[node name="TerrainStoneBlockCenter14" type="Sprite2D" parent="TerrainStoneBlockCenter56" unique_id=258913494]
+position = Vector2(1911, 0)
+texture = ExtResource("2_pbc48")
+
+[node name="TerrainStoneHorizontalMiddle17" type="Sprite2D" parent="TerrainStoneBlockCenter56" unique_id=434345868]
+position = Vector2(1783, -60)
+texture = ExtResource("1_jm1iu")
+
+[node name="TerrainStoneBlockCenter15" type="Sprite2D" parent="TerrainStoneBlockCenter56" unique_id=1151691129]
+position = Vector2(1783, 0)
+texture = ExtResource("2_pbc48")
+
+[node name="TerrainStoneBlockCenter16" type="Sprite2D" parent="TerrainStoneBlockCenter56" unique_id=687219652]
+position = Vector2(1528, 0)
+texture = ExtResource("2_pbc48")
+
+[node name="TerrainStoneHorizontalMiddle18" type="Sprite2D" parent="TerrainStoneBlockCenter56" unique_id=1670025185]
+position = Vector2(2039, -60)
+texture = ExtResource("1_jm1iu")
+
+[node name="TerrainStoneHorizontalMiddle19" type="Sprite2D" parent="TerrainStoneBlockCenter56" unique_id=722576101]
+position = Vector2(2103, -60)
+texture = ExtResource("1_jm1iu")
+
+[node name="TerrainStoneBlockCenter17" type="Sprite2D" parent="TerrainStoneBlockCenter56" unique_id=28273132]
+position = Vector2(2102, 0)
+texture = ExtResource("2_pbc48")
+
+[node name="TerrainStoneHorizontalMiddle20" type="Sprite2D" parent="TerrainStoneBlockCenter56" unique_id=1820574602]
+position = Vector2(2166, -60)
+texture = ExtResource("1_jm1iu")
+
+[node name="TerrainStoneHorizontalMiddle21" type="Sprite2D" parent="TerrainStoneBlockCenter56" unique_id=1189605485]
+position = Vector2(2230, -60)
+texture = ExtResource("1_jm1iu")
+
+[node name="TerrainStoneBlockCenter18" type="Sprite2D" parent="TerrainStoneBlockCenter56" unique_id=306075960]
+position = Vector2(2230, 0)
+texture = ExtResource("2_pbc48")
+
+[node name="TerrainStoneBlockCenter19" type="Sprite2D" parent="TerrainStoneBlockCenter56" unique_id=1609489090]
+position = Vector2(2166, 0)
+texture = ExtResource("2_pbc48")
+
+[node name="TerrainStoneHorizontalMiddle22" type="Sprite2D" parent="TerrainStoneBlockCenter56" unique_id=254121168]
+position = Vector2(2357, -60)
+texture = ExtResource("1_jm1iu")
+
+[node name="TerrainStoneBlockCenter20" type="Sprite2D" parent="TerrainStoneBlockCenter56" unique_id=247202439]
+position = Vector2(2357, 0)
+texture = ExtResource("2_pbc48")
+
+[node name="TerrainStoneHorizontalMiddle23" type="Sprite2D" parent="TerrainStoneBlockCenter56" unique_id=1337078918]
+position = Vector2(2421, -60)
+texture = ExtResource("1_jm1iu")
+
+[node name="TerrainStoneHorizontalMiddle24" type="Sprite2D" parent="TerrainStoneBlockCenter56" unique_id=2117667937]
+position = Vector2(2485, -60)
+texture = ExtResource("1_jm1iu")
+
+[node name="TerrainStoneBlockCenter21" type="Sprite2D" parent="TerrainStoneBlockCenter56" unique_id=2131744062]
+position = Vector2(2485, 0)
+texture = ExtResource("2_pbc48")
+
+[node name="TerrainStoneBlockCenter22" type="Sprite2D" parent="TerrainStoneBlockCenter56" unique_id=888241088]
+position = Vector2(2421, 0)
+texture = ExtResource("2_pbc48")
+
+[node name="TerrainStoneHorizontalMiddle25" type="Sprite2D" parent="TerrainStoneBlockCenter56" unique_id=1494888198]
+position = Vector2(2293, -60)
+texture = ExtResource("1_jm1iu")
+
+[node name="TerrainStoneBlockCenter23" type="Sprite2D" parent="TerrainStoneBlockCenter56" unique_id=480861660]
+position = Vector2(2293, 0)
+texture = ExtResource("2_pbc48")
+
+[node name="TerrainStoneBlockCenter24" type="Sprite2D" parent="TerrainStoneBlockCenter56" unique_id=167390058]
+position = Vector2(2038, 0)
+texture = ExtResource("2_pbc48")
+
+[node name="TerrainStoneHorizontalMiddle26" type="Sprite2D" parent="TerrainStoneBlockCenter56" unique_id=79493195]
+position = Vector2(2548, -60)
+texture = ExtResource("1_jm1iu")
+
+[node name="TerrainStoneHorizontalMiddle27" type="Sprite2D" parent="TerrainStoneBlockCenter56" unique_id=1154353967]
+position = Vector2(2612, -60)
+texture = ExtResource("1_jm1iu")
+
+[node name="TerrainStoneBlockCenter25" type="Sprite2D" parent="TerrainStoneBlockCenter56" unique_id=355585612]
+position = Vector2(2611, 0)
+texture = ExtResource("2_pbc48")
+
+[node name="TerrainStoneHorizontalMiddle28" type="Sprite2D" parent="TerrainStoneBlockCenter56" unique_id=388315888]
+position = Vector2(2675, -60)
+texture = ExtResource("1_jm1iu")
+
+[node name="TerrainStoneHorizontalMiddle29" type="Sprite2D" parent="TerrainStoneBlockCenter56" unique_id=713340640]
+position = Vector2(2739, -60)
+texture = ExtResource("1_jm1iu")
+
+[node name="TerrainStoneBlockCenter26" type="Sprite2D" parent="TerrainStoneBlockCenter56" unique_id=1333896873]
+position = Vector2(2739, 0)
+texture = ExtResource("2_pbc48")
+
+[node name="TerrainStoneBlockCenter27" type="Sprite2D" parent="TerrainStoneBlockCenter56" unique_id=1945620002]
+position = Vector2(2675, 0)
+texture = ExtResource("2_pbc48")
+
+[node name="TerrainStoneHorizontalMiddle30" type="Sprite2D" parent="TerrainStoneBlockCenter56" unique_id=845699414]
+position = Vector2(2866, -60)
+texture = ExtResource("1_jm1iu")
+
+[node name="TerrainStoneBlockCenter28" type="Sprite2D" parent="TerrainStoneBlockCenter56" unique_id=1854997649]
+position = Vector2(2866, 0)
+texture = ExtResource("2_pbc48")
+
+[node name="TerrainStoneHorizontalMiddle31" type="Sprite2D" parent="TerrainStoneBlockCenter56" unique_id=841908971]
+position = Vector2(2930, -60)
+texture = ExtResource("1_jm1iu")
+
+[node name="TerrainStoneHorizontalMiddle32" type="Sprite2D" parent="TerrainStoneBlockCenter56" unique_id=253772831]
+position = Vector2(2994, -60)
+texture = ExtResource("1_jm1iu")
+
+[node name="TerrainStoneBlockCenter29" type="Sprite2D" parent="TerrainStoneBlockCenter56" unique_id=1439023396]
+position = Vector2(2994, 0)
+texture = ExtResource("2_pbc48")
+
+[node name="TerrainStoneBlockCenter30" type="Sprite2D" parent="TerrainStoneBlockCenter56" unique_id=414682295]
+position = Vector2(2930, 0)
+texture = ExtResource("2_pbc48")
+
+[node name="TerrainStoneHorizontalMiddle33" type="Sprite2D" parent="TerrainStoneBlockCenter56" unique_id=384145657]
+position = Vector2(2802, -60)
+texture = ExtResource("1_jm1iu")
+
+[node name="TerrainStoneBlockCenter31" type="Sprite2D" parent="TerrainStoneBlockCenter56" unique_id=218017202]
+position = Vector2(2802, 0)
+texture = ExtResource("2_pbc48")
+
+[node name="TerrainStoneBlockCenter32" type="Sprite2D" parent="TerrainStoneBlockCenter56" unique_id=696110755]
+position = Vector2(2547, 0)
+texture = ExtResource("2_pbc48")
+
+[node name="TerrainStoneHorizontalMiddle34" type="Sprite2D" parent="TerrainStoneBlockCenter56" unique_id=1707682149]
+position = Vector2(3057, -60)
+texture = ExtResource("1_jm1iu")
+
+[node name="TerrainStoneHorizontalMiddle35" type="Sprite2D" parent="TerrainStoneBlockCenter56" unique_id=148429532]
+position = Vector2(3121, -60)
+texture = ExtResource("1_jm1iu")
+
+[node name="TerrainStoneBlockCenter33" type="Sprite2D" parent="TerrainStoneBlockCenter56" unique_id=369140601]
+position = Vector2(3120, 0)
+texture = ExtResource("2_pbc48")
+
+[node name="TerrainStoneHorizontalMiddle36" type="Sprite2D" parent="TerrainStoneBlockCenter56" unique_id=49651940]
+position = Vector2(3184, -60)
+texture = ExtResource("1_jm1iu")
+
+[node name="TerrainStoneHorizontalMiddle37" type="Sprite2D" parent="TerrainStoneBlockCenter56" unique_id=363624154]
+position = Vector2(3248, -60)
+texture = ExtResource("1_jm1iu")
+
+[node name="TerrainStoneBlockCenter34" type="Sprite2D" parent="TerrainStoneBlockCenter56" unique_id=1118752601]
+position = Vector2(3248, 0)
+texture = ExtResource("2_pbc48")
+
+[node name="TerrainStoneBlockCenter35" type="Sprite2D" parent="TerrainStoneBlockCenter56" unique_id=482420539]
+position = Vector2(3184, 0)
+texture = ExtResource("2_pbc48")
+
+[node name="TerrainStoneHorizontalMiddle38" type="Sprite2D" parent="TerrainStoneBlockCenter56" unique_id=1800026782]
+position = Vector2(3375, -60)
+texture = ExtResource("1_jm1iu")
+
+[node name="TerrainStoneBlockCenter36" type="Sprite2D" parent="TerrainStoneBlockCenter56" unique_id=767058692]
+position = Vector2(3375, 0)
+texture = ExtResource("2_pbc48")
+
+[node name="TerrainStoneHorizontalMiddle39" type="Sprite2D" parent="TerrainStoneBlockCenter56" unique_id=567097457]
+position = Vector2(3439, -60)
+texture = ExtResource("1_jm1iu")
+
+[node name="TerrainStoneHorizontalMiddle40" type="Sprite2D" parent="TerrainStoneBlockCenter56" unique_id=535238959]
+position = Vector2(3503, -60)
+texture = ExtResource("1_jm1iu")
+
+[node name="TerrainStoneBlockCenter37" type="Sprite2D" parent="TerrainStoneBlockCenter56" unique_id=211005186]
+position = Vector2(3503, 0)
+texture = ExtResource("2_pbc48")
+
+[node name="TerrainStoneBlockCenter38" type="Sprite2D" parent="TerrainStoneBlockCenter56" unique_id=1500040202]
+position = Vector2(3439, 0)
+texture = ExtResource("2_pbc48")
+
+[node name="TerrainStoneHorizontalMiddle41" type="Sprite2D" parent="TerrainStoneBlockCenter56" unique_id=416527246]
+position = Vector2(3311, -60)
+texture = ExtResource("1_jm1iu")
+
+[node name="TerrainStoneBlockCenter39" type="Sprite2D" parent="TerrainStoneBlockCenter56" unique_id=1319721182]
+position = Vector2(3311, 0)
+texture = ExtResource("2_pbc48")
+
+[node name="TerrainStoneBlockCenter40" type="Sprite2D" parent="TerrainStoneBlockCenter56" unique_id=1821677637]
+position = Vector2(3056, 0)
+texture = ExtResource("2_pbc48")
+
+[node name="TerrainStoneHorizontalMiddle42" type="Sprite2D" parent="TerrainStoneBlockCenter56" unique_id=1970096174]
+position = Vector2(3566, -60)
+texture = ExtResource("1_jm1iu")
+
+[node name="TerrainStoneHorizontalMiddle43" type="Sprite2D" parent="TerrainStoneBlockCenter56" unique_id=720448756]
+position = Vector2(3630, -60)
+texture = ExtResource("1_jm1iu")
+
+[node name="TerrainStoneBlockCenter41" type="Sprite2D" parent="TerrainStoneBlockCenter56" unique_id=329579550]
+position = Vector2(3629, 0)
+texture = ExtResource("2_pbc48")
+
+[node name="TerrainStoneHorizontalMiddle44" type="Sprite2D" parent="TerrainStoneBlockCenter56" unique_id=1956364291]
+position = Vector2(3693, -60)
+texture = ExtResource("1_jm1iu")
+
+[node name="TerrainStoneHorizontalMiddle45" type="Sprite2D" parent="TerrainStoneBlockCenter56" unique_id=1813878648]
+position = Vector2(3757, -60)
+texture = ExtResource("1_jm1iu")
+
+[node name="TerrainStoneBlockCenter42" type="Sprite2D" parent="TerrainStoneBlockCenter56" unique_id=1558522617]
+position = Vector2(3757, 0)
+texture = ExtResource("2_pbc48")
+
+[node name="TerrainStoneBlockCenter43" type="Sprite2D" parent="TerrainStoneBlockCenter56" unique_id=415199879]
+position = Vector2(3693, 0)
+texture = ExtResource("2_pbc48")
+
+[node name="TerrainStoneHorizontalMiddle46" type="Sprite2D" parent="TerrainStoneBlockCenter56" unique_id=1315621325]
+position = Vector2(3884, -60)
+texture = ExtResource("1_jm1iu")
+
+[node name="TerrainStoneBlockCenter44" type="Sprite2D" parent="TerrainStoneBlockCenter56" unique_id=290591971]
+position = Vector2(3884, 0)
+texture = ExtResource("2_pbc48")
+
+[node name="TerrainStoneHorizontalMiddle47" type="Sprite2D" parent="TerrainStoneBlockCenter56" unique_id=154471632]
+position = Vector2(3948, -60)
+texture = ExtResource("1_jm1iu")
+
+[node name="TerrainStoneHorizontalMiddle48" type="Sprite2D" parent="TerrainStoneBlockCenter56" unique_id=1816724637]
+position = Vector2(4012, -60)
+texture = ExtResource("1_jm1iu")
+
+[node name="TerrainStoneBlockCenter45" type="Sprite2D" parent="TerrainStoneBlockCenter56" unique_id=1707542755]
+position = Vector2(4012, 0)
+texture = ExtResource("2_pbc48")
+
+[node name="TerrainStoneBlockCenter46" type="Sprite2D" parent="TerrainStoneBlockCenter56" unique_id=830202440]
+position = Vector2(3948, 0)
+texture = ExtResource("2_pbc48")
+
+[node name="TerrainStoneHorizontalMiddle49" type="Sprite2D" parent="TerrainStoneBlockCenter56" unique_id=1245224263]
+position = Vector2(3820, -60)
+texture = ExtResource("1_jm1iu")
+
+[node name="TerrainStoneBlockCenter47" type="Sprite2D" parent="TerrainStoneBlockCenter56" unique_id=257288538]
+position = Vector2(3820, 0)
+texture = ExtResource("2_pbc48")
+
+[node name="TerrainStoneBlockCenter48" type="Sprite2D" parent="TerrainStoneBlockCenter56" unique_id=441721272]
+position = Vector2(3565, 0)
+texture = ExtResource("2_pbc48")
+
+[node name="TerrainStoneHorizontalMiddle50" type="Sprite2D" parent="TerrainStoneBlockCenter56" unique_id=595608598]
+position = Vector2(4075, -60)
+texture = ExtResource("1_jm1iu")
+
+[node name="TerrainStoneHorizontalMiddle51" type="Sprite2D" parent="TerrainStoneBlockCenter56" unique_id=1682049135]
+position = Vector2(4139, -60)
+texture = ExtResource("1_jm1iu")
+
+[node name="TerrainStoneBlockCenter49" type="Sprite2D" parent="TerrainStoneBlockCenter56" unique_id=1351009547]
+position = Vector2(4138, 0)
+texture = ExtResource("2_pbc48")
+
+[node name="TerrainStoneHorizontalMiddle52" type="Sprite2D" parent="TerrainStoneBlockCenter56" unique_id=1515150381]
+position = Vector2(4202, -60)
+texture = ExtResource("1_jm1iu")
+
+[node name="TerrainStoneHorizontalMiddle53" type="Sprite2D" parent="TerrainStoneBlockCenter56" unique_id=1999264959]
+position = Vector2(4266, -60)
+texture = ExtResource("1_jm1iu")
+
+[node name="TerrainStoneBlockCenter50" type="Sprite2D" parent="TerrainStoneBlockCenter56" unique_id=132734275]
+position = Vector2(4266, 0)
+texture = ExtResource("2_pbc48")
+
+[node name="TerrainStoneBlockCenter51" type="Sprite2D" parent="TerrainStoneBlockCenter56" unique_id=1959419602]
+position = Vector2(4202, 0)
+texture = ExtResource("2_pbc48")
+
+[node name="TerrainStoneHorizontalMiddle54" type="Sprite2D" parent="TerrainStoneBlockCenter56" unique_id=990580407]
+position = Vector2(4393, -60)
+texture = ExtResource("1_jm1iu")
+
+[node name="TerrainStoneBlockCenter52" type="Sprite2D" parent="TerrainStoneBlockCenter56" unique_id=1624688057]
+position = Vector2(4393, 0)
+texture = ExtResource("2_pbc48")
+
+[node name="TerrainStoneHorizontalMiddle55" type="Sprite2D" parent="TerrainStoneBlockCenter56" unique_id=614324608]
+position = Vector2(4457, -60)
+texture = ExtResource("1_jm1iu")
+
+[node name="TerrainStoneHorizontalMiddle56" type="Sprite2D" parent="TerrainStoneBlockCenter56" unique_id=114628945]
+position = Vector2(4521, -60)
+texture = ExtResource("1_jm1iu")
+
+[node name="TerrainStoneBlockCenter53" type="Sprite2D" parent="TerrainStoneBlockCenter56" unique_id=665752979]
+position = Vector2(4521, 0)
+texture = ExtResource("2_pbc48")
+
+[node name="TerrainStoneBlockCenter54" type="Sprite2D" parent="TerrainStoneBlockCenter56" unique_id=1668134604]
+position = Vector2(4457, 0)
+texture = ExtResource("2_pbc48")
+
+[node name="TerrainStoneHorizontalMiddle57" type="Sprite2D" parent="TerrainStoneBlockCenter56" unique_id=283077731]
+position = Vector2(4329, -60)
+texture = ExtResource("1_jm1iu")
+
+[node name="TerrainStoneBlockCenter55" type="Sprite2D" parent="TerrainStoneBlockCenter56" unique_id=1322978086]
+position = Vector2(4329, 0)
+texture = ExtResource("2_pbc48")
+
+[node name="TerrainStoneBlockCenter56" type="Sprite2D" parent="TerrainStoneBlockCenter56" unique_id=2008813746]
+position = Vector2(4074, 0)
+texture = ExtResource("2_pbc48")
+
+[node name="TerrainStoneHorizontalMiddle66" type="Sprite2D" parent="." unique_id=881073253]
+position = Vector2(8179, 553)
+texture = ExtResource("1_jm1iu")
+
+[node name="TerrainStoneHorizontalMiddle67" type="Sprite2D" parent="." unique_id=105755594]
+position = Vector2(8243, 553)
+texture = ExtResource("1_jm1iu")
+
+[node name="TerrainStoneBlockCenter65" type="Sprite2D" parent="." unique_id=262519533]
+position = Vector2(8242, 613)
+texture = ExtResource("2_pbc48")
+
+[node name="TerrainStoneHorizontalMiddle68" type="Sprite2D" parent="." unique_id=323486272]
+position = Vector2(8306, 553)
+texture = ExtResource("1_jm1iu")
+
+[node name="TerrainStoneHorizontalMiddle69" type="Sprite2D" parent="." unique_id=1612150536]
+position = Vector2(8370, 553)
+texture = ExtResource("1_jm1iu")
+
+[node name="TerrainStoneBlockCenter66" type="Sprite2D" parent="." unique_id=227875198]
+position = Vector2(8370, 613)
+texture = ExtResource("2_pbc48")
+
+[node name="TerrainStoneBlockCenter67" type="Sprite2D" parent="." unique_id=347094169]
+position = Vector2(8306, 613)
+texture = ExtResource("2_pbc48")
+
+[node name="TerrainStoneHorizontalMiddle70" type="Sprite2D" parent="." unique_id=146380910]
+position = Vector2(8497, 553)
+texture = ExtResource("1_jm1iu")
+
+[node name="TerrainStoneBlockCenter68" type="Sprite2D" parent="." unique_id=294328435]
+position = Vector2(8497, 613)
+texture = ExtResource("2_pbc48")
+
+[node name="TerrainStoneHorizontalMiddle71" type="Sprite2D" parent="." unique_id=712270174]
+position = Vector2(8561, 553)
+texture = ExtResource("1_jm1iu")
+
+[node name="TerrainStoneHorizontalMiddle72" type="Sprite2D" parent="." unique_id=1208212763]
+position = Vector2(8625, 553)
+texture = ExtResource("1_jm1iu")
+
+[node name="TerrainStoneBlockCenter69" type="Sprite2D" parent="." unique_id=2044612005]
+position = Vector2(8625, 613)
+texture = ExtResource("2_pbc48")
+
+[node name="TerrainStoneBlockCenter70" type="Sprite2D" parent="." unique_id=1505693036]
+position = Vector2(8561, 613)
+texture = ExtResource("2_pbc48")
+
+[node name="TerrainStoneHorizontalMiddle73" type="Sprite2D" parent="." unique_id=1678393828]
+position = Vector2(8433, 553)
+texture = ExtResource("1_jm1iu")
+
+[node name="TerrainStoneBlockCenter71" type="Sprite2D" parent="." unique_id=630803439]
+position = Vector2(8433, 613)
+texture = ExtResource("2_pbc48")
+
+[node name="TerrainStoneHorizontalMiddle74" type="Sprite2D" parent="." unique_id=138272951]
+position = Vector2(8688, 553)
+texture = ExtResource("1_jm1iu")
+
+[node name="TerrainStoneHorizontalMiddle75" type="Sprite2D" parent="." unique_id=1507726982]
+position = Vector2(8752, 553)
+texture = ExtResource("1_jm1iu")
+
+[node name="TerrainStoneBlockCenter72" type="Sprite2D" parent="." unique_id=379375263]
+position = Vector2(8751, 613)
+texture = ExtResource("2_pbc48")
+
+[node name="TerrainStoneHorizontalMiddle76" type="Sprite2D" parent="." unique_id=2055627298]
+position = Vector2(8815, 553)
+texture = ExtResource("1_jm1iu")
+
+[node name="TerrainStoneHorizontalMiddle77" type="Sprite2D" parent="." unique_id=1302234036]
+position = Vector2(8879, 553)
+texture = ExtResource("1_jm1iu")
+
+[node name="TerrainStoneBlockCenter73" type="Sprite2D" parent="." unique_id=1753394618]
+position = Vector2(8879, 613)
+texture = ExtResource("2_pbc48")
+
+[node name="TerrainStoneBlockCenter74" type="Sprite2D" parent="." unique_id=2021886543]
+position = Vector2(8815, 613)
+texture = ExtResource("2_pbc48")
+
+[node name="TerrainStoneHorizontalMiddle78" type="Sprite2D" parent="." unique_id=1953717581]
+position = Vector2(9006, 553)
+texture = ExtResource("1_jm1iu")
+
+[node name="TerrainStoneBlockCenter75" type="Sprite2D" parent="." unique_id=1508982716]
+position = Vector2(9006, 613)
+texture = ExtResource("2_pbc48")
+
+[node name="TerrainStoneHorizontalMiddle79" type="Sprite2D" parent="." unique_id=1001716183]
+position = Vector2(9070, 553)
+texture = ExtResource("1_jm1iu")
+
+[node name="TerrainStoneHorizontalMiddle80" type="Sprite2D" parent="." unique_id=709707975]
+position = Vector2(9134, 553)
+texture = ExtResource("1_jm1iu")
+
+[node name="TerrainStoneBlockCenter76" type="Sprite2D" parent="." unique_id=1591979460]
+position = Vector2(9134, 613)
+texture = ExtResource("2_pbc48")
+
+[node name="TerrainStoneBlockCenter77" type="Sprite2D" parent="." unique_id=637537447]
+position = Vector2(9070, 613)
+texture = ExtResource("2_pbc48")
+
+[node name="TerrainStoneHorizontalMiddle81" type="Sprite2D" parent="." unique_id=1233031062]
+position = Vector2(8942, 553)
+texture = ExtResource("1_jm1iu")
+
+[node name="TerrainStoneBlockCenter78" type="Sprite2D" parent="." unique_id=2053840483]
+position = Vector2(8942, 613)
+texture = ExtResource("2_pbc48")
+
+[node name="TerrainStoneBlockCenter79" type="Sprite2D" parent="." unique_id=1672386010]
+position = Vector2(8687, 613)
+texture = ExtResource("2_pbc48")
+
+[node name="TerrainStoneBlockCenter80" type="Sprite2D" parent="." unique_id=1047982071]
+position = Vector2(8178, 613)
+texture = ExtResource("2_pbc48")
+
+[node name="TerrainStoneHorizontalMiddle82" type="Sprite2D" parent="." unique_id=1966014937]
+position = Vector2(9197, 553)
+texture = ExtResource("1_jm1iu")
+
+[node name="TerrainStoneHorizontalMiddle83" type="Sprite2D" parent="." unique_id=928225506]
+position = Vector2(9261, 553)
+texture = ExtResource("1_jm1iu")
+
+[node name="TerrainStoneBlockCenter81" type="Sprite2D" parent="." unique_id=1039237465]
+position = Vector2(9260, 613)
+texture = ExtResource("2_pbc48")
+
+[node name="TerrainStoneHorizontalMiddle84" type="Sprite2D" parent="." unique_id=13911267]
+position = Vector2(9324, 553)
+texture = ExtResource("1_jm1iu")
+
+[node name="TerrainStoneHorizontalMiddle85" type="Sprite2D" parent="." unique_id=1936037961]
+position = Vector2(9388, 553)
+texture = ExtResource("1_jm1iu")
+
+[node name="TerrainStoneBlockCenter82" type="Sprite2D" parent="." unique_id=1092743921]
+position = Vector2(9388, 613)
+texture = ExtResource("2_pbc48")
+
+[node name="TerrainStoneBlockCenter83" type="Sprite2D" parent="." unique_id=1316274663]
+position = Vector2(9324, 613)
+texture = ExtResource("2_pbc48")
+
+[node name="TerrainStoneHorizontalMiddle86" type="Sprite2D" parent="." unique_id=1262830877]
+position = Vector2(9515, 553)
+texture = ExtResource("1_jm1iu")
+
+[node name="TerrainStoneBlockCenter84" type="Sprite2D" parent="." unique_id=976770564]
+position = Vector2(9515, 613)
+texture = ExtResource("2_pbc48")
+
+[node name="TerrainStoneHorizontalMiddle87" type="Sprite2D" parent="." unique_id=570197514]
+position = Vector2(9579, 553)
+texture = ExtResource("1_jm1iu")
+
+[node name="TerrainStoneHorizontalMiddle88" type="Sprite2D" parent="." unique_id=882213516]
+position = Vector2(9643, 553)
+texture = ExtResource("1_jm1iu")
+
+[node name="TerrainStoneBlockCenter85" type="Sprite2D" parent="." unique_id=1594562472]
+position = Vector2(9643, 613)
+texture = ExtResource("2_pbc48")
+
+[node name="TerrainStoneBlockCenter86" type="Sprite2D" parent="." unique_id=1469139934]
+position = Vector2(9579, 613)
+texture = ExtResource("2_pbc48")
+
+[node name="TerrainStoneHorizontalMiddle89" type="Sprite2D" parent="." unique_id=481421294]
+position = Vector2(9451, 553)
+texture = ExtResource("1_jm1iu")
+
+[node name="TerrainStoneBlockCenter87" type="Sprite2D" parent="." unique_id=991280856]
+position = Vector2(9451, 613)
+texture = ExtResource("2_pbc48")
+
+[node name="TerrainStoneBlockCenter88" type="Sprite2D" parent="." unique_id=2014741114]
+position = Vector2(9196, 613)
+texture = ExtResource("2_pbc48")
+
+[node name="TerrainStoneHorizontalMiddle90" type="Sprite2D" parent="." unique_id=751941241]
+position = Vector2(9707, 553)
+texture = ExtResource("1_jm1iu")
+
+[node name="TerrainStoneHorizontalMiddle91" type="Sprite2D" parent="." unique_id=1503926100]
+position = Vector2(9771, 553)
+texture = ExtResource("1_jm1iu")
+
+[node name="TerrainStoneBlockCenter89" type="Sprite2D" parent="." unique_id=1638857154]
+position = Vector2(9770, 613)
+texture = ExtResource("2_pbc48")
+
+[node name="TerrainStoneHorizontalMiddle92" type="Sprite2D" parent="." unique_id=968340863]
+position = Vector2(9834, 553)
+texture = ExtResource("1_jm1iu")
+
+[node name="TerrainStoneHorizontalMiddle93" type="Sprite2D" parent="." unique_id=111886994]
+position = Vector2(9898, 553)
+texture = ExtResource("1_jm1iu")
+
+[node name="TerrainStoneBlockCenter90" type="Sprite2D" parent="." unique_id=2092877733]
+position = Vector2(9898, 613)
+texture = ExtResource("2_pbc48")
+
+[node name="TerrainStoneBlockCenter91" type="Sprite2D" parent="." unique_id=1797291064]
+position = Vector2(9834, 613)
+texture = ExtResource("2_pbc48")
+
+[node name="TerrainStoneHorizontalMiddle94" type="Sprite2D" parent="." unique_id=2101032501]
+position = Vector2(10025, 553)
+texture = ExtResource("1_jm1iu")
+
+[node name="TerrainStoneBlockCenter92" type="Sprite2D" parent="." unique_id=149625071]
+position = Vector2(10025, 613)
+texture = ExtResource("2_pbc48")
+
+[node name="TerrainStoneHorizontalMiddle95" type="Sprite2D" parent="." unique_id=1427992476]
+position = Vector2(10089, 553)
+texture = ExtResource("1_jm1iu")
+
+[node name="TerrainStoneHorizontalMiddle96" type="Sprite2D" parent="." unique_id=1274103347]
+position = Vector2(10153, 553)
+texture = ExtResource("1_jm1iu")
+
+[node name="TerrainStoneBlockCenter93" type="Sprite2D" parent="." unique_id=187207681]
+position = Vector2(10153, 613)
+texture = ExtResource("2_pbc48")
+
+[node name="TerrainStoneBlockCenter94" type="Sprite2D" parent="." unique_id=1623811917]
+position = Vector2(10089, 613)
+texture = ExtResource("2_pbc48")
+
+[node name="TerrainStoneHorizontalMiddle97" type="Sprite2D" parent="." unique_id=1036680523]
+position = Vector2(9961, 553)
+texture = ExtResource("1_jm1iu")
+
+[node name="TerrainStoneBlockCenter95" type="Sprite2D" parent="." unique_id=1436514113]
+position = Vector2(9961, 613)
+texture = ExtResource("2_pbc48")
+
+[node name="TerrainStoneBlockCenter96" type="Sprite2D" parent="." unique_id=1294119382]
+position = Vector2(9706, 613)
+texture = ExtResource("2_pbc48")
+
+[node name="TerrainStoneHorizontalMiddle98" type="Sprite2D" parent="." unique_id=928382346]
+position = Vector2(10216, 553)
+texture = ExtResource("1_jm1iu")
+
+[node name="TerrainStoneHorizontalMiddle99" type="Sprite2D" parent="." unique_id=1327377791]
+position = Vector2(10280, 553)
+texture = ExtResource("1_jm1iu")
+
+[node name="TerrainStoneBlockCenter97" type="Sprite2D" parent="." unique_id=730761511]
+position = Vector2(10279, 613)
+texture = ExtResource("2_pbc48")
+
+[node name="TerrainStoneHorizontalMiddle100" type="Sprite2D" parent="." unique_id=1896628197]
+position = Vector2(10343, 553)
+texture = ExtResource("1_jm1iu")
+
+[node name="TerrainStoneHorizontalMiddle101" type="Sprite2D" parent="." unique_id=1808231000]
+position = Vector2(10407, 553)
+texture = ExtResource("1_jm1iu")
+
+[node name="TerrainStoneBlockCenter98" type="Sprite2D" parent="." unique_id=1196702796]
+position = Vector2(10407, 613)
+texture = ExtResource("2_pbc48")
+
+[node name="TerrainStoneBlockCenter99" type="Sprite2D" parent="." unique_id=2101434229]
+position = Vector2(10343, 613)
+texture = ExtResource("2_pbc48")
+
+[node name="TerrainStoneHorizontalMiddle102" type="Sprite2D" parent="." unique_id=734386738]
+position = Vector2(10534, 553)
+texture = ExtResource("1_jm1iu")
+
+[node name="TerrainStoneBlockCenter100" type="Sprite2D" parent="." unique_id=920974390]
+position = Vector2(10534, 613)
+texture = ExtResource("2_pbc48")
+
+[node name="TerrainStoneHorizontalMiddle103" type="Sprite2D" parent="." unique_id=1707089655]
+position = Vector2(10598, 553)
+texture = ExtResource("1_jm1iu")
+
+[node name="TerrainStoneHorizontalMiddle104" type="Sprite2D" parent="." unique_id=1525028106]
+position = Vector2(10662, 553)
+texture = ExtResource("1_jm1iu")
+
+[node name="TerrainStoneBlockCenter101" type="Sprite2D" parent="." unique_id=545971843]
+position = Vector2(10662, 613)
+texture = ExtResource("2_pbc48")
+
+[node name="TerrainStoneBlockCenter102" type="Sprite2D" parent="." unique_id=2114361832]
+position = Vector2(10598, 613)
+texture = ExtResource("2_pbc48")
+
+[node name="TerrainStoneHorizontalMiddle105" type="Sprite2D" parent="." unique_id=828431467]
+position = Vector2(10470, 553)
+texture = ExtResource("1_jm1iu")
+
+[node name="TerrainStoneBlockCenter103" type="Sprite2D" parent="." unique_id=900106641]
+position = Vector2(10470, 613)
+texture = ExtResource("2_pbc48")
+
+[node name="TerrainStoneBlockCenter104" type="Sprite2D" parent="." unique_id=1905525413]
+position = Vector2(10215, 613)
+texture = ExtResource("2_pbc48")
+
+[node name="TerrainStoneHorizontalMiddle106" type="Sprite2D" parent="." unique_id=269213448]
+position = Vector2(10725, 553)
+texture = ExtResource("1_jm1iu")
+
+[node name="TerrainStoneHorizontalMiddle107" type="Sprite2D" parent="." unique_id=283155933]
+position = Vector2(10789, 553)
+texture = ExtResource("1_jm1iu")
+
+[node name="TerrainStoneBlockCenter105" type="Sprite2D" parent="." unique_id=170639144]
+position = Vector2(10788, 613)
+texture = ExtResource("2_pbc48")
+
+[node name="TerrainStoneHorizontalMiddle108" type="Sprite2D" parent="." unique_id=360658695]
+position = Vector2(10852, 553)
+texture = ExtResource("1_jm1iu")
+
+[node name="TerrainStoneHorizontalMiddle109" type="Sprite2D" parent="." unique_id=551035010]
+position = Vector2(10916, 553)
+texture = ExtResource("1_jm1iu")
+
+[node name="TerrainStoneBlockCenter106" type="Sprite2D" parent="." unique_id=1660239794]
+position = Vector2(10916, 613)
+texture = ExtResource("2_pbc48")
+
+[node name="TerrainStoneBlockCenter107" type="Sprite2D" parent="." unique_id=898892880]
+position = Vector2(10852, 613)
+texture = ExtResource("2_pbc48")
+
+[node name="TerrainStoneHorizontalMiddle110" type="Sprite2D" parent="." unique_id=741784124]
+position = Vector2(11043, 553)
+texture = ExtResource("1_jm1iu")
+
+[node name="TerrainStoneBlockCenter108" type="Sprite2D" parent="." unique_id=1820466509]
+position = Vector2(11043, 613)
+texture = ExtResource("2_pbc48")
+
+[node name="TerrainStoneHorizontalMiddle111" type="Sprite2D" parent="." unique_id=411944694]
+position = Vector2(11107, 553)
+texture = ExtResource("1_jm1iu")
+
+[node name="TerrainStoneHorizontalMiddle112" type="Sprite2D" parent="." unique_id=637802294]
+position = Vector2(11171, 553)
+texture = ExtResource("1_jm1iu")
+
+[node name="TerrainStoneBlockCenter109" type="Sprite2D" parent="." unique_id=1845504981]
+position = Vector2(11171, 613)
+texture = ExtResource("2_pbc48")
+
+[node name="TerrainStoneBlockCenter110" type="Sprite2D" parent="." unique_id=1457557667]
+position = Vector2(11107, 613)
+texture = ExtResource("2_pbc48")
+
+[node name="TerrainStoneHorizontalMiddle113" type="Sprite2D" parent="." unique_id=646112354]
+position = Vector2(10979, 553)
+texture = ExtResource("1_jm1iu")
+
+[node name="TerrainStoneBlockCenter111" type="Sprite2D" parent="." unique_id=154622364]
+position = Vector2(10979, 613)
+texture = ExtResource("2_pbc48")
+
+[node name="TerrainStoneBlockCenter112" type="Sprite2D" parent="." unique_id=1760943273]
+position = Vector2(10724, 613)
+texture = ExtResource("2_pbc48")
+
+[node name="TerrainStoneHorizontalMiddle114" type="Sprite2D" parent="." unique_id=1867798293]
+position = Vector2(11234, 553)
+texture = ExtResource("1_jm1iu")
+
+[node name="TerrainStoneHorizontalMiddle115" type="Sprite2D" parent="." unique_id=724599168]
+position = Vector2(11298, 553)
+texture = ExtResource("1_jm1iu")
+
+[node name="TerrainStoneBlockCenter113" type="Sprite2D" parent="." unique_id=344758848]
+position = Vector2(11297, 613)
+texture = ExtResource("2_pbc48")
+
+[node name="TerrainStoneHorizontalMiddle116" type="Sprite2D" parent="." unique_id=1598049319]
+position = Vector2(11361, 553)
+texture = ExtResource("1_jm1iu")
+
+[node name="TerrainStoneHorizontalMiddle117" type="Sprite2D" parent="." unique_id=228848407]
+position = Vector2(11425, 553)
+texture = ExtResource("1_jm1iu")
+
+[node name="TerrainStoneBlockCenter114" type="Sprite2D" parent="." unique_id=690962204]
+position = Vector2(11425, 613)
+texture = ExtResource("2_pbc48")
+
+[node name="TerrainStoneBlockCenter115" type="Sprite2D" parent="." unique_id=1789658197]
+position = Vector2(11361, 613)
+texture = ExtResource("2_pbc48")
+
+[node name="TerrainStoneHorizontalMiddle118" type="Sprite2D" parent="." unique_id=695792459]
+position = Vector2(11552, 553)
+texture = ExtResource("1_jm1iu")
+
+[node name="TerrainStoneBlockCenter116" type="Sprite2D" parent="." unique_id=1447485067]
+position = Vector2(11552, 613)
+texture = ExtResource("2_pbc48")
+
+[node name="TerrainStoneHorizontalMiddle119" type="Sprite2D" parent="." unique_id=328462361]
+position = Vector2(11616, 553)
+texture = ExtResource("1_jm1iu")
+
+[node name="TerrainStoneHorizontalMiddle120" type="Sprite2D" parent="." unique_id=1628357962]
+position = Vector2(11680, 553)
+texture = ExtResource("1_jm1iu")
+
+[node name="TerrainStoneBlockCenter117" type="Sprite2D" parent="." unique_id=1648025648]
+position = Vector2(11680, 613)
+texture = ExtResource("2_pbc48")
+
+[node name="TerrainStoneBlockCenter118" type="Sprite2D" parent="." unique_id=227860529]
+position = Vector2(11616, 613)
+texture = ExtResource("2_pbc48")
+
+[node name="TerrainStoneHorizontalMiddle121" type="Sprite2D" parent="." unique_id=2048015480]
+position = Vector2(11488, 553)
+texture = ExtResource("1_jm1iu")
+
+[node name="TerrainStoneBlockCenter119" type="Sprite2D" parent="." unique_id=111230605]
+position = Vector2(11488, 613)
+texture = ExtResource("2_pbc48")
+
+[node name="TerrainStoneBlockCenter120" type="Sprite2D" parent="." unique_id=2074508283]
+position = Vector2(11233, 613)
+texture = ExtResource("2_pbc48")
+
+[node name="TerrainStoneHorizontalMiddle122" type="Sprite2D" parent="." unique_id=1340537217]
+position = Vector2(11743, 553)
+texture = ExtResource("1_jm1iu")
+
+[node name="TerrainStoneHorizontalMiddle123" type="Sprite2D" parent="." unique_id=245555972]
+position = Vector2(11807, 553)
+texture = ExtResource("1_jm1iu")
+
+[node name="TerrainStoneBlockCenter121" type="Sprite2D" parent="." unique_id=1626425216]
+position = Vector2(11806, 613)
+texture = ExtResource("2_pbc48")
+
+[node name="TerrainStoneHorizontalMiddle124" type="Sprite2D" parent="." unique_id=2098643501]
+position = Vector2(11870, 553)
+texture = ExtResource("1_jm1iu")
+
+[node name="TerrainStoneHorizontalMiddle125" type="Sprite2D" parent="." unique_id=927536297]
+position = Vector2(11934, 553)
+texture = ExtResource("1_jm1iu")
+
+[node name="TerrainStoneBlockCenter122" type="Sprite2D" parent="." unique_id=1739301402]
+position = Vector2(11934, 613)
+texture = ExtResource("2_pbc48")
+
+[node name="TerrainStoneBlockCenter123" type="Sprite2D" parent="." unique_id=1416532024]
+position = Vector2(11870, 613)
+texture = ExtResource("2_pbc48")
+
+[node name="TerrainStoneHorizontalMiddle126" type="Sprite2D" parent="." unique_id=621281716]
+position = Vector2(12061, 553)
+texture = ExtResource("1_jm1iu")
+
+[node name="TerrainStoneBlockCenter124" type="Sprite2D" parent="." unique_id=1074371011]
+position = Vector2(12061, 613)
+texture = ExtResource("2_pbc48")
+
+[node name="TerrainStoneHorizontalMiddle127" type="Sprite2D" parent="." unique_id=1196128360]
+position = Vector2(12125, 553)
+texture = ExtResource("1_jm1iu")
+
+[node name="TerrainStoneHorizontalMiddle128" type="Sprite2D" parent="." unique_id=1775921446]
+position = Vector2(12189, 553)
+texture = ExtResource("1_jm1iu")
+
+[node name="TerrainStoneBlockCenter125" type="Sprite2D" parent="." unique_id=827514940]
+position = Vector2(12189, 613)
+texture = ExtResource("2_pbc48")
+
+[node name="TerrainStoneHorizontalMiddle128" type="Sprite2D" parent="TerrainStoneBlockCenter125" unique_id=227067392]
+position = Vector2(63, -60)
+texture = ExtResource("1_jm1iu")
+
+[node name="TerrainStoneBlockCenter125" type="Sprite2D" parent="TerrainStoneBlockCenter125" unique_id=451863191]
+position = Vector2(63, 0)
+texture = ExtResource("2_pbc48")
+
+[node name="TerrainStoneBlockCenter126" type="Sprite2D" parent="." unique_id=1054841414]
+position = Vector2(12125, 613)
+texture = ExtResource("2_pbc48")
+
+[node name="TerrainStoneHorizontalMiddle129" type="Sprite2D" parent="." unique_id=2136383490]
+position = Vector2(11997, 553)
+texture = ExtResource("1_jm1iu")
+
+[node name="TerrainStoneBlockCenter127" type="Sprite2D" parent="." unique_id=2063426297]
+position = Vector2(11997, 613)
+texture = ExtResource("2_pbc48")
+
+[node name="TerrainStoneBlockCenter128" type="Sprite2D" parent="." unique_id=1117768247]
+position = Vector2(11742, 613)
 texture = ExtResource("2_pbc48")
