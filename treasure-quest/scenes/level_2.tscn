@@ -20,3 +20,19 @@ texture = ExtResource("1_jm1iu")
 [node name="TerrainStoneBlockCenter" type="Sprite2D" parent="TerrainStoneBlockCenter" unique_id=543804872]
 position = Vector2(64, 0)
 texture = ExtResource("2_pbc48")
+
+[node name="TerrainStoneHorizontalMiddle2" type="Sprite2D" parent="TerrainStoneBlockCenter" unique_id=1853729326]
+position = Vector2(128, -60)
+texture = ExtResource("1_jm1iu")
+
+[node name="TerrainStoneBlockCenter2" type="Sprite2D" parent="TerrainStoneBlockCenter" unique_id=561942931]
+position = Vector2(128, 0)
+texture = ExtResource("2_pbc48")
+
+[node name="TerrainStoneHorizontalMiddle" type="Sprite2D" parent="TerrainStoneBlockCenter/TerrainStoneBlockCenter2" unique_id=1860472747]
+position = Vector2(64, -60)
+texture = ExtResource("1_jm1iu")
+
+[node name="TerrainStoneBlockCenter" type="Sprite2D" parent="TerrainStoneBlockCenter/TerrainStoneBlockCenter2" unique_id=1536721611]
+position = Vector2(64, 0)
+texture = ExtResource("2_pbc48")
