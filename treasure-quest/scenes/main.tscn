@@ -1586,17 +1586,11 @@ position = Vector2(2704, 378)
 [node name="Bee3" parent="." unique_id=823164614 instance=ExtResource("7_o6xl0")]
 position = Vector2(4194, -273)
 
-[node name="Bee4" parent="." unique_id=1291688334 instance=ExtResource("7_o6xl0")]
-position = Vector2(4647, -107)
-
-[node name="Bee5" parent="." unique_id=1230274726 instance=ExtResource("7_o6xl0")]
-position = Vector2(4906, 151)
-
 [node name="saw4" parent="." unique_id=838631159 instance=ExtResource("16_0ld40")]
-position = Vector2(4761, 33)
+position = Vector2(4730, -4)
 
 [node name="saw5" parent="." unique_id=722752826 instance=ExtResource("16_0ld40")]
-position = Vector2(5003, 290)
+position = Vector2(4856, 134)
 
 [node name="Bee6" parent="." unique_id=1121822336 instance=ExtResource("7_o6xl0")]
 position = Vector2(5715, 328)
