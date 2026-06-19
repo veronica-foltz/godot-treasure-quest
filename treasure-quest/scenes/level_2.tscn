@@ -1,3 +1,22 @@
 [gd_scene format=3 uid="uid://vd8q0h5f6g66"]
 
+[ext_resource type="Texture2D" uid="uid://slxhqkw74lde" path="res://assets/kenney_new-platformer-pack-1.1/Sprites/Tiles/Default/terrain_stone_horizontal_middle.png" id="1_jm1iu"]
+[ext_resource type="Texture2D" uid="uid://n87bj8pi2ay1" path="res://assets/kenney_new-platformer-pack-1.1/Sprites/Tiles/Default/terrain_stone_block_center.png" id="2_pbc48"]
+
 [node name="Level2" type="Node2D" unique_id=1685866390]
+
+[node name="TerrainStoneHorizontalMiddle" type="Sprite2D" parent="." unique_id=196681097]
+position = Vector2(32, 330)
+texture = ExtResource("1_jm1iu")
+
+[node name="TerrainStoneBlockCenter" type="Sprite2D" parent="." unique_id=92147814]
+position = Vector2(32, 390)
+texture = ExtResource("2_pbc48")
+
+[node name="TerrainStoneHorizontalMiddle" type="Sprite2D" parent="TerrainStoneBlockCenter" unique_id=950926707]
+position = Vector2(64, -60)
+texture = ExtResource("1_jm1iu")
+
+[node name="TerrainStoneBlockCenter" type="Sprite2D" parent="TerrainStoneBlockCenter" unique_id=543804872]
+position = Vector2(64, 0)
+texture = ExtResource("2_pbc48")
