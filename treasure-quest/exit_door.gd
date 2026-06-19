@@ -1,6 +1,6 @@
 extends Area2D
 
-@export var next_level = "res://scenes/level_2.tscn"
+@export var next_level = "res://scenes/level_3.tscn"
 
 func _ready():
 

@@ -1,0 +1,28 @@
+[gd_scene format=3 uid="uid://cy4sxysdai5un"]
+
+[ext_resource type="Script" uid="uid://ctn1hof2vfpso" path="res://grey_blocks.gd" id="1_2djws"]
+[ext_resource type="Texture2D" uid="uid://slxhqkw74lde" path="res://assets/kenney_new-platformer-pack-1.1/Sprites/Tiles/Default/terrain_stone_horizontal_middle.png" id="2_2xks8"]
+[ext_resource type="Texture2D" uid="uid://dfw0ybbhh1q4u" path="res://assets/kenney_new-platformer-pack-1.1/Sprites/Tiles/Default/terrain_stone_horizontal_right.png" id="3_iqp8x"]
+[ext_resource type="Texture2D" uid="uid://eb3u6opu63aq" path="res://assets/kenney_new-platformer-pack-1.1/Sprites/Tiles/Default/terrain_stone_horizontal_left.png" id="4_14c31"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_trysq"]
+size = Vector2(187, 61)
+
+[node name="greyBlocks" type="StaticBody2D" unique_id=1788270513]
+script = ExtResource("1_2djws")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=2081090315]
+position = Vector2(113.5, 20.5)
+shape = SubResource("RectangleShape2D_trysq")
+
+[node name="TerrainStoneHorizontalMiddle" type="Sprite2D" parent="." unique_id=121977717]
+position = Vector2(114, 20)
+texture = ExtResource("2_2xks8")
+
+[node name="TerrainStoneHorizontalRight" type="Sprite2D" parent="." unique_id=1107648546]
+position = Vector2(177, 20)
+texture = ExtResource("3_iqp8x")
+
+[node name="TerrainStoneHorizontalLeft" type="Sprite2D" parent="." unique_id=577570086]
+position = Vector2(50, 20)
+texture = ExtResource("4_14c31")

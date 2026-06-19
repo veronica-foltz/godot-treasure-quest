@@ -1,0 +1,44 @@
+[gd_scene format=3 uid="uid://bdcsco6l2d2st"]
+
+[ext_resource type="Script" uid="uid://31ousjwxpo38" path="res://scenes/long_spikes.gd" id="1_r1mvb"]
+[ext_resource type="Texture2D" uid="uid://ivm6te5yqlrr" path="res://assets/kenney_new-platformer-pack-1.1/Sprites/Tiles/Default/spikes.png" id="2_u602c"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ud08h"]
+size = Vector2(443.5, 30)
+
+[node name="LongSpikes" type="Area2D" unique_id=1845434854]
+script = ExtResource("1_r1mvb")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=696004440]
+position = Vector2(224.25, 57)
+shape = SubResource("RectangleShape2D_ud08h")
+
+[node name="Spikes" type="Sprite2D" parent="." unique_id=451587634]
+position = Vector2(34, 38)
+texture = ExtResource("2_u602c")
+
+[node name="Spikes2" type="Sprite2D" parent="." unique_id=1249147929]
+position = Vector2(96, 37)
+texture = ExtResource("2_u602c")
+
+[node name="Spikes3" type="Sprite2D" parent="." unique_id=1926754992]
+position = Vector2(159, 37)
+texture = ExtResource("2_u602c")
+
+[node name="Spikes4" type="Sprite2D" parent="." unique_id=677506165]
+position = Vector2(224, 37)
+texture = ExtResource("2_u602c")
+
+[node name="Spikes5" type="Sprite2D" parent="." unique_id=521842274]
+position = Vector2(288, 37)
+texture = ExtResource("2_u602c")
+
+[node name="Spikes6" type="Sprite2D" parent="." unique_id=673407385]
+position = Vector2(351, 37)
+texture = ExtResource("2_u602c")
+
+[node name="Spikes7" type="Sprite2D" parent="." unique_id=1554252444]
+position = Vector2(413, 37)
+texture = ExtResource("2_u602c")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
