@@ -1,0 +1,16 @@
+[gd_scene format=3 uid="uid://coejcyare4bxv"]
+
+[ext_resource type="Texture2D" uid="uid://bpyo64bgj0uld" path="res://assets/kenney_new-platformer-pack-1.1/Sprites/Tiles/Default/terrain_dirt_cloud.png" id="1_4vtr6"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_4vtr6"]
+size = Vector2(57.5, 39)
+
+[node name="SingleDirtBlock" type="StaticBody2D" unique_id=573239099]
+
+[node name="TerrainDirtCloud" type="Sprite2D" parent="." unique_id=1191984141]
+position = Vector2(34, 36)
+texture = ExtResource("1_4vtr6")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=51366394]
+position = Vector2(34.25, 27)
+shape = SubResource("RectangleShape2D_4vtr6")
