@@ -27,15 +27,15 @@ size = Vector2(200.5, 57)
 
 [node name="Level2" type="Node2D" unique_id=1685866390]
 
-[node name="ExitDoor" parent="." unique_id=1702446062 instance=ExtResource("12_172wr")]
-position = Vector2(9096, 432)
-
 [node name="ColorRect" type="ColorRect" parent="." unique_id=1172111720]
 offset_left = -3.0
 offset_top = -972.0
 offset_right = 10307.0
 offset_bottom = 608.0
 color = Color(0, 0, 0, 1)
+
+[node name="ExitDoor" parent="." unique_id=1702446062 instance=ExtResource("12_172wr")]
+position = Vector2(9096, 432)
 
 [node name="TerrainStoneBlockTopLeft" type="Sprite2D" parent="." unique_id=58804158]
 position = Vector2(1365, 488)

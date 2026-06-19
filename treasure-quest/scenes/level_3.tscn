@@ -8,6 +8,13 @@
 [ext_resource type="Texture2D" uid="uid://ccvls1tsxw7gj" path="res://assets/kenney_new-platformer-pack-1.1/Sprites/Tiles/Default/terrain_dirt_block_center.png" id="6_56dhn"]
 [ext_resource type="Texture2D" uid="uid://bqsog5ho4pydv" path="res://assets/kenney_new-platformer-pack-1.1/Sprites/Tiles/Default/terrain_dirt_block_top_right.png" id="7_wae8j"]
 [ext_resource type="Texture2D" uid="uid://g6b1060vycxt" path="res://assets/kenney_new-platformer-pack-1.1/Sprites/Tiles/Default/terrain_dirt_block_right.png" id="8_ha73p"]
+[ext_resource type="PackedScene" uid="uid://de6orvpo2ehos" path="res://scenes/player.tscn" id="9_ha73p"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ha73p"]
+size = Vector2(1866.5, 226.5)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_vcx5n"]
+size = Vector2(7373, 130.5)
 
 [node name="Level3" type="Node2D" unique_id=1601843956]
 
@@ -359,1633 +366,1649 @@ position = Vector2(8721, -220.99995)
 scale = Vector2(4.03125, 1.7734375)
 texture = ExtResource("4_ha73p")
 
-[node name="TerrainDirtBlockTop" type="Sprite2D" parent="." unique_id=1265619989]
+[node name="Player" parent="." unique_id=1741513001 instance=ExtResource("9_ha73p")]
+position = Vector2(288, 180)
+
+[node name="Camera2D" type="Camera2D" parent="Player" unique_id=2140494699]
+position = Vector2(276, 80)
+
+[node name="ground" type="StaticBody2D" parent="." unique_id=852476468]
+
+[node name="TerrainDirtBlockTop" type="Sprite2D" parent="ground" unique_id=1265619989]
 position = Vector2(36, 430)
 texture = ExtResource("5_vcx5n")
 
-[node name="TerrainDirtBlockCenter" type="Sprite2D" parent="." unique_id=1629194556]
+[node name="TerrainDirtBlockCenter" type="Sprite2D" parent="ground" unique_id=1629194556]
 position = Vector2(36, 493)
 texture = ExtResource("6_56dhn")
 
-[node name="TerrainDirtBlockTop" type="Sprite2D" parent="TerrainDirtBlockCenter" unique_id=1876822165]
+[node name="TerrainDirtBlockTop" type="Sprite2D" parent="ground/TerrainDirtBlockCenter" unique_id=1876822165]
 position = Vector2(64, -63)
 texture = ExtResource("5_vcx5n")
 
-[node name="TerrainDirtBlockCenter" type="Sprite2D" parent="TerrainDirtBlockCenter" unique_id=1430496830]
+[node name="TerrainDirtBlockCenter" type="Sprite2D" parent="ground/TerrainDirtBlockCenter" unique_id=1430496830]
 position = Vector2(64, 0)
 texture = ExtResource("6_56dhn")
 
-[node name="TerrainDirtBlockTop2" type="Sprite2D" parent="TerrainDirtBlockCenter" unique_id=1353460774]
+[node name="TerrainDirtBlockTop2" type="Sprite2D" parent="ground/TerrainDirtBlockCenter" unique_id=1353460774]
 position = Vector2(127, -63)
 texture = ExtResource("5_vcx5n")
 
-[node name="TerrainDirtBlockCenter2" type="Sprite2D" parent="TerrainDirtBlockCenter" unique_id=789334905]
+[node name="TerrainDirtBlockCenter2" type="Sprite2D" parent="ground/TerrainDirtBlockCenter" unique_id=789334905]
 position = Vector2(127, 0)
 texture = ExtResource("6_56dhn")
 
-[node name="TerrainDirtBlockTop" type="Sprite2D" parent="TerrainDirtBlockCenter/TerrainDirtBlockCenter2" unique_id=1797465003]
+[node name="TerrainDirtBlockTop" type="Sprite2D" parent="ground/TerrainDirtBlockCenter/TerrainDirtBlockCenter2" unique_id=1797465003]
 position = Vector2(64, -63)
 texture = ExtResource("5_vcx5n")
 
-[node name="TerrainDirtBlockCenter" type="Sprite2D" parent="TerrainDirtBlockCenter/TerrainDirtBlockCenter2" unique_id=1912522483]
+[node name="TerrainDirtBlockCenter" type="Sprite2D" parent="ground/TerrainDirtBlockCenter/TerrainDirtBlockCenter2" unique_id=1912522483]
 position = Vector2(64, 0)
 texture = ExtResource("6_56dhn")
 
-[node name="TerrainDirtBlockTop3" type="Sprite2D" parent="TerrainDirtBlockCenter" unique_id=252457452]
+[node name="TerrainDirtBlockTop3" type="Sprite2D" parent="ground/TerrainDirtBlockCenter" unique_id=252457452]
 position = Vector2(892, -63)
 texture = ExtResource("5_vcx5n")
 
-[node name="TerrainDirtBlockCenter3" type="Sprite2D" parent="TerrainDirtBlockCenter" unique_id=669420760]
+[node name="TerrainDirtBlockCenter3" type="Sprite2D" parent="ground/TerrainDirtBlockCenter" unique_id=669420760]
 position = Vector2(892, 0)
 texture = ExtResource("6_56dhn")
 
-[node name="TerrainDirtBlockTop" type="Sprite2D" parent="TerrainDirtBlockCenter/TerrainDirtBlockCenter3" unique_id=255034823]
+[node name="TerrainDirtBlockTop" type="Sprite2D" parent="ground/TerrainDirtBlockCenter/TerrainDirtBlockCenter3" unique_id=255034823]
 position = Vector2(64, -63)
 texture = ExtResource("5_vcx5n")
 
-[node name="TerrainDirtBlockCenter" type="Sprite2D" parent="TerrainDirtBlockCenter/TerrainDirtBlockCenter3" unique_id=2143210364]
+[node name="TerrainDirtBlockCenter" type="Sprite2D" parent="ground/TerrainDirtBlockCenter/TerrainDirtBlockCenter3" unique_id=2143210364]
 position = Vector2(64, 0)
 texture = ExtResource("6_56dhn")
 
-[node name="TerrainDirtBlockTop2" type="Sprite2D" parent="TerrainDirtBlockCenter/TerrainDirtBlockCenter3" unique_id=1680608311]
+[node name="TerrainDirtBlockTop2" type="Sprite2D" parent="ground/TerrainDirtBlockCenter/TerrainDirtBlockCenter3" unique_id=1680608311]
 position = Vector2(127, -63)
 texture = ExtResource("5_vcx5n")
 
-[node name="TerrainDirtBlockCenter2" type="Sprite2D" parent="TerrainDirtBlockCenter/TerrainDirtBlockCenter3" unique_id=1571642000]
+[node name="TerrainDirtBlockCenter2" type="Sprite2D" parent="ground/TerrainDirtBlockCenter/TerrainDirtBlockCenter3" unique_id=1571642000]
 position = Vector2(127, 0)
 texture = ExtResource("6_56dhn")
 
-[node name="TerrainDirtBlockTop" type="Sprite2D" parent="TerrainDirtBlockCenter/TerrainDirtBlockCenter3/TerrainDirtBlockCenter2" unique_id=1615620212]
+[node name="TerrainDirtBlockTop" type="Sprite2D" parent="ground/TerrainDirtBlockCenter/TerrainDirtBlockCenter3/TerrainDirtBlockCenter2" unique_id=1615620212]
 position = Vector2(64, -63)
 texture = ExtResource("5_vcx5n")
 
-[node name="TerrainDirtBlockCenter" type="Sprite2D" parent="TerrainDirtBlockCenter/TerrainDirtBlockCenter3/TerrainDirtBlockCenter2" unique_id=1468463740]
+[node name="TerrainDirtBlockCenter" type="Sprite2D" parent="ground/TerrainDirtBlockCenter/TerrainDirtBlockCenter3/TerrainDirtBlockCenter2" unique_id=1468463740]
 position = Vector2(64, 0)
 texture = ExtResource("6_56dhn")
 
-[node name="TerrainDirtBlockTop4" type="Sprite2D" parent="TerrainDirtBlockCenter" unique_id=848957248]
+[node name="TerrainDirtBlockTop4" type="Sprite2D" parent="ground/TerrainDirtBlockCenter" unique_id=848957248]
 position = Vector2(1147, -63)
 texture = ExtResource("5_vcx5n")
 
-[node name="TerrainDirtBlockCenter4" type="Sprite2D" parent="TerrainDirtBlockCenter" unique_id=1084856314]
+[node name="TerrainDirtBlockCenter4" type="Sprite2D" parent="ground/TerrainDirtBlockCenter" unique_id=1084856314]
 position = Vector2(1147, 0)
 texture = ExtResource("6_56dhn")
 
-[node name="TerrainDirtBlockTop" type="Sprite2D" parent="TerrainDirtBlockCenter/TerrainDirtBlockCenter4" unique_id=323177862]
+[node name="TerrainDirtBlockTop" type="Sprite2D" parent="ground/TerrainDirtBlockCenter/TerrainDirtBlockCenter4" unique_id=323177862]
 position = Vector2(64, -63)
 texture = ExtResource("5_vcx5n")
 
-[node name="TerrainDirtBlockCenter" type="Sprite2D" parent="TerrainDirtBlockCenter/TerrainDirtBlockCenter4" unique_id=365146186]
+[node name="TerrainDirtBlockCenter" type="Sprite2D" parent="ground/TerrainDirtBlockCenter/TerrainDirtBlockCenter4" unique_id=365146186]
 position = Vector2(64, 0)
 texture = ExtResource("6_56dhn")
 
-[node name="TerrainDirtBlockTop5" type="Sprite2D" parent="TerrainDirtBlockCenter" unique_id=680252851]
+[node name="TerrainDirtBlockTop5" type="Sprite2D" parent="ground/TerrainDirtBlockCenter" unique_id=680252851]
 position = Vector2(1274, -63)
 texture = ExtResource("5_vcx5n")
 
-[node name="TerrainDirtBlockCenter5" type="Sprite2D" parent="TerrainDirtBlockCenter" unique_id=1905007808]
+[node name="TerrainDirtBlockCenter5" type="Sprite2D" parent="ground/TerrainDirtBlockCenter" unique_id=1905007808]
 position = Vector2(1274, 0)
 texture = ExtResource("6_56dhn")
 
-[node name="TerrainDirtBlockTop" type="Sprite2D" parent="TerrainDirtBlockCenter/TerrainDirtBlockCenter5" unique_id=1829251669]
+[node name="TerrainDirtBlockTop" type="Sprite2D" parent="ground/TerrainDirtBlockCenter/TerrainDirtBlockCenter5" unique_id=1829251669]
 position = Vector2(64, -63)
 texture = ExtResource("5_vcx5n")
 
-[node name="TerrainDirtBlockCenter" type="Sprite2D" parent="TerrainDirtBlockCenter/TerrainDirtBlockCenter5" unique_id=993983893]
+[node name="TerrainDirtBlockCenter" type="Sprite2D" parent="ground/TerrainDirtBlockCenter/TerrainDirtBlockCenter5" unique_id=993983893]
 position = Vector2(64, 0)
 texture = ExtResource("6_56dhn")
 
-[node name="TerrainDirtBlockTop6" type="Sprite2D" parent="TerrainDirtBlockCenter" unique_id=124013599]
+[node name="TerrainDirtBlockTop6" type="Sprite2D" parent="ground/TerrainDirtBlockCenter" unique_id=124013599]
 position = Vector2(1401, -63)
 texture = ExtResource("5_vcx5n")
 
-[node name="TerrainDirtBlockCenter6" type="Sprite2D" parent="TerrainDirtBlockCenter" unique_id=510236746]
+[node name="TerrainDirtBlockCenter6" type="Sprite2D" parent="ground/TerrainDirtBlockCenter" unique_id=510236746]
 position = Vector2(1401, 0)
 texture = ExtResource("6_56dhn")
 
-[node name="TerrainDirtBlockTop" type="Sprite2D" parent="TerrainDirtBlockCenter/TerrainDirtBlockCenter6" unique_id=728790364]
+[node name="TerrainDirtBlockTop" type="Sprite2D" parent="ground/TerrainDirtBlockCenter/TerrainDirtBlockCenter6" unique_id=728790364]
 position = Vector2(64, -63)
 texture = ExtResource("5_vcx5n")
 
-[node name="TerrainDirtBlockCenter" type="Sprite2D" parent="TerrainDirtBlockCenter/TerrainDirtBlockCenter6" unique_id=177387233]
+[node name="TerrainDirtBlockCenter" type="Sprite2D" parent="ground/TerrainDirtBlockCenter/TerrainDirtBlockCenter6" unique_id=177387233]
 position = Vector2(64, 0)
 texture = ExtResource("6_56dhn")
 
-[node name="TerrainDirtBlockTop7" type="Sprite2D" parent="TerrainDirtBlockCenter" unique_id=1436782583]
+[node name="TerrainDirtBlockTop7" type="Sprite2D" parent="ground/TerrainDirtBlockCenter" unique_id=1436782583]
 position = Vector2(1528, -63)
 texture = ExtResource("5_vcx5n")
 
-[node name="TerrainDirtBlockCenter7" type="Sprite2D" parent="TerrainDirtBlockCenter" unique_id=471794467]
+[node name="TerrainDirtBlockCenter7" type="Sprite2D" parent="ground/TerrainDirtBlockCenter" unique_id=471794467]
 position = Vector2(1528, 0)
 texture = ExtResource("6_56dhn")
 
-[node name="TerrainDirtBlockTop" type="Sprite2D" parent="TerrainDirtBlockCenter/TerrainDirtBlockCenter7" unique_id=1571333050]
+[node name="TerrainDirtBlockTop" type="Sprite2D" parent="ground/TerrainDirtBlockCenter/TerrainDirtBlockCenter7" unique_id=1571333050]
 position = Vector2(64, -63)
 texture = ExtResource("5_vcx5n")
 
-[node name="TerrainDirtBlockCenter" type="Sprite2D" parent="TerrainDirtBlockCenter/TerrainDirtBlockCenter7" unique_id=91671257]
+[node name="TerrainDirtBlockCenter" type="Sprite2D" parent="ground/TerrainDirtBlockCenter/TerrainDirtBlockCenter7" unique_id=91671257]
 position = Vector2(64, 0)
 texture = ExtResource("6_56dhn")
 
-[node name="TerrainDirtBlockTop8" type="Sprite2D" parent="TerrainDirtBlockCenter" unique_id=1497744838]
+[node name="TerrainDirtBlockTop8" type="Sprite2D" parent="ground/TerrainDirtBlockCenter" unique_id=1497744838]
 position = Vector2(1656, -63)
 texture = ExtResource("5_vcx5n")
 
-[node name="TerrainDirtBlockCenter8" type="Sprite2D" parent="TerrainDirtBlockCenter" unique_id=1292298056]
+[node name="TerrainDirtBlockCenter8" type="Sprite2D" parent="ground/TerrainDirtBlockCenter" unique_id=1292298056]
 position = Vector2(1656, 0)
 texture = ExtResource("6_56dhn")
 
-[node name="TerrainDirtBlockTop" type="Sprite2D" parent="TerrainDirtBlockCenter/TerrainDirtBlockCenter8" unique_id=2141512803]
+[node name="TerrainDirtBlockTop" type="Sprite2D" parent="ground/TerrainDirtBlockCenter/TerrainDirtBlockCenter8" unique_id=2141512803]
 position = Vector2(64, -63)
 texture = ExtResource("5_vcx5n")
 
-[node name="TerrainDirtBlockCenter" type="Sprite2D" parent="TerrainDirtBlockCenter/TerrainDirtBlockCenter8" unique_id=1201820343]
+[node name="TerrainDirtBlockCenter" type="Sprite2D" parent="ground/TerrainDirtBlockCenter/TerrainDirtBlockCenter8" unique_id=1201820343]
 position = Vector2(64, 0)
 texture = ExtResource("6_56dhn")
 
-[node name="TerrainDirtBlockTop9" type="Sprite2D" parent="TerrainDirtBlockCenter" unique_id=1654496813]
+[node name="TerrainDirtBlockTop9" type="Sprite2D" parent="ground/TerrainDirtBlockCenter" unique_id=1654496813]
 position = Vector2(1786, 56)
 texture = ExtResource("5_vcx5n")
 
-[node name="TerrainDirtBlockCenter9" type="Sprite2D" parent="TerrainDirtBlockCenter" unique_id=516674777]
+[node name="TerrainDirtBlockCenter9" type="Sprite2D" parent="ground/TerrainDirtBlockCenter" unique_id=516674777]
 position = Vector2(1786, 119)
 texture = ExtResource("6_56dhn")
 
-[node name="TerrainDirtBlockTop" type="Sprite2D" parent="TerrainDirtBlockCenter/TerrainDirtBlockCenter9" unique_id=519425925]
+[node name="TerrainDirtBlockTop" type="Sprite2D" parent="ground/TerrainDirtBlockCenter/TerrainDirtBlockCenter9" unique_id=519425925]
 position = Vector2(64, -63)
 texture = ExtResource("5_vcx5n")
 
-[node name="TerrainDirtBlockCenter" type="Sprite2D" parent="TerrainDirtBlockCenter/TerrainDirtBlockCenter9" unique_id=295804526]
+[node name="TerrainDirtBlockCenter" type="Sprite2D" parent="ground/TerrainDirtBlockCenter/TerrainDirtBlockCenter9" unique_id=295804526]
 position = Vector2(64, 0)
 texture = ExtResource("6_56dhn")
 
-[node name="TerrainDirtBlockTop2" type="Sprite2D" parent="TerrainDirtBlockCenter/TerrainDirtBlockCenter9" unique_id=693594692]
+[node name="TerrainDirtBlockTop2" type="Sprite2D" parent="ground/TerrainDirtBlockCenter/TerrainDirtBlockCenter9" unique_id=693594692]
 position = Vector2(127, -63)
 texture = ExtResource("5_vcx5n")
 
-[node name="TerrainDirtBlockCenter2" type="Sprite2D" parent="TerrainDirtBlockCenter/TerrainDirtBlockCenter9" unique_id=2080352302]
+[node name="TerrainDirtBlockCenter2" type="Sprite2D" parent="ground/TerrainDirtBlockCenter/TerrainDirtBlockCenter9" unique_id=2080352302]
 position = Vector2(127, 0)
 texture = ExtResource("6_56dhn")
 
-[node name="TerrainDirtBlockTop" type="Sprite2D" parent="TerrainDirtBlockCenter/TerrainDirtBlockCenter9/TerrainDirtBlockCenter2" unique_id=1100127466]
+[node name="TerrainDirtBlockTop" type="Sprite2D" parent="ground/TerrainDirtBlockCenter/TerrainDirtBlockCenter9/TerrainDirtBlockCenter2" unique_id=1100127466]
 position = Vector2(64, -63)
 texture = ExtResource("5_vcx5n")
 
-[node name="TerrainDirtBlockCenter" type="Sprite2D" parent="TerrainDirtBlockCenter/TerrainDirtBlockCenter9/TerrainDirtBlockCenter2" unique_id=562398233]
+[node name="TerrainDirtBlockCenter" type="Sprite2D" parent="ground/TerrainDirtBlockCenter/TerrainDirtBlockCenter9/TerrainDirtBlockCenter2" unique_id=562398233]
 position = Vector2(64, 0)
 texture = ExtResource("6_56dhn")
 
-[node name="TerrainDirtBlockTop3" type="Sprite2D" parent="TerrainDirtBlockCenter/TerrainDirtBlockCenter9" unique_id=657335099]
+[node name="TerrainDirtBlockTop3" type="Sprite2D" parent="ground/TerrainDirtBlockCenter/TerrainDirtBlockCenter9" unique_id=657335099]
 position = Vector2(892, -63)
 texture = ExtResource("5_vcx5n")
 
-[node name="TerrainDirtBlockCenter3" type="Sprite2D" parent="TerrainDirtBlockCenter/TerrainDirtBlockCenter9" unique_id=1718650470]
+[node name="TerrainDirtBlockCenter3" type="Sprite2D" parent="ground/TerrainDirtBlockCenter/TerrainDirtBlockCenter9" unique_id=1718650470]
 position = Vector2(892, 0)
 texture = ExtResource("6_56dhn")
 
-[node name="TerrainDirtBlockTop" type="Sprite2D" parent="TerrainDirtBlockCenter/TerrainDirtBlockCenter9/TerrainDirtBlockCenter3" unique_id=612612109]
+[node name="TerrainDirtBlockTop" type="Sprite2D" parent="ground/TerrainDirtBlockCenter/TerrainDirtBlockCenter9/TerrainDirtBlockCenter3" unique_id=612612109]
 position = Vector2(64, -63)
 texture = ExtResource("5_vcx5n")
 
-[node name="TerrainDirtBlockCenter" type="Sprite2D" parent="TerrainDirtBlockCenter/TerrainDirtBlockCenter9/TerrainDirtBlockCenter3" unique_id=1241017488]
+[node name="TerrainDirtBlockCenter" type="Sprite2D" parent="ground/TerrainDirtBlockCenter/TerrainDirtBlockCenter9/TerrainDirtBlockCenter3" unique_id=1241017488]
 position = Vector2(64, 0)
 texture = ExtResource("6_56dhn")
 
-[node name="TerrainDirtBlockTop2" type="Sprite2D" parent="TerrainDirtBlockCenter/TerrainDirtBlockCenter9/TerrainDirtBlockCenter3" unique_id=2101459386]
+[node name="TerrainDirtBlockTop2" type="Sprite2D" parent="ground/TerrainDirtBlockCenter/TerrainDirtBlockCenter9/TerrainDirtBlockCenter3" unique_id=2101459386]
 position = Vector2(127, -63)
 texture = ExtResource("5_vcx5n")
 
-[node name="TerrainDirtBlockCenter2" type="Sprite2D" parent="TerrainDirtBlockCenter/TerrainDirtBlockCenter9/TerrainDirtBlockCenter3" unique_id=433405321]
+[node name="TerrainDirtBlockCenter2" type="Sprite2D" parent="ground/TerrainDirtBlockCenter/TerrainDirtBlockCenter9/TerrainDirtBlockCenter3" unique_id=433405321]
 position = Vector2(127, 0)
 texture = ExtResource("6_56dhn")
 
-[node name="TerrainDirtBlockTop" type="Sprite2D" parent="TerrainDirtBlockCenter/TerrainDirtBlockCenter9/TerrainDirtBlockCenter3/TerrainDirtBlockCenter2" unique_id=1128136961]
+[node name="TerrainDirtBlockTop" type="Sprite2D" parent="ground/TerrainDirtBlockCenter/TerrainDirtBlockCenter9/TerrainDirtBlockCenter3/TerrainDirtBlockCenter2" unique_id=1128136961]
 position = Vector2(64, -63)
 texture = ExtResource("5_vcx5n")
 
-[node name="TerrainDirtBlockCenter" type="Sprite2D" parent="TerrainDirtBlockCenter/TerrainDirtBlockCenter9/TerrainDirtBlockCenter3/TerrainDirtBlockCenter2" unique_id=797694001]
+[node name="TerrainDirtBlockCenter" type="Sprite2D" parent="ground/TerrainDirtBlockCenter/TerrainDirtBlockCenter9/TerrainDirtBlockCenter3/TerrainDirtBlockCenter2" unique_id=797694001]
 position = Vector2(64, 0)
 texture = ExtResource("6_56dhn")
 
-[node name="TerrainDirtBlockTop4" type="Sprite2D" parent="TerrainDirtBlockCenter/TerrainDirtBlockCenter9" unique_id=850921193]
+[node name="TerrainDirtBlockTop4" type="Sprite2D" parent="ground/TerrainDirtBlockCenter/TerrainDirtBlockCenter9" unique_id=850921193]
 position = Vector2(1147, -63)
 texture = ExtResource("5_vcx5n")
 
-[node name="TerrainDirtBlockCenter4" type="Sprite2D" parent="TerrainDirtBlockCenter/TerrainDirtBlockCenter9" unique_id=217896231]
+[node name="TerrainDirtBlockCenter4" type="Sprite2D" parent="ground/TerrainDirtBlockCenter/TerrainDirtBlockCenter9" unique_id=217896231]
 position = Vector2(1147, 0)
 texture = ExtResource("6_56dhn")
 
-[node name="TerrainDirtBlockTop" type="Sprite2D" parent="TerrainDirtBlockCenter/TerrainDirtBlockCenter9/TerrainDirtBlockCenter4" unique_id=2008383184]
+[node name="TerrainDirtBlockTop" type="Sprite2D" parent="ground/TerrainDirtBlockCenter/TerrainDirtBlockCenter9/TerrainDirtBlockCenter4" unique_id=2008383184]
 position = Vector2(64, -63)
 texture = ExtResource("5_vcx5n")
 
-[node name="TerrainDirtBlockCenter" type="Sprite2D" parent="TerrainDirtBlockCenter/TerrainDirtBlockCenter9/TerrainDirtBlockCenter4" unique_id=199846920]
+[node name="TerrainDirtBlockCenter" type="Sprite2D" parent="ground/TerrainDirtBlockCenter/TerrainDirtBlockCenter9/TerrainDirtBlockCenter4" unique_id=199846920]
 position = Vector2(64, 0)
 texture = ExtResource("6_56dhn")
 
-[node name="TerrainDirtBlockTop5" type="Sprite2D" parent="TerrainDirtBlockCenter/TerrainDirtBlockCenter9" unique_id=686594049]
+[node name="TerrainDirtBlockTop5" type="Sprite2D" parent="ground/TerrainDirtBlockCenter/TerrainDirtBlockCenter9" unique_id=686594049]
 position = Vector2(1274, -63)
 texture = ExtResource("5_vcx5n")
 
-[node name="TerrainDirtBlockCenter5" type="Sprite2D" parent="TerrainDirtBlockCenter/TerrainDirtBlockCenter9" unique_id=631342301]
+[node name="TerrainDirtBlockCenter5" type="Sprite2D" parent="ground/TerrainDirtBlockCenter/TerrainDirtBlockCenter9" unique_id=631342301]
 position = Vector2(1274, 0)
 texture = ExtResource("6_56dhn")
 
-[node name="TerrainDirtBlockTop" type="Sprite2D" parent="TerrainDirtBlockCenter/TerrainDirtBlockCenter9/TerrainDirtBlockCenter5" unique_id=330059957]
+[node name="TerrainDirtBlockTop" type="Sprite2D" parent="ground/TerrainDirtBlockCenter/TerrainDirtBlockCenter9/TerrainDirtBlockCenter5" unique_id=330059957]
 position = Vector2(64, -63)
 texture = ExtResource("5_vcx5n")
 
-[node name="TerrainDirtBlockCenter" type="Sprite2D" parent="TerrainDirtBlockCenter/TerrainDirtBlockCenter9/TerrainDirtBlockCenter5" unique_id=701263037]
+[node name="TerrainDirtBlockCenter" type="Sprite2D" parent="ground/TerrainDirtBlockCenter/TerrainDirtBlockCenter9/TerrainDirtBlockCenter5" unique_id=701263037]
 position = Vector2(64, 0)
 texture = ExtResource("6_56dhn")
 
-[node name="TerrainDirtBlockTop6" type="Sprite2D" parent="TerrainDirtBlockCenter/TerrainDirtBlockCenter9" unique_id=356868840]
+[node name="TerrainDirtBlockTop6" type="Sprite2D" parent="ground/TerrainDirtBlockCenter/TerrainDirtBlockCenter9" unique_id=356868840]
 position = Vector2(1401, -63)
 texture = ExtResource("5_vcx5n")
 
-[node name="TerrainDirtBlockCenter6" type="Sprite2D" parent="TerrainDirtBlockCenter/TerrainDirtBlockCenter9" unique_id=704448462]
+[node name="TerrainDirtBlockCenter6" type="Sprite2D" parent="ground/TerrainDirtBlockCenter/TerrainDirtBlockCenter9" unique_id=704448462]
 position = Vector2(1401, 0)
 texture = ExtResource("6_56dhn")
 
-[node name="TerrainDirtBlockTop" type="Sprite2D" parent="TerrainDirtBlockCenter/TerrainDirtBlockCenter9/TerrainDirtBlockCenter6" unique_id=11358872]
+[node name="TerrainDirtBlockTop" type="Sprite2D" parent="ground/TerrainDirtBlockCenter/TerrainDirtBlockCenter9/TerrainDirtBlockCenter6" unique_id=11358872]
 position = Vector2(64, -63)
 texture = ExtResource("5_vcx5n")
 
-[node name="TerrainDirtBlockCenter" type="Sprite2D" parent="TerrainDirtBlockCenter/TerrainDirtBlockCenter9/TerrainDirtBlockCenter6" unique_id=734803097]
+[node name="TerrainDirtBlockCenter" type="Sprite2D" parent="ground/TerrainDirtBlockCenter/TerrainDirtBlockCenter9/TerrainDirtBlockCenter6" unique_id=734803097]
 position = Vector2(64, 0)
 texture = ExtResource("6_56dhn")
 
-[node name="TerrainDirtBlockTop7" type="Sprite2D" parent="TerrainDirtBlockCenter/TerrainDirtBlockCenter9" unique_id=177118912]
+[node name="TerrainDirtBlockTop7" type="Sprite2D" parent="ground/TerrainDirtBlockCenter/TerrainDirtBlockCenter9" unique_id=177118912]
 position = Vector2(1528, -63)
 texture = ExtResource("5_vcx5n")
 
-[node name="TerrainDirtBlockCenter7" type="Sprite2D" parent="TerrainDirtBlockCenter/TerrainDirtBlockCenter9" unique_id=1302162744]
+[node name="TerrainDirtBlockCenter7" type="Sprite2D" parent="ground/TerrainDirtBlockCenter/TerrainDirtBlockCenter9" unique_id=1302162744]
 position = Vector2(1528, 0)
 texture = ExtResource("6_56dhn")
 
-[node name="TerrainDirtBlockTop" type="Sprite2D" parent="TerrainDirtBlockCenter/TerrainDirtBlockCenter9/TerrainDirtBlockCenter7" unique_id=1811494246]
+[node name="TerrainDirtBlockTop" type="Sprite2D" parent="ground/TerrainDirtBlockCenter/TerrainDirtBlockCenter9/TerrainDirtBlockCenter7" unique_id=1811494246]
 position = Vector2(64, -63)
 texture = ExtResource("5_vcx5n")
 
-[node name="TerrainDirtBlockCenter" type="Sprite2D" parent="TerrainDirtBlockCenter/TerrainDirtBlockCenter9/TerrainDirtBlockCenter7" unique_id=30640606]
+[node name="TerrainDirtBlockCenter" type="Sprite2D" parent="ground/TerrainDirtBlockCenter/TerrainDirtBlockCenter9/TerrainDirtBlockCenter7" unique_id=30640606]
 position = Vector2(64, 0)
 texture = ExtResource("6_56dhn")
 
-[node name="TerrainDirtBlockTop8" type="Sprite2D" parent="TerrainDirtBlockCenter/TerrainDirtBlockCenter9" unique_id=762387599]
+[node name="TerrainDirtBlockTop8" type="Sprite2D" parent="ground/TerrainDirtBlockCenter/TerrainDirtBlockCenter9" unique_id=762387599]
 position = Vector2(1656, -63)
 texture = ExtResource("5_vcx5n")
 
-[node name="TerrainDirtBlockCenter8" type="Sprite2D" parent="TerrainDirtBlockCenter/TerrainDirtBlockCenter9" unique_id=461074981]
+[node name="TerrainDirtBlockCenter8" type="Sprite2D" parent="ground/TerrainDirtBlockCenter/TerrainDirtBlockCenter9" unique_id=461074981]
 position = Vector2(1656, 0)
 texture = ExtResource("6_56dhn")
 
-[node name="TerrainDirtBlockTop" type="Sprite2D" parent="TerrainDirtBlockCenter/TerrainDirtBlockCenter9/TerrainDirtBlockCenter8" unique_id=937495197]
+[node name="TerrainDirtBlockTop" type="Sprite2D" parent="ground/TerrainDirtBlockCenter/TerrainDirtBlockCenter9/TerrainDirtBlockCenter8" unique_id=937495197]
 position = Vector2(64, -63)
 texture = ExtResource("5_vcx5n")
 
-[node name="TerrainDirtBlockCenter" type="Sprite2D" parent="TerrainDirtBlockCenter/TerrainDirtBlockCenter9/TerrainDirtBlockCenter8" unique_id=111889463]
+[node name="TerrainDirtBlockCenter" type="Sprite2D" parent="ground/TerrainDirtBlockCenter/TerrainDirtBlockCenter9/TerrainDirtBlockCenter8" unique_id=111889463]
 position = Vector2(64, 0)
 texture = ExtResource("6_56dhn")
 
-[node name="TerrainDirtBlockTop10" type="Sprite2D" parent="TerrainDirtBlockCenter" unique_id=350722142]
+[node name="TerrainDirtBlockTop10" type="Sprite2D" parent="ground/TerrainDirtBlockCenter" unique_id=350722142]
 position = Vector2(2041, 56)
 texture = ExtResource("5_vcx5n")
 
-[node name="TerrainDirtBlockCenter10" type="Sprite2D" parent="TerrainDirtBlockCenter" unique_id=31086463]
+[node name="TerrainDirtBlockCenter10" type="Sprite2D" parent="ground/TerrainDirtBlockCenter" unique_id=31086463]
 position = Vector2(2041, 119)
 texture = ExtResource("6_56dhn")
 
-[node name="TerrainDirtBlockTop" type="Sprite2D" parent="TerrainDirtBlockCenter/TerrainDirtBlockCenter10" unique_id=1561979193]
+[node name="TerrainDirtBlockTop" type="Sprite2D" parent="ground/TerrainDirtBlockCenter/TerrainDirtBlockCenter10" unique_id=1561979193]
 position = Vector2(64, -63)
 texture = ExtResource("5_vcx5n")
 
-[node name="TerrainDirtBlockCenter" type="Sprite2D" parent="TerrainDirtBlockCenter/TerrainDirtBlockCenter10" unique_id=1512018092]
+[node name="TerrainDirtBlockCenter" type="Sprite2D" parent="ground/TerrainDirtBlockCenter/TerrainDirtBlockCenter10" unique_id=1512018092]
 position = Vector2(64, 0)
 texture = ExtResource("6_56dhn")
 
-[node name="TerrainDirtBlockTop11" type="Sprite2D" parent="TerrainDirtBlockCenter" unique_id=885934819]
+[node name="TerrainDirtBlockTop11" type="Sprite2D" parent="ground/TerrainDirtBlockCenter" unique_id=885934819]
 position = Vector2(2168, 56)
 texture = ExtResource("5_vcx5n")
 
-[node name="TerrainDirtBlockCenter11" type="Sprite2D" parent="TerrainDirtBlockCenter" unique_id=1488733067]
+[node name="TerrainDirtBlockCenter11" type="Sprite2D" parent="ground/TerrainDirtBlockCenter" unique_id=1488733067]
 position = Vector2(2168, 119)
 texture = ExtResource("6_56dhn")
 
-[node name="TerrainDirtBlockTop" type="Sprite2D" parent="TerrainDirtBlockCenter/TerrainDirtBlockCenter11" unique_id=849385213]
+[node name="TerrainDirtBlockTop" type="Sprite2D" parent="ground/TerrainDirtBlockCenter/TerrainDirtBlockCenter11" unique_id=849385213]
 position = Vector2(64, -63)
 texture = ExtResource("5_vcx5n")
 
-[node name="TerrainDirtBlockCenter" type="Sprite2D" parent="TerrainDirtBlockCenter/TerrainDirtBlockCenter11" unique_id=358863289]
+[node name="TerrainDirtBlockCenter" type="Sprite2D" parent="ground/TerrainDirtBlockCenter/TerrainDirtBlockCenter11" unique_id=358863289]
 position = Vector2(64, 0)
 texture = ExtResource("6_56dhn")
 
-[node name="TerrainDirtBlockTop12" type="Sprite2D" parent="TerrainDirtBlockCenter" unique_id=1554209129]
+[node name="TerrainDirtBlockTop12" type="Sprite2D" parent="ground/TerrainDirtBlockCenter" unique_id=1554209129]
 position = Vector2(2295, 56)
 texture = ExtResource("5_vcx5n")
 
-[node name="TerrainDirtBlockCenter12" type="Sprite2D" parent="TerrainDirtBlockCenter" unique_id=2032494108]
+[node name="TerrainDirtBlockCenter12" type="Sprite2D" parent="ground/TerrainDirtBlockCenter" unique_id=2032494108]
 position = Vector2(2295, 119)
 texture = ExtResource("6_56dhn")
 
-[node name="TerrainDirtBlockTop" type="Sprite2D" parent="TerrainDirtBlockCenter/TerrainDirtBlockCenter12" unique_id=229794438]
+[node name="TerrainDirtBlockTop" type="Sprite2D" parent="ground/TerrainDirtBlockCenter/TerrainDirtBlockCenter12" unique_id=229794438]
 position = Vector2(64, -63)
 texture = ExtResource("5_vcx5n")
 
-[node name="TerrainDirtBlockCenter" type="Sprite2D" parent="TerrainDirtBlockCenter/TerrainDirtBlockCenter12" unique_id=691507156]
+[node name="TerrainDirtBlockCenter" type="Sprite2D" parent="ground/TerrainDirtBlockCenter/TerrainDirtBlockCenter12" unique_id=691507156]
 position = Vector2(64, 0)
 texture = ExtResource("6_56dhn")
 
-[node name="TerrainDirtBlockTop13" type="Sprite2D" parent="TerrainDirtBlockCenter" unique_id=652274135]
+[node name="TerrainDirtBlockTop13" type="Sprite2D" parent="ground/TerrainDirtBlockCenter" unique_id=652274135]
 position = Vector2(2422, 56)
 texture = ExtResource("5_vcx5n")
 
-[node name="TerrainDirtBlockCenter13" type="Sprite2D" parent="TerrainDirtBlockCenter" unique_id=1968445201]
+[node name="TerrainDirtBlockCenter13" type="Sprite2D" parent="ground/TerrainDirtBlockCenter" unique_id=1968445201]
 position = Vector2(2422, 119)
 texture = ExtResource("6_56dhn")
 
-[node name="TerrainDirtBlockTop" type="Sprite2D" parent="TerrainDirtBlockCenter/TerrainDirtBlockCenter13" unique_id=1503347684]
+[node name="TerrainDirtBlockTop" type="Sprite2D" parent="ground/TerrainDirtBlockCenter/TerrainDirtBlockCenter13" unique_id=1503347684]
 position = Vector2(64, -63)
 texture = ExtResource("5_vcx5n")
 
-[node name="TerrainDirtBlockCenter" type="Sprite2D" parent="TerrainDirtBlockCenter/TerrainDirtBlockCenter13" unique_id=925458707]
+[node name="TerrainDirtBlockCenter" type="Sprite2D" parent="ground/TerrainDirtBlockCenter/TerrainDirtBlockCenter13" unique_id=925458707]
 position = Vector2(64, 0)
 texture = ExtResource("6_56dhn")
 
-[node name="TerrainDirtBlockTop14" type="Sprite2D" parent="TerrainDirtBlockCenter" unique_id=1890220380]
+[node name="TerrainDirtBlockTop14" type="Sprite2D" parent="ground/TerrainDirtBlockCenter" unique_id=1890220380]
 position = Vector2(2550, 56)
 texture = ExtResource("5_vcx5n")
 
-[node name="TerrainDirtBlockCenter14" type="Sprite2D" parent="TerrainDirtBlockCenter" unique_id=395953467]
+[node name="TerrainDirtBlockCenter14" type="Sprite2D" parent="ground/TerrainDirtBlockCenter" unique_id=395953467]
 position = Vector2(2550, 119)
 texture = ExtResource("6_56dhn")
 
-[node name="TerrainDirtBlockTop" type="Sprite2D" parent="TerrainDirtBlockCenter/TerrainDirtBlockCenter14" unique_id=1514748123]
+[node name="TerrainDirtBlockTop" type="Sprite2D" parent="ground/TerrainDirtBlockCenter/TerrainDirtBlockCenter14" unique_id=1514748123]
 position = Vector2(64, -63)
 texture = ExtResource("5_vcx5n")
 
-[node name="TerrainDirtBlockCenter" type="Sprite2D" parent="TerrainDirtBlockCenter/TerrainDirtBlockCenter14" unique_id=1550458877]
+[node name="TerrainDirtBlockCenter" type="Sprite2D" parent="ground/TerrainDirtBlockCenter/TerrainDirtBlockCenter14" unique_id=1550458877]
 position = Vector2(64, 0)
 texture = ExtResource("6_56dhn")
 
-[node name="TerrainDirtBlockTop9" type="Sprite2D" parent="TerrainDirtBlockCenter/TerrainDirtBlockCenter14" unique_id=1297833179]
+[node name="TerrainDirtBlockTop9" type="Sprite2D" parent="ground/TerrainDirtBlockCenter/TerrainDirtBlockCenter14" unique_id=1297833179]
 position = Vector2(1017, -63)
 texture = ExtResource("5_vcx5n")
 
-[node name="TerrainDirtBlockCenter9" type="Sprite2D" parent="TerrainDirtBlockCenter/TerrainDirtBlockCenter14" unique_id=1433477929]
+[node name="TerrainDirtBlockCenter9" type="Sprite2D" parent="ground/TerrainDirtBlockCenter/TerrainDirtBlockCenter14" unique_id=1433477929]
 position = Vector2(1017, 0)
 texture = ExtResource("6_56dhn")
 
-[node name="TerrainDirtBlockTop" type="Sprite2D" parent="TerrainDirtBlockCenter/TerrainDirtBlockCenter14/TerrainDirtBlockCenter9" unique_id=679113969]
+[node name="TerrainDirtBlockTop" type="Sprite2D" parent="ground/TerrainDirtBlockCenter/TerrainDirtBlockCenter14/TerrainDirtBlockCenter9" unique_id=679113969]
 position = Vector2(64, -63)
 texture = ExtResource("5_vcx5n")
 
-[node name="TerrainDirtBlockCenter" type="Sprite2D" parent="TerrainDirtBlockCenter/TerrainDirtBlockCenter14/TerrainDirtBlockCenter9" unique_id=280184576]
+[node name="TerrainDirtBlockCenter" type="Sprite2D" parent="ground/TerrainDirtBlockCenter/TerrainDirtBlockCenter14/TerrainDirtBlockCenter9" unique_id=280184576]
 position = Vector2(64, 0)
 texture = ExtResource("6_56dhn")
 
-[node name="TerrainDirtBlockTop2" type="Sprite2D" parent="TerrainDirtBlockCenter/TerrainDirtBlockCenter14/TerrainDirtBlockCenter9" unique_id=339000582]
+[node name="TerrainDirtBlockTop2" type="Sprite2D" parent="ground/TerrainDirtBlockCenter/TerrainDirtBlockCenter14/TerrainDirtBlockCenter9" unique_id=339000582]
 position = Vector2(127, -63)
 texture = ExtResource("5_vcx5n")
 
-[node name="TerrainDirtBlockCenter2" type="Sprite2D" parent="TerrainDirtBlockCenter/TerrainDirtBlockCenter14/TerrainDirtBlockCenter9" unique_id=1010624921]
+[node name="TerrainDirtBlockCenter2" type="Sprite2D" parent="ground/TerrainDirtBlockCenter/TerrainDirtBlockCenter14/TerrainDirtBlockCenter9" unique_id=1010624921]
 position = Vector2(127, 0)
 texture = ExtResource("6_56dhn")
 
-[node name="TerrainDirtBlockTop" type="Sprite2D" parent="TerrainDirtBlockCenter/TerrainDirtBlockCenter14/TerrainDirtBlockCenter9/TerrainDirtBlockCenter2" unique_id=1273341208]
+[node name="TerrainDirtBlockTop" type="Sprite2D" parent="ground/TerrainDirtBlockCenter/TerrainDirtBlockCenter14/TerrainDirtBlockCenter9/TerrainDirtBlockCenter2" unique_id=1273341208]
 position = Vector2(64, -63)
 texture = ExtResource("5_vcx5n")
 
-[node name="TerrainDirtBlockCenter" type="Sprite2D" parent="TerrainDirtBlockCenter/TerrainDirtBlockCenter14/TerrainDirtBlockCenter9/TerrainDirtBlockCenter2" unique_id=694944686]
+[node name="TerrainDirtBlockCenter" type="Sprite2D" parent="ground/TerrainDirtBlockCenter/TerrainDirtBlockCenter14/TerrainDirtBlockCenter9/TerrainDirtBlockCenter2" unique_id=694944686]
 position = Vector2(64, 0)
 texture = ExtResource("6_56dhn")
 
-[node name="TerrainDirtBlockTop3" type="Sprite2D" parent="TerrainDirtBlockCenter/TerrainDirtBlockCenter14/TerrainDirtBlockCenter9" unique_id=1622907809]
+[node name="TerrainDirtBlockTop3" type="Sprite2D" parent="ground/TerrainDirtBlockCenter/TerrainDirtBlockCenter14/TerrainDirtBlockCenter9" unique_id=1622907809]
 position = Vector2(892, -63)
 texture = ExtResource("5_vcx5n")
 
-[node name="TerrainDirtBlockCenter3" type="Sprite2D" parent="TerrainDirtBlockCenter/TerrainDirtBlockCenter14/TerrainDirtBlockCenter9" unique_id=1151424472]
+[node name="TerrainDirtBlockCenter3" type="Sprite2D" parent="ground/TerrainDirtBlockCenter/TerrainDirtBlockCenter14/TerrainDirtBlockCenter9" unique_id=1151424472]
 position = Vector2(892, 0)
 texture = ExtResource("6_56dhn")
 
-[node name="TerrainDirtBlockTop" type="Sprite2D" parent="TerrainDirtBlockCenter/TerrainDirtBlockCenter14/TerrainDirtBlockCenter9/TerrainDirtBlockCenter3" unique_id=238170235]
+[node name="TerrainDirtBlockTop" type="Sprite2D" parent="ground/TerrainDirtBlockCenter/TerrainDirtBlockCenter14/TerrainDirtBlockCenter9/TerrainDirtBlockCenter3" unique_id=238170235]
 position = Vector2(64, -63)
 texture = ExtResource("5_vcx5n")
 
-[node name="TerrainDirtBlockCenter" type="Sprite2D" parent="TerrainDirtBlockCenter/TerrainDirtBlockCenter14/TerrainDirtBlockCenter9/TerrainDirtBlockCenter3" unique_id=1807620155]
+[node name="TerrainDirtBlockCenter" type="Sprite2D" parent="ground/TerrainDirtBlockCenter/TerrainDirtBlockCenter14/TerrainDirtBlockCenter9/TerrainDirtBlockCenter3" unique_id=1807620155]
 position = Vector2(64, 0)
 texture = ExtResource("6_56dhn")
 
-[node name="TerrainDirtBlockTop2" type="Sprite2D" parent="TerrainDirtBlockCenter/TerrainDirtBlockCenter14/TerrainDirtBlockCenter9/TerrainDirtBlockCenter3" unique_id=712657743]
+[node name="TerrainDirtBlockTop2" type="Sprite2D" parent="ground/TerrainDirtBlockCenter/TerrainDirtBlockCenter14/TerrainDirtBlockCenter9/TerrainDirtBlockCenter3" unique_id=712657743]
 position = Vector2(127, -63)
 texture = ExtResource("5_vcx5n")
 
-[node name="TerrainDirtBlockCenter2" type="Sprite2D" parent="TerrainDirtBlockCenter/TerrainDirtBlockCenter14/TerrainDirtBlockCenter9/TerrainDirtBlockCenter3" unique_id=1330333589]
+[node name="TerrainDirtBlockCenter2" type="Sprite2D" parent="ground/TerrainDirtBlockCenter/TerrainDirtBlockCenter14/TerrainDirtBlockCenter9/TerrainDirtBlockCenter3" unique_id=1330333589]
 position = Vector2(127, 0)
 texture = ExtResource("6_56dhn")
 
-[node name="TerrainDirtBlockTop" type="Sprite2D" parent="TerrainDirtBlockCenter/TerrainDirtBlockCenter14/TerrainDirtBlockCenter9/TerrainDirtBlockCenter3/TerrainDirtBlockCenter2" unique_id=329667922]
+[node name="TerrainDirtBlockTop" type="Sprite2D" parent="ground/TerrainDirtBlockCenter/TerrainDirtBlockCenter14/TerrainDirtBlockCenter9/TerrainDirtBlockCenter3/TerrainDirtBlockCenter2" unique_id=329667922]
 position = Vector2(64, -63)
 texture = ExtResource("5_vcx5n")
 
-[node name="TerrainDirtBlockCenter" type="Sprite2D" parent="TerrainDirtBlockCenter/TerrainDirtBlockCenter14/TerrainDirtBlockCenter9/TerrainDirtBlockCenter3/TerrainDirtBlockCenter2" unique_id=1499744990]
+[node name="TerrainDirtBlockCenter" type="Sprite2D" parent="ground/TerrainDirtBlockCenter/TerrainDirtBlockCenter14/TerrainDirtBlockCenter9/TerrainDirtBlockCenter3/TerrainDirtBlockCenter2" unique_id=1499744990]
 position = Vector2(64, 0)
 texture = ExtResource("6_56dhn")
 
-[node name="TerrainDirtBlockTop4" type="Sprite2D" parent="TerrainDirtBlockCenter/TerrainDirtBlockCenter14/TerrainDirtBlockCenter9" unique_id=1723675531]
+[node name="TerrainDirtBlockTop4" type="Sprite2D" parent="ground/TerrainDirtBlockCenter/TerrainDirtBlockCenter14/TerrainDirtBlockCenter9" unique_id=1723675531]
 position = Vector2(1147, -63)
 texture = ExtResource("5_vcx5n")
 
-[node name="TerrainDirtBlockCenter4" type="Sprite2D" parent="TerrainDirtBlockCenter/TerrainDirtBlockCenter14/TerrainDirtBlockCenter9" unique_id=1457177353]
+[node name="TerrainDirtBlockCenter4" type="Sprite2D" parent="ground/TerrainDirtBlockCenter/TerrainDirtBlockCenter14/TerrainDirtBlockCenter9" unique_id=1457177353]
 position = Vector2(1147, 0)
 texture = ExtResource("6_56dhn")
 
-[node name="TerrainDirtBlockTop" type="Sprite2D" parent="TerrainDirtBlockCenter/TerrainDirtBlockCenter14/TerrainDirtBlockCenter9/TerrainDirtBlockCenter4" unique_id=1300292135]
+[node name="TerrainDirtBlockTop" type="Sprite2D" parent="ground/TerrainDirtBlockCenter/TerrainDirtBlockCenter14/TerrainDirtBlockCenter9/TerrainDirtBlockCenter4" unique_id=1300292135]
 position = Vector2(64, -63)
 texture = ExtResource("5_vcx5n")
 
-[node name="TerrainDirtBlockCenter" type="Sprite2D" parent="TerrainDirtBlockCenter/TerrainDirtBlockCenter14/TerrainDirtBlockCenter9/TerrainDirtBlockCenter4" unique_id=65924799]
+[node name="TerrainDirtBlockCenter" type="Sprite2D" parent="ground/TerrainDirtBlockCenter/TerrainDirtBlockCenter14/TerrainDirtBlockCenter9/TerrainDirtBlockCenter4" unique_id=65924799]
 position = Vector2(64, 0)
 texture = ExtResource("6_56dhn")
 
-[node name="TerrainDirtBlockTop5" type="Sprite2D" parent="TerrainDirtBlockCenter/TerrainDirtBlockCenter14/TerrainDirtBlockCenter9" unique_id=682641498]
+[node name="TerrainDirtBlockTop5" type="Sprite2D" parent="ground/TerrainDirtBlockCenter/TerrainDirtBlockCenter14/TerrainDirtBlockCenter9" unique_id=682641498]
 position = Vector2(1274, -63)
 texture = ExtResource("5_vcx5n")
 
-[node name="TerrainDirtBlockCenter5" type="Sprite2D" parent="TerrainDirtBlockCenter/TerrainDirtBlockCenter14/TerrainDirtBlockCenter9" unique_id=1698696342]
+[node name="TerrainDirtBlockCenter5" type="Sprite2D" parent="ground/TerrainDirtBlockCenter/TerrainDirtBlockCenter14/TerrainDirtBlockCenter9" unique_id=1698696342]
 position = Vector2(1274, 0)
 texture = ExtResource("6_56dhn")
 
-[node name="TerrainDirtBlockTop" type="Sprite2D" parent="TerrainDirtBlockCenter/TerrainDirtBlockCenter14/TerrainDirtBlockCenter9/TerrainDirtBlockCenter5" unique_id=873872910]
+[node name="TerrainDirtBlockTop" type="Sprite2D" parent="ground/TerrainDirtBlockCenter/TerrainDirtBlockCenter14/TerrainDirtBlockCenter9/TerrainDirtBlockCenter5" unique_id=873872910]
 position = Vector2(64, -63)
 texture = ExtResource("5_vcx5n")
 
-[node name="TerrainDirtBlockCenter" type="Sprite2D" parent="TerrainDirtBlockCenter/TerrainDirtBlockCenter14/TerrainDirtBlockCenter9/TerrainDirtBlockCenter5" unique_id=746008478]
+[node name="TerrainDirtBlockCenter" type="Sprite2D" parent="ground/TerrainDirtBlockCenter/TerrainDirtBlockCenter14/TerrainDirtBlockCenter9/TerrainDirtBlockCenter5" unique_id=746008478]
 position = Vector2(64, 0)
 texture = ExtResource("6_56dhn")
 
-[node name="TerrainDirtBlockTop6" type="Sprite2D" parent="TerrainDirtBlockCenter/TerrainDirtBlockCenter14/TerrainDirtBlockCenter9" unique_id=955179596]
+[node name="TerrainDirtBlockTop6" type="Sprite2D" parent="ground/TerrainDirtBlockCenter/TerrainDirtBlockCenter14/TerrainDirtBlockCenter9" unique_id=955179596]
 position = Vector2(1401, -63)
 texture = ExtResource("5_vcx5n")
 
-[node name="TerrainDirtBlockCenter6" type="Sprite2D" parent="TerrainDirtBlockCenter/TerrainDirtBlockCenter14/TerrainDirtBlockCenter9" unique_id=1882073290]
+[node name="TerrainDirtBlockCenter6" type="Sprite2D" parent="ground/TerrainDirtBlockCenter/TerrainDirtBlockCenter14/TerrainDirtBlockCenter9" unique_id=1882073290]
 position = Vector2(1401, 0)
 texture = ExtResource("6_56dhn")
 
-[node name="TerrainDirtBlockTop" type="Sprite2D" parent="TerrainDirtBlockCenter/TerrainDirtBlockCenter14/TerrainDirtBlockCenter9/TerrainDirtBlockCenter6" unique_id=1994426194]
+[node name="TerrainDirtBlockTop" type="Sprite2D" parent="ground/TerrainDirtBlockCenter/TerrainDirtBlockCenter14/TerrainDirtBlockCenter9/TerrainDirtBlockCenter6" unique_id=1994426194]
 position = Vector2(64, -63)
 texture = ExtResource("5_vcx5n")
 
-[node name="TerrainDirtBlockCenter" type="Sprite2D" parent="TerrainDirtBlockCenter/TerrainDirtBlockCenter14/TerrainDirtBlockCenter9/TerrainDirtBlockCenter6" unique_id=298000448]
+[node name="TerrainDirtBlockCenter" type="Sprite2D" parent="ground/TerrainDirtBlockCenter/TerrainDirtBlockCenter14/TerrainDirtBlockCenter9/TerrainDirtBlockCenter6" unique_id=298000448]
 position = Vector2(64, 0)
 texture = ExtResource("6_56dhn")
 
-[node name="TerrainDirtBlockTop7" type="Sprite2D" parent="TerrainDirtBlockCenter/TerrainDirtBlockCenter14/TerrainDirtBlockCenter9" unique_id=231823423]
+[node name="TerrainDirtBlockTop7" type="Sprite2D" parent="ground/TerrainDirtBlockCenter/TerrainDirtBlockCenter14/TerrainDirtBlockCenter9" unique_id=231823423]
 position = Vector2(1528, -63)
 texture = ExtResource("5_vcx5n")
 
-[node name="TerrainDirtBlockCenter7" type="Sprite2D" parent="TerrainDirtBlockCenter/TerrainDirtBlockCenter14/TerrainDirtBlockCenter9" unique_id=752006961]
+[node name="TerrainDirtBlockCenter7" type="Sprite2D" parent="ground/TerrainDirtBlockCenter/TerrainDirtBlockCenter14/TerrainDirtBlockCenter9" unique_id=752006961]
 position = Vector2(1528, 0)
 texture = ExtResource("6_56dhn")
 
-[node name="TerrainDirtBlockTop" type="Sprite2D" parent="TerrainDirtBlockCenter/TerrainDirtBlockCenter14/TerrainDirtBlockCenter9/TerrainDirtBlockCenter7" unique_id=1499921825]
+[node name="TerrainDirtBlockTop" type="Sprite2D" parent="ground/TerrainDirtBlockCenter/TerrainDirtBlockCenter14/TerrainDirtBlockCenter9/TerrainDirtBlockCenter7" unique_id=1499921825]
 position = Vector2(64, -63)
 texture = ExtResource("5_vcx5n")
 
-[node name="TerrainDirtBlockCenter" type="Sprite2D" parent="TerrainDirtBlockCenter/TerrainDirtBlockCenter14/TerrainDirtBlockCenter9/TerrainDirtBlockCenter7" unique_id=1446352660]
+[node name="TerrainDirtBlockCenter" type="Sprite2D" parent="ground/TerrainDirtBlockCenter/TerrainDirtBlockCenter14/TerrainDirtBlockCenter9/TerrainDirtBlockCenter7" unique_id=1446352660]
 position = Vector2(64, 0)
 texture = ExtResource("6_56dhn")
 
-[node name="TerrainDirtBlockTop8" type="Sprite2D" parent="TerrainDirtBlockCenter/TerrainDirtBlockCenter14/TerrainDirtBlockCenter9" unique_id=1099910121]
+[node name="TerrainDirtBlockTop8" type="Sprite2D" parent="ground/TerrainDirtBlockCenter/TerrainDirtBlockCenter14/TerrainDirtBlockCenter9" unique_id=1099910121]
 position = Vector2(1656, -63)
 texture = ExtResource("5_vcx5n")
 
-[node name="TerrainDirtBlockCenter8" type="Sprite2D" parent="TerrainDirtBlockCenter/TerrainDirtBlockCenter14/TerrainDirtBlockCenter9" unique_id=927757114]
+[node name="TerrainDirtBlockCenter8" type="Sprite2D" parent="ground/TerrainDirtBlockCenter/TerrainDirtBlockCenter14/TerrainDirtBlockCenter9" unique_id=927757114]
 position = Vector2(1656, 0)
 texture = ExtResource("6_56dhn")
 
-[node name="TerrainDirtBlockTop" type="Sprite2D" parent="TerrainDirtBlockCenter/TerrainDirtBlockCenter14/TerrainDirtBlockCenter9/TerrainDirtBlockCenter8" unique_id=1676564591]
+[node name="TerrainDirtBlockTop" type="Sprite2D" parent="ground/TerrainDirtBlockCenter/TerrainDirtBlockCenter14/TerrainDirtBlockCenter9/TerrainDirtBlockCenter8" unique_id=1676564591]
 position = Vector2(64, -63)
 texture = ExtResource("5_vcx5n")
 
-[node name="TerrainDirtBlockCenter" type="Sprite2D" parent="TerrainDirtBlockCenter/TerrainDirtBlockCenter14/TerrainDirtBlockCenter9/TerrainDirtBlockCenter8" unique_id=349258779]
+[node name="TerrainDirtBlockCenter" type="Sprite2D" parent="ground/TerrainDirtBlockCenter/TerrainDirtBlockCenter14/TerrainDirtBlockCenter9/TerrainDirtBlockCenter8" unique_id=349258779]
 position = Vector2(64, 0)
 texture = ExtResource("6_56dhn")
 
-[node name="TerrainDirtBlockTop10" type="Sprite2D" parent="TerrainDirtBlockCenter/TerrainDirtBlockCenter14" unique_id=750380758]
+[node name="TerrainDirtBlockTop10" type="Sprite2D" parent="ground/TerrainDirtBlockCenter/TerrainDirtBlockCenter14" unique_id=750380758]
 position = Vector2(1272, -63)
 texture = ExtResource("5_vcx5n")
 
-[node name="TerrainDirtBlockCenter10" type="Sprite2D" parent="TerrainDirtBlockCenter/TerrainDirtBlockCenter14" unique_id=1232433076]
+[node name="TerrainDirtBlockCenter10" type="Sprite2D" parent="ground/TerrainDirtBlockCenter/TerrainDirtBlockCenter14" unique_id=1232433076]
 position = Vector2(1272, 0)
 texture = ExtResource("6_56dhn")
 
-[node name="TerrainDirtBlockTop" type="Sprite2D" parent="TerrainDirtBlockCenter/TerrainDirtBlockCenter14/TerrainDirtBlockCenter10" unique_id=1103905857]
+[node name="TerrainDirtBlockTop" type="Sprite2D" parent="ground/TerrainDirtBlockCenter/TerrainDirtBlockCenter14/TerrainDirtBlockCenter10" unique_id=1103905857]
 position = Vector2(64, -63)
 texture = ExtResource("5_vcx5n")
 
-[node name="TerrainDirtBlockCenter" type="Sprite2D" parent="TerrainDirtBlockCenter/TerrainDirtBlockCenter14/TerrainDirtBlockCenter10" unique_id=1304939099]
+[node name="TerrainDirtBlockCenter" type="Sprite2D" parent="ground/TerrainDirtBlockCenter/TerrainDirtBlockCenter14/TerrainDirtBlockCenter10" unique_id=1304939099]
 position = Vector2(64, 0)
 texture = ExtResource("6_56dhn")
 
-[node name="TerrainDirtBlockTop11" type="Sprite2D" parent="TerrainDirtBlockCenter/TerrainDirtBlockCenter14" unique_id=2016557254]
+[node name="TerrainDirtBlockTop11" type="Sprite2D" parent="ground/TerrainDirtBlockCenter/TerrainDirtBlockCenter14" unique_id=2016557254]
 position = Vector2(1399, -63)
 texture = ExtResource("5_vcx5n")
 
-[node name="TerrainDirtBlockCenter11" type="Sprite2D" parent="TerrainDirtBlockCenter/TerrainDirtBlockCenter14" unique_id=624887905]
+[node name="TerrainDirtBlockCenter11" type="Sprite2D" parent="ground/TerrainDirtBlockCenter/TerrainDirtBlockCenter14" unique_id=624887905]
 position = Vector2(1399, 0)
 texture = ExtResource("6_56dhn")
 
-[node name="TerrainDirtBlockTop" type="Sprite2D" parent="TerrainDirtBlockCenter/TerrainDirtBlockCenter14/TerrainDirtBlockCenter11" unique_id=1872196620]
+[node name="TerrainDirtBlockTop" type="Sprite2D" parent="ground/TerrainDirtBlockCenter/TerrainDirtBlockCenter14/TerrainDirtBlockCenter11" unique_id=1872196620]
 position = Vector2(64, -63)
 texture = ExtResource("5_vcx5n")
 
-[node name="TerrainDirtBlockCenter" type="Sprite2D" parent="TerrainDirtBlockCenter/TerrainDirtBlockCenter14/TerrainDirtBlockCenter11" unique_id=1107186035]
+[node name="TerrainDirtBlockCenter" type="Sprite2D" parent="ground/TerrainDirtBlockCenter/TerrainDirtBlockCenter14/TerrainDirtBlockCenter11" unique_id=1107186035]
 position = Vector2(64, 0)
 texture = ExtResource("6_56dhn")
 
-[node name="TerrainDirtBlockTop12" type="Sprite2D" parent="TerrainDirtBlockCenter/TerrainDirtBlockCenter14" unique_id=153590788]
+[node name="TerrainDirtBlockTop12" type="Sprite2D" parent="ground/TerrainDirtBlockCenter/TerrainDirtBlockCenter14" unique_id=153590788]
 position = Vector2(1526, -63)
 texture = ExtResource("5_vcx5n")
 
-[node name="TerrainDirtBlockCenter12" type="Sprite2D" parent="TerrainDirtBlockCenter/TerrainDirtBlockCenter14" unique_id=1809846543]
+[node name="TerrainDirtBlockCenter12" type="Sprite2D" parent="ground/TerrainDirtBlockCenter/TerrainDirtBlockCenter14" unique_id=1809846543]
 position = Vector2(1526, 0)
 texture = ExtResource("6_56dhn")
 
-[node name="TerrainDirtBlockTop" type="Sprite2D" parent="TerrainDirtBlockCenter/TerrainDirtBlockCenter14/TerrainDirtBlockCenter12" unique_id=1850828241]
+[node name="TerrainDirtBlockTop" type="Sprite2D" parent="ground/TerrainDirtBlockCenter/TerrainDirtBlockCenter14/TerrainDirtBlockCenter12" unique_id=1850828241]
 position = Vector2(64, -63)
 texture = ExtResource("5_vcx5n")
 
-[node name="TerrainDirtBlockCenter" type="Sprite2D" parent="TerrainDirtBlockCenter/TerrainDirtBlockCenter14/TerrainDirtBlockCenter12" unique_id=2124618981]
+[node name="TerrainDirtBlockCenter" type="Sprite2D" parent="ground/TerrainDirtBlockCenter/TerrainDirtBlockCenter14/TerrainDirtBlockCenter12" unique_id=2124618981]
 position = Vector2(64, 0)
 texture = ExtResource("6_56dhn")
 
-[node name="TerrainDirtBlockTop13" type="Sprite2D" parent="TerrainDirtBlockCenter/TerrainDirtBlockCenter14" unique_id=750525397]
+[node name="TerrainDirtBlockTop13" type="Sprite2D" parent="ground/TerrainDirtBlockCenter/TerrainDirtBlockCenter14" unique_id=750525397]
 position = Vector2(1653, -63)
 texture = ExtResource("5_vcx5n")
 
-[node name="TerrainDirtBlockCenter13" type="Sprite2D" parent="TerrainDirtBlockCenter/TerrainDirtBlockCenter14" unique_id=1287365258]
+[node name="TerrainDirtBlockCenter13" type="Sprite2D" parent="ground/TerrainDirtBlockCenter/TerrainDirtBlockCenter14" unique_id=1287365258]
 position = Vector2(1653, 0)
 texture = ExtResource("6_56dhn")
 
-[node name="TerrainDirtBlockTop" type="Sprite2D" parent="TerrainDirtBlockCenter/TerrainDirtBlockCenter14/TerrainDirtBlockCenter13" unique_id=423213077]
+[node name="TerrainDirtBlockTop" type="Sprite2D" parent="ground/TerrainDirtBlockCenter/TerrainDirtBlockCenter14/TerrainDirtBlockCenter13" unique_id=423213077]
 position = Vector2(64, -63)
 texture = ExtResource("5_vcx5n")
 
-[node name="TerrainDirtBlockCenter" type="Sprite2D" parent="TerrainDirtBlockCenter/TerrainDirtBlockCenter14/TerrainDirtBlockCenter13" unique_id=331323428]
+[node name="TerrainDirtBlockCenter" type="Sprite2D" parent="ground/TerrainDirtBlockCenter/TerrainDirtBlockCenter14/TerrainDirtBlockCenter13" unique_id=331323428]
 position = Vector2(64, 0)
 texture = ExtResource("6_56dhn")
 
-[node name="TerrainDirtBlockTop14" type="Sprite2D" parent="TerrainDirtBlockCenter/TerrainDirtBlockCenter14" unique_id=607426915]
+[node name="TerrainDirtBlockTop14" type="Sprite2D" parent="ground/TerrainDirtBlockCenter/TerrainDirtBlockCenter14" unique_id=607426915]
 position = Vector2(1781, -63)
 texture = ExtResource("5_vcx5n")
 
-[node name="TerrainDirtBlockCenter14" type="Sprite2D" parent="TerrainDirtBlockCenter/TerrainDirtBlockCenter14" unique_id=1018879065]
+[node name="TerrainDirtBlockCenter14" type="Sprite2D" parent="ground/TerrainDirtBlockCenter/TerrainDirtBlockCenter14" unique_id=1018879065]
 position = Vector2(1781, 0)
 texture = ExtResource("6_56dhn")
 
-[node name="TerrainDirtBlockTop" type="Sprite2D" parent="TerrainDirtBlockCenter/TerrainDirtBlockCenter14/TerrainDirtBlockCenter14" unique_id=2029942017]
+[node name="TerrainDirtBlockTop" type="Sprite2D" parent="ground/TerrainDirtBlockCenter/TerrainDirtBlockCenter14/TerrainDirtBlockCenter14" unique_id=2029942017]
 position = Vector2(64, -63)
 texture = ExtResource("5_vcx5n")
 
-[node name="TerrainDirtBlockCenter" type="Sprite2D" parent="TerrainDirtBlockCenter/TerrainDirtBlockCenter14/TerrainDirtBlockCenter14" unique_id=759360335]
+[node name="TerrainDirtBlockCenter" type="Sprite2D" parent="ground/TerrainDirtBlockCenter/TerrainDirtBlockCenter14/TerrainDirtBlockCenter14" unique_id=759360335]
 position = Vector2(64, 0)
 texture = ExtResource("6_56dhn")
 
-[node name="TerrainDirtBlockTop7" type="Sprite2D" parent="TerrainDirtBlockCenter/TerrainDirtBlockCenter14" unique_id=1866054653]
+[node name="TerrainDirtBlockTop7" type="Sprite2D" parent="ground/TerrainDirtBlockCenter/TerrainDirtBlockCenter14" unique_id=1866054653]
 position = Vector2(2799, -63)
 texture = ExtResource("5_vcx5n")
 
-[node name="TerrainDirtBlockCenter7" type="Sprite2D" parent="TerrainDirtBlockCenter/TerrainDirtBlockCenter14" unique_id=40497179]
+[node name="TerrainDirtBlockCenter7" type="Sprite2D" parent="ground/TerrainDirtBlockCenter/TerrainDirtBlockCenter14" unique_id=40497179]
 position = Vector2(2799, 0)
 texture = ExtResource("6_56dhn")
 
-[node name="TerrainDirtBlockTop" type="Sprite2D" parent="TerrainDirtBlockCenter/TerrainDirtBlockCenter14/TerrainDirtBlockCenter7" unique_id=1470079598]
+[node name="TerrainDirtBlockTop" type="Sprite2D" parent="ground/TerrainDirtBlockCenter/TerrainDirtBlockCenter14/TerrainDirtBlockCenter7" unique_id=1470079598]
 position = Vector2(64, -63)
 texture = ExtResource("5_vcx5n")
 
-[node name="TerrainDirtBlockCenter" type="Sprite2D" parent="TerrainDirtBlockCenter/TerrainDirtBlockCenter14/TerrainDirtBlockCenter7" unique_id=97032966]
+[node name="TerrainDirtBlockCenter" type="Sprite2D" parent="ground/TerrainDirtBlockCenter/TerrainDirtBlockCenter14/TerrainDirtBlockCenter7" unique_id=97032966]
 position = Vector2(64, 0)
 texture = ExtResource("6_56dhn")
 
-[node name="TerrainDirtBlockTop2" type="Sprite2D" parent="TerrainDirtBlockCenter/TerrainDirtBlockCenter14/TerrainDirtBlockCenter7" unique_id=455870605]
+[node name="TerrainDirtBlockTop2" type="Sprite2D" parent="ground/TerrainDirtBlockCenter/TerrainDirtBlockCenter14/TerrainDirtBlockCenter7" unique_id=455870605]
 position = Vector2(127, -63)
 texture = ExtResource("5_vcx5n")
 
-[node name="TerrainDirtBlockCenter2" type="Sprite2D" parent="TerrainDirtBlockCenter/TerrainDirtBlockCenter14/TerrainDirtBlockCenter7" unique_id=898867081]
+[node name="TerrainDirtBlockCenter2" type="Sprite2D" parent="ground/TerrainDirtBlockCenter/TerrainDirtBlockCenter14/TerrainDirtBlockCenter7" unique_id=898867081]
 position = Vector2(127, 0)
 texture = ExtResource("6_56dhn")
 
-[node name="TerrainDirtBlockTop" type="Sprite2D" parent="TerrainDirtBlockCenter/TerrainDirtBlockCenter14/TerrainDirtBlockCenter7/TerrainDirtBlockCenter2" unique_id=1123775108]
+[node name="TerrainDirtBlockTop" type="Sprite2D" parent="ground/TerrainDirtBlockCenter/TerrainDirtBlockCenter14/TerrainDirtBlockCenter7/TerrainDirtBlockCenter2" unique_id=1123775108]
 position = Vector2(64, -63)
 texture = ExtResource("5_vcx5n")
 
-[node name="TerrainDirtBlockCenter" type="Sprite2D" parent="TerrainDirtBlockCenter/TerrainDirtBlockCenter14/TerrainDirtBlockCenter7/TerrainDirtBlockCenter2" unique_id=363418851]
+[node name="TerrainDirtBlockCenter" type="Sprite2D" parent="ground/TerrainDirtBlockCenter/TerrainDirtBlockCenter14/TerrainDirtBlockCenter7/TerrainDirtBlockCenter2" unique_id=363418851]
 position = Vector2(64, 0)
 texture = ExtResource("6_56dhn")
 
-[node name="TerrainDirtBlockTop3" type="Sprite2D" parent="TerrainDirtBlockCenter/TerrainDirtBlockCenter14/TerrainDirtBlockCenter7" unique_id=134596731]
+[node name="TerrainDirtBlockTop3" type="Sprite2D" parent="ground/TerrainDirtBlockCenter/TerrainDirtBlockCenter14/TerrainDirtBlockCenter7" unique_id=134596731]
 position = Vector2(892, -63)
 texture = ExtResource("5_vcx5n")
 
-[node name="TerrainDirtBlockCenter3" type="Sprite2D" parent="TerrainDirtBlockCenter/TerrainDirtBlockCenter14/TerrainDirtBlockCenter7" unique_id=1110242302]
+[node name="TerrainDirtBlockCenter3" type="Sprite2D" parent="ground/TerrainDirtBlockCenter/TerrainDirtBlockCenter14/TerrainDirtBlockCenter7" unique_id=1110242302]
 position = Vector2(892, 0)
 texture = ExtResource("6_56dhn")
 
-[node name="TerrainDirtBlockTop" type="Sprite2D" parent="TerrainDirtBlockCenter/TerrainDirtBlockCenter14/TerrainDirtBlockCenter7/TerrainDirtBlockCenter3" unique_id=596679534]
+[node name="TerrainDirtBlockTop" type="Sprite2D" parent="ground/TerrainDirtBlockCenter/TerrainDirtBlockCenter14/TerrainDirtBlockCenter7/TerrainDirtBlockCenter3" unique_id=596679534]
 position = Vector2(64, -63)
 texture = ExtResource("5_vcx5n")
 
-[node name="TerrainDirtBlockCenter" type="Sprite2D" parent="TerrainDirtBlockCenter/TerrainDirtBlockCenter14/TerrainDirtBlockCenter7/TerrainDirtBlockCenter3" unique_id=1858621200]
+[node name="TerrainDirtBlockCenter" type="Sprite2D" parent="ground/TerrainDirtBlockCenter/TerrainDirtBlockCenter14/TerrainDirtBlockCenter7/TerrainDirtBlockCenter3" unique_id=1858621200]
 position = Vector2(64, 0)
 texture = ExtResource("6_56dhn")
 
-[node name="TerrainDirtBlockTop2" type="Sprite2D" parent="TerrainDirtBlockCenter/TerrainDirtBlockCenter14/TerrainDirtBlockCenter7/TerrainDirtBlockCenter3" unique_id=1217180433]
+[node name="TerrainDirtBlockTop2" type="Sprite2D" parent="ground/TerrainDirtBlockCenter/TerrainDirtBlockCenter14/TerrainDirtBlockCenter7/TerrainDirtBlockCenter3" unique_id=1217180433]
 position = Vector2(127, -63)
 texture = ExtResource("5_vcx5n")
 
-[node name="TerrainDirtBlockCenter2" type="Sprite2D" parent="TerrainDirtBlockCenter/TerrainDirtBlockCenter14/TerrainDirtBlockCenter7/TerrainDirtBlockCenter3" unique_id=1073411100]
+[node name="TerrainDirtBlockCenter2" type="Sprite2D" parent="ground/TerrainDirtBlockCenter/TerrainDirtBlockCenter14/TerrainDirtBlockCenter7/TerrainDirtBlockCenter3" unique_id=1073411100]
 position = Vector2(127, 0)
 texture = ExtResource("6_56dhn")
 
-[node name="TerrainDirtBlockTop" type="Sprite2D" parent="TerrainDirtBlockCenter/TerrainDirtBlockCenter14/TerrainDirtBlockCenter7/TerrainDirtBlockCenter3/TerrainDirtBlockCenter2" unique_id=1413624811]
+[node name="TerrainDirtBlockTop" type="Sprite2D" parent="ground/TerrainDirtBlockCenter/TerrainDirtBlockCenter14/TerrainDirtBlockCenter7/TerrainDirtBlockCenter3/TerrainDirtBlockCenter2" unique_id=1413624811]
 position = Vector2(64, -63)
 texture = ExtResource("5_vcx5n")
 
-[node name="TerrainDirtBlockCenter" type="Sprite2D" parent="TerrainDirtBlockCenter/TerrainDirtBlockCenter14/TerrainDirtBlockCenter7/TerrainDirtBlockCenter3/TerrainDirtBlockCenter2" unique_id=997353980]
+[node name="TerrainDirtBlockCenter" type="Sprite2D" parent="ground/TerrainDirtBlockCenter/TerrainDirtBlockCenter14/TerrainDirtBlockCenter7/TerrainDirtBlockCenter3/TerrainDirtBlockCenter2" unique_id=997353980]
 position = Vector2(64, 0)
 texture = ExtResource("6_56dhn")
 
-[node name="TerrainDirtBlockTop4" type="Sprite2D" parent="TerrainDirtBlockCenter/TerrainDirtBlockCenter14/TerrainDirtBlockCenter7" unique_id=117845824]
+[node name="TerrainDirtBlockTop4" type="Sprite2D" parent="ground/TerrainDirtBlockCenter/TerrainDirtBlockCenter14/TerrainDirtBlockCenter7" unique_id=117845824]
 position = Vector2(1147, -63)
 texture = ExtResource("5_vcx5n")
 
-[node name="TerrainDirtBlockCenter4" type="Sprite2D" parent="TerrainDirtBlockCenter/TerrainDirtBlockCenter14/TerrainDirtBlockCenter7" unique_id=505585143]
+[node name="TerrainDirtBlockCenter4" type="Sprite2D" parent="ground/TerrainDirtBlockCenter/TerrainDirtBlockCenter14/TerrainDirtBlockCenter7" unique_id=505585143]
 position = Vector2(1147, 0)
 texture = ExtResource("6_56dhn")
 
-[node name="TerrainDirtBlockTop" type="Sprite2D" parent="TerrainDirtBlockCenter/TerrainDirtBlockCenter14/TerrainDirtBlockCenter7/TerrainDirtBlockCenter4" unique_id=1120635359]
+[node name="TerrainDirtBlockTop" type="Sprite2D" parent="ground/TerrainDirtBlockCenter/TerrainDirtBlockCenter14/TerrainDirtBlockCenter7/TerrainDirtBlockCenter4" unique_id=1120635359]
 position = Vector2(64, -63)
 texture = ExtResource("5_vcx5n")
 
-[node name="TerrainDirtBlockCenter" type="Sprite2D" parent="TerrainDirtBlockCenter/TerrainDirtBlockCenter14/TerrainDirtBlockCenter7/TerrainDirtBlockCenter4" unique_id=1456592103]
+[node name="TerrainDirtBlockCenter" type="Sprite2D" parent="ground/TerrainDirtBlockCenter/TerrainDirtBlockCenter14/TerrainDirtBlockCenter7/TerrainDirtBlockCenter4" unique_id=1456592103]
 position = Vector2(64, 0)
 texture = ExtResource("6_56dhn")
 
-[node name="TerrainDirtBlockTop5" type="Sprite2D" parent="TerrainDirtBlockCenter/TerrainDirtBlockCenter14/TerrainDirtBlockCenter7" unique_id=944080290]
+[node name="TerrainDirtBlockTop5" type="Sprite2D" parent="ground/TerrainDirtBlockCenter/TerrainDirtBlockCenter14/TerrainDirtBlockCenter7" unique_id=944080290]
 position = Vector2(1274, -63)
 texture = ExtResource("5_vcx5n")
 
-[node name="TerrainDirtBlockCenter5" type="Sprite2D" parent="TerrainDirtBlockCenter/TerrainDirtBlockCenter14/TerrainDirtBlockCenter7" unique_id=241890994]
+[node name="TerrainDirtBlockCenter5" type="Sprite2D" parent="ground/TerrainDirtBlockCenter/TerrainDirtBlockCenter14/TerrainDirtBlockCenter7" unique_id=241890994]
 position = Vector2(1274, 0)
 texture = ExtResource("6_56dhn")
 
-[node name="TerrainDirtBlockTop" type="Sprite2D" parent="TerrainDirtBlockCenter/TerrainDirtBlockCenter14/TerrainDirtBlockCenter7/TerrainDirtBlockCenter5" unique_id=1731634520]
+[node name="TerrainDirtBlockTop" type="Sprite2D" parent="ground/TerrainDirtBlockCenter/TerrainDirtBlockCenter14/TerrainDirtBlockCenter7/TerrainDirtBlockCenter5" unique_id=1731634520]
 position = Vector2(64, -63)
 texture = ExtResource("5_vcx5n")
 
-[node name="TerrainDirtBlockCenter" type="Sprite2D" parent="TerrainDirtBlockCenter/TerrainDirtBlockCenter14/TerrainDirtBlockCenter7/TerrainDirtBlockCenter5" unique_id=1945006876]
+[node name="TerrainDirtBlockCenter" type="Sprite2D" parent="ground/TerrainDirtBlockCenter/TerrainDirtBlockCenter14/TerrainDirtBlockCenter7/TerrainDirtBlockCenter5" unique_id=1945006876]
 position = Vector2(64, 0)
 texture = ExtResource("6_56dhn")
 
-[node name="TerrainDirtBlockTop6" type="Sprite2D" parent="TerrainDirtBlockCenter/TerrainDirtBlockCenter14/TerrainDirtBlockCenter7" unique_id=1025359832]
+[node name="TerrainDirtBlockTop6" type="Sprite2D" parent="ground/TerrainDirtBlockCenter/TerrainDirtBlockCenter14/TerrainDirtBlockCenter7" unique_id=1025359832]
 position = Vector2(1401, -63)
 texture = ExtResource("5_vcx5n")
 
-[node name="TerrainDirtBlockCenter6" type="Sprite2D" parent="TerrainDirtBlockCenter/TerrainDirtBlockCenter14/TerrainDirtBlockCenter7" unique_id=217783054]
+[node name="TerrainDirtBlockCenter6" type="Sprite2D" parent="ground/TerrainDirtBlockCenter/TerrainDirtBlockCenter14/TerrainDirtBlockCenter7" unique_id=217783054]
 position = Vector2(1401, 0)
 texture = ExtResource("6_56dhn")
 
-[node name="TerrainDirtBlockTop" type="Sprite2D" parent="TerrainDirtBlockCenter/TerrainDirtBlockCenter14/TerrainDirtBlockCenter7/TerrainDirtBlockCenter6" unique_id=815106864]
+[node name="TerrainDirtBlockTop" type="Sprite2D" parent="ground/TerrainDirtBlockCenter/TerrainDirtBlockCenter14/TerrainDirtBlockCenter7/TerrainDirtBlockCenter6" unique_id=815106864]
 position = Vector2(64, -63)
 texture = ExtResource("5_vcx5n")
 
-[node name="TerrainDirtBlockCenter" type="Sprite2D" parent="TerrainDirtBlockCenter/TerrainDirtBlockCenter14/TerrainDirtBlockCenter7/TerrainDirtBlockCenter6" unique_id=423937216]
+[node name="TerrainDirtBlockCenter" type="Sprite2D" parent="ground/TerrainDirtBlockCenter/TerrainDirtBlockCenter14/TerrainDirtBlockCenter7/TerrainDirtBlockCenter6" unique_id=423937216]
 position = Vector2(64, 0)
 texture = ExtResource("6_56dhn")
 
-[node name="TerrainDirtBlockTop7" type="Sprite2D" parent="TerrainDirtBlockCenter/TerrainDirtBlockCenter14/TerrainDirtBlockCenter7" unique_id=155130080]
+[node name="TerrainDirtBlockTop7" type="Sprite2D" parent="ground/TerrainDirtBlockCenter/TerrainDirtBlockCenter14/TerrainDirtBlockCenter7" unique_id=155130080]
 position = Vector2(1528, -63)
 texture = ExtResource("5_vcx5n")
 
-[node name="TerrainDirtBlockCenter7" type="Sprite2D" parent="TerrainDirtBlockCenter/TerrainDirtBlockCenter14/TerrainDirtBlockCenter7" unique_id=426435734]
+[node name="TerrainDirtBlockCenter7" type="Sprite2D" parent="ground/TerrainDirtBlockCenter/TerrainDirtBlockCenter14/TerrainDirtBlockCenter7" unique_id=426435734]
 position = Vector2(1528, 0)
 texture = ExtResource("6_56dhn")
 
-[node name="TerrainDirtBlockTop" type="Sprite2D" parent="TerrainDirtBlockCenter/TerrainDirtBlockCenter14/TerrainDirtBlockCenter7/TerrainDirtBlockCenter7" unique_id=2006054468]
+[node name="TerrainDirtBlockTop" type="Sprite2D" parent="ground/TerrainDirtBlockCenter/TerrainDirtBlockCenter14/TerrainDirtBlockCenter7/TerrainDirtBlockCenter7" unique_id=2006054468]
 position = Vector2(64, -63)
 texture = ExtResource("5_vcx5n")
 
-[node name="TerrainDirtBlockCenter" type="Sprite2D" parent="TerrainDirtBlockCenter/TerrainDirtBlockCenter14/TerrainDirtBlockCenter7/TerrainDirtBlockCenter7" unique_id=223751536]
+[node name="TerrainDirtBlockCenter" type="Sprite2D" parent="ground/TerrainDirtBlockCenter/TerrainDirtBlockCenter14/TerrainDirtBlockCenter7/TerrainDirtBlockCenter7" unique_id=223751536]
 position = Vector2(64, 0)
 texture = ExtResource("6_56dhn")
 
-[node name="TerrainDirtBlockTop8" type="Sprite2D" parent="TerrainDirtBlockCenter/TerrainDirtBlockCenter14/TerrainDirtBlockCenter7" unique_id=1592065542]
+[node name="TerrainDirtBlockTop8" type="Sprite2D" parent="ground/TerrainDirtBlockCenter/TerrainDirtBlockCenter14/TerrainDirtBlockCenter7" unique_id=1592065542]
 position = Vector2(1656, -63)
 texture = ExtResource("5_vcx5n")
 
-[node name="TerrainDirtBlockCenter8" type="Sprite2D" parent="TerrainDirtBlockCenter/TerrainDirtBlockCenter14/TerrainDirtBlockCenter7" unique_id=275764432]
+[node name="TerrainDirtBlockCenter8" type="Sprite2D" parent="ground/TerrainDirtBlockCenter/TerrainDirtBlockCenter14/TerrainDirtBlockCenter7" unique_id=275764432]
 position = Vector2(1656, 0)
 texture = ExtResource("6_56dhn")
 
-[node name="TerrainDirtBlockTop" type="Sprite2D" parent="TerrainDirtBlockCenter/TerrainDirtBlockCenter14/TerrainDirtBlockCenter7/TerrainDirtBlockCenter8" unique_id=937234037]
+[node name="TerrainDirtBlockTop" type="Sprite2D" parent="ground/TerrainDirtBlockCenter/TerrainDirtBlockCenter14/TerrainDirtBlockCenter7/TerrainDirtBlockCenter8" unique_id=937234037]
 position = Vector2(64, -63)
 texture = ExtResource("5_vcx5n")
 
-[node name="TerrainDirtBlockCenter" type="Sprite2D" parent="TerrainDirtBlockCenter/TerrainDirtBlockCenter14/TerrainDirtBlockCenter7/TerrainDirtBlockCenter8" unique_id=1457572992]
+[node name="TerrainDirtBlockCenter" type="Sprite2D" parent="ground/TerrainDirtBlockCenter/TerrainDirtBlockCenter14/TerrainDirtBlockCenter7/TerrainDirtBlockCenter8" unique_id=1457572992]
 position = Vector2(64, 0)
 texture = ExtResource("6_56dhn")
 
-[node name="TerrainDirtBlockTop8" type="Sprite2D" parent="TerrainDirtBlockCenter/TerrainDirtBlockCenter14" unique_id=612092093]
+[node name="TerrainDirtBlockTop8" type="Sprite2D" parent="ground/TerrainDirtBlockCenter/TerrainDirtBlockCenter14" unique_id=612092093]
 position = Vector2(3054, -63)
 texture = ExtResource("5_vcx5n")
 
-[node name="TerrainDirtBlockCenter8" type="Sprite2D" parent="TerrainDirtBlockCenter/TerrainDirtBlockCenter14" unique_id=213887264]
+[node name="TerrainDirtBlockCenter8" type="Sprite2D" parent="ground/TerrainDirtBlockCenter/TerrainDirtBlockCenter14" unique_id=213887264]
 position = Vector2(3054, 0)
 texture = ExtResource("6_56dhn")
 
-[node name="TerrainDirtBlockTop" type="Sprite2D" parent="TerrainDirtBlockCenter/TerrainDirtBlockCenter14/TerrainDirtBlockCenter8" unique_id=637989063]
+[node name="TerrainDirtBlockTop" type="Sprite2D" parent="ground/TerrainDirtBlockCenter/TerrainDirtBlockCenter14/TerrainDirtBlockCenter8" unique_id=637989063]
 position = Vector2(64, -63)
 texture = ExtResource("5_vcx5n")
 
-[node name="TerrainDirtBlockCenter" type="Sprite2D" parent="TerrainDirtBlockCenter/TerrainDirtBlockCenter14/TerrainDirtBlockCenter8" unique_id=1596178751]
+[node name="TerrainDirtBlockCenter" type="Sprite2D" parent="ground/TerrainDirtBlockCenter/TerrainDirtBlockCenter14/TerrainDirtBlockCenter8" unique_id=1596178751]
 position = Vector2(64, 0)
 texture = ExtResource("6_56dhn")
 
-[node name="TerrainDirtBlockTop15" type="Sprite2D" parent="TerrainDirtBlockCenter/TerrainDirtBlockCenter14" unique_id=729677955]
+[node name="TerrainDirtBlockTop15" type="Sprite2D" parent="ground/TerrainDirtBlockCenter/TerrainDirtBlockCenter14" unique_id=729677955]
 position = Vector2(3181, -63)
 texture = ExtResource("5_vcx5n")
 
-[node name="TerrainDirtBlockCenter15" type="Sprite2D" parent="TerrainDirtBlockCenter/TerrainDirtBlockCenter14" unique_id=1237641190]
+[node name="TerrainDirtBlockCenter15" type="Sprite2D" parent="ground/TerrainDirtBlockCenter/TerrainDirtBlockCenter14" unique_id=1237641190]
 position = Vector2(3181, 0)
 texture = ExtResource("6_56dhn")
 
-[node name="TerrainDirtBlockTop" type="Sprite2D" parent="TerrainDirtBlockCenter/TerrainDirtBlockCenter14/TerrainDirtBlockCenter15" unique_id=946814894]
+[node name="TerrainDirtBlockTop" type="Sprite2D" parent="ground/TerrainDirtBlockCenter/TerrainDirtBlockCenter14/TerrainDirtBlockCenter15" unique_id=946814894]
 position = Vector2(64, -63)
 texture = ExtResource("5_vcx5n")
 
-[node name="TerrainDirtBlockCenter" type="Sprite2D" parent="TerrainDirtBlockCenter/TerrainDirtBlockCenter14/TerrainDirtBlockCenter15" unique_id=1124233063]
+[node name="TerrainDirtBlockCenter" type="Sprite2D" parent="ground/TerrainDirtBlockCenter/TerrainDirtBlockCenter14/TerrainDirtBlockCenter15" unique_id=1124233063]
 position = Vector2(64, 0)
 texture = ExtResource("6_56dhn")
 
-[node name="TerrainDirtBlockTop16" type="Sprite2D" parent="TerrainDirtBlockCenter/TerrainDirtBlockCenter14" unique_id=1031198075]
+[node name="TerrainDirtBlockTop16" type="Sprite2D" parent="ground/TerrainDirtBlockCenter/TerrainDirtBlockCenter14" unique_id=1031198075]
 position = Vector2(3308, -63)
 texture = ExtResource("5_vcx5n")
 
-[node name="TerrainDirtBlockCenter16" type="Sprite2D" parent="TerrainDirtBlockCenter/TerrainDirtBlockCenter14" unique_id=280260495]
+[node name="TerrainDirtBlockCenter16" type="Sprite2D" parent="ground/TerrainDirtBlockCenter/TerrainDirtBlockCenter14" unique_id=280260495]
 position = Vector2(3308, 0)
 texture = ExtResource("6_56dhn")
 
-[node name="TerrainDirtBlockTop" type="Sprite2D" parent="TerrainDirtBlockCenter/TerrainDirtBlockCenter14/TerrainDirtBlockCenter16" unique_id=628767042]
+[node name="TerrainDirtBlockTop" type="Sprite2D" parent="ground/TerrainDirtBlockCenter/TerrainDirtBlockCenter14/TerrainDirtBlockCenter16" unique_id=628767042]
 position = Vector2(64, -63)
 texture = ExtResource("5_vcx5n")
 
-[node name="TerrainDirtBlockCenter" type="Sprite2D" parent="TerrainDirtBlockCenter/TerrainDirtBlockCenter14/TerrainDirtBlockCenter16" unique_id=1684916955]
+[node name="TerrainDirtBlockCenter" type="Sprite2D" parent="ground/TerrainDirtBlockCenter/TerrainDirtBlockCenter14/TerrainDirtBlockCenter16" unique_id=1684916955]
 position = Vector2(64, 0)
 texture = ExtResource("6_56dhn")
 
-[node name="TerrainDirtBlockTop17" type="Sprite2D" parent="TerrainDirtBlockCenter/TerrainDirtBlockCenter14" unique_id=792625961]
+[node name="TerrainDirtBlockTop17" type="Sprite2D" parent="ground/TerrainDirtBlockCenter/TerrainDirtBlockCenter14" unique_id=792625961]
 position = Vector2(3435, -63)
 texture = ExtResource("5_vcx5n")
 
-[node name="TerrainDirtBlockCenter17" type="Sprite2D" parent="TerrainDirtBlockCenter/TerrainDirtBlockCenter14" unique_id=724985492]
+[node name="TerrainDirtBlockCenter17" type="Sprite2D" parent="ground/TerrainDirtBlockCenter/TerrainDirtBlockCenter14" unique_id=724985492]
 position = Vector2(3435, 0)
 texture = ExtResource("6_56dhn")
 
-[node name="TerrainDirtBlockTop" type="Sprite2D" parent="TerrainDirtBlockCenter/TerrainDirtBlockCenter14/TerrainDirtBlockCenter17" unique_id=182663495]
+[node name="TerrainDirtBlockTop" type="Sprite2D" parent="ground/TerrainDirtBlockCenter/TerrainDirtBlockCenter14/TerrainDirtBlockCenter17" unique_id=182663495]
 position = Vector2(64, -63)
 texture = ExtResource("5_vcx5n")
 
-[node name="TerrainDirtBlockCenter" type="Sprite2D" parent="TerrainDirtBlockCenter/TerrainDirtBlockCenter14/TerrainDirtBlockCenter17" unique_id=1637956982]
+[node name="TerrainDirtBlockCenter" type="Sprite2D" parent="ground/TerrainDirtBlockCenter/TerrainDirtBlockCenter14/TerrainDirtBlockCenter17" unique_id=1637956982]
 position = Vector2(64, 0)
 texture = ExtResource("6_56dhn")
 
-[node name="TerrainDirtBlockTop18" type="Sprite2D" parent="TerrainDirtBlockCenter/TerrainDirtBlockCenter14" unique_id=1343042352]
+[node name="TerrainDirtBlockTop18" type="Sprite2D" parent="ground/TerrainDirtBlockCenter/TerrainDirtBlockCenter14" unique_id=1343042352]
 position = Vector2(3563, -63)
 texture = ExtResource("5_vcx5n")
 
-[node name="TerrainDirtBlockCenter18" type="Sprite2D" parent="TerrainDirtBlockCenter/TerrainDirtBlockCenter14" unique_id=1416369446]
+[node name="TerrainDirtBlockCenter18" type="Sprite2D" parent="ground/TerrainDirtBlockCenter/TerrainDirtBlockCenter14" unique_id=1416369446]
 position = Vector2(3563, 0)
 texture = ExtResource("6_56dhn")
 
-[node name="TerrainDirtBlockTop" type="Sprite2D" parent="TerrainDirtBlockCenter/TerrainDirtBlockCenter14/TerrainDirtBlockCenter18" unique_id=1298522695]
+[node name="TerrainDirtBlockTop" type="Sprite2D" parent="ground/TerrainDirtBlockCenter/TerrainDirtBlockCenter14/TerrainDirtBlockCenter18" unique_id=1298522695]
 position = Vector2(64, -63)
 texture = ExtResource("5_vcx5n")
 
-[node name="TerrainDirtBlockCenter" type="Sprite2D" parent="TerrainDirtBlockCenter/TerrainDirtBlockCenter14/TerrainDirtBlockCenter18" unique_id=1762031271]
+[node name="TerrainDirtBlockCenter" type="Sprite2D" parent="ground/TerrainDirtBlockCenter/TerrainDirtBlockCenter14/TerrainDirtBlockCenter18" unique_id=1762031271]
 position = Vector2(64, 0)
 texture = ExtResource("6_56dhn")
 
-[node name="TerrainDirtBlockTop2" type="Sprite2D" parent="." unique_id=230271840]
+[node name="TerrainDirtBlockTop2" type="Sprite2D" parent="ground" unique_id=230271840]
 position = Vector2(288, 430)
 texture = ExtResource("5_vcx5n")
 
-[node name="TerrainDirtBlockCenter2" type="Sprite2D" parent="." unique_id=329812178]
+[node name="TerrainDirtBlockCenter2" type="Sprite2D" parent="ground" unique_id=329812178]
 position = Vector2(288, 493)
 texture = ExtResource("6_56dhn")
 
-[node name="TerrainDirtBlockTop" type="Sprite2D" parent="TerrainDirtBlockCenter2" unique_id=266441340]
+[node name="TerrainDirtBlockTop" type="Sprite2D" parent="ground/TerrainDirtBlockCenter2" unique_id=266441340]
 position = Vector2(64, -63)
 texture = ExtResource("5_vcx5n")
 
-[node name="TerrainDirtBlockCenter" type="Sprite2D" parent="TerrainDirtBlockCenter2" unique_id=1270837905]
+[node name="TerrainDirtBlockCenter" type="Sprite2D" parent="ground/TerrainDirtBlockCenter2" unique_id=1270837905]
 position = Vector2(64, 0)
 texture = ExtResource("6_56dhn")
 
-[node name="TerrainDirtBlockTop3" type="Sprite2D" parent="." unique_id=539227391]
+[node name="TerrainDirtBlockTop3" type="Sprite2D" parent="ground" unique_id=539227391]
 position = Vector2(415, 430)
 texture = ExtResource("5_vcx5n")
 
-[node name="TerrainDirtBlockCenter3" type="Sprite2D" parent="." unique_id=822761508]
+[node name="TerrainDirtBlockCenter3" type="Sprite2D" parent="ground" unique_id=822761508]
 position = Vector2(415, 493)
 texture = ExtResource("6_56dhn")
 
-[node name="TerrainDirtBlockTop" type="Sprite2D" parent="TerrainDirtBlockCenter3" unique_id=4101951]
+[node name="TerrainDirtBlockTop" type="Sprite2D" parent="ground/TerrainDirtBlockCenter3" unique_id=4101951]
 position = Vector2(64, -63)
 texture = ExtResource("5_vcx5n")
 
-[node name="TerrainDirtBlockCenter" type="Sprite2D" parent="TerrainDirtBlockCenter3" unique_id=57029545]
+[node name="TerrainDirtBlockCenter" type="Sprite2D" parent="ground/TerrainDirtBlockCenter3" unique_id=57029545]
 position = Vector2(64, 0)
 texture = ExtResource("6_56dhn")
 
-[node name="TerrainDirtBlockTop4" type="Sprite2D" parent="." unique_id=1465190321]
+[node name="TerrainDirtBlockTop4" type="Sprite2D" parent="ground" unique_id=1465190321]
 position = Vector2(542, 430)
 texture = ExtResource("5_vcx5n")
 
-[node name="TerrainDirtBlockCenter4" type="Sprite2D" parent="." unique_id=1567331554]
+[node name="TerrainDirtBlockCenter4" type="Sprite2D" parent="ground" unique_id=1567331554]
 position = Vector2(542, 493)
 texture = ExtResource("6_56dhn")
 
-[node name="TerrainDirtBlockTop" type="Sprite2D" parent="TerrainDirtBlockCenter4" unique_id=315273498]
+[node name="TerrainDirtBlockTop" type="Sprite2D" parent="ground/TerrainDirtBlockCenter4" unique_id=315273498]
 position = Vector2(64, -63)
 texture = ExtResource("5_vcx5n")
 
-[node name="TerrainDirtBlockCenter" type="Sprite2D" parent="TerrainDirtBlockCenter4" unique_id=917128172]
+[node name="TerrainDirtBlockCenter" type="Sprite2D" parent="ground/TerrainDirtBlockCenter4" unique_id=917128172]
 position = Vector2(64, 0)
 texture = ExtResource("6_56dhn")
 
-[node name="TerrainDirtBlockTop5" type="Sprite2D" parent="." unique_id=1943867288]
+[node name="TerrainDirtBlockTop5" type="Sprite2D" parent="ground" unique_id=1943867288]
 position = Vector2(669, 430)
 texture = ExtResource("5_vcx5n")
 
-[node name="TerrainDirtBlockCenter5" type="Sprite2D" parent="." unique_id=799841475]
+[node name="TerrainDirtBlockCenter5" type="Sprite2D" parent="ground" unique_id=799841475]
 position = Vector2(669, 493)
 texture = ExtResource("6_56dhn")
 
-[node name="TerrainDirtBlockTop" type="Sprite2D" parent="TerrainDirtBlockCenter5" unique_id=1053865552]
+[node name="TerrainDirtBlockTop" type="Sprite2D" parent="ground/TerrainDirtBlockCenter5" unique_id=1053865552]
 position = Vector2(64, -63)
 texture = ExtResource("5_vcx5n")
 
-[node name="TerrainDirtBlockCenter" type="Sprite2D" parent="TerrainDirtBlockCenter5" unique_id=678154805]
+[node name="TerrainDirtBlockCenter" type="Sprite2D" parent="ground/TerrainDirtBlockCenter5" unique_id=678154805]
 position = Vector2(64, 0)
 texture = ExtResource("6_56dhn")
 
-[node name="TerrainDirtBlockTop6" type="Sprite2D" parent="." unique_id=1126402374]
+[node name="TerrainDirtBlockTop6" type="Sprite2D" parent="ground" unique_id=1126402374]
 position = Vector2(797, 430)
 texture = ExtResource("5_vcx5n")
 
-[node name="TerrainDirtBlockCenter6" type="Sprite2D" parent="." unique_id=215807261]
+[node name="TerrainDirtBlockCenter6" type="Sprite2D" parent="ground" unique_id=215807261]
 position = Vector2(797, 493)
 texture = ExtResource("6_56dhn")
 
-[node name="TerrainDirtBlockTop" type="Sprite2D" parent="TerrainDirtBlockCenter6" unique_id=1786647496]
+[node name="TerrainDirtBlockTop" type="Sprite2D" parent="ground/TerrainDirtBlockCenter6" unique_id=1786647496]
 position = Vector2(66, -63)
 scale = Vector2(1.0625, 1)
 texture = ExtResource("5_vcx5n")
 
-[node name="TerrainDirtBlockCenter" type="Sprite2D" parent="TerrainDirtBlockCenter6" unique_id=598206298]
+[node name="TerrainDirtBlockCenter" type="Sprite2D" parent="ground/TerrainDirtBlockCenter6" unique_id=598206298]
 position = Vector2(66, 0)
 scale = Vector2(1.0625, 1)
 texture = ExtResource("6_56dhn")
 
-[node name="TerrainDirtBlockTop7" type="Sprite2D" parent="." unique_id=1165724128]
+[node name="TerrainDirtBlockTop7" type="Sprite2D" parent="ground" unique_id=1165724128]
 position = Vector2(46, 995)
 texture = ExtResource("5_vcx5n")
 
-[node name="TerrainDirtBlockCenter7" type="Sprite2D" parent="." unique_id=1716383011]
+[node name="TerrainDirtBlockCenter7" type="Sprite2D" parent="ground" unique_id=1716383011]
 position = Vector2(46, 1058)
 texture = ExtResource("6_56dhn")
 
-[node name="TerrainDirtBlockTop" type="Sprite2D" parent="TerrainDirtBlockCenter7" unique_id=379713067]
+[node name="TerrainDirtBlockTop" type="Sprite2D" parent="ground/TerrainDirtBlockCenter7" unique_id=379713067]
 position = Vector2(64, -63)
 texture = ExtResource("5_vcx5n")
 
-[node name="TerrainDirtBlockCenter" type="Sprite2D" parent="TerrainDirtBlockCenter7" unique_id=2078725580]
+[node name="TerrainDirtBlockCenter" type="Sprite2D" parent="ground/TerrainDirtBlockCenter7" unique_id=2078725580]
 position = Vector2(64, 0)
 texture = ExtResource("6_56dhn")
 
-[node name="TerrainDirtBlockTop2" type="Sprite2D" parent="TerrainDirtBlockCenter7" unique_id=951952429]
+[node name="TerrainDirtBlockTop2" type="Sprite2D" parent="ground/TerrainDirtBlockCenter7" unique_id=951952429]
 position = Vector2(127, -63)
 texture = ExtResource("5_vcx5n")
 
-[node name="TerrainDirtBlockCenter2" type="Sprite2D" parent="TerrainDirtBlockCenter7" unique_id=1497117857]
+[node name="TerrainDirtBlockCenter2" type="Sprite2D" parent="ground/TerrainDirtBlockCenter7" unique_id=1497117857]
 position = Vector2(127, 0)
 texture = ExtResource("6_56dhn")
 
-[node name="TerrainDirtBlockTop" type="Sprite2D" parent="TerrainDirtBlockCenter7/TerrainDirtBlockCenter2" unique_id=735546987]
+[node name="TerrainDirtBlockTop" type="Sprite2D" parent="ground/TerrainDirtBlockCenter7/TerrainDirtBlockCenter2" unique_id=735546987]
 position = Vector2(64, -63)
 texture = ExtResource("5_vcx5n")
 
-[node name="TerrainDirtBlockCenter" type="Sprite2D" parent="TerrainDirtBlockCenter7/TerrainDirtBlockCenter2" unique_id=1606402157]
+[node name="TerrainDirtBlockCenter" type="Sprite2D" parent="ground/TerrainDirtBlockCenter7/TerrainDirtBlockCenter2" unique_id=1606402157]
 position = Vector2(64, 0)
 texture = ExtResource("6_56dhn")
 
-[node name="TerrainDirtBlockTop3" type="Sprite2D" parent="TerrainDirtBlockCenter7" unique_id=1034930639]
+[node name="TerrainDirtBlockTop3" type="Sprite2D" parent="ground/TerrainDirtBlockCenter7" unique_id=1034930639]
 position = Vector2(892, -63)
 texture = ExtResource("5_vcx5n")
 
-[node name="TerrainDirtBlockCenter3" type="Sprite2D" parent="TerrainDirtBlockCenter7" unique_id=1630116366]
+[node name="TerrainDirtBlockCenter3" type="Sprite2D" parent="ground/TerrainDirtBlockCenter7" unique_id=1630116366]
 position = Vector2(892, 0)
 texture = ExtResource("6_56dhn")
 
-[node name="TerrainDirtBlockTop" type="Sprite2D" parent="TerrainDirtBlockCenter7/TerrainDirtBlockCenter3" unique_id=1522089886]
+[node name="TerrainDirtBlockTop" type="Sprite2D" parent="ground/TerrainDirtBlockCenter7/TerrainDirtBlockCenter3" unique_id=1522089886]
 position = Vector2(64, -63)
 texture = ExtResource("5_vcx5n")
 
-[node name="TerrainDirtBlockCenter" type="Sprite2D" parent="TerrainDirtBlockCenter7/TerrainDirtBlockCenter3" unique_id=251494596]
+[node name="TerrainDirtBlockCenter" type="Sprite2D" parent="ground/TerrainDirtBlockCenter7/TerrainDirtBlockCenter3" unique_id=251494596]
 position = Vector2(64, 0)
 texture = ExtResource("6_56dhn")
 
-[node name="TerrainDirtBlockTop2" type="Sprite2D" parent="TerrainDirtBlockCenter7/TerrainDirtBlockCenter3" unique_id=1251175184]
+[node name="TerrainDirtBlockTop2" type="Sprite2D" parent="ground/TerrainDirtBlockCenter7/TerrainDirtBlockCenter3" unique_id=1251175184]
 position = Vector2(127, -63)
 texture = ExtResource("5_vcx5n")
 
-[node name="TerrainDirtBlockCenter2" type="Sprite2D" parent="TerrainDirtBlockCenter7/TerrainDirtBlockCenter3" unique_id=1345152449]
+[node name="TerrainDirtBlockCenter2" type="Sprite2D" parent="ground/TerrainDirtBlockCenter7/TerrainDirtBlockCenter3" unique_id=1345152449]
 position = Vector2(127, 0)
 texture = ExtResource("6_56dhn")
 
-[node name="TerrainDirtBlockTop" type="Sprite2D" parent="TerrainDirtBlockCenter7/TerrainDirtBlockCenter3/TerrainDirtBlockCenter2" unique_id=361392970]
+[node name="TerrainDirtBlockTop" type="Sprite2D" parent="ground/TerrainDirtBlockCenter7/TerrainDirtBlockCenter3/TerrainDirtBlockCenter2" unique_id=361392970]
 position = Vector2(64, -63)
 texture = ExtResource("5_vcx5n")
 
-[node name="TerrainDirtBlockCenter" type="Sprite2D" parent="TerrainDirtBlockCenter7/TerrainDirtBlockCenter3/TerrainDirtBlockCenter2" unique_id=1282633192]
+[node name="TerrainDirtBlockCenter" type="Sprite2D" parent="ground/TerrainDirtBlockCenter7/TerrainDirtBlockCenter3/TerrainDirtBlockCenter2" unique_id=1282633192]
 position = Vector2(64, 0)
 texture = ExtResource("6_56dhn")
 
-[node name="TerrainDirtBlockTop4" type="Sprite2D" parent="TerrainDirtBlockCenter7" unique_id=1931562068]
+[node name="TerrainDirtBlockTop4" type="Sprite2D" parent="ground/TerrainDirtBlockCenter7" unique_id=1931562068]
 position = Vector2(1147, -63)
 texture = ExtResource("5_vcx5n")
 
-[node name="TerrainDirtBlockCenter4" type="Sprite2D" parent="TerrainDirtBlockCenter7" unique_id=1165067177]
+[node name="TerrainDirtBlockCenter4" type="Sprite2D" parent="ground/TerrainDirtBlockCenter7" unique_id=1165067177]
 position = Vector2(1147, 0)
 texture = ExtResource("6_56dhn")
 
-[node name="TerrainDirtBlockTop" type="Sprite2D" parent="TerrainDirtBlockCenter7/TerrainDirtBlockCenter4" unique_id=1741836896]
+[node name="TerrainDirtBlockTop" type="Sprite2D" parent="ground/TerrainDirtBlockCenter7/TerrainDirtBlockCenter4" unique_id=1741836896]
 position = Vector2(64, -63)
 texture = ExtResource("5_vcx5n")
 
-[node name="TerrainDirtBlockCenter" type="Sprite2D" parent="TerrainDirtBlockCenter7/TerrainDirtBlockCenter4" unique_id=1322083964]
+[node name="TerrainDirtBlockCenter" type="Sprite2D" parent="ground/TerrainDirtBlockCenter7/TerrainDirtBlockCenter4" unique_id=1322083964]
 position = Vector2(64, 0)
 texture = ExtResource("6_56dhn")
 
-[node name="TerrainDirtBlockTop5" type="Sprite2D" parent="TerrainDirtBlockCenter7" unique_id=232377737]
+[node name="TerrainDirtBlockTop5" type="Sprite2D" parent="ground/TerrainDirtBlockCenter7" unique_id=232377737]
 position = Vector2(1274, -63)
 texture = ExtResource("5_vcx5n")
 
-[node name="TerrainDirtBlockCenter5" type="Sprite2D" parent="TerrainDirtBlockCenter7" unique_id=96277757]
+[node name="TerrainDirtBlockCenter5" type="Sprite2D" parent="ground/TerrainDirtBlockCenter7" unique_id=96277757]
 position = Vector2(1274, 0)
 texture = ExtResource("6_56dhn")
 
-[node name="TerrainDirtBlockTop" type="Sprite2D" parent="TerrainDirtBlockCenter7/TerrainDirtBlockCenter5" unique_id=499005481]
+[node name="TerrainDirtBlockTop" type="Sprite2D" parent="ground/TerrainDirtBlockCenter7/TerrainDirtBlockCenter5" unique_id=499005481]
 position = Vector2(64, -63)
 texture = ExtResource("5_vcx5n")
 
-[node name="TerrainDirtBlockCenter" type="Sprite2D" parent="TerrainDirtBlockCenter7/TerrainDirtBlockCenter5" unique_id=2124529790]
+[node name="TerrainDirtBlockCenter" type="Sprite2D" parent="ground/TerrainDirtBlockCenter7/TerrainDirtBlockCenter5" unique_id=2124529790]
 position = Vector2(64, 0)
 texture = ExtResource("6_56dhn")
 
-[node name="TerrainDirtBlockTop6" type="Sprite2D" parent="TerrainDirtBlockCenter7" unique_id=749565293]
+[node name="TerrainDirtBlockTop6" type="Sprite2D" parent="ground/TerrainDirtBlockCenter7" unique_id=749565293]
 position = Vector2(1401, -63)
 texture = ExtResource("5_vcx5n")
 
-[node name="TerrainDirtBlockCenter6" type="Sprite2D" parent="TerrainDirtBlockCenter7" unique_id=1352258349]
+[node name="TerrainDirtBlockCenter6" type="Sprite2D" parent="ground/TerrainDirtBlockCenter7" unique_id=1352258349]
 position = Vector2(1401, 0)
 texture = ExtResource("6_56dhn")
 
-[node name="TerrainDirtBlockTop" type="Sprite2D" parent="TerrainDirtBlockCenter7/TerrainDirtBlockCenter6" unique_id=172708398]
+[node name="TerrainDirtBlockTop" type="Sprite2D" parent="ground/TerrainDirtBlockCenter7/TerrainDirtBlockCenter6" unique_id=172708398]
 position = Vector2(64, -63)
 texture = ExtResource("5_vcx5n")
 
-[node name="TerrainDirtBlockCenter" type="Sprite2D" parent="TerrainDirtBlockCenter7/TerrainDirtBlockCenter6" unique_id=112281993]
+[node name="TerrainDirtBlockCenter" type="Sprite2D" parent="ground/TerrainDirtBlockCenter7/TerrainDirtBlockCenter6" unique_id=112281993]
 position = Vector2(64, 0)
 texture = ExtResource("6_56dhn")
 
-[node name="TerrainDirtBlockTop7" type="Sprite2D" parent="TerrainDirtBlockCenter7" unique_id=539786661]
+[node name="TerrainDirtBlockTop7" type="Sprite2D" parent="ground/TerrainDirtBlockCenter7" unique_id=539786661]
 position = Vector2(1528, -63)
 texture = ExtResource("5_vcx5n")
 
-[node name="TerrainDirtBlockCenter7" type="Sprite2D" parent="TerrainDirtBlockCenter7" unique_id=1891554843]
+[node name="TerrainDirtBlockCenter7" type="Sprite2D" parent="ground/TerrainDirtBlockCenter7" unique_id=1891554843]
 position = Vector2(1528, 0)
 texture = ExtResource("6_56dhn")
 
-[node name="TerrainDirtBlockTop" type="Sprite2D" parent="TerrainDirtBlockCenter7/TerrainDirtBlockCenter7" unique_id=1607572563]
+[node name="TerrainDirtBlockTop" type="Sprite2D" parent="ground/TerrainDirtBlockCenter7/TerrainDirtBlockCenter7" unique_id=1607572563]
 position = Vector2(64, -63)
 texture = ExtResource("5_vcx5n")
 
-[node name="TerrainDirtBlockCenter" type="Sprite2D" parent="TerrainDirtBlockCenter7/TerrainDirtBlockCenter7" unique_id=265629527]
+[node name="TerrainDirtBlockCenter" type="Sprite2D" parent="ground/TerrainDirtBlockCenter7/TerrainDirtBlockCenter7" unique_id=265629527]
 position = Vector2(64, 0)
 texture = ExtResource("6_56dhn")
 
-[node name="TerrainDirtBlockTop8" type="Sprite2D" parent="TerrainDirtBlockCenter7" unique_id=305584741]
+[node name="TerrainDirtBlockTop8" type="Sprite2D" parent="ground/TerrainDirtBlockCenter7" unique_id=305584741]
 position = Vector2(1656, -63)
 texture = ExtResource("5_vcx5n")
 
-[node name="TerrainDirtBlockCenter8" type="Sprite2D" parent="TerrainDirtBlockCenter7" unique_id=546357040]
+[node name="TerrainDirtBlockCenter8" type="Sprite2D" parent="ground/TerrainDirtBlockCenter7" unique_id=546357040]
 position = Vector2(1656, 0)
 texture = ExtResource("6_56dhn")
 
-[node name="TerrainDirtBlockTop" type="Sprite2D" parent="TerrainDirtBlockCenter7/TerrainDirtBlockCenter8" unique_id=175820173]
+[node name="TerrainDirtBlockTop" type="Sprite2D" parent="ground/TerrainDirtBlockCenter7/TerrainDirtBlockCenter8" unique_id=175820173]
 position = Vector2(64, -63)
 texture = ExtResource("5_vcx5n")
 
-[node name="TerrainDirtBlockCenter" type="Sprite2D" parent="TerrainDirtBlockCenter7/TerrainDirtBlockCenter8" unique_id=355232159]
+[node name="TerrainDirtBlockCenter" type="Sprite2D" parent="ground/TerrainDirtBlockCenter7/TerrainDirtBlockCenter8" unique_id=355232159]
 position = Vector2(64, 0)
 texture = ExtResource("6_56dhn")
 
-[node name="TerrainDirtBlockTop8" type="Sprite2D" parent="." unique_id=1776771168]
+[node name="TerrainDirtBlockTop8" type="Sprite2D" parent="ground" unique_id=1776771168]
 position = Vector2(301, 995)
 texture = ExtResource("5_vcx5n")
 
-[node name="TerrainDirtBlockCenter8" type="Sprite2D" parent="." unique_id=440455431]
+[node name="TerrainDirtBlockCenter8" type="Sprite2D" parent="ground" unique_id=440455431]
 position = Vector2(301, 1058)
 texture = ExtResource("6_56dhn")
 
-[node name="TerrainDirtBlockTop" type="Sprite2D" parent="TerrainDirtBlockCenter8" unique_id=849795438]
+[node name="TerrainDirtBlockTop" type="Sprite2D" parent="ground/TerrainDirtBlockCenter8" unique_id=849795438]
 position = Vector2(64, -63)
 texture = ExtResource("5_vcx5n")
 
-[node name="TerrainDirtBlockCenter" type="Sprite2D" parent="TerrainDirtBlockCenter8" unique_id=2062206160]
+[node name="TerrainDirtBlockCenter" type="Sprite2D" parent="ground/TerrainDirtBlockCenter8" unique_id=2062206160]
 position = Vector2(64, 0)
 texture = ExtResource("6_56dhn")
 
-[node name="TerrainDirtBlockTop9" type="Sprite2D" parent="." unique_id=1691609393]
+[node name="TerrainDirtBlockTop9" type="Sprite2D" parent="ground" unique_id=1691609393]
 position = Vector2(428, 995)
 texture = ExtResource("5_vcx5n")
 
-[node name="TerrainDirtBlockCenter9" type="Sprite2D" parent="." unique_id=1957711180]
+[node name="TerrainDirtBlockCenter9" type="Sprite2D" parent="ground" unique_id=1957711180]
 position = Vector2(428, 1058)
 texture = ExtResource("6_56dhn")
 
-[node name="TerrainDirtBlockTop" type="Sprite2D" parent="TerrainDirtBlockCenter9" unique_id=881814034]
+[node name="TerrainDirtBlockTop" type="Sprite2D" parent="ground/TerrainDirtBlockCenter9" unique_id=881814034]
 position = Vector2(69, -58)
 texture = ExtResource("5_vcx5n")
 
-[node name="TerrainDirtBlockCenter" type="Sprite2D" parent="TerrainDirtBlockCenter9" unique_id=585711100]
+[node name="TerrainDirtBlockCenter" type="Sprite2D" parent="ground/TerrainDirtBlockCenter9" unique_id=585711100]
 position = Vector2(64, 0)
 texture = ExtResource("6_56dhn")
 
-[node name="TerrainDirtBlockTop10" type="Sprite2D" parent="." unique_id=17176510]
+[node name="TerrainDirtBlockTop10" type="Sprite2D" parent="ground" unique_id=17176510]
 position = Vector2(555, 995)
 texture = ExtResource("5_vcx5n")
 
-[node name="TerrainDirtBlockCenter10" type="Sprite2D" parent="." unique_id=1108893083]
+[node name="TerrainDirtBlockCenter10" type="Sprite2D" parent="ground" unique_id=1108893083]
 position = Vector2(555, 1058)
 texture = ExtResource("6_56dhn")
 
-[node name="TerrainDirtBlockTop" type="Sprite2D" parent="TerrainDirtBlockCenter10" unique_id=5131600]
+[node name="TerrainDirtBlockTop" type="Sprite2D" parent="ground/TerrainDirtBlockCenter10" unique_id=5131600]
 position = Vector2(64, -63)
 texture = ExtResource("5_vcx5n")
 
-[node name="TerrainDirtBlockCenter" type="Sprite2D" parent="TerrainDirtBlockCenter10" unique_id=90247787]
+[node name="TerrainDirtBlockCenter" type="Sprite2D" parent="ground/TerrainDirtBlockCenter10" unique_id=90247787]
 position = Vector2(64, 0)
 texture = ExtResource("6_56dhn")
 
-[node name="TerrainDirtBlockTop11" type="Sprite2D" parent="." unique_id=2034022759]
+[node name="TerrainDirtBlockTop11" type="Sprite2D" parent="ground" unique_id=2034022759]
 position = Vector2(682, 995)
 texture = ExtResource("5_vcx5n")
 
-[node name="TerrainDirtBlockCenter11" type="Sprite2D" parent="." unique_id=437070067]
+[node name="TerrainDirtBlockCenter11" type="Sprite2D" parent="ground" unique_id=437070067]
 position = Vector2(682, 1058)
 texture = ExtResource("6_56dhn")
 
-[node name="TerrainDirtBlockTop" type="Sprite2D" parent="TerrainDirtBlockCenter11" unique_id=1064767880]
+[node name="TerrainDirtBlockTop" type="Sprite2D" parent="ground/TerrainDirtBlockCenter11" unique_id=1064767880]
 position = Vector2(64, -63)
 texture = ExtResource("5_vcx5n")
 
-[node name="TerrainDirtBlockCenter" type="Sprite2D" parent="TerrainDirtBlockCenter11" unique_id=1861466352]
+[node name="TerrainDirtBlockCenter" type="Sprite2D" parent="ground/TerrainDirtBlockCenter11" unique_id=1861466352]
 position = Vector2(64, 0)
 texture = ExtResource("6_56dhn")
 
-[node name="TerrainDirtBlockTop12" type="Sprite2D" parent="." unique_id=1908250748]
+[node name="TerrainDirtBlockTop12" type="Sprite2D" parent="ground" unique_id=1908250748]
 position = Vector2(810, 995)
 texture = ExtResource("5_vcx5n")
 
-[node name="TerrainDirtBlockCenter12" type="Sprite2D" parent="." unique_id=1456612511]
+[node name="TerrainDirtBlockCenter12" type="Sprite2D" parent="ground" unique_id=1456612511]
 position = Vector2(810, 1058)
 texture = ExtResource("6_56dhn")
 
-[node name="TerrainDirtBlockTop" type="Sprite2D" parent="TerrainDirtBlockCenter12" unique_id=917344585]
+[node name="TerrainDirtBlockTop" type="Sprite2D" parent="ground/TerrainDirtBlockCenter12" unique_id=917344585]
 position = Vector2(64, -63)
 texture = ExtResource("5_vcx5n")
 
-[node name="TerrainDirtBlockCenter" type="Sprite2D" parent="TerrainDirtBlockCenter12" unique_id=55613209]
+[node name="TerrainDirtBlockCenter" type="Sprite2D" parent="ground/TerrainDirtBlockCenter12" unique_id=55613209]
 position = Vector2(64, 0)
 texture = ExtResource("6_56dhn")
 
-[node name="TerrainDirtBlockTop13" type="Sprite2D" parent="." unique_id=966934995]
+[node name="TerrainDirtBlockTop13" type="Sprite2D" parent="ground" unique_id=966934995]
 position = Vector2(7164, 549)
 texture = ExtResource("5_vcx5n")
 
-[node name="TerrainDirtBlockTop25" type="Sprite2D" parent="." unique_id=1908605819]
+[node name="TerrainDirtBlockTop25" type="Sprite2D" parent="ground" unique_id=1908605819]
 position = Vector2(7228, 549)
 texture = ExtResource("5_vcx5n")
 
-[node name="TerrainDirtBlockCenter25" type="Sprite2D" parent="." unique_id=1964523134]
+[node name="TerrainDirtBlockCenter25" type="Sprite2D" parent="ground" unique_id=1964523134]
 position = Vector2(7228, 612)
 texture = ExtResource("6_56dhn")
 
-[node name="TerrainDirtBlockTop26" type="Sprite2D" parent="." unique_id=443865996]
+[node name="TerrainDirtBlockTop26" type="Sprite2D" parent="ground" unique_id=443865996]
 position = Vector2(7291, 549)
 texture = ExtResource("5_vcx5n")
 
-[node name="TerrainDirtBlockCenter26" type="Sprite2D" parent="." unique_id=218986343]
+[node name="TerrainDirtBlockCenter26" type="Sprite2D" parent="ground" unique_id=218986343]
 position = Vector2(7291, 612)
 texture = ExtResource("6_56dhn")
 
-[node name="TerrainDirtBlockTop" type="Sprite2D" parent="TerrainDirtBlockCenter26" unique_id=302865870]
+[node name="TerrainDirtBlockTop" type="Sprite2D" parent="ground/TerrainDirtBlockCenter26" unique_id=302865870]
 position = Vector2(64, -63)
 texture = ExtResource("5_vcx5n")
 
-[node name="TerrainDirtBlockCenter" type="Sprite2D" parent="TerrainDirtBlockCenter26" unique_id=1891698244]
+[node name="TerrainDirtBlockCenter" type="Sprite2D" parent="ground/TerrainDirtBlockCenter26" unique_id=1891698244]
 position = Vector2(64, 0)
 texture = ExtResource("6_56dhn")
 
-[node name="TerrainDirtBlockTop27" type="Sprite2D" parent="." unique_id=1058535260]
+[node name="TerrainDirtBlockTop27" type="Sprite2D" parent="ground" unique_id=1058535260]
 position = Vector2(8056, 549)
 texture = ExtResource("5_vcx5n")
 
-[node name="TerrainDirtBlockCenter27" type="Sprite2D" parent="." unique_id=484752978]
+[node name="TerrainDirtBlockCenter27" type="Sprite2D" parent="ground" unique_id=484752978]
 position = Vector2(8056, 612)
 texture = ExtResource("6_56dhn")
 
-[node name="TerrainDirtBlockTop" type="Sprite2D" parent="TerrainDirtBlockCenter27" unique_id=749246386]
+[node name="TerrainDirtBlockTop" type="Sprite2D" parent="ground/TerrainDirtBlockCenter27" unique_id=749246386]
 position = Vector2(64, -63)
 texture = ExtResource("5_vcx5n")
 
-[node name="TerrainDirtBlockCenter" type="Sprite2D" parent="TerrainDirtBlockCenter27" unique_id=1931871548]
+[node name="TerrainDirtBlockCenter" type="Sprite2D" parent="ground/TerrainDirtBlockCenter27" unique_id=1931871548]
 position = Vector2(64, 0)
 texture = ExtResource("6_56dhn")
 
-[node name="TerrainDirtBlockTop2" type="Sprite2D" parent="TerrainDirtBlockCenter27" unique_id=1441727035]
+[node name="TerrainDirtBlockTop2" type="Sprite2D" parent="ground/TerrainDirtBlockCenter27" unique_id=1441727035]
 position = Vector2(127, -63)
 texture = ExtResource("5_vcx5n")
 
-[node name="TerrainDirtBlockCenter2" type="Sprite2D" parent="TerrainDirtBlockCenter27" unique_id=1976028393]
+[node name="TerrainDirtBlockCenter2" type="Sprite2D" parent="ground/TerrainDirtBlockCenter27" unique_id=1976028393]
 position = Vector2(127, 0)
 texture = ExtResource("6_56dhn")
 
-[node name="TerrainDirtBlockTop" type="Sprite2D" parent="TerrainDirtBlockCenter27/TerrainDirtBlockCenter2" unique_id=1189600661]
+[node name="TerrainDirtBlockTop" type="Sprite2D" parent="ground/TerrainDirtBlockCenter27/TerrainDirtBlockCenter2" unique_id=1189600661]
 position = Vector2(64, -63)
 texture = ExtResource("5_vcx5n")
 
-[node name="TerrainDirtBlockCenter" type="Sprite2D" parent="TerrainDirtBlockCenter27/TerrainDirtBlockCenter2" unique_id=130084077]
+[node name="TerrainDirtBlockCenter" type="Sprite2D" parent="ground/TerrainDirtBlockCenter27/TerrainDirtBlockCenter2" unique_id=130084077]
 position = Vector2(64, 0)
 texture = ExtResource("6_56dhn")
 
-[node name="TerrainDirtBlockTop28" type="Sprite2D" parent="." unique_id=318127478]
+[node name="TerrainDirtBlockTop28" type="Sprite2D" parent="ground" unique_id=318127478]
 position = Vector2(8311, 549)
 texture = ExtResource("5_vcx5n")
 
-[node name="TerrainDirtBlockCenter28" type="Sprite2D" parent="." unique_id=426260524]
+[node name="TerrainDirtBlockCenter28" type="Sprite2D" parent="ground" unique_id=426260524]
 position = Vector2(8311, 612)
 texture = ExtResource("6_56dhn")
 
-[node name="TerrainDirtBlockTop" type="Sprite2D" parent="TerrainDirtBlockCenter28" unique_id=1729444653]
+[node name="TerrainDirtBlockTop" type="Sprite2D" parent="ground/TerrainDirtBlockCenter28" unique_id=1729444653]
 position = Vector2(64, -63)
 texture = ExtResource("5_vcx5n")
 
-[node name="TerrainDirtBlockCenter" type="Sprite2D" parent="TerrainDirtBlockCenter28" unique_id=1072871598]
+[node name="TerrainDirtBlockCenter" type="Sprite2D" parent="ground/TerrainDirtBlockCenter28" unique_id=1072871598]
 position = Vector2(64, 0)
 texture = ExtResource("6_56dhn")
 
-[node name="TerrainDirtBlockTop29" type="Sprite2D" parent="." unique_id=1789645370]
+[node name="TerrainDirtBlockTop29" type="Sprite2D" parent="ground" unique_id=1789645370]
 position = Vector2(8438, 549)
 texture = ExtResource("5_vcx5n")
 
-[node name="TerrainDirtBlockCenter29" type="Sprite2D" parent="." unique_id=400244118]
+[node name="TerrainDirtBlockCenter29" type="Sprite2D" parent="ground" unique_id=400244118]
 position = Vector2(8438, 612)
 texture = ExtResource("6_56dhn")
 
-[node name="TerrainDirtBlockTop" type="Sprite2D" parent="TerrainDirtBlockCenter29" unique_id=1212984552]
+[node name="TerrainDirtBlockTop" type="Sprite2D" parent="ground/TerrainDirtBlockCenter29" unique_id=1212984552]
 position = Vector2(64, -63)
 texture = ExtResource("5_vcx5n")
 
-[node name="TerrainDirtBlockCenter" type="Sprite2D" parent="TerrainDirtBlockCenter29" unique_id=520079454]
+[node name="TerrainDirtBlockCenter" type="Sprite2D" parent="ground/TerrainDirtBlockCenter29" unique_id=520079454]
 position = Vector2(64, 0)
 texture = ExtResource("6_56dhn")
 
-[node name="TerrainDirtBlockTop30" type="Sprite2D" parent="." unique_id=91590895]
+[node name="TerrainDirtBlockTop30" type="Sprite2D" parent="ground" unique_id=91590895]
 position = Vector2(8565, 549)
 texture = ExtResource("5_vcx5n")
 
-[node name="TerrainDirtBlockCenter30" type="Sprite2D" parent="." unique_id=107554632]
+[node name="TerrainDirtBlockCenter30" type="Sprite2D" parent="ground" unique_id=107554632]
 position = Vector2(8565, 612)
 texture = ExtResource("6_56dhn")
 
-[node name="TerrainDirtBlockTop" type="Sprite2D" parent="TerrainDirtBlockCenter30" unique_id=172017165]
+[node name="TerrainDirtBlockTop" type="Sprite2D" parent="ground/TerrainDirtBlockCenter30" unique_id=172017165]
 position = Vector2(64, -63)
 texture = ExtResource("5_vcx5n")
 
-[node name="TerrainDirtBlockCenter" type="Sprite2D" parent="TerrainDirtBlockCenter30" unique_id=2123416460]
+[node name="TerrainDirtBlockCenter" type="Sprite2D" parent="ground/TerrainDirtBlockCenter30" unique_id=2123416460]
 position = Vector2(64, 0)
 texture = ExtResource("6_56dhn")
 
-[node name="TerrainDirtBlockTop" type="Sprite2D" parent="TerrainDirtBlockCenter30/TerrainDirtBlockCenter" unique_id=468819]
+[node name="TerrainDirtBlockTop" type="Sprite2D" parent="ground/TerrainDirtBlockCenter30/TerrainDirtBlockCenter" unique_id=468819]
 position = Vector2(64, -63)
 texture = ExtResource("5_vcx5n")
 
-[node name="TerrainDirtBlockCenter" type="Sprite2D" parent="TerrainDirtBlockCenter30/TerrainDirtBlockCenter" unique_id=346687591]
+[node name="TerrainDirtBlockCenter" type="Sprite2D" parent="ground/TerrainDirtBlockCenter30/TerrainDirtBlockCenter" unique_id=346687591]
 position = Vector2(64, 0)
 texture = ExtResource("6_56dhn")
 
-[node name="TerrainDirtBlockTop7" type="Sprite2D" parent="TerrainDirtBlockCenter30/TerrainDirtBlockCenter" unique_id=858250988]
+[node name="TerrainDirtBlockTop7" type="Sprite2D" parent="ground/TerrainDirtBlockCenter30/TerrainDirtBlockCenter" unique_id=858250988]
 position = Vector2(319, -63)
 texture = ExtResource("5_vcx5n")
 
-[node name="TerrainDirtBlockCenter7" type="Sprite2D" parent="TerrainDirtBlockCenter30/TerrainDirtBlockCenter" unique_id=1580219996]
+[node name="TerrainDirtBlockCenter7" type="Sprite2D" parent="ground/TerrainDirtBlockCenter30/TerrainDirtBlockCenter" unique_id=1580219996]
 position = Vector2(319, 0)
 texture = ExtResource("6_56dhn")
 
-[node name="TerrainDirtBlockTop" type="Sprite2D" parent="TerrainDirtBlockCenter30/TerrainDirtBlockCenter/TerrainDirtBlockCenter7" unique_id=1796354589]
+[node name="TerrainDirtBlockTop" type="Sprite2D" parent="ground/TerrainDirtBlockCenter30/TerrainDirtBlockCenter/TerrainDirtBlockCenter7" unique_id=1796354589]
 position = Vector2(64, -63)
 texture = ExtResource("5_vcx5n")
 
-[node name="TerrainDirtBlockCenter" type="Sprite2D" parent="TerrainDirtBlockCenter30/TerrainDirtBlockCenter/TerrainDirtBlockCenter7" unique_id=788515491]
+[node name="TerrainDirtBlockCenter" type="Sprite2D" parent="ground/TerrainDirtBlockCenter30/TerrainDirtBlockCenter/TerrainDirtBlockCenter7" unique_id=788515491]
 position = Vector2(64, 0)
 texture = ExtResource("6_56dhn")
 
-[node name="TerrainDirtBlockTop8" type="Sprite2D" parent="TerrainDirtBlockCenter30/TerrainDirtBlockCenter" unique_id=535494185]
+[node name="TerrainDirtBlockTop8" type="Sprite2D" parent="ground/TerrainDirtBlockCenter30/TerrainDirtBlockCenter" unique_id=535494185]
 position = Vector2(447, -63)
 texture = ExtResource("5_vcx5n")
 
-[node name="TerrainDirtBlockCenter8" type="Sprite2D" parent="TerrainDirtBlockCenter30/TerrainDirtBlockCenter" unique_id=1307875334]
+[node name="TerrainDirtBlockCenter8" type="Sprite2D" parent="ground/TerrainDirtBlockCenter30/TerrainDirtBlockCenter" unique_id=1307875334]
 position = Vector2(447, 0)
 texture = ExtResource("6_56dhn")
 
-[node name="TerrainDirtBlockTop" type="Sprite2D" parent="TerrainDirtBlockCenter30/TerrainDirtBlockCenter/TerrainDirtBlockCenter8" unique_id=782503492]
+[node name="TerrainDirtBlockTop" type="Sprite2D" parent="ground/TerrainDirtBlockCenter30/TerrainDirtBlockCenter/TerrainDirtBlockCenter8" unique_id=782503492]
 position = Vector2(64, -63)
 texture = ExtResource("5_vcx5n")
 
-[node name="TerrainDirtBlockCenter" type="Sprite2D" parent="TerrainDirtBlockCenter30/TerrainDirtBlockCenter/TerrainDirtBlockCenter8" unique_id=482850138]
+[node name="TerrainDirtBlockCenter" type="Sprite2D" parent="ground/TerrainDirtBlockCenter30/TerrainDirtBlockCenter/TerrainDirtBlockCenter8" unique_id=482850138]
 position = Vector2(64, 0)
 texture = ExtResource("6_56dhn")
 
-[node name="TerrainDirtBlockTop" type="Sprite2D" parent="TerrainDirtBlockCenter30/TerrainDirtBlockCenter/TerrainDirtBlockCenter8/TerrainDirtBlockCenter" unique_id=2081775834]
+[node name="TerrainDirtBlockTop" type="Sprite2D" parent="ground/TerrainDirtBlockCenter30/TerrainDirtBlockCenter/TerrainDirtBlockCenter8/TerrainDirtBlockCenter" unique_id=2081775834]
 position = Vector2(64.499985, -63)
 scale = Vector2(1.0156245, 1)
 texture = ExtResource("5_vcx5n")
 
-[node name="TerrainDirtBlockCenter" type="Sprite2D" parent="TerrainDirtBlockCenter30/TerrainDirtBlockCenter/TerrainDirtBlockCenter8/TerrainDirtBlockCenter" unique_id=143123499]
+[node name="TerrainDirtBlockCenter" type="Sprite2D" parent="ground/TerrainDirtBlockCenter30/TerrainDirtBlockCenter/TerrainDirtBlockCenter8/TerrainDirtBlockCenter" unique_id=143123499]
 position = Vector2(64.5, 0)
 scale = Vector2(1.015625, 1)
 texture = ExtResource("6_56dhn")
 
-[node name="TerrainDirtBlockTop31" type="Sprite2D" parent="." unique_id=713442664]
+[node name="TerrainDirtBlockTop31" type="Sprite2D" parent="ground" unique_id=713442664]
 position = Vector2(8692, 549)
 texture = ExtResource("5_vcx5n")
 
-[node name="TerrainDirtBlockCenter31" type="Sprite2D" parent="." unique_id=97865915]
+[node name="TerrainDirtBlockCenter31" type="Sprite2D" parent="ground" unique_id=97865915]
 position = Vector2(8692, 612)
 texture = ExtResource("6_56dhn")
 
-[node name="TerrainDirtBlockTop" type="Sprite2D" parent="TerrainDirtBlockCenter31" unique_id=2011621339]
+[node name="TerrainDirtBlockTop" type="Sprite2D" parent="ground/TerrainDirtBlockCenter31" unique_id=2011621339]
 position = Vector2(64, -63)
 texture = ExtResource("5_vcx5n")
 
-[node name="TerrainDirtBlockCenter" type="Sprite2D" parent="TerrainDirtBlockCenter31" unique_id=1463367067]
+[node name="TerrainDirtBlockCenter" type="Sprite2D" parent="ground/TerrainDirtBlockCenter31" unique_id=1463367067]
 position = Vector2(64, 0)
 texture = ExtResource("6_56dhn")
 
-[node name="TerrainDirtBlockTop32" type="Sprite2D" parent="." unique_id=1106272022]
+[node name="TerrainDirtBlockTop32" type="Sprite2D" parent="ground" unique_id=1106272022]
 position = Vector2(8820, 549)
 texture = ExtResource("5_vcx5n")
 
-[node name="TerrainDirtBlockTop14" type="Sprite2D" parent="." unique_id=2023709668]
+[node name="TerrainDirtBlockTop14" type="Sprite2D" parent="ground" unique_id=2023709668]
 position = Vector2(7419, 549)
 texture = ExtResource("5_vcx5n")
 
-[node name="TerrainDirtBlockCenter32" type="Sprite2D" parent="." unique_id=443125140]
+[node name="TerrainDirtBlockCenter32" type="Sprite2D" parent="ground" unique_id=443125140]
 position = Vector2(8820, 612)
 texture = ExtResource("6_56dhn")
 
-[node name="TerrainDirtBlockTop" type="Sprite2D" parent="TerrainDirtBlockCenter32" unique_id=1062337691]
+[node name="TerrainDirtBlockTop" type="Sprite2D" parent="ground/TerrainDirtBlockCenter32" unique_id=1062337691]
 position = Vector2(64, -63)
 texture = ExtResource("5_vcx5n")
 
-[node name="TerrainDirtBlockCenter" type="Sprite2D" parent="TerrainDirtBlockCenter32" unique_id=120216511]
+[node name="TerrainDirtBlockCenter" type="Sprite2D" parent="ground/TerrainDirtBlockCenter32" unique_id=120216511]
 position = Vector2(64, 0)
 texture = ExtResource("6_56dhn")
 
-[node name="TerrainDirtBlockCenter13" type="Sprite2D" parent="." unique_id=724474860]
+[node name="TerrainDirtBlockCenter13" type="Sprite2D" parent="ground" unique_id=724474860]
 position = Vector2(7165, 612)
 texture = ExtResource("6_56dhn")
 
-[node name="TerrainDirtBlockCenter14" type="Sprite2D" parent="." unique_id=1324177883]
+[node name="TerrainDirtBlockCenter14" type="Sprite2D" parent="ground" unique_id=1324177883]
 position = Vector2(7419, 612)
 texture = ExtResource("6_56dhn")
 
-[node name="TerrainDirtBlockTop" type="Sprite2D" parent="TerrainDirtBlockCenter14" unique_id=636774954]
+[node name="TerrainDirtBlockTop" type="Sprite2D" parent="ground/TerrainDirtBlockCenter14" unique_id=636774954]
 position = Vector2(64, -63)
 texture = ExtResource("5_vcx5n")
 
-[node name="TerrainDirtBlockCenter" type="Sprite2D" parent="TerrainDirtBlockCenter14" unique_id=1877544278]
+[node name="TerrainDirtBlockCenter" type="Sprite2D" parent="ground/TerrainDirtBlockCenter14" unique_id=1877544278]
 position = Vector2(64, 0)
 texture = ExtResource("6_56dhn")
 
-[node name="TerrainDirtBlockTop15" type="Sprite2D" parent="." unique_id=1693164037]
+[node name="TerrainDirtBlockTop15" type="Sprite2D" parent="ground" unique_id=1693164037]
 position = Vector2(7546, 549)
 texture = ExtResource("5_vcx5n")
 
-[node name="TerrainDirtBlockCenter15" type="Sprite2D" parent="." unique_id=656678159]
+[node name="TerrainDirtBlockCenter15" type="Sprite2D" parent="ground" unique_id=656678159]
 position = Vector2(7546, 612)
 texture = ExtResource("6_56dhn")
 
-[node name="TerrainDirtBlockTop" type="Sprite2D" parent="TerrainDirtBlockCenter15" unique_id=1870167824]
+[node name="TerrainDirtBlockTop" type="Sprite2D" parent="ground/TerrainDirtBlockCenter15" unique_id=1870167824]
 position = Vector2(64, -63)
 texture = ExtResource("5_vcx5n")
 
-[node name="TerrainDirtBlockCenter" type="Sprite2D" parent="TerrainDirtBlockCenter15" unique_id=1490438991]
+[node name="TerrainDirtBlockCenter" type="Sprite2D" parent="ground/TerrainDirtBlockCenter15" unique_id=1490438991]
 position = Vector2(64, 0)
 texture = ExtResource("6_56dhn")
 
-[node name="TerrainDirtBlockTop16" type="Sprite2D" parent="." unique_id=754816523]
+[node name="TerrainDirtBlockTop16" type="Sprite2D" parent="ground" unique_id=754816523]
 position = Vector2(7673, 549)
 texture = ExtResource("5_vcx5n")
 
-[node name="TerrainDirtBlockCenter16" type="Sprite2D" parent="." unique_id=519073447]
+[node name="TerrainDirtBlockCenter16" type="Sprite2D" parent="ground" unique_id=519073447]
 position = Vector2(7673, 612)
 texture = ExtResource("6_56dhn")
 
-[node name="TerrainDirtBlockTop" type="Sprite2D" parent="TerrainDirtBlockCenter16" unique_id=1031049282]
+[node name="TerrainDirtBlockTop" type="Sprite2D" parent="ground/TerrainDirtBlockCenter16" unique_id=1031049282]
 position = Vector2(64, -63)
 texture = ExtResource("5_vcx5n")
 
-[node name="TerrainDirtBlockCenter" type="Sprite2D" parent="TerrainDirtBlockCenter16" unique_id=1970516688]
+[node name="TerrainDirtBlockCenter" type="Sprite2D" parent="ground/TerrainDirtBlockCenter16" unique_id=1970516688]
 position = Vector2(64, 0)
 texture = ExtResource("6_56dhn")
 
-[node name="TerrainDirtBlockTop17" type="Sprite2D" parent="." unique_id=1495630286]
+[node name="TerrainDirtBlockTop17" type="Sprite2D" parent="ground" unique_id=1495630286]
 position = Vector2(7800, 549)
 texture = ExtResource("5_vcx5n")
 
-[node name="TerrainDirtBlockCenter17" type="Sprite2D" parent="." unique_id=8296234]
+[node name="TerrainDirtBlockCenter17" type="Sprite2D" parent="ground" unique_id=8296234]
 position = Vector2(7800, 612)
 texture = ExtResource("6_56dhn")
 
-[node name="TerrainDirtBlockTop" type="Sprite2D" parent="TerrainDirtBlockCenter17" unique_id=1427587254]
+[node name="TerrainDirtBlockTop" type="Sprite2D" parent="ground/TerrainDirtBlockCenter17" unique_id=1427587254]
 position = Vector2(64, -63)
 texture = ExtResource("5_vcx5n")
 
-[node name="TerrainDirtBlockCenter" type="Sprite2D" parent="TerrainDirtBlockCenter17" unique_id=1123012606]
+[node name="TerrainDirtBlockCenter" type="Sprite2D" parent="ground/TerrainDirtBlockCenter17" unique_id=1123012606]
 position = Vector2(64, 0)
 texture = ExtResource("6_56dhn")
 
-[node name="TerrainDirtBlockTop18" type="Sprite2D" parent="." unique_id=1337946111]
+[node name="TerrainDirtBlockTop18" type="Sprite2D" parent="ground" unique_id=1337946111]
 position = Vector2(7928, 549)
 texture = ExtResource("5_vcx5n")
 
-[node name="TerrainDirtBlockCenter18" type="Sprite2D" parent="." unique_id=761295306]
+[node name="TerrainDirtBlockCenter18" type="Sprite2D" parent="ground" unique_id=761295306]
 position = Vector2(7928, 612)
 texture = ExtResource("6_56dhn")
 
-[node name="TerrainDirtBlockTop" type="Sprite2D" parent="TerrainDirtBlockCenter18" unique_id=297013242]
+[node name="TerrainDirtBlockTop" type="Sprite2D" parent="ground/TerrainDirtBlockCenter18" unique_id=297013242]
 position = Vector2(64, -63)
 texture = ExtResource("5_vcx5n")
 
-[node name="TerrainDirtBlockCenter" type="Sprite2D" parent="TerrainDirtBlockCenter18" unique_id=2039527709]
+[node name="TerrainDirtBlockCenter" type="Sprite2D" parent="ground/TerrainDirtBlockCenter18" unique_id=2039527709]
 position = Vector2(64, 0)
 texture = ExtResource("6_56dhn")
 
-[node name="TerrainDirtBlockTop19" type="Sprite2D" parent="." unique_id=1012841837]
+[node name="TerrainDirtBlockTop19" type="Sprite2D" parent="ground" unique_id=1012841837]
 position = Vector2(36, 549)
 texture = ExtResource("5_vcx5n")
 
-[node name="TerrainDirtBlockCenter19" type="Sprite2D" parent="." unique_id=1372857338]
+[node name="TerrainDirtBlockCenter19" type="Sprite2D" parent="ground" unique_id=1372857338]
 position = Vector2(36, 612)
 texture = ExtResource("6_56dhn")
 
-[node name="TerrainDirtBlockTop" type="Sprite2D" parent="TerrainDirtBlockCenter19" unique_id=370163981]
+[node name="TerrainDirtBlockTop" type="Sprite2D" parent="ground/TerrainDirtBlockCenter19" unique_id=370163981]
 position = Vector2(64, -63)
 texture = ExtResource("5_vcx5n")
 
-[node name="TerrainDirtBlockCenter" type="Sprite2D" parent="TerrainDirtBlockCenter19" unique_id=1169687359]
+[node name="TerrainDirtBlockCenter" type="Sprite2D" parent="ground/TerrainDirtBlockCenter19" unique_id=1169687359]
 position = Vector2(64, 0)
 texture = ExtResource("6_56dhn")
 
-[node name="TerrainDirtBlockTop2" type="Sprite2D" parent="TerrainDirtBlockCenter19" unique_id=1555385213]
+[node name="TerrainDirtBlockTop2" type="Sprite2D" parent="ground/TerrainDirtBlockCenter19" unique_id=1555385213]
 position = Vector2(127, -63)
 texture = ExtResource("5_vcx5n")
 
-[node name="TerrainDirtBlockCenter2" type="Sprite2D" parent="TerrainDirtBlockCenter19" unique_id=2108544778]
+[node name="TerrainDirtBlockCenter2" type="Sprite2D" parent="ground/TerrainDirtBlockCenter19" unique_id=2108544778]
 position = Vector2(127, 0)
 texture = ExtResource("6_56dhn")
 
-[node name="TerrainDirtBlockTop" type="Sprite2D" parent="TerrainDirtBlockCenter19/TerrainDirtBlockCenter2" unique_id=810157614]
+[node name="TerrainDirtBlockTop" type="Sprite2D" parent="ground/TerrainDirtBlockCenter19/TerrainDirtBlockCenter2" unique_id=810157614]
 position = Vector2(64, -63)
 texture = ExtResource("5_vcx5n")
 
-[node name="TerrainDirtBlockCenter" type="Sprite2D" parent="TerrainDirtBlockCenter19/TerrainDirtBlockCenter2" unique_id=1035676765]
+[node name="TerrainDirtBlockCenter" type="Sprite2D" parent="ground/TerrainDirtBlockCenter19/TerrainDirtBlockCenter2" unique_id=1035676765]
 position = Vector2(64, 0)
 texture = ExtResource("6_56dhn")
 
-[node name="TerrainDirtBlockTop3" type="Sprite2D" parent="TerrainDirtBlockCenter19" unique_id=2063250422]
+[node name="TerrainDirtBlockTop3" type="Sprite2D" parent="ground/TerrainDirtBlockCenter19" unique_id=2063250422]
 position = Vector2(892, -63)
 texture = ExtResource("5_vcx5n")
 
-[node name="TerrainDirtBlockCenter3" type="Sprite2D" parent="TerrainDirtBlockCenter19" unique_id=830932859]
+[node name="TerrainDirtBlockCenter3" type="Sprite2D" parent="ground/TerrainDirtBlockCenter19" unique_id=830932859]
 position = Vector2(892, 0)
 texture = ExtResource("6_56dhn")
 
-[node name="TerrainDirtBlockTop" type="Sprite2D" parent="TerrainDirtBlockCenter19/TerrainDirtBlockCenter3" unique_id=472613575]
+[node name="TerrainDirtBlockTop" type="Sprite2D" parent="ground/TerrainDirtBlockCenter19/TerrainDirtBlockCenter3" unique_id=472613575]
 position = Vector2(64, -63)
 texture = ExtResource("5_vcx5n")
 
-[node name="TerrainDirtBlockCenter" type="Sprite2D" parent="TerrainDirtBlockCenter19/TerrainDirtBlockCenter3" unique_id=1369962101]
+[node name="TerrainDirtBlockCenter" type="Sprite2D" parent="ground/TerrainDirtBlockCenter19/TerrainDirtBlockCenter3" unique_id=1369962101]
 position = Vector2(64, 0)
 texture = ExtResource("6_56dhn")
 
-[node name="TerrainDirtBlockTop2" type="Sprite2D" parent="TerrainDirtBlockCenter19/TerrainDirtBlockCenter3" unique_id=442246067]
+[node name="TerrainDirtBlockTop2" type="Sprite2D" parent="ground/TerrainDirtBlockCenter19/TerrainDirtBlockCenter3" unique_id=442246067]
 position = Vector2(127, -63)
 texture = ExtResource("5_vcx5n")
 
-[node name="TerrainDirtBlockCenter2" type="Sprite2D" parent="TerrainDirtBlockCenter19/TerrainDirtBlockCenter3" unique_id=1410642827]
+[node name="TerrainDirtBlockCenter2" type="Sprite2D" parent="ground/TerrainDirtBlockCenter19/TerrainDirtBlockCenter3" unique_id=1410642827]
 position = Vector2(127, 0)
 texture = ExtResource("6_56dhn")
 
-[node name="TerrainDirtBlockTop" type="Sprite2D" parent="TerrainDirtBlockCenter19/TerrainDirtBlockCenter3/TerrainDirtBlockCenter2" unique_id=1325889493]
+[node name="TerrainDirtBlockTop" type="Sprite2D" parent="ground/TerrainDirtBlockCenter19/TerrainDirtBlockCenter3/TerrainDirtBlockCenter2" unique_id=1325889493]
 position = Vector2(64, -63)
 texture = ExtResource("5_vcx5n")
 
-[node name="TerrainDirtBlockCenter" type="Sprite2D" parent="TerrainDirtBlockCenter19/TerrainDirtBlockCenter3/TerrainDirtBlockCenter2" unique_id=2113256800]
+[node name="TerrainDirtBlockCenter" type="Sprite2D" parent="ground/TerrainDirtBlockCenter19/TerrainDirtBlockCenter3/TerrainDirtBlockCenter2" unique_id=2113256800]
 position = Vector2(64, 0)
 texture = ExtResource("6_56dhn")
 
-[node name="TerrainDirtBlockTop4" type="Sprite2D" parent="TerrainDirtBlockCenter19" unique_id=308824704]
+[node name="TerrainDirtBlockTop4" type="Sprite2D" parent="ground/TerrainDirtBlockCenter19" unique_id=308824704]
 position = Vector2(1147, -63)
 texture = ExtResource("5_vcx5n")
 
-[node name="TerrainDirtBlockCenter4" type="Sprite2D" parent="TerrainDirtBlockCenter19" unique_id=73421544]
+[node name="TerrainDirtBlockCenter4" type="Sprite2D" parent="ground/TerrainDirtBlockCenter19" unique_id=73421544]
 position = Vector2(1147, 0)
 texture = ExtResource("6_56dhn")
 
-[node name="TerrainDirtBlockTop" type="Sprite2D" parent="TerrainDirtBlockCenter19/TerrainDirtBlockCenter4" unique_id=146639811]
+[node name="TerrainDirtBlockTop" type="Sprite2D" parent="ground/TerrainDirtBlockCenter19/TerrainDirtBlockCenter4" unique_id=146639811]
 position = Vector2(64, -63)
 texture = ExtResource("5_vcx5n")
 
-[node name="TerrainDirtBlockCenter" type="Sprite2D" parent="TerrainDirtBlockCenter19/TerrainDirtBlockCenter4" unique_id=661613357]
+[node name="TerrainDirtBlockCenter" type="Sprite2D" parent="ground/TerrainDirtBlockCenter19/TerrainDirtBlockCenter4" unique_id=661613357]
 position = Vector2(64, 0)
 texture = ExtResource("6_56dhn")
 
-[node name="TerrainDirtBlockTop5" type="Sprite2D" parent="TerrainDirtBlockCenter19" unique_id=1534314245]
+[node name="TerrainDirtBlockTop5" type="Sprite2D" parent="ground/TerrainDirtBlockCenter19" unique_id=1534314245]
 position = Vector2(1274, -63)
 texture = ExtResource("5_vcx5n")
 
-[node name="TerrainDirtBlockCenter5" type="Sprite2D" parent="TerrainDirtBlockCenter19" unique_id=1827852682]
+[node name="TerrainDirtBlockCenter5" type="Sprite2D" parent="ground/TerrainDirtBlockCenter19" unique_id=1827852682]
 position = Vector2(1274, 0)
 texture = ExtResource("6_56dhn")
 
-[node name="TerrainDirtBlockTop" type="Sprite2D" parent="TerrainDirtBlockCenter19/TerrainDirtBlockCenter5" unique_id=1481802296]
+[node name="TerrainDirtBlockTop" type="Sprite2D" parent="ground/TerrainDirtBlockCenter19/TerrainDirtBlockCenter5" unique_id=1481802296]
 position = Vector2(64, -63)
 texture = ExtResource("5_vcx5n")
 
-[node name="TerrainDirtBlockCenter" type="Sprite2D" parent="TerrainDirtBlockCenter19/TerrainDirtBlockCenter5" unique_id=1579359157]
+[node name="TerrainDirtBlockCenter" type="Sprite2D" parent="ground/TerrainDirtBlockCenter19/TerrainDirtBlockCenter5" unique_id=1579359157]
 position = Vector2(64, 0)
 texture = ExtResource("6_56dhn")
 
-[node name="TerrainDirtBlockTop6" type="Sprite2D" parent="TerrainDirtBlockCenter19" unique_id=1063597646]
+[node name="TerrainDirtBlockTop6" type="Sprite2D" parent="ground/TerrainDirtBlockCenter19" unique_id=1063597646]
 position = Vector2(1401, -63)
 texture = ExtResource("5_vcx5n")
 
-[node name="TerrainDirtBlockCenter6" type="Sprite2D" parent="TerrainDirtBlockCenter19" unique_id=819170019]
+[node name="TerrainDirtBlockCenter6" type="Sprite2D" parent="ground/TerrainDirtBlockCenter19" unique_id=819170019]
 position = Vector2(1401, 0)
 texture = ExtResource("6_56dhn")
 
-[node name="TerrainDirtBlockTop" type="Sprite2D" parent="TerrainDirtBlockCenter19/TerrainDirtBlockCenter6" unique_id=1597981145]
+[node name="TerrainDirtBlockTop" type="Sprite2D" parent="ground/TerrainDirtBlockCenter19/TerrainDirtBlockCenter6" unique_id=1597981145]
 position = Vector2(64, -63)
 texture = ExtResource("5_vcx5n")
 
-[node name="TerrainDirtBlockCenter" type="Sprite2D" parent="TerrainDirtBlockCenter19/TerrainDirtBlockCenter6" unique_id=1473394086]
+[node name="TerrainDirtBlockCenter" type="Sprite2D" parent="ground/TerrainDirtBlockCenter19/TerrainDirtBlockCenter6" unique_id=1473394086]
 position = Vector2(64, 0)
 texture = ExtResource("6_56dhn")
 
-[node name="TerrainDirtBlockTop7" type="Sprite2D" parent="TerrainDirtBlockCenter19" unique_id=1148612620]
+[node name="TerrainDirtBlockTop7" type="Sprite2D" parent="ground/TerrainDirtBlockCenter19" unique_id=1148612620]
 position = Vector2(1528, -63)
 texture = ExtResource("5_vcx5n")
 
-[node name="TerrainDirtBlockCenter7" type="Sprite2D" parent="TerrainDirtBlockCenter19" unique_id=719142016]
+[node name="TerrainDirtBlockCenter7" type="Sprite2D" parent="ground/TerrainDirtBlockCenter19" unique_id=719142016]
 position = Vector2(1528, 0)
 texture = ExtResource("6_56dhn")
 
-[node name="TerrainDirtBlockTop" type="Sprite2D" parent="TerrainDirtBlockCenter19/TerrainDirtBlockCenter7" unique_id=1649909225]
+[node name="TerrainDirtBlockTop" type="Sprite2D" parent="ground/TerrainDirtBlockCenter19/TerrainDirtBlockCenter7" unique_id=1649909225]
 position = Vector2(64, -63)
 texture = ExtResource("5_vcx5n")
 
-[node name="TerrainDirtBlockCenter" type="Sprite2D" parent="TerrainDirtBlockCenter19/TerrainDirtBlockCenter7" unique_id=10424271]
+[node name="TerrainDirtBlockCenter" type="Sprite2D" parent="ground/TerrainDirtBlockCenter19/TerrainDirtBlockCenter7" unique_id=10424271]
 position = Vector2(64, 0)
 texture = ExtResource("6_56dhn")
 
-[node name="TerrainDirtBlockTop8" type="Sprite2D" parent="TerrainDirtBlockCenter19" unique_id=1576190692]
+[node name="TerrainDirtBlockTop8" type="Sprite2D" parent="ground/TerrainDirtBlockCenter19" unique_id=1576190692]
 position = Vector2(1656, -63)
 texture = ExtResource("5_vcx5n")
 
-[node name="TerrainDirtBlockCenter8" type="Sprite2D" parent="TerrainDirtBlockCenter19" unique_id=1420802573]
+[node name="TerrainDirtBlockCenter8" type="Sprite2D" parent="ground/TerrainDirtBlockCenter19" unique_id=1420802573]
 position = Vector2(1656, 0)
 texture = ExtResource("6_56dhn")
 
-[node name="TerrainDirtBlockTop" type="Sprite2D" parent="TerrainDirtBlockCenter19/TerrainDirtBlockCenter8" unique_id=612748328]
+[node name="TerrainDirtBlockTop" type="Sprite2D" parent="ground/TerrainDirtBlockCenter19/TerrainDirtBlockCenter8" unique_id=612748328]
 position = Vector2(65, -63)
 scale = Vector2(1.03125, 1)
 texture = ExtResource("5_vcx5n")
 
-[node name="TerrainDirtBlockCenter" type="Sprite2D" parent="TerrainDirtBlockCenter19/TerrainDirtBlockCenter8" unique_id=2121871790]
+[node name="TerrainDirtBlockCenter" type="Sprite2D" parent="ground/TerrainDirtBlockCenter19/TerrainDirtBlockCenter8" unique_id=2121871790]
 position = Vector2(66.5, 0)
 scale = Vector2(1.078125, 1)
 texture = ExtResource("6_56dhn")
 
-[node name="TerrainDirtBlockTop20" type="Sprite2D" parent="." unique_id=191048970]
+[node name="TerrainDirtBlockTop20" type="Sprite2D" parent="ground" unique_id=191048970]
 position = Vector2(291, 549)
 texture = ExtResource("5_vcx5n")
 
-[node name="TerrainDirtBlockCenter20" type="Sprite2D" parent="." unique_id=933968059]
+[node name="TerrainDirtBlockCenter20" type="Sprite2D" parent="ground" unique_id=933968059]
 position = Vector2(291, 612)
 texture = ExtResource("6_56dhn")
 
-[node name="TerrainDirtBlockTop" type="Sprite2D" parent="TerrainDirtBlockCenter20" unique_id=1499830448]
+[node name="TerrainDirtBlockTop" type="Sprite2D" parent="ground/TerrainDirtBlockCenter20" unique_id=1499830448]
 position = Vector2(64, -63)
 texture = ExtResource("5_vcx5n")
 
-[node name="TerrainDirtBlockCenter" type="Sprite2D" parent="TerrainDirtBlockCenter20" unique_id=1924512970]
+[node name="TerrainDirtBlockCenter" type="Sprite2D" parent="ground/TerrainDirtBlockCenter20" unique_id=1924512970]
 position = Vector2(64, 0)
 texture = ExtResource("6_56dhn")
 
-[node name="TerrainDirtBlockTop21" type="Sprite2D" parent="." unique_id=721415616]
+[node name="TerrainDirtBlockTop21" type="Sprite2D" parent="ground" unique_id=721415616]
 position = Vector2(418, 549)
 texture = ExtResource("5_vcx5n")
 
-[node name="TerrainDirtBlockCenter21" type="Sprite2D" parent="." unique_id=840173233]
+[node name="TerrainDirtBlockCenter21" type="Sprite2D" parent="ground" unique_id=840173233]
 position = Vector2(418, 612)
 texture = ExtResource("6_56dhn")
 
-[node name="TerrainDirtBlockTop" type="Sprite2D" parent="TerrainDirtBlockCenter21" unique_id=1373207594]
+[node name="TerrainDirtBlockTop" type="Sprite2D" parent="ground/TerrainDirtBlockCenter21" unique_id=1373207594]
 position = Vector2(64, -63)
 texture = ExtResource("5_vcx5n")
 
-[node name="TerrainDirtBlockCenter" type="Sprite2D" parent="TerrainDirtBlockCenter21" unique_id=250345991]
+[node name="TerrainDirtBlockCenter" type="Sprite2D" parent="ground/TerrainDirtBlockCenter21" unique_id=250345991]
 position = Vector2(64, 0)
 texture = ExtResource("6_56dhn")
 
-[node name="TerrainDirtBlockTop22" type="Sprite2D" parent="." unique_id=1126098453]
+[node name="TerrainDirtBlockTop22" type="Sprite2D" parent="ground" unique_id=1126098453]
 position = Vector2(545, 549)
 texture = ExtResource("5_vcx5n")
 
-[node name="TerrainDirtBlockCenter22" type="Sprite2D" parent="." unique_id=1198256907]
+[node name="TerrainDirtBlockCenter22" type="Sprite2D" parent="ground" unique_id=1198256907]
 position = Vector2(545, 612)
 texture = ExtResource("6_56dhn")
 
-[node name="TerrainDirtBlockTop" type="Sprite2D" parent="TerrainDirtBlockCenter22" unique_id=1870056657]
+[node name="TerrainDirtBlockTop" type="Sprite2D" parent="ground/TerrainDirtBlockCenter22" unique_id=1870056657]
 position = Vector2(64, -63)
 texture = ExtResource("5_vcx5n")
 
-[node name="TerrainDirtBlockCenter" type="Sprite2D" parent="TerrainDirtBlockCenter22" unique_id=695149021]
+[node name="TerrainDirtBlockCenter" type="Sprite2D" parent="ground/TerrainDirtBlockCenter22" unique_id=695149021]
 position = Vector2(64, 0)
 texture = ExtResource("6_56dhn")
 
-[node name="TerrainDirtBlockTop23" type="Sprite2D" parent="." unique_id=1111207716]
+[node name="TerrainDirtBlockTop23" type="Sprite2D" parent="ground" unique_id=1111207716]
 position = Vector2(672, 549)
 texture = ExtResource("5_vcx5n")
 
-[node name="TerrainDirtBlockCenter23" type="Sprite2D" parent="." unique_id=1337952626]
+[node name="TerrainDirtBlockCenter23" type="Sprite2D" parent="ground" unique_id=1337952626]
 position = Vector2(672, 612)
 texture = ExtResource("6_56dhn")
 
-[node name="TerrainDirtBlockTop" type="Sprite2D" parent="TerrainDirtBlockCenter23" unique_id=447238634]
+[node name="TerrainDirtBlockTop" type="Sprite2D" parent="ground/TerrainDirtBlockCenter23" unique_id=447238634]
 position = Vector2(64, -63)
 texture = ExtResource("5_vcx5n")
 
-[node name="TerrainDirtBlockCenter" type="Sprite2D" parent="TerrainDirtBlockCenter23" unique_id=178800445]
+[node name="TerrainDirtBlockCenter" type="Sprite2D" parent="ground/TerrainDirtBlockCenter23" unique_id=178800445]
 position = Vector2(64, 0)
 texture = ExtResource("6_56dhn")
 
-[node name="TerrainDirtBlockTop24" type="Sprite2D" parent="." unique_id=1708440258]
+[node name="TerrainDirtBlockTop24" type="Sprite2D" parent="ground" unique_id=1708440258]
 position = Vector2(800, 549)
 texture = ExtResource("5_vcx5n")
 
-[node name="TerrainDirtBlockCenter24" type="Sprite2D" parent="." unique_id=442835085]
+[node name="TerrainDirtBlockCenter24" type="Sprite2D" parent="ground" unique_id=442835085]
 position = Vector2(800, 612)
 texture = ExtResource("6_56dhn")
 
-[node name="TerrainDirtBlockTop" type="Sprite2D" parent="TerrainDirtBlockCenter24" unique_id=17759858]
+[node name="TerrainDirtBlockTop" type="Sprite2D" parent="ground/TerrainDirtBlockCenter24" unique_id=17759858]
 position = Vector2(64, -63)
 texture = ExtResource("5_vcx5n")
 
-[node name="TerrainDirtBlockCenter" type="Sprite2D" parent="TerrainDirtBlockCenter24" unique_id=1258436940]
+[node name="TerrainDirtBlockCenter" type="Sprite2D" parent="ground/TerrainDirtBlockCenter24" unique_id=1258436940]
 position = Vector2(64, 0)
 texture = ExtResource("6_56dhn")
 
-[node name="TerrainDirtBlockTopRight" type="Sprite2D" parent="." unique_id=494022711]
+[node name="TerrainDirtBlockTopRight" type="Sprite2D" parent="ground" unique_id=494022711]
 position = Vector2(1819, 430)
 texture = ExtResource("7_wae8j")
 
-[node name="TerrainDirtBlockRight" type="Sprite2D" parent="." unique_id=1350874145]
+[node name="TerrainDirtBlockRight" type="Sprite2D" parent="ground" unique_id=1350874145]
 position = Vector2(1819.5, 489.5)
 scale = Vector2(0.984375, 0.859375)
 texture = ExtResource("8_ha73p")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="ground" unique_id=1971500229]
+position = Vector2(923.75, 524.75)
+shape = SubResource("RectangleShape2D_ha73p")
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="ground" unique_id=1986383914]
+position = Vector2(5556.5, 587.75)
+shape = SubResource("RectangleShape2D_vcx5n")
