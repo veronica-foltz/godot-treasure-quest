@@ -1,0 +1,39 @@
+[gd_scene format=3 uid="uid://n1sioxmk8uxn"]
+
+[ext_resource type="Texture2D" uid="uid://e6824k27rnh" path="res://assets/kenney_new-platformer-pack-1.1/Sprites/Enemies/Default/snail_rest.png" id="1_5b1ba"]
+[ext_resource type="Script" uid="uid://dxl3cu68hiti2" path="res://scenes/snail.gd" id="1_er827"]
+[ext_resource type="Texture2D" uid="uid://bppdnliuqisd4" path="res://assets/kenney_new-platformer-pack-1.1/Sprites/Enemies/Default/snail_walk_a.png" id="2_er827"]
+[ext_resource type="Texture2D" uid="uid://0w0fo4tdv4sq" path="res://assets/kenney_new-platformer-pack-1.1/Sprites/Enemies/Default/snail_walk_b.png" id="3_ymp48"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_761fw"]
+size = Vector2(53, 48)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_vewxh"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_5b1ba")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_er827")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_ymp48")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[node name="snail" type="Area2D" unique_id=997975817]
+script = ExtResource("1_er827")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1174650182]
+position = Vector2(0.5, 8)
+shape = SubResource("RectangleShape2D_761fw")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=148651691]
+sprite_frames = SubResource("SpriteFrames_vewxh")
+frame_progress = 0.05282488
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
