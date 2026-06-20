@@ -1,0 +1,24 @@
+[gd_scene format=3 uid="uid://bli63k03svg4c"]
+
+[ext_resource type="Texture2D" uid="uid://b0kuge521m1tu" path="res://assets/kenney_new-platformer-pack-1.1/Sprites/Tiles/Default/torch_on_a.png" id="1_my26j"]
+[ext_resource type="Texture2D" uid="uid://dpcgxq0hqmrl2" path="res://assets/kenney_new-platformer-pack-1.1/Sprites/Tiles/Default/torch_on_b.png" id="2_o2tjn"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_r3k50"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_my26j")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_o2tjn")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[node name="torch" type="Area2D" unique_id=510156727]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1873690038]
+sprite_frames = SubResource("SpriteFrames_r3k50")
+frame_progress = 0.23167229

@@ -12,6 +12,8 @@
 [ext_resource type="PackedScene" uid="uid://duvjslw62ng2m" path="res://scenes/long_grey_block.tscn" id="10_que50"]
 [ext_resource type="PackedScene" uid="uid://b7a5c5ognxifx" path="res://scenes/short_spikes.tscn" id="11_hey2k"]
 [ext_resource type="PackedScene" uid="uid://dorfhiic1mp0m" path="res://scenes/exit_door.tscn" id="12_172wr"]
+[ext_resource type="PackedScene" uid="uid://bli63k03svg4c" path="res://scenes/torch.tscn" id="13_fldb1"]
+[ext_resource type="PackedScene" uid="uid://cnhiu4h87m3bi" path="res://scenes/platform_blocks.tscn" id="14_guvtl"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_ne2mo"]
 size = Vector2(2740.5, 120)
@@ -1352,3 +1354,21 @@ position = Vector2(7458, 335)
 
 [node name="singleGreyBlock5" parent="." unique_id=712944826 instance=ExtResource("9_6cvei")]
 position = Vector2(7795, 330)
+
+[node name="torch" parent="." unique_id=510156727 instance=ExtResource("13_fldb1")]
+position = Vector2(2167, 251)
+
+[node name="torch2" parent="." unique_id=1932274904 instance=ExtResource("13_fldb1")]
+position = Vector2(876, 256)
+
+[node name="torch3" parent="." unique_id=1781429864 instance=ExtResource("13_fldb1")]
+position = Vector2(3542, 240)
+
+[node name="torch4" parent="." unique_id=1774129686 instance=ExtResource("13_fldb1")]
+position = Vector2(5583, 254)
+
+[node name="torch5" parent="." unique_id=368697033 instance=ExtResource("13_fldb1")]
+position = Vector2(8586, 271)
+
+[node name="platformBlocks" parent="." unique_id=1477500899 instance=ExtResource("14_guvtl")]
+position = Vector2(5091, 187)

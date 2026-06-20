@@ -1,0 +1,40 @@
+[gd_scene format=3 uid="uid://csxtgsl0rcfch"]
+
+[ext_resource type="Texture2D" uid="uid://be6e1m2e8rgak" path="res://assets/kenney_new-platformer-pack-1.1/Sprites/Enemies/Default/slime_spike_flat.png" id="1_pjw23"]
+[ext_resource type="Texture2D" uid="uid://dqjioce3w0ivj" path="res://assets/kenney_new-platformer-pack-1.1/Sprites/Enemies/Default/slime_spike_rest.png" id="2_2npkn"]
+[ext_resource type="Texture2D" uid="uid://8u6qsljg1qy4" path="res://assets/kenney_new-platformer-pack-1.1/Sprites/Enemies/Default/slime_spike_walk_a.png" id="3_fd6lc"]
+[ext_resource type="Texture2D" uid="uid://2kcrmvvevep1" path="res://assets/kenney_new-platformer-pack-1.1/Sprites/Enemies/Default/slime_spike_walk_b.png" id="4_gstla"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_v5wyi"]
+size = Vector2(30.5, 18.25)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_0l8pv"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_pjw23")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_2npkn")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_fd6lc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_gstla")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[node name="slime" type="Area2D" unique_id=907538098]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1335119515]
+position = Vector2(25.25, 68.125)
+shape = SubResource("RectangleShape2D_v5wyi")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1083313456]
+position = Vector2(25, 48)
+sprite_frames = SubResource("SpriteFrames_0l8pv")
+frame_progress = 0.7291574

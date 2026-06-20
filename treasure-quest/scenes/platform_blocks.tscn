@@ -1,0 +1,51 @@
+[gd_scene format=3 uid="uid://cnhiu4h87m3bi"]
+
+[ext_resource type="Texture2D" uid="uid://b1b1n4gx2vaer" path="res://assets/new kenney/kenney_platformer-pack-industrial/PNG/Default size/platformIndustrial_057.png" id="1_mkk1r"]
+[ext_resource type="Texture2D" uid="uid://brfvgp10ayp7k" path="res://assets/new kenney/kenney_platformer-pack-industrial/PNG/Default size/platformIndustrial_058.png" id="2_styvn"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_qjub7"]
+size = Vector2(60, 64)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_6xgr1"]
+size = Vector2(73, 66)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_vxfmv"]
+size = Vector2(139, 139)
+
+[node name="platformBlocks" type="StaticBody2D" unique_id=1477500899]
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="." unique_id=1423606013]
+position = Vector2(275, 165)
+shape = SubResource("RectangleShape2D_qjub7")
+
+[node name="CollisionShape2D3" type="CollisionShape2D" parent="." unique_id=1067104149]
+position = Vector2(140, 297)
+shape = SubResource("RectangleShape2D_6xgr1")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=54330095]
+position = Vector2(241.5, 265.5)
+shape = SubResource("RectangleShape2D_vxfmv")
+
+[node name="PlatformIndustrial057" type="Sprite2D" parent="." unique_id=817899936]
+position = Vector2(138, 299)
+texture = ExtResource("1_mkk1r")
+
+[node name="PlatformIndustrial058" type="Sprite2D" parent="." unique_id=627264190]
+position = Vector2(208, 299)
+texture = ExtResource("2_styvn")
+
+[node name="PlatformIndustrial059" type="Sprite2D" parent="." unique_id=1103633020]
+position = Vector2(278, 300)
+texture = ExtResource("2_styvn")
+
+[node name="PlatformIndustrial060" type="Sprite2D" parent="." unique_id=267723028]
+position = Vector2(206, 229)
+texture = ExtResource("2_styvn")
+
+[node name="PlatformIndustrial061" type="Sprite2D" parent="." unique_id=459804731]
+position = Vector2(276, 230)
+texture = ExtResource("2_styvn")
+
+[node name="PlatformIndustrial062" type="Sprite2D" parent="." unique_id=1806008496]
+position = Vector2(275, 161)
+texture = ExtResource("1_mkk1r")
