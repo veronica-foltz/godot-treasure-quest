@@ -25,13 +25,13 @@
 [ext_resource type="PackedScene" uid="uid://dgvtd50xky5pt" path="res://scenes/silver_coin.tscn" id="23_vhnap"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_ne2mo"]
-size = Vector2(2740.5, 120)
+size = Vector2(2742.5, 124)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_6cvei"]
 size = Vector2(450.25, 65.75)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_que50"]
-size = Vector2(1461, 115)
+size = Vector2(1462, 120)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_hey2k"]
 size = Vector2(200.5, 57)
@@ -40,10 +40,10 @@ size = Vector2(200.5, 57)
 size = Vector2(2092.5, 68.5)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_k22d5"]
-size = Vector2(1466, 61.5)
+size = Vector2(1465, 58.5)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_k6a82"]
-size = Vector2(3556, 127.5)
+size = Vector2(3560, 126.5)
 
 [node name="Level2" type="Node2D" unique_id=1685866390]
 
@@ -115,7 +115,7 @@ position = Vector2(262, -5)
 [node name="Ground" type="StaticBody2D" parent="." unique_id=1927696325]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Ground" unique_id=1677984240]
-position = Vector2(1365.75, 589)
+position = Vector2(1366.75, 587)
 shape = SubResource("RectangleShape2D_ne2mo")
 
 [node name="CollisionShape2D2" type="CollisionShape2D" parent="Ground" unique_id=565029590]
@@ -123,7 +123,7 @@ position = Vector2(2959.875, 618.125)
 shape = SubResource("RectangleShape2D_6cvei")
 
 [node name="CollisionShape2D3" type="CollisionShape2D" parent="Ground" unique_id=25412578]
-position = Vector2(3915.5, 584.5)
+position = Vector2(3915, 582)
 shape = SubResource("RectangleShape2D_que50")
 
 [node name="TerrainStoneHorizontalMiddle9" type="Sprite2D" parent="Ground" unique_id=1068619712]
@@ -1373,11 +1373,11 @@ position = Vector2(5703.75, 616.75)
 shape = SubResource("RectangleShape2D_bv48q")
 
 [node name="CollisionShape2D6" type="CollisionShape2D" parent="Ground" unique_id=378322741]
-position = Vector2(5569, 551.75)
+position = Vector2(5568.5, 553.25)
 shape = SubResource("RectangleShape2D_k22d5")
 
 [node name="CollisionShape2D7" type="CollisionShape2D" parent="Ground" unique_id=1224306091]
-position = Vector2(8520, 582.75)
+position = Vector2(8518, 583.25)
 shape = SubResource("RectangleShape2D_k6a82")
 
 [node name="singleGreyBlock" parent="." unique_id=1026547076 instance=ExtResource("9_6cvei")]
@@ -1494,9 +1494,6 @@ position = Vector2(5973, 401)
 [node name="coin19" parent="." unique_id=1690316316 instance=ExtResource("18_k6a82")]
 position = Vector2(6087, 402)
 
-[node name="singleGreyBlock6" parent="." unique_id=1297159303 instance=ExtResource("9_6cvei")]
-position = Vector2(6767, 347)
-
 [node name="greyBlocks4" parent="." unique_id=1466540727 instance=ExtResource("7_hey2k")]
 position = Vector2(4996, 152)
 
@@ -1539,7 +1536,7 @@ position = Vector2(4885, -24)
 position = Vector2(5682, 455)
 
 [node name="halfSaw" parent="." unique_id=793024893 instance=ExtResource("22_vhnap")]
-position = Vector2(7645, 455)
+position = Vector2(7647, 458)
 
 [node name="halfSaw3" parent="." unique_id=988304004 instance=ExtResource("22_vhnap")]
 position = Vector2(2558, 460)

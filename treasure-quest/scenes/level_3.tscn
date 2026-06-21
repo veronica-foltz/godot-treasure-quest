@@ -11,7 +11,7 @@
 [ext_resource type="PackedScene" uid="uid://de6orvpo2ehos" path="res://scenes/player.tscn" id="9_ha73p"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_ha73p"]
-size = Vector2(1866.5, 226.5)
+size = Vector2(1866.5, 239)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_vcx5n"]
 size = Vector2(7373, 130.5)
@@ -367,10 +367,10 @@ scale = Vector2(4.03125, 1.7734375)
 texture = ExtResource("4_ha73p")
 
 [node name="Player" parent="." unique_id=1741513001 instance=ExtResource("9_ha73p")]
-position = Vector2(288, 180)
+position = Vector2(374, 187)
 
 [node name="Camera2D" type="Camera2D" parent="Player" unique_id=2140494699]
-position = Vector2(276, 80)
+position = Vector2(228, -30)
 
 [node name="ground" type="StaticBody2D" parent="." unique_id=852476468]
 
@@ -2006,7 +2006,7 @@ scale = Vector2(0.984375, 0.859375)
 texture = ExtResource("8_ha73p")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="ground" unique_id=1971500229]
-position = Vector2(923.75, 524.75)
+position = Vector2(923.75, 518.5)
 shape = SubResource("RectangleShape2D_ha73p")
 
 [node name="CollisionShape2D2" type="CollisionShape2D" parent="ground" unique_id=1986383914]

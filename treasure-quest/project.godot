@@ -11,7 +11,7 @@ config_version=5
 [application]
 
 config/name="Treasure Quest"
-run/main_scene="uid://vd8q0h5f6g66"
+run/main_scene="uid://j1udsvy0muh8"
 config/features=PackedStringArray("4.6", "Forward Plus")
 config/icon="res://icon.svg"
 
