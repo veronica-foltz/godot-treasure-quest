@@ -1,6 +1,7 @@
 [gd_scene format=3 uid="uid://vd8q0h5f6g66"]
 
 [ext_resource type="Texture2D" uid="uid://slxhqkw74lde" path="res://assets/kenney_new-platformer-pack-1.1/Sprites/Tiles/Default/terrain_stone_horizontal_middle.png" id="1_jm1iu"]
+[ext_resource type="Texture2D" uid="uid://l5wp0phnteh" path="res://assets/new kenney/kenney_platformer-pack-industrial/PNG/Default size/platformIndustrial_103.png" id="2_1sb0y"]
 [ext_resource type="Texture2D" uid="uid://n87bj8pi2ay1" path="res://assets/kenney_new-platformer-pack-1.1/Sprites/Tiles/Default/terrain_stone_block_center.png" id="2_pbc48"]
 [ext_resource type="Texture2D" uid="uid://bp4jkp5jm6siw" path="res://assets/kenney_new-platformer-pack-1.1/Sprites/Tiles/Default/terrain_stone_block_top_left.png" id="3_y0kc7"]
 [ext_resource type="Texture2D" uid="uid://cm3vybopmnfxq" path="res://assets/kenney_new-platformer-pack-1.1/Sprites/Tiles/Default/terrain_stone_block_top_right.png" id="4_ne2mo"]
@@ -15,10 +16,12 @@
 [ext_resource type="PackedScene" uid="uid://bli63k03svg4c" path="res://scenes/torch.tscn" id="13_fldb1"]
 [ext_resource type="PackedScene" uid="uid://cnhiu4h87m3bi" path="res://scenes/platform_blocks.tscn" id="14_guvtl"]
 [ext_resource type="PackedScene" uid="uid://dru8weml0gt30" path="res://scenes/fly.tscn" id="15_7qsfm"]
-[ext_resource type="PackedScene" uid="uid://n1sioxmk8uxn" path="res://scenes/snail.tscn" id="16_bv48q"]
 [ext_resource type="PackedScene" uid="uid://csxtgsl0rcfch" path="res://scenes/slime.tscn" id="17_k22d5"]
 [ext_resource type="PackedScene" uid="uid://drao7adjsjkjt" path="res://scenes/coin.tscn" id="18_k6a82"]
 [ext_resource type="Texture2D" uid="uid://coafrcakqq520" path="res://assets/kenney_new-platformer-pack-1.1/Sprites/Tiles/Default/sign_exit.png" id="19_bv48q"]
+[ext_resource type="Texture2D" uid="uid://vhkmh85q5o64" path="res://assets/kenney_new-platformer-pack-1.1/Sprites/Tiles/Default/terrain_stone_block_left.png" id="20_k22d5"]
+[ext_resource type="PackedScene" uid="uid://dgmie6b3t3vy2" path="res://scenes/black_block.tscn" id="21_k6a82"]
+[ext_resource type="PackedScene" uid="uid://bvaceenngg2ew" path="res://scenes/half_saw.tscn" id="22_vhnap"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_ne2mo"]
 size = Vector2(2740.5, 120)
@@ -27,19 +30,39 @@ size = Vector2(2740.5, 120)
 size = Vector2(450.25, 65.75)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_que50"]
-size = Vector2(6105, 115)
+size = Vector2(1461, 115)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_hey2k"]
 size = Vector2(200.5, 57)
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_bv48q"]
+size = Vector2(2092.5, 68.5)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_k22d5"]
+size = Vector2(1466, 61.5)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_k6a82"]
+size = Vector2(3556, 127.5)
+
 [node name="Level2" type="Node2D" unique_id=1685866390]
 
+[node name="black block" parent="." unique_id=1247375298 instance=ExtResource("21_k6a82")]
+position = Vector2(5245, 226)
+
 [node name="ColorRect" type="ColorRect" parent="." unique_id=1172111720]
-offset_left = -3.0
-offset_top = -972.0
-offset_right = 10307.0
-offset_bottom = 608.0
+offset_left = -1258.0
+offset_top = -955.0
+offset_right = 9923.0
+offset_bottom = 643.0
 color = Color(0.13333334, 0.13333334, 0.13333334, 1)
+
+[node name="PlatformIndustrial103" type="Sprite2D" parent="." unique_id=323150025]
+position = Vector2(181, 487)
+texture = ExtResource("2_1sb0y")
+
+[node name="PlatformIndustrial104" type="Sprite2D" parent="." unique_id=1268053073]
+position = Vector2(7091, 486)
+texture = ExtResource("2_1sb0y")
 
 [node name="torch" parent="." unique_id=510156727 instance=ExtResource("13_fldb1")]
 position = Vector2(1011, 222)
@@ -99,7 +122,7 @@ position = Vector2(2959.875, 618.125)
 shape = SubResource("RectangleShape2D_6cvei")
 
 [node name="CollisionShape2D3" type="CollisionShape2D" parent="Ground" unique_id=25412578]
-position = Vector2(6237.5, 584.5)
+position = Vector2(3915.5, 584.5)
 shape = SubResource("RectangleShape2D_que50")
 
 [node name="TerrainStoneHorizontalMiddle9" type="Sprite2D" parent="Ground" unique_id=1068619712]
@@ -1344,6 +1367,18 @@ position = Vector2(6509, 463)
 [node name="singleGreyBlock3" parent="Ground" unique_id=850376095 instance=ExtResource("9_6cvei")]
 position = Vector2(6624, 460)
 
+[node name="CollisionShape2D5" type="CollisionShape2D" parent="Ground" unique_id=810050129]
+position = Vector2(5703.75, 616.75)
+shape = SubResource("RectangleShape2D_bv48q")
+
+[node name="CollisionShape2D6" type="CollisionShape2D" parent="Ground" unique_id=378322741]
+position = Vector2(5569, 551.75)
+shape = SubResource("RectangleShape2D_k22d5")
+
+[node name="CollisionShape2D7" type="CollisionShape2D" parent="Ground" unique_id=1224306091]
+position = Vector2(8520, 582.75)
+shape = SubResource("RectangleShape2D_k6a82")
+
 [node name="singleGreyBlock" parent="." unique_id=1026547076 instance=ExtResource("9_6cvei")]
 position = Vector2(2797, 451)
 
@@ -1425,15 +1460,6 @@ position = Vector2(1499, 437)
 [node name="coin14" parent="." unique_id=654924263 instance=ExtResource("18_k6a82")]
 position = Vector2(1439, 437)
 
-[node name="snail" parent="." unique_id=997975817 instance=ExtResource("16_bv48q")]
-position = Vector2(7540, 485)
-
-[node name="snail2" parent="." unique_id=1100282746 instance=ExtResource("16_bv48q")]
-position = Vector2(5580, 489)
-
-[node name="snail3" parent="." unique_id=1934359151 instance=ExtResource("16_bv48q")]
-position = Vector2(2444, 485)
-
 [node name="slime" parent="." unique_id=907538098 instance=ExtResource("17_k22d5")]
 position = Vector2(3366, 445)
 
@@ -1444,13 +1470,13 @@ position = Vector2(7452, 249)
 position = Vector2(7789, 244)
 
 [node name="fly" parent="." unique_id=682406429 instance=ExtResource("15_7qsfm")]
-position = Vector2(1967, 342)
+position = Vector2(1964, 367)
 
 [node name="fly2" parent="." unique_id=761809362 instance=ExtResource("15_7qsfm")]
 position = Vector2(4972, 367)
 
 [node name="fly3" parent="." unique_id=1777028343 instance=ExtResource("15_7qsfm")]
-position = Vector2(7090, 363)
+position = Vector2(7087, 387)
 
 [node name="coin15" parent="." unique_id=1090598909 instance=ExtResource("18_k6a82")]
 position = Vector2(6880, 395)
@@ -1466,3 +1492,44 @@ position = Vector2(5973, 401)
 
 [node name="coin19" parent="." unique_id=1690316316 instance=ExtResource("18_k6a82")]
 position = Vector2(6087, 402)
+
+[node name="singleGreyBlock6" parent="." unique_id=1297159303 instance=ExtResource("9_6cvei")]
+position = Vector2(6767, 347)
+
+[node name="greyBlocks4" parent="." unique_id=1466540727 instance=ExtResource("7_hey2k")]
+position = Vector2(4996, 152)
+
+[node name="greyBlocks5" parent="." unique_id=396347215 instance=ExtResource("7_hey2k")]
+position = Vector2(4714, 7)
+
+[node name="singleGreyBlock7" parent="." unique_id=830917116 instance=ExtResource("9_6cvei")]
+position = Vector2(4954, 84)
+
+[node name="coin20" parent="." unique_id=412776141 instance=ExtResource("18_k6a82")]
+position = Vector2(5114, 117)
+
+[node name="coin21" parent="." unique_id=2021633882 instance=ExtResource("18_k6a82")]
+position = Vector2(5167, 115)
+
+[node name="coin22" parent="." unique_id=175008045 instance=ExtResource("18_k6a82")]
+position = Vector2(5057, 117)
+
+[node name="LongSpikes3" parent="." unique_id=616596697 instance=ExtResource("6_que50")]
+position = Vector2(3917, 453)
+
+[node name="TerrainStoneBlockTopLeft2" type="Sprite2D" parent="." unique_id=584049089]
+position = Vector2(-28, 553)
+texture = ExtResource("3_y0kc7")
+
+[node name="TerrainStoneBlockLeft" type="Sprite2D" parent="." unique_id=407289314]
+position = Vector2(-28, 613)
+texture = ExtResource("20_k22d5")
+
+[node name="halfSaw" parent="." unique_id=1883620628 instance=ExtResource("22_vhnap")]
+position = Vector2(7647, 458)
+
+[node name="halfSaw2" parent="." unique_id=211355405 instance=ExtResource("22_vhnap")]
+position = Vector2(5685, 460)
+
+[node name="halfSaw3" parent="." unique_id=774206477 instance=ExtResource("22_vhnap")]
+position = Vector2(2561, 459)
