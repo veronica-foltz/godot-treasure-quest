@@ -1,6 +1,7 @@
 [gd_scene format=3 uid="uid://bvaceenngg2ew"]
 
 [ext_resource type="Texture2D" uid="uid://brt3r70m25f2i" path="res://assets/new kenney/kenney_platformer-pack-industrial/PNG/Default size/platformIndustrial_068.png" id="1_bm42y"]
+[ext_resource type="Script" uid="uid://cmwfyspjjhr4j" path="res://scenes/half_saw.gd" id="1_gm1ft"]
 [ext_resource type="Texture2D" uid="uid://beva8mwoj5p1q" path="res://assets/new kenney/kenney_platformer-pack-industrial/PNG/Default size/platformIndustrial_069.png" id="2_gm1ft"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_p0e2h"]
@@ -21,6 +22,7 @@ animations = [{
 }]
 
 [node name="halfSaw" type="Area2D" unique_id=1883620628]
+script = ExtResource("1_gm1ft")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=363601185]
 position = Vector2(1, 50.75)
@@ -32,3 +34,5 @@ scale = Vector2(0.9285714, 0.8)
 sprite_frames = SubResource("SpriteFrames_iljvg")
 autoplay = "default"
 frame_progress = 0.40631688
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

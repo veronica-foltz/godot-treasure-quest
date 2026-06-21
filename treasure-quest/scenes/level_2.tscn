@@ -22,6 +22,7 @@
 [ext_resource type="Texture2D" uid="uid://vhkmh85q5o64" path="res://assets/kenney_new-platformer-pack-1.1/Sprites/Tiles/Default/terrain_stone_block_left.png" id="20_k22d5"]
 [ext_resource type="PackedScene" uid="uid://dgmie6b3t3vy2" path="res://scenes/black_block.tscn" id="21_k6a82"]
 [ext_resource type="PackedScene" uid="uid://bvaceenngg2ew" path="res://scenes/half_saw.tscn" id="22_vhnap"]
+[ext_resource type="PackedScene" uid="uid://dgvtd50xky5pt" path="res://scenes/silver_coin.tscn" id="23_vhnap"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_ne2mo"]
 size = Vector2(2740.5, 120)
@@ -52,7 +53,7 @@ position = Vector2(5245, 226)
 [node name="ColorRect" type="ColorRect" parent="." unique_id=1172111720]
 offset_left = -1258.0
 offset_top = -955.0
-offset_right = 9923.0
+offset_right = 10291.0
 offset_bottom = 643.0
 color = Color(0.13333334, 0.13333334, 0.13333334, 1)
 
@@ -1525,11 +1526,20 @@ texture = ExtResource("3_y0kc7")
 position = Vector2(-28, 613)
 texture = ExtResource("20_k22d5")
 
-[node name="halfSaw" parent="." unique_id=1883620628 instance=ExtResource("22_vhnap")]
-position = Vector2(7647, 458)
+[node name="silverCoin" parent="." unique_id=974234180 instance=ExtResource("23_vhnap")]
+position = Vector2(4779, -24)
 
-[node name="halfSaw2" parent="." unique_id=211355405 instance=ExtResource("22_vhnap")]
-position = Vector2(5685, 460)
+[node name="silverCoin2" parent="." unique_id=825027791 instance=ExtResource("23_vhnap")]
+position = Vector2(4831, -24)
 
-[node name="halfSaw3" parent="." unique_id=774206477 instance=ExtResource("22_vhnap")]
-position = Vector2(2561, 459)
+[node name="silverCoin3" parent="." unique_id=1240989156 instance=ExtResource("23_vhnap")]
+position = Vector2(4885, -24)
+
+[node name="halfSaw2" parent="." unique_id=1883620628 instance=ExtResource("22_vhnap")]
+position = Vector2(5682, 455)
+
+[node name="halfSaw" parent="." unique_id=793024893 instance=ExtResource("22_vhnap")]
+position = Vector2(7645, 455)
+
+[node name="halfSaw3" parent="." unique_id=988304004 instance=ExtResource("22_vhnap")]
+position = Vector2(2558, 460)

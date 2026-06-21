@@ -1,0 +1,36 @@
+[gd_scene format=3 uid="uid://dgvtd50xky5pt"]
+
+[ext_resource type="Script" uid="uid://c0403bubksmaj" path="res://scenes/silver_coin.gd" id="1_hyekj"]
+[ext_resource type="Texture2D" uid="uid://crhyb82eo8rn2" path="res://assets/kenney_new-platformer-pack-1.1/Sprites/Tiles/Default/coin_silver.png" id="1_i6kbj"]
+[ext_resource type="Texture2D" uid="uid://dwrj0oe3elgfa" path="res://assets/kenney_new-platformer-pack-1.1/Sprites/Tiles/Default/coin_silver_side.png" id="2_hyekj"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ak2im"]
+size = Vector2(14, 20)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_8mjmt"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_i6kbj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_hyekj")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[node name="silverCoin" type="Area2D" unique_id=974234180]
+script = ExtResource("1_hyekj")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=997399979]
+position = Vector2(1, 0)
+shape = SubResource("RectangleShape2D_ak2im")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1258720528]
+sprite_frames = SubResource("SpriteFrames_8mjmt")
+autoplay = "default"
+frame_progress = 0.34892935
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
