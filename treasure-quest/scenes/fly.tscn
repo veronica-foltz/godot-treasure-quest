@@ -1,6 +1,7 @@
 [gd_scene format=3 uid="uid://dru8weml0gt30"]
 
 [ext_resource type="Texture2D" uid="uid://b8nuvx0ehh6vd" path="res://assets/kenney_new-platformer-pack-1.1/Sprites/Enemies/Default/fly_rest.png" id="1_2lkvx"]
+[ext_resource type="Script" uid="uid://palk8wytthjp" path="res://scenes/fly.gd" id="1_sgyng"]
 [ext_resource type="Texture2D" uid="uid://b5367a5gt0rh2" path="res://assets/kenney_new-platformer-pack-1.1/Sprites/Enemies/Default/fly_a.png" id="2_sgyng"]
 [ext_resource type="Texture2D" uid="uid://dwxnkrl71dfi8" path="res://assets/kenney_new-platformer-pack-1.1/Sprites/Enemies/Default/fly_b.png" id="3_0qovp"]
 
@@ -25,6 +26,7 @@ animations = [{
 }]
 
 [node name="fly" type="Area2D" unique_id=682406429]
+script = ExtResource("1_sgyng")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=557056898]
 position = Vector2(-11, -10.25)
@@ -35,3 +37,5 @@ position = Vector2(-10, -4)
 sprite_frames = SubResource("SpriteFrames_eswn2")
 autoplay = "default"
 frame_progress = 0.54450995
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
