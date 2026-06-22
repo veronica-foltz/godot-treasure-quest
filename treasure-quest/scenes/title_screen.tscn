@@ -1,8 +1,16 @@
 [gd_scene format=3 uid="uid://cxnn0skoljy0p"]
 
-[ext_resource type="Texture2D" uid="uid://b07u23uuvpfh1" path="res://assets/images/Treasure Quest TP.png" id="1_fgkus"]
 [ext_resource type="Script" uid="uid://bxopkgittyjjn" path="res://scenes/title_screen.gd" id="1_sa3yf"]
+[ext_resource type="Texture2D" uid="uid://rxsollymbwvu" path="res://assets/images/newTitleScreen.png" id="3_mgrm8"]
 [ext_resource type="AudioStream" uid="uid://ci4xy1m2rd2xi" path="res://assets/music/tatamusic-game-gaming-minecraft-background-music-377647.mp3" id="3_s4lrb"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_s4lrb"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_mgrm8"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_dc4i4"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_e54dn"]
 
 [node name="TitleScreen" type="Control" unique_id=1037495461]
 layout_mode = 3
@@ -21,22 +29,24 @@ layout_mode = 0
 offset_right = 58.0
 offset_bottom = 40.0
 
-[node name="TreasureQuestTp" type="Sprite2D" parent="." unique_id=2116117992]
-position = Vector2(574, 362.99997)
-scale = Vector2(0.74609375, 0.7001953)
-texture = ExtResource("1_fgkus")
-
-[node name="Button" type="Button" parent="." unique_id=89611878]
-layout_mode = 0
-offset_left = 490.0
-offset_top = 415.0
-offset_right = 684.0
-offset_bottom = 476.0
-theme_override_font_sizes/font_size = 26
-text = "Start Game"
-
 [node name="Music" type="AudioStreamPlayer2D" parent="." unique_id=2110437924]
 stream = ExtResource("3_s4lrb")
 autoplay = true
+
+[node name="NewTitleScreen" type="Sprite2D" parent="." unique_id=1372293867]
+position = Vector2(574.75, 325)
+scale = Vector2(0.69016194, 0.68432206)
+texture = ExtResource("3_mgrm8")
+
+[node name="Button" type="Button" parent="." unique_id=565724027]
+layout_mode = 0
+offset_left = 415.0
+offset_top = 376.0
+offset_right = 736.0
+offset_bottom = 445.0
+theme_override_styles/normal = SubResource("StyleBoxEmpty_s4lrb")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_mgrm8")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_dc4i4")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_e54dn")
 
 [connection signal="pressed" from="Button" to="." method="_on_button_pressed"]

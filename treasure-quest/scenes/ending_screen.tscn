@@ -1,0 +1,18 @@
+[gd_scene format=3 uid="uid://csf4vdw44liup"]
+
+[node name="EndingScreen" type="Control" unique_id=1255609217]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Label" type="Label" parent="." unique_id=130785044]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 23.0
+
+[node name="Button" type="Button" parent="." unique_id=201349067]
+layout_mode = 0
+offset_right = 109.0
+offset_bottom = 54.0
+text = "Main Menu"
