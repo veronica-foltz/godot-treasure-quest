@@ -27,6 +27,7 @@
 [ext_resource type="Texture2D" uid="uid://b71riaykew6pe" path="res://assets/kenney_new-platformer-pack-1.1/Sprites/Tiles/Default/terrain_dirt_block_bottom_left.png" id="24_jnlnj"]
 [ext_resource type="Texture2D" uid="uid://c7u76w5qix313" path="res://assets/kenney_new-platformer-pack-1.1/Sprites/Tiles/Default/terrain_dirt_block_top_left.png" id="25_nhai6"]
 [ext_resource type="PackedScene" uid="uid://dorfhiic1mp0m" path="res://scenes/exit_door.tscn" id="27_bjw4u"]
+[ext_resource type="Texture2D" uid="uid://cvspu3uibbc6s" path="res://assets/kenney_new-platformer-pack-1.1/Sprites/Tiles/Default/terrain_dirt_block_left.png" id="28_bjw4u"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_0vrl8"]
 size = Vector2(1960, 126.5)
@@ -50,6 +51,22 @@ texture = ExtResource("4_ha73p")
 [node name="BackgroundFadeMushrooms" type="Sprite2D" parent="." unique_id=1501695416]
 position = Vector2(130, 389)
 texture = ExtResource("1_p6vls")
+
+[node name="BackgroundFadeMushrooms" type="Sprite2D" parent="BackgroundFadeMushrooms" unique_id=111830670]
+position = Vector2(-513, 0)
+texture = ExtResource("1_p6vls")
+
+[node name="BackgroundFadeHills" type="Sprite2D" parent="BackgroundFadeMushrooms" unique_id=1519218305]
+position = Vector2(-258, 0)
+texture = ExtResource("2_hhfj6")
+
+[node name="BackgroundClouds" type="Sprite2D" parent="BackgroundFadeMushrooms" unique_id=228321024]
+position = Vector2(-513, -256)
+texture = ExtResource("3_wae8j")
+
+[node name="BackgroundClouds2" type="Sprite2D" parent="BackgroundFadeMushrooms" unique_id=1376241156]
+position = Vector2(-257, -256)
+texture = ExtResource("3_wae8j")
 
 [node name="BackgroundFadeMushrooms2" type="Sprite2D" parent="." unique_id=2052701185]
 position = Vector2(641, 389)
@@ -114,8 +131,8 @@ scale = Vector2(1.0039063, 1)
 texture = ExtResource("2_hhfj6")
 
 [node name="BackgroundSolidSky" type="Sprite2D" parent="." unique_id=102109139]
-position = Vector2(4613.9995, -1043.5)
-scale = Vector2(36.031246, 8.199219)
+position = Vector2(4355.9995, -1041.9999)
+scale = Vector2(38.046875, 8.210938)
 texture = ExtResource("4_ha73p")
 
 [node name="BackgroundFadeMushrooms3" type="Sprite2D" parent="." unique_id=1898503574]
@@ -1546,6 +1563,28 @@ position = Vector2(4660, 348)
 position = Vector2(2663, 285)
 
 [node name="ExitDoor" parent="." unique_id=1702446062 instance=ExtResource("27_bjw4u")]
-position = Vector2(8578, 422)
+position = Vector2(8579, 424)
+
+[node name="BackgroundSolidSky2" type="Sprite2D" parent="." unique_id=1277637127]
+position = Vector2(-292, 577)
+scale = Vector2(1.828125, 0.5546875)
+texture = ExtResource("4_ha73p")
+
+[node name="TerrainDirtBlockTopLeft2" type="Sprite2D" parent="." unique_id=1416210311]
+position = Vector2(-26, 430)
+texture = ExtResource("25_nhai6")
+
+[node name="TerrainDirtBlockLeft" type="Sprite2D" parent="." unique_id=492339314]
+position = Vector2(-26, 492)
+scale = Vector2(1, 0.96875)
+texture = ExtResource("28_bjw4u")
+
+[node name="TerrainDirtBlockTopLeft3" type="Sprite2D" parent="." unique_id=2061587704]
+position = Vector2(-25, 549)
+texture = ExtResource("25_nhai6")
+
+[node name="TerrainDirtBlockLeft2" type="Sprite2D" parent="." unique_id=958292586]
+position = Vector2(-25, 613)
+texture = ExtResource("28_bjw4u")
 
 [connection signal="body_entered" from="fall" to="Player" method="_on_fall_body_entered"]
