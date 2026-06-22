@@ -41,7 +41,7 @@ size = Vector2(1783.375, 131.25)
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_56dhn"]
 size = Vector2(3643, 14.75)
 
-[node name="Level2" type="Node2D" unique_id=1601843956]
+[node name="Level3" type="Node2D" unique_id=1601843956]
 
 [node name="BackgroundSolidSky5" type="Sprite2D" parent="." unique_id=442045125]
 position = Vector2(6427.4995, 575)
@@ -57,7 +57,8 @@ position = Vector2(-513, 0)
 texture = ExtResource("2_yo6ga")
 
 [node name="BackgroundFadeHills" type="Sprite2D" parent="BackgroundFadeMushrooms" unique_id=1519218305]
-position = Vector2(-258, 0)
+position = Vector2(-255, 0)
+scale = Vector2(1.0234375, 1)
 texture = ExtResource("3_l5x7i")
 
 [node name="BackgroundClouds" type="Sprite2D" parent="BackgroundFadeMushrooms" unique_id=228321024]
@@ -65,7 +66,8 @@ position = Vector2(-513, -256)
 texture = ExtResource("4_safny")
 
 [node name="BackgroundClouds2" type="Sprite2D" parent="BackgroundFadeMushrooms" unique_id=1376241156]
-position = Vector2(-257, -256)
+position = Vector2(-254, -256)
+scale = Vector2(1.0234375, 1)
 texture = ExtResource("4_safny")
 
 [node name="BackgroundFadeMushrooms2" type="Sprite2D" parent="." unique_id=2052701185]
@@ -1564,6 +1566,7 @@ position = Vector2(2663, 285)
 
 [node name="ExitDoor" parent="." unique_id=1702446062 instance=ExtResource("27_4v6uq")]
 position = Vector2(8579, 424)
+next_level = "res://scenes/level_3.tscn"
 
 [node name="BackgroundSolidSky2" type="Sprite2D" parent="." unique_id=1277637127]
 position = Vector2(-292, 577)

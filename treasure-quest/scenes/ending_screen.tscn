@@ -1,10 +1,14 @@
 [gd_scene format=3 uid="uid://csf4vdw44liup"]
 
+[ext_resource type="Script" uid="uid://10om1yyfr4sw" path="res://scenes/ending_screen.gd" id="1_4vp0n"]
+[ext_resource type="Texture2D" uid="uid://craoms3ukdxta" path="res://assets/images/endingScreen.png" id="1_61pod"]
+
 [node name="EndingScreen" type="Control" unique_id=1255609217]
 layout_mode = 3
 anchors_preset = 0
 offset_right = 40.0
 offset_bottom = 40.0
+script = ExtResource("1_4vp0n")
 
 [node name="Label" type="Label" parent="." unique_id=130785044]
 layout_mode = 0
@@ -13,6 +17,14 @@ offset_bottom = 23.0
 
 [node name="Button" type="Button" parent="." unique_id=201349067]
 layout_mode = 0
-offset_right = 109.0
-offset_bottom = 54.0
-text = "Main Menu"
+offset_left = 410.0
+offset_top = 387.0
+offset_right = 745.0
+offset_bottom = 472.0
+
+[node name="EndingScreen" type="Sprite2D" parent="." unique_id=124151860]
+position = Vector2(576.99994, 325.49997)
+scale = Vector2(0.6877989, 0.6918172)
+texture = ExtResource("1_61pod")
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]

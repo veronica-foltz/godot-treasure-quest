@@ -301,6 +301,7 @@ texture = ExtResource("5_tbgi4")
 
 [node name="ExitDoor" parent="." unique_id=1702446062 instance=ExtResource("17_muem4")]
 position = Vector2(6151, 422)
+next_level = "res://scenes/level_2.tscn"
 
 [node name="SignRight" type="Sprite2D" parent="." unique_id=1068579584]
 position = Vector2(1353, 484)
