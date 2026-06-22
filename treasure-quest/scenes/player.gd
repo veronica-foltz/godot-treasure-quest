@@ -1,12 +1,16 @@
 extends CharacterBody2D
 
 const SPEED = 200
-
 const JUMP_VELOCITY = -400
-
 const GRAVITY = 900
 
 @onready var anim = $AnimatedSprite2D
+
+var health = 3
+var start_position = Vector2(100, 300)
+var can_take_damage = true
+var is_hurt = false
+var facing_direction = 1
 
 func _physics_process(delta):
 
@@ -21,6 +25,11 @@ func _physics_process(delta):
 	else:
 		velocity.x = 0
 	move_and_slide()
+	
+	if is_hurt:
+		move_and_slide()
+		return
+	
 	if not is_on_floor():
 		anim.play("jump")
 	elif Input.is_action_pressed("crouch"):
@@ -38,3 +47,32 @@ func _on_bee_body_entered(body):
 func _on_fall_body_entered(body: Node2D):
 	if body.name == "Player":
 		body.position = Vector2(100, 100)
+		
+func take_damage(enemy_position):
+	
+	if can_take_damage == false:
+		return
+	health -= 1
+	print("Health:", health)
+	can_take_damage = false
+	is_hurt = true
+# Knockback away from enemy
+
+	if enemy_position.x < global_position.x:
+		velocity.x = 200
+	else:
+		velocity.x = -200
+	velocity.y = -250
+	# Play hurt animation
+	$AnimatedSprite2D.play("hurt")
+	# Update health bar
+	#health_bar.value = health
+	# Check if dead
+	if health <= 0:
+		position = Vector2(100, 300)
+		health = 3
+		#health_bar.value = health
+	await get_tree().create_timer(0.5).timeout
+	is_hurt = false
+	await get_tree().create_timer(0.5).timeout
+	can_take_damage = true

@@ -2,17 +2,15 @@ extends Area2D
 
 func _on_body_entered(body):
 
-	print("TOUCHED:", name)
-	body.position = Vector2(100, 300)
+	if body.has_method("take_damage"):
+		body.take_damage(global_position)
 
+func _on_bee_2_body_entered(body):
 
-func _on_bee_3_body_entered(body: Node2D):
-	print("TOUCHED:", name)
+	if body.has_method("take_damage"):
+		body.take_damage(global_position)
 
-	body.position = Vector2(100, 300)
+func _on_bee_3_body_entered(body):
 
-
-func _on_bee_2_body_entered(body: Node2D):
-	print("TOUCHED:", name)
-
-	body.position = Vector2(100, 300)
+	if body.has_method("take_damage"):
+		body.take_damage(global_position)

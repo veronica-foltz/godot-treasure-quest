@@ -11,6 +11,7 @@ func _process(delta: float) -> void:
 	pass
 
 
-func _on_body_entered(body: Node2D):
-	if body.name == "Player":
-		body.position = Vector2(100, 300)
+func _on_body_entered(body):
+
+	if body.has_method("take_damage"):
+		body.take_damage(global_position)
