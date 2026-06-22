@@ -1369,10 +1369,10 @@ position = Vector2(6955, 480)
 position = Vector2(2171, 498)
 
 [node name="saw" parent="ground" unique_id=169050000 instance=ExtResource("15_ld1e4")]
-position = Vector2(1865, 241)
+position = Vector2(1880, 245)
 
 [node name="saw2" parent="ground" unique_id=1586886010 instance=ExtResource("15_ld1e4")]
-position = Vector2(1975, 316)
+position = Vector2(2012, 320)
 
 [node name="LongSpikes" parent="ground" unique_id=1845434854 instance=ExtResource("16_detxl")]
 position = Vector2(2445, 446)
@@ -1556,7 +1556,7 @@ position = Vector2(1434, 378)
 position = Vector2(1550, 377)
 
 [node name="fly2" parent="." unique_id=1199135457 instance=ExtResource("17_58p72")]
-position = Vector2(4199, 109)
+position = Vector2(4199, 92)
 
 [node name="fly3" parent="." unique_id=1726901944 instance=ExtResource("17_58p72")]
 position = Vector2(4660, 348)
