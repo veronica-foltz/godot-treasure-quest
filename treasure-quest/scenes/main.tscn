@@ -19,6 +19,9 @@
 [ext_resource type="PackedScene" uid="uid://dorfhiic1mp0m" path="res://scenes/exit_door.tscn" id="17_muem4"]
 [ext_resource type="AudioStream" uid="uid://ci4xy1m2rd2xi" path="res://assets/music/tatamusic-game-gaming-minecraft-background-music-377647.mp3" id="18_dp3eg"]
 
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_dp3eg"]
+bg_color = Color(0.27821618, 0.62001187, 0.93560463, 1)
+
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_0wfyh"]
 size = Vector2(8010, 132)
 
@@ -298,6 +301,17 @@ texture = ExtResource("1_tbgi4")
 position = Vector2(7267.1875, 148)
 scale = Vector2(1.1062502, 1.140625)
 texture = ExtResource("5_tbgi4")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=1669175374]
+
+[node name="HealthBar" type="ProgressBar" parent="CanvasLayer" unique_id=528274860]
+offset_left = 60.0
+offset_top = 49.0
+offset_right = 185.0
+offset_bottom = 76.0
+theme_override_styles/fill = SubResource("StyleBoxFlat_dp3eg")
+max_value = 3.0
+value = 3.0
 
 [node name="ExitDoor" parent="." unique_id=1702446062 instance=ExtResource("17_muem4")]
 position = Vector2(6151, 422)

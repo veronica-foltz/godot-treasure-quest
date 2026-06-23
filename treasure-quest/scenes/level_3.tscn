@@ -41,6 +41,9 @@ size = Vector2(1783.375, 131.25)
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_56dhn"]
 size = Vector2(3643, 14.75)
 
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_bjw4u"]
+bg_color = Color(0.2784314, 0.61960787, 0.9372549, 1)
+
 [node name="Level3" type="Node2D" unique_id=1601843956]
 
 [node name="BackgroundSolidSky5" type="Sprite2D" parent="." unique_id=442045125]
@@ -1595,5 +1598,18 @@ position = Vector2(7699, 493)
 
 [node name="frog2" parent="." unique_id=1256062850 instance=ExtResource("14_1rxxv")]
 position = Vector2(8065, 493)
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=1423375533]
+
+[node name="HealthBar" type="ProgressBar" parent="CanvasLayer" unique_id=1876822861]
+anchors_preset = -1
+anchor_bottom = 0.11100001
+offset_left = 497.0
+offset_top = 34.0
+offset_right = 600.0
+offset_bottom = 1.071991
+theme_override_styles/background = SubResource("StyleBoxFlat_bjw4u")
+max_value = 3.0
+value = 3.0
 
 [connection signal="body_entered" from="fall" to="Player" method="_on_fall_body_entered"]

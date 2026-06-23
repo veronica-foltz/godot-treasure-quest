@@ -1541,3 +1541,13 @@ position = Vector2(7647, 458)
 
 [node name="halfSaw3" parent="." unique_id=988304004 instance=ExtResource("22_vhnap")]
 position = Vector2(2558, 460)
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=440435013]
+
+[node name="HealthBar" type="ProgressBar" parent="CanvasLayer" unique_id=587483282]
+offset_left = 152.0
+offset_top = 26.0
+offset_right = 270.0
+offset_bottom = 53.0
+max_value = 3.0
+value = 3.0
