@@ -28,6 +28,7 @@
 [ext_resource type="Texture2D" uid="uid://c7u76w5qix313" path="res://assets/kenney_new-platformer-pack-1.1/Sprites/Tiles/Default/terrain_dirt_block_top_left.png" id="25_nhai6"]
 [ext_resource type="PackedScene" uid="uid://dorfhiic1mp0m" path="res://scenes/exit_door.tscn" id="27_bjw4u"]
 [ext_resource type="Texture2D" uid="uid://cvspu3uibbc6s" path="res://assets/kenney_new-platformer-pack-1.1/Sprites/Tiles/Default/terrain_dirt_block_left.png" id="28_bjw4u"]
+[ext_resource type="PackedScene" uid="uid://cm36isqxipvrh" path="res://scenes/gem.tscn" id="29_1rxxv"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_0vrl8"]
 size = Vector2(1960, 126.5)
@@ -42,7 +43,7 @@ size = Vector2(1783.375, 131.25)
 size = Vector2(3643, 14.75)
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_bjw4u"]
-bg_color = Color(0.2784314, 0.61960787, 0.9372549, 1)
+bg_color = Color(0.5019608, 0.7254902, 0.91764706, 1)
 border_width_left = 2
 border_width_top = 2
 border_width_right = 2
@@ -1469,9 +1470,6 @@ position = Vector2(4244, 232)
 [node name="coin6" parent="ground" unique_id=1075619567 instance=ExtResource("21_ciptj")]
 position = Vector2(4192, 232)
 
-[node name="coin7" parent="ground" unique_id=1294870709 instance=ExtResource("21_ciptj")]
-position = Vector2(4447, 134)
-
 [node name="coin8" parent="ground" unique_id=1734134502 instance=ExtResource("21_ciptj")]
 position = Vector2(4818, 404)
 
@@ -1633,13 +1631,29 @@ position = Vector2(8065, 493)
 [node name="HealthBar" type="ProgressBar" parent="CanvasLayer" unique_id=1876822861]
 anchors_preset = -1
 anchor_bottom = 0.11100001
-offset_left = 39.0
-offset_top = 19.0
-offset_right = 142.0
-offset_bottom = -13.928009
+offset_left = 48.0
+offset_top = 26.0
+offset_right = 181.0
+offset_bottom = -11.928009
 theme_override_styles/background = SubResource("StyleBoxFlat_bjw4u")
 max_value = 3.0
 value = 3.0
+
+[node name="CoinLabel" type="Label" parent="CanvasLayer" unique_id=2017033895]
+offset_left = 993.0
+offset_top = 11.0
+offset_right = 1083.0
+offset_bottom = 43.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 22
+
+[node name="GemLabel" type="Label" parent="CanvasLayer" unique_id=86085063]
+offset_left = 993.0
+offset_top = 40.0
+offset_right = 1077.0
+offset_bottom = 71.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 22
 
 [node name="fall2" type="Area2D" parent="." unique_id=1403897937]
 
@@ -1658,6 +1672,15 @@ shape = SubResource("RectangleShape2D_1rxxv")
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Wall" unique_id=264892117]
 position = Vector2(8948, 115)
 shape = SubResource("RectangleShape2D_1rxxv")
+
+[node name="Gem" parent="." unique_id=1689091507 instance=ExtResource("29_1rxxv")]
+position = Vector2(5670, 222)
+
+[node name="Gem2" parent="." unique_id=1981976046 instance=ExtResource("29_1rxxv")]
+position = Vector2(4422, 106)
+
+[node name="Gem3" parent="." unique_id=819666841 instance=ExtResource("29_1rxxv")]
+position = Vector2(2642, 245)
 
 [connection signal="body_entered" from="fall" to="Player" method="_on_fall_body_entered"]
 [connection signal="body_entered" from="fall2" to="Player" method="_on_fall_2_body_entered"]

@@ -4,6 +4,7 @@
 [ext_resource type="Texture2D" uid="uid://iugy5n1ikd8v" path="res://assets/kenney_new-platformer-pack-1.1/Sprites/Backgrounds/Default/background_fade_desert.png" id="1_tbgi4"]
 [ext_resource type="Texture2D" uid="uid://crhw0x5wd4db8" path="res://assets/kenney_new-platformer-pack-1.1/Sprites/Tiles/Default/terrain_grass_block_bottom.png" id="2_sugp2"]
 [ext_resource type="Texture2D" uid="uid://o32oy35axt0d" path="res://assets/kenney_new-platformer-pack-1.1/Sprites/Tiles/Default/terrain_grass_block_top.png" id="3_jyhfs"]
+[ext_resource type="PackedScene" uid="uid://cm36isqxipvrh" path="res://scenes/gem.tscn" id="4_0ld40"]
 [ext_resource type="Texture2D" uid="uid://dcn0k3ep2sbju" path="res://assets/kenney_new-platformer-pack-1.1/Sprites/Tiles/Default/sign_right.png" id="4_jbj1t"]
 [ext_resource type="Texture2D" uid="uid://6lvh1oeocpah" path="res://assets/kenney_new-platformer-pack-1.1/Sprites/Backgrounds/Default/background_clouds.png" id="5_tbgi4"]
 [ext_resource type="Texture2D" uid="uid://fx08c0garmvt" path="res://assets/kenney_new-platformer-pack-1.1/Sprites/Backgrounds/Default/background_solid_sky.png" id="6_tefeu"]
@@ -330,6 +331,15 @@ position = Vector2(7267.1875, 148)
 scale = Vector2(1.1062502, 1.140625)
 texture = ExtResource("5_tbgi4")
 
+[node name="Gem" parent="." unique_id=1689091507 instance=ExtResource("4_0ld40")]
+position = Vector2(1962, 477)
+
+[node name="Gem2" parent="." unique_id=2050496127 instance=ExtResource("4_0ld40")]
+position = Vector2(4177, -196)
+
+[node name="Gem3" parent="." unique_id=1862700481 instance=ExtResource("4_0ld40")]
+position = Vector2(5270, 481)
+
 [node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=1669175374]
 
 [node name="HealthBar" type="ProgressBar" parent="CanvasLayer" unique_id=528274860]
@@ -340,6 +350,22 @@ offset_bottom = 50.0
 theme_override_styles/fill = SubResource("StyleBoxFlat_dp3eg")
 max_value = 3.0
 value = 3.0
+
+[node name="CoinLabel" type="Label" parent="CanvasLayer" unique_id=1350066075]
+offset_left = 1043.0
+offset_top = 15.0
+offset_right = 1128.0
+offset_bottom = 44.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 22
+
+[node name="GemLabel" type="Label" parent="CanvasLayer" unique_id=950284862]
+offset_left = 1043.0
+offset_top = 41.0
+offset_right = 1105.0
+offset_bottom = 64.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 22
 
 [node name="ExitDoor" parent="." unique_id=1702446062 instance=ExtResource("17_muem4")]
 position = Vector2(6151, 422)

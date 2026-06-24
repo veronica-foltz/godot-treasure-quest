@@ -22,7 +22,7 @@
 [ext_resource type="Texture2D" uid="uid://vhkmh85q5o64" path="res://assets/kenney_new-platformer-pack-1.1/Sprites/Tiles/Default/terrain_stone_block_left.png" id="20_k22d5"]
 [ext_resource type="PackedScene" uid="uid://dgmie6b3t3vy2" path="res://scenes/black_block.tscn" id="21_k6a82"]
 [ext_resource type="PackedScene" uid="uid://bvaceenngg2ew" path="res://scenes/half_saw.tscn" id="22_vhnap"]
-[ext_resource type="PackedScene" uid="uid://dgvtd50xky5pt" path="res://scenes/silver_coin.tscn" id="23_vhnap"]
+[ext_resource type="PackedScene" uid="uid://cm36isqxipvrh" path="res://scenes/gem.tscn" id="23_vhnap"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_ne2mo"]
 size = Vector2(2742.5, 124)
@@ -1534,15 +1534,6 @@ texture = ExtResource("3_y0kc7")
 position = Vector2(-28, 613)
 texture = ExtResource("20_k22d5")
 
-[node name="silverCoin" parent="." unique_id=974234180 instance=ExtResource("23_vhnap")]
-position = Vector2(4779, -24)
-
-[node name="silverCoin2" parent="." unique_id=825027791 instance=ExtResource("23_vhnap")]
-position = Vector2(4831, -24)
-
-[node name="silverCoin3" parent="." unique_id=1240989156 instance=ExtResource("23_vhnap")]
-position = Vector2(4885, -24)
-
 [node name="halfSaw2" parent="." unique_id=1883620628 instance=ExtResource("22_vhnap")]
 position = Vector2(5682, 455)
 
@@ -1555,18 +1546,32 @@ position = Vector2(2558, 460)
 [node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=440435013]
 
 [node name="HealthBar" type="ProgressBar" parent="CanvasLayer" unique_id=587483282]
-offset_left = 152.0
-offset_top = 26.0
-offset_right = 270.0
-offset_bottom = 53.0
+offset_left = 49.0
+offset_top = 28.0
+offset_right = 167.0
+offset_bottom = 55.0
 theme_override_styles/background = SubResource("StyleBoxFlat_vhnap")
 max_value = 3.0
 value = 3.0
 
+[node name="CoinLabel" type="Label" parent="CanvasLayer" unique_id=1606422933]
+offset_left = 1046.0
+offset_top = 13.0
+offset_right = 1113.0
+offset_bottom = 44.0
+theme_override_font_sizes/font_size = 22
+
+[node name="GemLabel" type="Label" parent="CanvasLayer" unique_id=1746950904]
+offset_left = 1045.0
+offset_top = 36.0
+offset_right = 1114.0
+offset_bottom = 67.0
+theme_override_font_sizes/font_size = 22
+
 [node name="StaticBody2D2" type="StaticBody2D" parent="." unique_id=865453379]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D2" unique_id=1933274390]
-position = Vector2(10, 254.5)
+position = Vector2(4, 256)
 shape = SubResource("RectangleShape2D_vhnap")
 
 [node name="StaticBody2D" type="StaticBody2D" parent="." unique_id=812044642]
@@ -1574,3 +1579,12 @@ shape = SubResource("RectangleShape2D_vhnap")
 [node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D" unique_id=2010427100]
 position = Vector2(9310, 259)
 shape = SubResource("RectangleShape2D_vhnap")
+
+[node name="Gem" parent="." unique_id=1689091507 instance=ExtResource("23_vhnap")]
+position = Vector2(4748, -42)
+
+[node name="Gem2" parent="." unique_id=1138607137 instance=ExtResource("23_vhnap")]
+position = Vector2(4808, -42)
+
+[node name="Gem3" parent="." unique_id=1430208019 instance=ExtResource("23_vhnap")]
+position = Vector2(4864, -40)

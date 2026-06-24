@@ -7,11 +7,17 @@ const GRAVITY = 900
 @onready var anim = $AnimatedSprite2D
 @onready var health_bar = get_tree().current_scene.get_node("CanvasLayer/HealthBar")
 
+@onready var coin_label = get_tree().current_scene.get_node("CanvasLayer/CoinLabel")
+@onready var gem_label = get_tree().current_scene.get_node("CanvasLayer/GemLabel")
+
 var health = 3
 var start_position = Vector2(100, 300)
 var can_take_damage = true
 var is_hurt = false
 var facing_direction = 1
+
+var coins = 0
+var gems = 0
 
 func _physics_process(delta):
 
@@ -81,3 +87,13 @@ func take_damage(enemy_position):
 func _on_fall_2_body_entered(body: Node2D):
 	if body.has_method("take_damage"):
 		body.take_damage(global_position)
+		
+func collect_coin():
+	coins += 1
+	print("Coins:", coins)
+	coin_label.text = "Coins: " + str(coins)
+
+func collect_gem():
+	gems += 1
+	print("Gems:", gems)
+	gem_label.text = "Gems: " + str(gems)
