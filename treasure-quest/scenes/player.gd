@@ -76,3 +76,8 @@ func take_damage(enemy_position):
 	is_hurt = false
 	await get_tree().create_timer(0.5).timeout
 	can_take_damage = true
+
+
+func _on_fall_2_body_entered(body: Node2D):
+	if body.has_method("take_damage"):
+		body.take_damage(global_position)

@@ -45,6 +45,16 @@ size = Vector2(1465, 58.5)
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_k6a82"]
 size = Vector2(3560, 126.5)
 
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_vhnap"]
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(0, 0, 0, 1)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_vhnap"]
+size = Vector2(40, 529)
+
 [node name="Level2" type="Node2D" unique_id=1685866390]
 
 [node name="black block" parent="." unique_id=1247375298 instance=ExtResource("21_k6a82")]
@@ -1549,5 +1559,18 @@ offset_left = 152.0
 offset_top = 26.0
 offset_right = 270.0
 offset_bottom = 53.0
+theme_override_styles/background = SubResource("StyleBoxFlat_vhnap")
 max_value = 3.0
 value = 3.0
+
+[node name="StaticBody2D2" type="StaticBody2D" parent="." unique_id=865453379]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D2" unique_id=1933274390]
+position = Vector2(10, 254.5)
+shape = SubResource("RectangleShape2D_vhnap")
+
+[node name="StaticBody2D" type="StaticBody2D" parent="." unique_id=812044642]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D" unique_id=2010427100]
+position = Vector2(9310, 259)
+shape = SubResource("RectangleShape2D_vhnap")

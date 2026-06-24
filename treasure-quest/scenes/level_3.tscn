@@ -43,6 +43,17 @@ size = Vector2(3643, 14.75)
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_bjw4u"]
 bg_color = Color(0.2784314, 0.61960787, 0.9372549, 1)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(0, 0, 0, 1)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_bjw4u"]
+size = Vector2(987, 1)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_1rxxv"]
+size = Vector2(64, 778)
 
 [node name="Level3" type="Node2D" unique_id=1601843956]
 
@@ -63,6 +74,24 @@ texture = ExtResource("1_p6vls")
 position = Vector2(-255, 0)
 scale = Vector2(1.0234375, 1)
 texture = ExtResource("2_hhfj6")
+
+[node name="BackgroundFadeMushrooms" type="Sprite2D" parent="BackgroundFadeMushrooms/BackgroundFadeHills" unique_id=630587322]
+position = Vector2(-764.0916, -2)
+texture = ExtResource("1_p6vls")
+
+[node name="BackgroundFadeHills" type="Sprite2D" parent="BackgroundFadeMushrooms/BackgroundFadeHills" unique_id=1443609898]
+position = Vector2(-506.0916, -2)
+scale = Vector2(1.0234375, 1)
+texture = ExtResource("2_hhfj6")
+
+[node name="BackgroundClouds" type="Sprite2D" parent="BackgroundFadeMushrooms/BackgroundFadeHills" unique_id=305921417]
+position = Vector2(-764.0916, -258)
+texture = ExtResource("3_wae8j")
+
+[node name="BackgroundClouds2" type="Sprite2D" parent="BackgroundFadeMushrooms/BackgroundFadeHills" unique_id=1025424946]
+position = Vector2(-505.0916, -258)
+scale = Vector2(1.0234375, 1)
+texture = ExtResource("3_wae8j")
 
 [node name="BackgroundClouds" type="Sprite2D" parent="BackgroundFadeMushrooms" unique_id=228321024]
 position = Vector2(-513, -256)
@@ -136,8 +165,8 @@ scale = Vector2(1.0039063, 1)
 texture = ExtResource("2_hhfj6")
 
 [node name="BackgroundSolidSky" type="Sprite2D" parent="." unique_id=102109139]
-position = Vector2(4355.9995, -1041.9999)
-scale = Vector2(38.046875, 8.210938)
+position = Vector2(4093.9995, -1041.9999)
+scale = Vector2(40.093746, 8.210938)
 texture = ExtResource("4_ha73p")
 
 [node name="BackgroundFadeMushrooms3" type="Sprite2D" parent="." unique_id=1898503574]
@@ -1572,8 +1601,8 @@ position = Vector2(8579, 424)
 next_level = "res://scenes/ending_screen.tscn"
 
 [node name="BackgroundSolidSky2" type="Sprite2D" parent="." unique_id=1277637127]
-position = Vector2(-292, 577)
-scale = Vector2(1.828125, 0.5546875)
+position = Vector2(-548.5, 577)
+scale = Vector2(3.832031, 0.5546875)
 texture = ExtResource("4_ha73p")
 
 [node name="TerrainDirtBlockTopLeft2" type="Sprite2D" parent="." unique_id=1416210311]
@@ -1604,12 +1633,31 @@ position = Vector2(8065, 493)
 [node name="HealthBar" type="ProgressBar" parent="CanvasLayer" unique_id=1876822861]
 anchors_preset = -1
 anchor_bottom = 0.11100001
-offset_left = 497.0
-offset_top = 34.0
-offset_right = 600.0
-offset_bottom = 1.071991
+offset_left = 39.0
+offset_top = 19.0
+offset_right = 142.0
+offset_bottom = -13.928009
 theme_override_styles/background = SubResource("StyleBoxFlat_bjw4u")
 max_value = 3.0
 value = 3.0
 
+[node name="fall2" type="Area2D" parent="." unique_id=1403897937]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="fall2" unique_id=1689101388]
+position = Vector2(-545.5, 632.5)
+shape = SubResource("RectangleShape2D_bjw4u")
+
+[node name="Wall2" type="StaticBody2D" parent="." unique_id=9431653]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Wall2" unique_id=1830600469]
+position = Vector2(-31, 8)
+shape = SubResource("RectangleShape2D_1rxxv")
+
+[node name="Wall" type="StaticBody2D" parent="." unique_id=1371922089]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Wall" unique_id=264892117]
+position = Vector2(8948, 115)
+shape = SubResource("RectangleShape2D_1rxxv")
+
 [connection signal="body_entered" from="fall" to="Player" method="_on_fall_body_entered"]
+[connection signal="body_entered" from="fall2" to="Player" method="_on_fall_2_body_entered"]
