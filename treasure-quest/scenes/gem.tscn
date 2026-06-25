@@ -4,16 +4,34 @@
 [ext_resource type="Script" uid="uid://q0n04tnguq5f" path="res://scenes/gem.gd" id="1_mpwtx"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_mpwtx"]
+radius = 7.071068
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_mpwtx"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_5cxma")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
 
 [node name="Gem" type="Area2D" unique_id=1689091507]
 script = ExtResource("1_mpwtx")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1755516167]
 position = Vector2(23, 17)
+scale = Vector2(0.71428573, 2)
 shape = SubResource("CircleShape2D_mpwtx")
 
 [node name="GemBlue" type="Sprite2D" parent="." unique_id=1309725819]
 position = Vector2(24, 19)
+scale = Vector2(inf, nan)
 texture = ExtResource("1_5cxma")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1289117450]
+scale = Vector2(1.075, 1.2444445)
+sprite_frames = SubResource("SpriteFrames_mpwtx")
 
 [connection signal="body_entered" from="." to="." method="_on_body_entered"]

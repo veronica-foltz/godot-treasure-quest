@@ -29,6 +29,7 @@
 [ext_resource type="PackedScene" uid="uid://dorfhiic1mp0m" path="res://scenes/exit_door.tscn" id="27_bjw4u"]
 [ext_resource type="Texture2D" uid="uid://cvspu3uibbc6s" path="res://assets/kenney_new-platformer-pack-1.1/Sprites/Tiles/Default/terrain_dirt_block_left.png" id="28_bjw4u"]
 [ext_resource type="PackedScene" uid="uid://cm36isqxipvrh" path="res://scenes/gem.tscn" id="29_1rxxv"]
+[ext_resource type="Texture2D" uid="uid://dyc3s6ngv7uhc" path="res://assets/kenney_new-platformer-pack-1.1/Sprites/Tiles/Default/heart.png" id="29_ld1e4"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_0vrl8"]
 size = Vector2(1960, 126.5)
@@ -41,14 +42,6 @@ size = Vector2(1783.375, 131.25)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_56dhn"]
 size = Vector2(3643, 14.75)
-
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_bjw4u"]
-bg_color = Color(0.5019608, 0.7254902, 0.91764706, 1)
-border_width_left = 2
-border_width_top = 2
-border_width_right = 2
-border_width_bottom = 2
-border_color = Color(0, 0, 0, 1)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_bjw4u"]
 size = Vector2(987, 1)
@@ -1628,17 +1621,6 @@ position = Vector2(8065, 493)
 
 [node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=1423375533]
 
-[node name="HealthBar" type="ProgressBar" parent="CanvasLayer" unique_id=1876822861]
-anchors_preset = -1
-anchor_bottom = 0.11100001
-offset_left = 48.0
-offset_top = 26.0
-offset_right = 181.0
-offset_bottom = -11.928009
-theme_override_styles/background = SubResource("StyleBoxFlat_bjw4u")
-max_value = 3.0
-value = 3.0
-
 [node name="CoinLabel" type="Label" parent="CanvasLayer" unique_id=2017033895]
 offset_left = 993.0
 offset_top = 11.0
@@ -1654,6 +1636,26 @@ offset_right = 1077.0
 offset_bottom = 71.0
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/font_size = 22
+
+[node name="Heart1" type="TextureRect" parent="CanvasLayer" unique_id=849656226]
+offset_top = -2.0
+offset_right = 64.0
+offset_bottom = 62.0
+texture = ExtResource("29_ld1e4")
+
+[node name="Heart2" type="TextureRect" parent="CanvasLayer" unique_id=1567115524]
+offset_left = 43.0
+offset_top = -2.0
+offset_right = 107.0
+offset_bottom = 62.0
+texture = ExtResource("29_ld1e4")
+
+[node name="Heart3" type="TextureRect" parent="CanvasLayer" unique_id=1487428391]
+offset_left = 85.0
+offset_top = -2.0
+offset_right = 149.0
+offset_bottom = 62.0
+texture = ExtResource("29_ld1e4")
 
 [node name="fall2" type="Area2D" parent="." unique_id=1403897937]
 

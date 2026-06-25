@@ -361,7 +361,7 @@ offset_left = 43.0
 offset_top = -2.0
 offset_right = 107.0
 offset_bottom = 62.0
-scale = Vector2(0.97415406, 1.0444123)
+scale = Vector2(0.97931325, 1.0822802)
 texture = ExtResource("5_gqmmt")
 
 [node name="Heart3" type="TextureRect" parent="CanvasLayer" unique_id=546940300]
