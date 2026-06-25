@@ -1624,17 +1624,17 @@ position = Vector2(8065, 493)
 [node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=1423375533]
 
 [node name="CoinLabel" type="Label" parent="CanvasLayer" unique_id=2017033895]
-offset_left = 1097.0
+offset_left = 1074.0
 offset_top = 13.0
-offset_right = 1187.0
+offset_right = 1164.0
 offset_bottom = 44.0
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/font_size = 22
 
 [node name="GemLabel" type="Label" parent="CanvasLayer" unique_id=86085063]
-offset_left = 1098.0
+offset_left = 1075.0
 offset_top = 54.0
-offset_right = 1182.0
+offset_right = 1159.0
 offset_bottom = 85.0
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/font_size = 22
@@ -1660,16 +1660,16 @@ offset_bottom = 62.0
 texture = ExtResource("29_ld1e4")
 
 [node name="CoinIcon" type="TextureRect" parent="CanvasLayer" unique_id=38471747]
-offset_left = 1039.0
+offset_left = 1016.0
 offset_top = -4.0
-offset_right = 1103.0
+offset_right = 1080.0
 offset_bottom = 60.0
 texture = ExtResource("30_58p72")
 
 [node name="GemIcon" type="TextureRect" parent="CanvasLayer" unique_id=1781630927]
-offset_left = 1041.0
+offset_left = 1018.0
 offset_top = 39.0
-offset_right = 1105.0
+offset_right = 1082.0
 offset_bottom = 103.0
 texture = ExtResource("31_365g5")
 
