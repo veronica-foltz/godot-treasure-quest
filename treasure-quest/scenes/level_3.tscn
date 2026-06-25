@@ -1676,13 +1676,13 @@ position = Vector2(8948, 115)
 shape = SubResource("RectangleShape2D_1rxxv")
 
 [node name="Gem" parent="." unique_id=1689091507 instance=ExtResource("29_1rxxv")]
-position = Vector2(5670, 222)
+position = Vector2(5700, 222)
 
 [node name="Gem2" parent="." unique_id=1981976046 instance=ExtResource("29_1rxxv")]
-position = Vector2(4422, 106)
+position = Vector2(4445, 106)
 
 [node name="Gem3" parent="." unique_id=819666841 instance=ExtResource("29_1rxxv")]
-position = Vector2(2642, 245)
+position = Vector2(2660, 245)
 
 [connection signal="body_entered" from="fall" to="Player" method="_on_fall_body_entered"]
 [connection signal="body_entered" from="fall2" to="Player" method="_on_fall_2_body_entered"]

@@ -328,10 +328,12 @@ texture = ExtResource("5_tbgi4")
 position = Vector2(1962, 477)
 
 [node name="Gem2" parent="." unique_id=2050496127 instance=ExtResource("4_0ld40")]
-position = Vector2(4177, -196)
+position = Vector2(4200, -200)
+scale = Vector2(1.010161, 1.0268354)
 
 [node name="Gem3" parent="." unique_id=1862700481 instance=ExtResource("4_0ld40")]
-position = Vector2(5270, 481)
+position = Vector2(5290, 481)
+scale = Vector2(1, 0.6666667)
 
 [node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=1669175374]
 
@@ -374,6 +376,7 @@ texture = ExtResource("5_gqmmt")
 
 [node name="ExitDoor" parent="." unique_id=1702446062 instance=ExtResource("17_muem4")]
 position = Vector2(6151, 422)
+scale = Vector2(1.0760235, 1.1111112)
 next_level = "res://scenes/level_2.tscn"
 
 [node name="SignRight" type="Sprite2D" parent="." unique_id=1068579584]
@@ -394,7 +397,7 @@ texture = ExtResource("4_jbj1t")
 
 [node name="SignExit" type="Sprite2D" parent="SignRight/SignRight" unique_id=1188775087]
 position = Vector2(3172, -6)
-scale = Vector2(1, 1.125)
+scale = Vector2(1, 1.35)
 texture = ExtResource("15_dp3eg")
 
 [node name="Player" parent="." unique_id=1741513001 instance=ExtResource("1_o5qli")]

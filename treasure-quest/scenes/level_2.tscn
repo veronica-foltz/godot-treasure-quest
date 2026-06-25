@@ -1586,10 +1586,10 @@ position = Vector2(9310, 259)
 shape = SubResource("RectangleShape2D_vhnap")
 
 [node name="Gem" parent="." unique_id=1689091507 instance=ExtResource("23_vhnap")]
-position = Vector2(4748, -42)
+position = Vector2(4770, -42)
 
 [node name="Gem2" parent="." unique_id=1138607137 instance=ExtResource("23_vhnap")]
-position = Vector2(4808, -42)
+position = Vector2(4825, -42)
 
 [node name="Gem3" parent="." unique_id=1430208019 instance=ExtResource("23_vhnap")]
-position = Vector2(4864, -40)
+position = Vector2(4880, -40)
