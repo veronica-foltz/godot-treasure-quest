@@ -5,7 +5,10 @@ const JUMP_VELOCITY = -400
 const GRAVITY = 900
 
 @onready var anim = $AnimatedSprite2D
-@onready var health_bar = get_tree().current_scene.get_node("CanvasLayer/HealthBar")
+
+@onready var heart1 = get_tree().current_scene.get_node("CanvasLayer/Heart1")
+@onready var heart2 = get_tree().current_scene.get_node("CanvasLayer/Heart2")
+@onready var heart3 = get_tree().current_scene.get_node("CanvasLayer/Heart3")
 
 @onready var coin_label = get_tree().current_scene.get_node("CanvasLayer/CoinLabel")
 @onready var gem_label = get_tree().current_scene.get_node("CanvasLayer/GemLabel")
@@ -58,7 +61,7 @@ func take_damage(enemy_position):
 	if can_take_damage == false:
 		return
 	health -= 1
-	health_bar.value = health
+	update_hearts()
 	print("Health:", health)
 	can_take_damage = false
 	is_hurt = true
@@ -77,7 +80,7 @@ func take_damage(enemy_position):
 	if health <= 0:
 		position = Vector2(100, 300)
 		health = 3
-		health_bar.value = health
+		update_hearts()
 	await get_tree().create_timer(0.5).timeout
 	is_hurt = false
 	await get_tree().create_timer(0.5).timeout
@@ -97,3 +100,8 @@ func collect_gem():
 	gems += 1
 	print("Gems:", gems)
 	gem_label.text = "Gems: " + str(gems)
+	
+func update_hearts():
+	heart1.visible = health >= 1
+	heart2.visible = health >= 2
+	heart3.visible = health >= 3
