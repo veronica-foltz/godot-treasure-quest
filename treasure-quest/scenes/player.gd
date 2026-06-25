@@ -94,12 +94,12 @@ func _on_fall_2_body_entered(body: Node2D):
 func collect_coin():
 	coins += 1
 	print("Coins:", coins)
-	coin_label.text = "Coins: " + str(coins)
+	coin_label.text = "x " + str(coins)
 
 func collect_gem():
 	gems += 1
 	print("Gems:", gems)
-	gem_label.text = "Gems: " + str(gems)
+	gem_label.text = "x " + str(gems)
 	
 func update_hearts():
 	heart1.visible = health >= 1

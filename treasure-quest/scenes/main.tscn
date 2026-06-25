@@ -8,8 +8,10 @@
 [ext_resource type="Texture2D" uid="uid://dcn0k3ep2sbju" path="res://assets/kenney_new-platformer-pack-1.1/Sprites/Tiles/Default/sign_right.png" id="4_jbj1t"]
 [ext_resource type="Texture2D" uid="uid://dyc3s6ngv7uhc" path="res://assets/kenney_new-platformer-pack-1.1/Sprites/Tiles/Default/heart.png" id="5_gqmmt"]
 [ext_resource type="Texture2D" uid="uid://6lvh1oeocpah" path="res://assets/kenney_new-platformer-pack-1.1/Sprites/Backgrounds/Default/background_clouds.png" id="5_tbgi4"]
+[ext_resource type="Texture2D" uid="uid://bs5eh77ag5ak" path="res://assets/kenney_new-platformer-pack-1.1/Sprites/Tiles/Default/coin_gold.png" id="6_jscy8"]
 [ext_resource type="Texture2D" uid="uid://fx08c0garmvt" path="res://assets/kenney_new-platformer-pack-1.1/Sprites/Backgrounds/Default/background_solid_sky.png" id="6_tefeu"]
 [ext_resource type="PackedScene" uid="uid://c2xn1le6ou7tt" path="res://scenes/bee.tscn" id="7_o6xl0"]
+[ext_resource type="Texture2D" uid="uid://4nfp6pkmy3p7" path="res://assets/kenney_new-platformer-pack-1.1/Sprites/Tiles/Default/gem_blue.png" id="7_pm3ni"]
 [ext_resource type="PackedScene" uid="uid://cgm27125xuuwp" path="res://scenes/cactus.tscn" id="8_choun"]
 [ext_resource type="PackedScene" uid="uid://g2idt2aguukj" path="res://scenes/block.tscn" id="9_ya4ey"]
 [ext_resource type="PackedScene" uid="uid://c6hs1ou20hs2g" path="res://scenes/single_block.tscn" id="10_eb6dy"]
@@ -338,18 +340,18 @@ scale = Vector2(1, 0.6666667)
 [node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=1669175374]
 
 [node name="CoinLabel" type="Label" parent="CanvasLayer" unique_id=1350066075]
-offset_left = 1043.0
-offset_top = 15.0
-offset_right = 1128.0
-offset_bottom = 44.0
+offset_left = 1075.0
+offset_top = 19.0
+offset_right = 1135.0
+offset_bottom = 50.0
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/font_size = 22
 
 [node name="GemLabel" type="Label" parent="CanvasLayer" unique_id=950284862]
-offset_left = 1043.0
-offset_top = 41.0
-offset_right = 1105.0
-offset_bottom = 64.0
+offset_left = 1077.0
+offset_top = 61.0
+offset_right = 1139.0
+offset_bottom = 92.0
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/font_size = 22
 
@@ -373,6 +375,20 @@ offset_right = 149.0
 offset_bottom = 62.0
 scale = Vector2(0.9026612, 1.0215627)
 texture = ExtResource("5_gqmmt")
+
+[node name="CoinIcon" type="TextureRect" parent="CanvasLayer" unique_id=936660155]
+offset_left = 1019.0
+offset_top = 2.0
+offset_right = 1083.0
+offset_bottom = 66.0
+texture = ExtResource("6_jscy8")
+
+[node name="GemIcon" type="TextureRect" parent="CanvasLayer" unique_id=458679099]
+offset_left = 1021.0
+offset_top = 46.0
+offset_right = 1085.0
+offset_bottom = 110.0
+texture = ExtResource("7_pm3ni")
 
 [node name="ExitDoor" parent="." unique_id=1702446062 instance=ExtResource("17_muem4")]
 position = Vector2(6151, 422)
