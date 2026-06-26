@@ -37,8 +37,8 @@ scale = Vector2(1.1855468, 0.89453137)
 texture = ExtResource("1_tbgi4")
 
 [node name="BackgroundClouds" type="Sprite2D" parent="." unique_id=164027951]
-position = Vector2(150.49998, 144.5)
-scale = Vector2(1.1835936, 1.1523438)
+position = Vector2(150.49998, 145.99998)
+scale = Vector2(1.1835936, 1.1406249)
 texture = ExtResource("5_tbgi4")
 
 [node name="BackgroundFadeDesert2" type="Sprite2D" parent="." unique_id=802997249]
@@ -47,8 +47,8 @@ scale = Vector2(1.175781, 0.89453137)
 texture = ExtResource("1_tbgi4")
 
 [node name="BackgroundClouds2" type="Sprite2D" parent="." unique_id=1895965070]
-position = Vector2(451.5, 144.5)
-scale = Vector2(1.1679685, 1.1367188)
+position = Vector2(451.5, 145.5)
+scale = Vector2(1.1679685, 1.1445313)
 texture = ExtResource("5_tbgi4")
 
 [node name="BackgroundFadeDesert3" type="Sprite2D" parent="." unique_id=1842836686]
@@ -57,8 +57,8 @@ scale = Vector2(1.175781, 0.89453137)
 texture = ExtResource("1_tbgi4")
 
 [node name="BackgroundClouds3" type="Sprite2D" parent="." unique_id=1066253870]
-position = Vector2(750.99994, 144)
-scale = Vector2(1.1718749, 1.125)
+position = Vector2(750.99994, 146.5)
+scale = Vector2(1.1718749, 1.1601563)
 texture = ExtResource("5_tbgi4")
 
 [node name="BackgroundFadeDesert4" type="Sprite2D" parent="." unique_id=669319139]
@@ -67,8 +67,8 @@ scale = Vector2(1.175781, 0.89453137)
 texture = ExtResource("1_tbgi4")
 
 [node name="BackgroundClouds4" type="Sprite2D" parent="." unique_id=1001520261]
-position = Vector2(1050, 146)
-scale = Vector2(1.1718749, 1.125)
+position = Vector2(1050, 146.49998)
+scale = Vector2(1.1718749, 1.1835938)
 texture = ExtResource("5_tbgi4")
 
 [node name="BackgroundFadeDesert7" type="Sprite2D" parent="." unique_id=1126576860]
@@ -77,8 +77,8 @@ scale = Vector2(1.1855468, 0.89453137)
 texture = ExtResource("1_tbgi4")
 
 [node name="BackgroundClouds7" type="Sprite2D" parent="." unique_id=189319999]
-position = Vector2(1350.5, 144.5)
-scale = Vector2(1.1835936, 1.1523438)
+position = Vector2(1350.5, 147)
+scale = Vector2(1.1835936, 1.171875)
 texture = ExtResource("5_tbgi4")
 
 [node name="BackgroundFadeDesert8" type="Sprite2D" parent="." unique_id=1106078658]
@@ -87,8 +87,8 @@ scale = Vector2(1.175781, 0.89453137)
 texture = ExtResource("1_tbgi4")
 
 [node name="BackgroundClouds8" type="Sprite2D" parent="." unique_id=972320473]
-position = Vector2(1651.5, 144.5)
-scale = Vector2(1.1679685, 1.1367188)
+position = Vector2(1651.5, 147.5)
+scale = Vector2(1.1679685, 1.1601563)
 texture = ExtResource("5_tbgi4")
 
 [node name="BackgroundFadeDesert9" type="Sprite2D" parent="." unique_id=2088010457]
@@ -97,8 +97,8 @@ scale = Vector2(1.175781, 0.89453137)
 texture = ExtResource("1_tbgi4")
 
 [node name="BackgroundClouds9" type="Sprite2D" parent="." unique_id=402900918]
-position = Vector2(1951, 144)
-scale = Vector2(1.1718749, 1.125)
+position = Vector2(1951, 148.00002)
+scale = Vector2(1.1718749, 1.1484377)
 texture = ExtResource("5_tbgi4")
 
 [node name="BackgroundFadeDesert10" type="Sprite2D" parent="." unique_id=3620516]
@@ -187,8 +187,8 @@ scale = Vector2(1.175781, 0.89453137)
 texture = ExtResource("1_tbgi4")
 
 [node name="BackgroundClouds6" type="Sprite2D" parent="." unique_id=1436260777]
-position = Vector2(-150, 144)
-scale = Vector2(1.1679685, 1.1367188)
+position = Vector2(-150, 145.25)
+scale = Vector2(1.1679685, 1.1464844)
 texture = ExtResource("5_tbgi4")
 
 [node name="BackgroundFadeDesert15" type="Sprite2D" parent="." unique_id=1596279180]
@@ -327,7 +327,7 @@ scale = Vector2(1.1062502, 1.140625)
 texture = ExtResource("5_tbgi4")
 
 [node name="Gem" parent="." unique_id=1689091507 instance=ExtResource("4_0ld40")]
-position = Vector2(1962, 477)
+position = Vector2(1975, 477)
 
 [node name="Gem2" parent="." unique_id=2050496127 instance=ExtResource("4_0ld40")]
 position = Vector2(4200, -200)
