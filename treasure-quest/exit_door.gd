@@ -7,8 +7,9 @@ func _ready():
 	$AnimatedSprite2D.frame = 0
 
 func _on_body_entered(body):
-
 	if body.name == "Player":
 		$AnimatedSprite2D.frame = 1
-		await get_tree().create_timer(0.5).timeout
+		if has_node("DoorSound"):
+			$DoorSound.play()
+		await get_tree().create_timer(0.3).timeout
 		get_tree().change_scene_to_file(next_level)

@@ -3,6 +3,7 @@
 [ext_resource type="Script" uid="uid://b1aiywm83mdgs" path="res://exit_door.gd" id="1_lxrmt"]
 [ext_resource type="Texture2D" uid="uid://dvp6fyiy2rncj" path="res://assets/kenney_new-platformer-pack-1.1/Sprites/Tiles/Default/closed.png" id="2_6m21m"]
 [ext_resource type="Texture2D" uid="uid://cur83wucngvva" path="res://assets/kenney_new-platformer-pack-1.1/Sprites/Tiles/Default/open.png" id="3_sojrm"]
+[ext_resource type="AudioStream" uid="uid://bh4mgoqatrrb2" path="res://assets/sounds/dragon-studio-opening-door-450444.mp3" id="4_6m21m"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_fn25g"]
 animations = [{
@@ -32,5 +33,8 @@ sprite_frames = SubResource("SpriteFrames_fn25g")
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=2070264658]
 position = Vector2(18, 26)
 shape = SubResource("RectangleShape2D_yvv6m")
+
+[node name="DoorSound" type="AudioStreamPlayer2D" parent="." unique_id=1265235546]
+stream = ExtResource("4_6m21m")
 
 [connection signal="body_entered" from="." to="." method="_on_body_entered"]
