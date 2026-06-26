@@ -2,6 +2,7 @@
 
 [ext_resource type="Texture2D" uid="uid://4nfp6pkmy3p7" path="res://assets/kenney_new-platformer-pack-1.1/Sprites/Tiles/Default/gem_blue.png" id="1_5cxma"]
 [ext_resource type="Script" uid="uid://q0n04tnguq5f" path="res://scenes/gem.gd" id="1_mpwtx"]
+[ext_resource type="AudioStream" uid="uid://d0ygfnskq2d57" path="res://assets/sounds/liecio-diamond-found-190255.mp3" id="3_bhq7q"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_mpwtx"]
 radius = 7.071068
@@ -33,5 +34,8 @@ texture = ExtResource("1_5cxma")
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1289117450]
 scale = Vector2(1.075, 1.2444445)
 sprite_frames = SubResource("SpriteFrames_mpwtx")
+
+[node name="GemSound" type="AudioStreamPlayer2D" parent="." unique_id=1102669511]
+stream = ExtResource("3_bhq7q")
 
 [connection signal="body_entered" from="." to="." method="_on_body_entered"]

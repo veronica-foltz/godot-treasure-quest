@@ -9,6 +9,8 @@
 [ext_resource type="Texture2D" uid="uid://7t26bna0cp7o" path="res://assets/kenney_new-platformer-pack-1.1/Sprites/Characters/Default/character_purple_jump.png" id="6_3v2ag"]
 [ext_resource type="Texture2D" uid="uid://bdk02njchxc4f" path="res://assets/kenney_new-platformer-pack-1.1/Sprites/Characters/Default/character_purple_walk_a.png" id="7_jej6c"]
 [ext_resource type="Texture2D" uid="uid://b64l17qvidrqm" path="res://assets/kenney_new-platformer-pack-1.1/Sprites/Characters/Default/character_purple_walk_b.png" id="8_f1ej7"]
+[ext_resource type="AudioStream" uid="uid://dsukxmsxsc18q" path="res://assets/sounds/bestuploadsever67aryan-jump-sound-531048.mp3" id="10_y4r1p"]
+[ext_resource type="AudioStream" uid="uid://b8jlm86m665yq" path="res://assets/sounds/stepir44-hurt-sound-435314.mp3" id="11_d2wvv"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_g2els"]
 size = Vector2(83, 102.5)
@@ -82,3 +84,9 @@ position = Vector2(237, 150)
 sprite_frames = SubResource("SpriteFrames_oprun")
 animation = &"hurt"
 autoplay = "idle"
+
+[node name="JumpSound" type="AudioStreamPlayer2D" parent="." unique_id=1821238924]
+stream = ExtResource("10_y4r1p")
+
+[node name="HurtSound" type="AudioStreamPlayer2D" parent="." unique_id=786292728]
+stream = ExtResource("11_d2wvv")

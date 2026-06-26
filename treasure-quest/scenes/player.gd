@@ -29,6 +29,7 @@ func _physics_process(delta):
 		velocity.y += GRAVITY * delta
 	if Input.is_action_just_pressed("jump") and is_on_floor():
 		velocity.y = JUMP_VELOCITY
+		$JumpSound.play()
 	if is_hurt:
 		move_and_slide()
 		return
@@ -65,6 +66,8 @@ func take_damage(enemy_position):
 	print("Health:", health)
 	can_take_damage = false
 	is_hurt = true
+	
+	$HurtSound.play()
 # Knockback away from enemy
 
 	if enemy_position.x < global_position.x:
