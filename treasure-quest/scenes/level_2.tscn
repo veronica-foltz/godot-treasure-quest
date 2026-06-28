@@ -26,6 +26,7 @@
 [ext_resource type="Texture2D" uid="uid://dyc3s6ngv7uhc" path="res://assets/kenney_new-platformer-pack-1.1/Sprites/Tiles/Default/heart.png" id="23_vwfin"]
 [ext_resource type="Texture2D" uid="uid://bs5eh77ag5ak" path="res://assets/kenney_new-platformer-pack-1.1/Sprites/Tiles/Default/coin_gold.png" id="24_va6c3"]
 [ext_resource type="Texture2D" uid="uid://4nfp6pkmy3p7" path="res://assets/kenney_new-platformer-pack-1.1/Sprites/Tiles/Default/gem_blue.png" id="25_pc3at"]
+[ext_resource type="AudioStream" uid="uid://yonmseeelxxk" path="res://assets/music/tatamusic-gaming-game-minecraft-background-music-387000.mp3" id="27_pc3at"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_ne2mo"]
 size = Vector2(2742.5, 124)
@@ -1609,3 +1610,8 @@ position = Vector2(4825, -42)
 
 [node name="Gem3" parent="." unique_id=1430208019 instance=ExtResource("23_vhnap")]
 position = Vector2(4880, -40)
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." unique_id=943953039]
+stream = ExtResource("27_pc3at")
+autoplay = true
+parameters/looping = true
