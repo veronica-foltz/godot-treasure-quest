@@ -1450,63 +1450,83 @@ position = Vector2(7072, 403)
 
 [node name="coin" parent="ground" unique_id=118956412 instance=ExtResource("21_ciptj")]
 position = Vector2(3682, 403)
+audio_bus_name = &"SFX"
 
 [node name="coin2" parent="ground" unique_id=343458123 instance=ExtResource("21_ciptj")]
 position = Vector2(3748, 340)
+audio_bus_name = &"SFX"
 
 [node name="coin3" parent="ground" unique_id=1176206383 instance=ExtResource("21_ciptj")]
 position = Vector2(3926, 193)
+audio_bus_name = &"SFX"
 
 [node name="coin4" parent="ground" unique_id=1563022257 instance=ExtResource("21_ciptj")]
 position = Vector2(4140, 233)
+audio_bus_name = &"SFX"
 
 [node name="coin5" parent="ground" unique_id=839716091 instance=ExtResource("21_ciptj")]
 position = Vector2(4244, 232)
+audio_bus_name = &"SFX"
 
 [node name="coin6" parent="ground" unique_id=1075619567 instance=ExtResource("21_ciptj")]
 position = Vector2(4192, 232)
+audio_bus_name = &"SFX"
 
 [node name="coin8" parent="ground" unique_id=1734134502 instance=ExtResource("21_ciptj")]
 position = Vector2(4818, 404)
+audio_bus_name = &"SFX"
 
 [node name="coin9" parent="ground" unique_id=608120712 instance=ExtResource("21_ciptj")]
 position = Vector2(4882, 402)
+audio_bus_name = &"SFX"
 
 [node name="coin10" parent="ground" unique_id=1994578702 instance=ExtResource("21_ciptj")]
 position = Vector2(5079, 214)
+audio_bus_name = &"SFX"
 
 [node name="coin11" parent="ground" unique_id=1453940199 instance=ExtResource("21_ciptj")]
 position = Vector2(5149, 152)
+audio_bus_name = &"SFX"
 
 [node name="coin12" parent="ground" unique_id=1003247463 instance=ExtResource("21_ciptj")]
 position = Vector2(5413, 60)
+audio_bus_name = &"SFX"
 
 [node name="coin13" parent="ground" unique_id=1982510351 instance=ExtResource("21_ciptj")]
 position = Vector2(6115, 255)
+audio_bus_name = &"SFX"
 
 [node name="coin14" parent="ground" unique_id=906583044 instance=ExtResource("21_ciptj")]
 position = Vector2(6039, 313)
+audio_bus_name = &"SFX"
 
 [node name="coin15" parent="ground" unique_id=146737965 instance=ExtResource("21_ciptj")]
 position = Vector2(6199, 305)
+audio_bus_name = &"SFX"
 
 [node name="coin16" parent="ground" unique_id=750187525 instance=ExtResource("21_ciptj")]
 position = Vector2(6621, 342)
+audio_bus_name = &"SFX"
 
 [node name="coin17" parent="ground" unique_id=2084008266 instance=ExtResource("21_ciptj")]
 position = Vector2(6682, 342)
+audio_bus_name = &"SFX"
 
 [node name="coin18" parent="ground" unique_id=1312696626 instance=ExtResource("21_ciptj")]
 position = Vector2(6742, 340)
+audio_bus_name = &"SFX"
 
 [node name="coin19" parent="ground" unique_id=1469098736 instance=ExtResource("21_ciptj")]
 position = Vector2(6801, 340)
+audio_bus_name = &"SFX"
 
 [node name="coin20" parent="ground" unique_id=1187814456 instance=ExtResource("21_ciptj")]
 position = Vector2(6362, 173)
+audio_bus_name = &"SFX"
 
 [node name="coin21" parent="ground" unique_id=606322883 instance=ExtResource("21_ciptj")]
 position = Vector2(7074, 397)
+audio_bus_name = &"SFX"
 
 [node name="TerrainDirtBlockTopRight" type="Sprite2D" parent="." unique_id=1321018455]
 position = Vector2(3606, 549)
@@ -1577,9 +1597,11 @@ position = Vector2(1491, 249)
 
 [node name="coin" parent="." unique_id=1440359811 instance=ExtResource("21_ciptj")]
 position = Vector2(1434, 378)
+audio_bus_name = &"SFX"
 
 [node name="coin2" parent="." unique_id=700820945 instance=ExtResource("21_ciptj")]
 position = Vector2(1550, 377)
+audio_bus_name = &"SFX"
 
 [node name="fly2" parent="." unique_id=1199135457 instance=ExtResource("17_58p72")]
 position = Vector2(4199, 92)
@@ -1592,6 +1614,7 @@ position = Vector2(2663, 285)
 
 [node name="ExitDoor" parent="." unique_id=1702446062 instance=ExtResource("27_bjw4u")]
 position = Vector2(8579, 424)
+audio_bus_name = &"SFX"
 next_level = "res://scenes/ending_screen.tscn"
 
 [node name="BackgroundSolidSky2" type="Sprite2D" parent="." unique_id=1277637127]
@@ -1694,16 +1717,20 @@ shape = SubResource("RectangleShape2D_1rxxv")
 
 [node name="Gem" parent="." unique_id=1689091507 instance=ExtResource("29_1rxxv")]
 position = Vector2(5700, 222)
+audio_bus_name = &"SFX"
 
 [node name="Gem2" parent="." unique_id=1981976046 instance=ExtResource("29_1rxxv")]
 position = Vector2(4445, 106)
+audio_bus_name = &"SFX"
 
 [node name="Gem3" parent="." unique_id=819666841 instance=ExtResource("29_1rxxv")]
 position = Vector2(2660, 245)
+audio_bus_name = &"SFX"
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." unique_id=708522913]
 stream = ExtResource("33_365g5")
 autoplay = true
+bus = &"Music"
 parameters/looping = true
 
 [connection signal="body_entered" from="fall" to="Player" method="_on_fall_body_entered"]

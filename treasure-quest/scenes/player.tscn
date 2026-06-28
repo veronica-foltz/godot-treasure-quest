@@ -87,6 +87,8 @@ autoplay = "idle"
 
 [node name="JumpSound" type="AudioStreamPlayer2D" parent="." unique_id=1821238924]
 stream = ExtResource("10_y4r1p")
+bus = &"SFX"
 
 [node name="HurtSound" type="AudioStreamPlayer2D" parent="." unique_id=786292728]
 stream = ExtResource("11_d2wvv")
+bus = &"SFX"

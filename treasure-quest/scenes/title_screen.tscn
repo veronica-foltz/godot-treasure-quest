@@ -32,6 +32,7 @@ offset_bottom = 40.0
 [node name="Music" type="AudioStreamPlayer2D" parent="." unique_id=2110437924]
 stream = ExtResource("3_s4lrb")
 autoplay = true
+bus = &"Music"
 
 [node name="NewTitleScreen" type="Sprite2D" parent="." unique_id=1372293867]
 position = Vector2(574.75, 325)
@@ -49,4 +50,13 @@ theme_override_styles/pressed = SubResource("StyleBoxEmpty_mgrm8")
 theme_override_styles/hover = SubResource("StyleBoxEmpty_dc4i4")
 theme_override_styles/focus = SubResource("StyleBoxEmpty_e54dn")
 
+[node name="SettingsButton" type="Button" parent="." unique_id=1104918280]
+layout_mode = 0
+offset_left = 989.0
+offset_top = 570.0
+offset_right = 1112.0
+offset_bottom = 626.0
+text = "Settings"
+
 [connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
+[connection signal="pressed" from="SettingsButton" to="." method="_on_settings_button_pressed"]

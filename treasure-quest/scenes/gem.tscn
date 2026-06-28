@@ -37,5 +37,6 @@ sprite_frames = SubResource("SpriteFrames_mpwtx")
 
 [node name="GemSound" type="AudioStreamPlayer2D" parent="." unique_id=1102669511]
 stream = ExtResource("3_bhq7q")
+bus = &"SFX"
 
 [connection signal="body_entered" from="." to="." method="_on_body_entered"]

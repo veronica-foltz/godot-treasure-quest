@@ -39,5 +39,6 @@ frame_progress = 0.23673014
 
 [node name="CoinSound" type="AudioStreamPlayer2D" parent="." unique_id=1465516335]
 stream = ExtResource("4_d14el")
+bus = &"SFX"
 
 [connection signal="body_entered" from="." to="." method="_on_body_entered"]
