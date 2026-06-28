@@ -1,6 +1,7 @@
 [gd_scene format=3 uid="uid://bq1g5d366aycl"]
 
 [ext_resource type="PackedScene" uid="uid://de6orvpo2ehos" path="res://scenes/player.tscn" id="1_o5qli"]
+[ext_resource type="Script" uid="uid://75wjchhjy1fr" path="res://scenes/main.gd" id="1_og1vs"]
 [ext_resource type="Texture2D" uid="uid://iugy5n1ikd8v" path="res://assets/kenney_new-platformer-pack-1.1/Sprites/Backgrounds/Default/background_fade_desert.png" id="1_tbgi4"]
 [ext_resource type="Texture2D" uid="uid://crhw0x5wd4db8" path="res://assets/kenney_new-platformer-pack-1.1/Sprites/Tiles/Default/terrain_grass_block_bottom.png" id="2_sugp2"]
 [ext_resource type="Texture2D" uid="uid://o32oy35axt0d" path="res://assets/kenney_new-platformer-pack-1.1/Sprites/Tiles/Default/terrain_grass_block_top.png" id="3_jyhfs"]
@@ -13,8 +14,10 @@
 [ext_resource type="PackedScene" uid="uid://c2xn1le6ou7tt" path="res://scenes/bee.tscn" id="7_o6xl0"]
 [ext_resource type="Texture2D" uid="uid://4nfp6pkmy3p7" path="res://assets/kenney_new-platformer-pack-1.1/Sprites/Tiles/Default/gem_blue.png" id="7_pm3ni"]
 [ext_resource type="PackedScene" uid="uid://cgm27125xuuwp" path="res://scenes/cactus.tscn" id="8_choun"]
+[ext_resource type="FontFile" uid="uid://c50doh5w62taq" path="res://assets/font/Unkempt/Unkempt-Bold.ttf" id="8_y6deb"]
 [ext_resource type="PackedScene" uid="uid://g2idt2aguukj" path="res://scenes/block.tscn" id="9_ya4ey"]
 [ext_resource type="PackedScene" uid="uid://c6hs1ou20hs2g" path="res://scenes/single_block.tscn" id="10_eb6dy"]
+[ext_resource type="Texture2D" uid="uid://d2c3lhaql4fb" path="res://assets/images/settings_65dp_000000_FILL0_wght400_GRAD0_opsz48.png" id="10_og1vs"]
 [ext_resource type="PackedScene" uid="uid://dy0i5gkv2fmdm" path="res://scenes/frog.tscn" id="11_eb6dy"]
 [ext_resource type="PackedScene" uid="uid://drao7adjsjkjt" path="res://scenes/coin.tscn" id="11_ya4ey"]
 [ext_resource type="PackedScene" uid="uid://dskjib78vhv4y" path="res://scenes/long_block.tscn" id="13_muem4"]
@@ -30,6 +33,7 @@ size = Vector2(8010, 132)
 size = Vector2(109, 523)
 
 [node name="Main" type="Node2D" unique_id=1243034358]
+script = ExtResource("1_og1vs")
 
 [node name="BackgroundFadeDesert" type="Sprite2D" parent="." unique_id=583285290]
 position = Vector2(150.75, 400)
@@ -348,6 +352,7 @@ offset_top = 13.0
 offset_right = 1144.0
 offset_bottom = 44.0
 theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("8_y6deb")
 theme_override_font_sizes/font_size = 22
 
 [node name="GemLabel" type="Label" parent="CanvasLayer" unique_id=950284862]
@@ -356,6 +361,7 @@ offset_top = 55.0
 offset_right = 1148.0
 offset_bottom = 86.0
 theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("8_y6deb")
 theme_override_font_sizes/font_size = 22
 
 [node name="Heart1" type="TextureRect" parent="CanvasLayer" unique_id=1395633849]
@@ -372,10 +378,10 @@ scale = Vector2(0.97931325, 1.0822802)
 texture = ExtResource("5_gqmmt")
 
 [node name="Heart3" type="TextureRect" parent="CanvasLayer" unique_id=546940300]
-offset_left = 85.0
-offset_top = -2.0
-offset_right = 149.0
-offset_bottom = 62.0
+offset_left = 87.0
+offset_top = -1.0
+offset_right = 151.0
+offset_bottom = 63.0
 scale = Vector2(0.9026612, 1.0215627)
 texture = ExtResource("5_gqmmt")
 
@@ -392,6 +398,17 @@ offset_top = 40.0
 offset_right = 1094.0
 offset_bottom = 104.0
 texture = ExtResource("7_pm3ni")
+
+[node name="SettingsButton" type="Button" parent="CanvasLayer" unique_id=1014868629]
+offset_left = 1050.0
+offset_top = 570.0
+offset_right = 1129.0
+offset_bottom = 643.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("8_y6deb")
+theme_override_font_sizes/font_size = 30
+icon = ExtResource("10_og1vs")
+flat = true
 
 [node name="ExitDoor" parent="." unique_id=1702446062 instance=ExtResource("17_muem4")]
 position = Vector2(6151, 422)
@@ -432,7 +449,7 @@ position = Vector2(53, 4)
 [node name="Ground" type="StaticBody2D" parent="." unique_id=2007761626]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Ground" unique_id=1291790232]
-position = Vector2(3406, 583)
+position = Vector2(3432, 584)
 shape = SubResource("RectangleShape2D_0wfyh")
 
 [node name="TerrainGrassBlockBottom" type="Sprite2D" parent="Ground/CollisionShape2D" unique_id=1282877831]
@@ -689,7 +706,7 @@ scale = Vector2(1.046875, 1.109375)
 texture = ExtResource("2_sugp2")
 
 [node name="TerrainGrassBlockBottom15" type="Sprite2D" parent="." unique_id=1368355178]
-position = Vector2(1035.5, 614.50006)
+position = Vector2(1036, 615)
 scale = Vector2(1.046875, 1.109375)
 texture = ExtResource("2_sugp2")
 
@@ -1875,3 +1892,5 @@ stream = ExtResource("18_dp3eg")
 autoplay = true
 bus = &"Music"
 parameters/looping = true
+
+[connection signal="pressed" from="CanvasLayer/SettingsButton" to="." method="_on_settings_button_pressed"]

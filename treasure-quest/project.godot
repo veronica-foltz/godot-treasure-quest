@@ -11,9 +11,17 @@ config_version=5
 [application]
 
 config/name="Treasure Quest"
-run/main_scene="uid://h612wmn855wq"
+run/main_scene="uid://bq1g5d366aycl"
 config/features=PackedStringArray("4.6", "Forward Plus")
 config/icon="res://icon.svg"
+
+[audio]
+
+buses/default_bus_layout="uid://cptftneuwrq71"
+
+[autoload]
+
+Globals="*uid://uf6uxayr1okx"
 
 [input]
 

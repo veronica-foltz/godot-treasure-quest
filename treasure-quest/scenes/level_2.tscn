@@ -1,5 +1,6 @@
 [gd_scene format=3 uid="uid://vd8q0h5f6g66"]
 
+[ext_resource type="Script" uid="uid://cbohqinl5105c" path="res://scenes/level_2.gd" id="1_45kkt"]
 [ext_resource type="Texture2D" uid="uid://slxhqkw74lde" path="res://assets/kenney_new-platformer-pack-1.1/Sprites/Tiles/Default/terrain_stone_horizontal_middle.png" id="1_jm1iu"]
 [ext_resource type="Texture2D" uid="uid://l5wp0phnteh" path="res://assets/new kenney/kenney_platformer-pack-industrial/PNG/Default size/platformIndustrial_103.png" id="2_1sb0y"]
 [ext_resource type="Texture2D" uid="uid://n87bj8pi2ay1" path="res://assets/kenney_new-platformer-pack-1.1/Sprites/Tiles/Default/terrain_stone_block_center.png" id="2_pbc48"]
@@ -26,7 +27,10 @@
 [ext_resource type="Texture2D" uid="uid://dyc3s6ngv7uhc" path="res://assets/kenney_new-platformer-pack-1.1/Sprites/Tiles/Default/heart.png" id="23_vwfin"]
 [ext_resource type="Texture2D" uid="uid://bs5eh77ag5ak" path="res://assets/kenney_new-platformer-pack-1.1/Sprites/Tiles/Default/coin_gold.png" id="24_va6c3"]
 [ext_resource type="Texture2D" uid="uid://4nfp6pkmy3p7" path="res://assets/kenney_new-platformer-pack-1.1/Sprites/Tiles/Default/gem_blue.png" id="25_pc3at"]
+[ext_resource type="FontFile" uid="uid://c50doh5w62taq" path="res://assets/font/Unkempt/Unkempt-Bold.ttf" id="26_73m23"]
 [ext_resource type="AudioStream" uid="uid://yonmseeelxxk" path="res://assets/music/tatamusic-gaming-game-minecraft-background-music-387000.mp3" id="27_pc3at"]
+[ext_resource type="Texture2D" uid="uid://c78p1c8gmtqyk" path="res://assets/images/settings_65dp_FFFFFF_FILL0_wght400_GRAD0_opsz48 (1).png" id="28_taw0e"]
+[ext_resource type="PackedScene" uid="uid://ibpxnfnciwq0" path="res://scenes/saw.tscn" id="31_taw0e"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_ne2mo"]
 size = Vector2(2742.5, 124)
@@ -53,6 +57,7 @@ size = Vector2(3560, 126.5)
 size = Vector2(40, 529)
 
 [node name="Level2" type="Node2D" unique_id=1685866390]
+script = ExtResource("1_45kkt")
 
 [node name="black block" parent="." unique_id=1247375298 instance=ExtResource("21_k6a82")]
 position = Vector2(5245, 226)
@@ -1484,9 +1489,6 @@ audio_bus_name = &"SFX"
 position = Vector2(1439, 437)
 audio_bus_name = &"SFX"
 
-[node name="slime" parent="." unique_id=907538098 instance=ExtResource("17_k22d5")]
-position = Vector2(3366, 445)
-
 [node name="slime2" parent="." unique_id=2070140749 instance=ExtResource("17_k22d5")]
 position = Vector2(7452, 249)
 
@@ -1570,6 +1572,7 @@ offset_left = 1078.0
 offset_top = 9.0
 offset_right = 1145.0
 offset_bottom = 40.0
+theme_override_fonts/font = ExtResource("26_73m23")
 theme_override_font_sizes/font_size = 22
 
 [node name="GemLabel" type="Label" parent="CanvasLayer" unique_id=1746950904]
@@ -1577,6 +1580,7 @@ offset_left = 1077.0
 offset_top = 45.0
 offset_right = 1146.0
 offset_bottom = 76.0
+theme_override_fonts/font = ExtResource("26_73m23")
 theme_override_font_sizes/font_size = 22
 
 [node name="Heart1" type="TextureRect" parent="CanvasLayer" unique_id=1755876045]
@@ -1613,6 +1617,17 @@ offset_right = 1084.0
 offset_bottom = 95.0
 texture = ExtResource("25_pc3at")
 
+[node name="SettingsButton" type="Button" parent="CanvasLayer" unique_id=1928269312]
+offset_left = 1062.0
+offset_top = 570.0
+offset_right = 1135.0
+offset_bottom = 643.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("26_73m23")
+theme_override_font_sizes/font_size = 30
+icon = ExtResource("28_taw0e")
+flat = true
+
 [node name="StaticBody2D2" type="StaticBody2D" parent="." unique_id=865453379]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D2" unique_id=1933274390]
@@ -1642,3 +1657,8 @@ stream = ExtResource("27_pc3at")
 autoplay = true
 bus = &"Music"
 parameters/looping = true
+
+[node name="saw" parent="." unique_id=169050000 instance=ExtResource("31_taw0e")]
+position = Vector2(3416, 372)
+
+[connection signal="pressed" from="CanvasLayer/SettingsButton" to="." method="_on_settings_button_pressed"]

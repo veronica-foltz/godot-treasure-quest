@@ -108,3 +108,6 @@ func update_hearts():
 	heart1.visible = health >= 1
 	heart2.visible = health >= 2
 	heart3.visible = health >= 3
+
+func _on_settings_button_pressed():
+	get_tree().change_scene_to_file("res://scenes/settings_screen.tscn")
