@@ -1838,10 +1838,6 @@ position = Vector2(5350, 369)
 [node name="coin15" parent="." unique_id=118956412 instance=ExtResource("11_ya4ey")]
 position = Vector2(292, 394)
 
-[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="." unique_id=1643732254]
-stream = ExtResource("18_dp3eg")
-autoplay = true
-
 [node name="Wall2" type="StaticBody2D" parent="." unique_id=574047826]
 position = Vector2(6931, 31)
 
@@ -1854,3 +1850,8 @@ shape = SubResource("RectangleShape2D_dp3eg")
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Wall" unique_id=862710626]
 position = Vector2(-523, 250)
 shape = SubResource("RectangleShape2D_dp3eg")
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." unique_id=1812339812]
+stream = ExtResource("18_dp3eg")
+autoplay = true
+parameters/looping = true
