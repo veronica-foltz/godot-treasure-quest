@@ -20,7 +20,11 @@
 [ext_resource type="Texture2D" uid="uid://d2c3lhaql4fb" path="res://assets/images/settings_65dp_000000_FILL0_wght400_GRAD0_opsz48.png" id="10_og1vs"]
 [ext_resource type="PackedScene" uid="uid://dy0i5gkv2fmdm" path="res://scenes/frog.tscn" id="11_eb6dy"]
 [ext_resource type="PackedScene" uid="uid://drao7adjsjkjt" path="res://scenes/coin.tscn" id="11_ya4ey"]
+[ext_resource type="Texture2D" uid="uid://dmacxadvy20gx" path="res://assets/images/keyboard_arrow_left_55dp_FFFFFF_FILL0_wght400_GRAD0_opsz48.png" id="11_yq6so"]
+[ext_resource type="Texture2D" uid="uid://clrhoj760olhe" path="res://assets/images/keyboard_arrow_right_55dp_FFFFFF_FILL0_wght400_GRAD0_opsz48.png" id="12_fv21b"]
 [ext_resource type="PackedScene" uid="uid://dskjib78vhv4y" path="res://scenes/long_block.tscn" id="13_muem4"]
+[ext_resource type="Texture2D" uid="uid://o7s6dpmlyjv2" path="res://assets/images/stat_1_55dp_FFFFFF_FILL0_wght400_GRAD0_opsz48.png" id="13_tel4y"]
+[ext_resource type="Texture2D" uid="uid://xqksshgedpg7" path="res://assets/images/stat_minus_1_55dp_FFFFFF_FILL0_wght400_GRAD0_opsz48.png" id="14_qkpxi"]
 [ext_resource type="Texture2D" uid="uid://coafrcakqq520" path="res://assets/kenney_new-platformer-pack-1.1/Sprites/Tiles/Default/sign_exit.png" id="15_dp3eg"]
 [ext_resource type="PackedScene" uid="uid://ibpxnfnciwq0" path="res://scenes/saw.tscn" id="16_0ld40"]
 [ext_resource type="PackedScene" uid="uid://dorfhiic1mp0m" path="res://scenes/exit_door.tscn" id="17_muem4"]
@@ -412,27 +416,39 @@ flat = true
 
 [node name="LeftButton" type="Button" parent="CanvasLayer" unique_id=683334471]
 offset_left = 120.0
-offset_top = 535.0
+offset_top = 548.0
 offset_right = 247.0
-offset_bottom = 628.0
+offset_bottom = 641.0
+icon = ExtResource("11_yq6so")
+flat = true
+expand_icon = true
 
 [node name="RightButton" type="Button" parent="CanvasLayer" unique_id=1476415817]
 offset_left = 295.0
-offset_top = 531.0
-offset_right = 409.0
-offset_bottom = 627.0
+offset_top = 545.0
+offset_right = 414.0
+offset_bottom = 647.0
+icon = ExtResource("12_fv21b")
+flat = true
+expand_icon = true
 
 [node name="JumpButton" type="Button" parent="CanvasLayer" unique_id=2018205690]
 offset_left = 700.0
-offset_top = 533.0
-offset_right = 814.0
-offset_bottom = 628.0
+offset_top = 545.0
+offset_right = 819.0
+offset_bottom = 649.0
+icon = ExtResource("13_tel4y")
+flat = true
+expand_icon = true
 
 [node name="CrouchButton" type="Button" parent="CanvasLayer" unique_id=1982170207]
 offset_left = 850.0
-offset_top = 533.0
-offset_right = 962.0
-offset_bottom = 626.0
+offset_top = 545.0
+offset_right = 985.0
+offset_bottom = 649.0
+icon = ExtResource("14_qkpxi")
+flat = true
+expand_icon = true
 
 [node name="ExitDoor" parent="." unique_id=1702446062 instance=ExtResource("17_muem4")]
 position = Vector2(6151, 422)
