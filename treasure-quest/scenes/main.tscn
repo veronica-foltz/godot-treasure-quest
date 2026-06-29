@@ -483,9 +483,6 @@ position = Vector2(-226, 302)
 [node name="Camera2D" type="Camera2D" parent="Player" unique_id=2012581898]
 position = Vector2(218, -7)
 
-[node name="AnimatedSprite2D2" type="AnimatedSprite2D" parent="Player" unique_id=1130506178]
-position = Vector2(53, 4)
-
 [node name="Ground" type="StaticBody2D" parent="." unique_id=2007761626]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Ground" unique_id=1291790232]
