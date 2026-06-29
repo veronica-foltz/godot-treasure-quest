@@ -29,6 +29,7 @@
 [ext_resource type="PackedScene" uid="uid://ibpxnfnciwq0" path="res://scenes/saw.tscn" id="16_0ld40"]
 [ext_resource type="PackedScene" uid="uid://dorfhiic1mp0m" path="res://scenes/exit_door.tscn" id="17_muem4"]
 [ext_resource type="AudioStream" uid="uid://ci4xy1m2rd2xi" path="res://assets/music/tatamusic-game-gaming-minecraft-background-music-377647.mp3" id="18_dp3eg"]
+[ext_resource type="Script" uid="uid://3ro83l08i7e2" path="res://scenes/music_player.gd" id="30_fv21b"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_0wfyh"]
 size = Vector2(8010, 132)
@@ -1923,10 +1924,11 @@ shape = SubResource("RectangleShape2D_dp3eg")
 position = Vector2(-523, 250)
 shape = SubResource("RectangleShape2D_dp3eg")
 
-[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." unique_id=1812339812]
+[node name="music_player" type="AudioStreamPlayer" parent="." unique_id=1812339812]
 stream = ExtResource("18_dp3eg")
 autoplay = true
 bus = &"Music"
 parameters/looping = true
+script = ExtResource("30_fv21b")
 
 [connection signal="pressed" from="CanvasLayer/SettingsButton" to="." method="_on_settings_button_pressed"]

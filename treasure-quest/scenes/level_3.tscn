@@ -679,7 +679,7 @@ shape = SubResource("RectangleShape2D_0vrl8")
 position = Vector2(801, 190)
 
 [node name="Camera2D" type="Camera2D" parent="Player" unique_id=2140494699]
-position = Vector2(228, -7)
+position = Vector2(223, 64)
 
 [node name="ground" type="StaticBody2D" parent="." unique_id=852476468]
 
@@ -1729,24 +1729,28 @@ flat = true
 metadata/_edit_use_anchors_ = true
 
 [node name="LeftButton" type="TouchScreenButton" parent="CanvasLayer" unique_id=510131544]
+modulate = Color(0, 0, 0, 1)
 position = Vector2(65, 430.00006)
 scale = Vector2(1.4727273, 1.4727273)
 texture_normal = ExtResource("35_1ke33")
 action = "left"
 
 [node name="RightButton" type="TouchScreenButton" parent="CanvasLayer" unique_id=1169744635]
+modulate = Color(0, 0, 0, 1)
 position = Vector2(236, 434.00003)
 scale = Vector2(1.6181822, 1.4181824)
 texture_normal = ExtResource("36_mnu1b")
 action = "right"
 
 [node name="JumpButton" type="TouchScreenButton" parent="CanvasLayer" unique_id=1614415789]
+modulate = Color(0, 0, 0, 1)
 position = Vector2(555.00006, 431.00006)
 scale = Vector2(1.4727273, 1.3818182)
 texture_normal = ExtResource("37_be7ao")
 action = "jump"
 
 [node name="CrouchButton" type="TouchScreenButton" parent="CanvasLayer" unique_id=558593473]
+modulate = Color(0, 0, 0, 1)
 position = Vector2(687, 429)
 scale = Vector2(1.6181837, 1.4727271)
 texture_normal = ExtResource("38_1x8o1")
