@@ -30,7 +30,6 @@
 [ext_resource type="FontFile" uid="uid://c50doh5w62taq" path="res://assets/font/Unkempt/Unkempt-Bold.ttf" id="26_73m23"]
 [ext_resource type="AudioStream" uid="uid://yonmseeelxxk" path="res://assets/music/tatamusic-gaming-game-minecraft-background-music-387000.mp3" id="27_pc3at"]
 [ext_resource type="Texture2D" uid="uid://c78p1c8gmtqyk" path="res://assets/images/settings_65dp_FFFFFF_FILL0_wght400_GRAD0_opsz48 (1).png" id="28_taw0e"]
-[ext_resource type="PackedScene" uid="uid://ibpxnfnciwq0" path="res://scenes/saw.tscn" id="31_taw0e"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_ne2mo"]
 size = Vector2(2742.5, 124)
@@ -1658,7 +1657,7 @@ autoplay = true
 bus = &"Music"
 parameters/looping = true
 
-[node name="saw" parent="." unique_id=169050000 instance=ExtResource("31_taw0e")]
-position = Vector2(3416, 372)
+[node name="halfSaw4" parent="." unique_id=1515044264 instance=ExtResource("22_vhnap")]
+position = Vector2(3386, 459)
 
 [connection signal="pressed" from="CanvasLayer/SettingsButton" to="." method="_on_settings_button_pressed"]

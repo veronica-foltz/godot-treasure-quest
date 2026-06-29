@@ -13,7 +13,7 @@ const GRAVITY = 900
 @onready var coin_label = get_tree().current_scene.get_node("CanvasLayer/CoinLabel")
 @onready var gem_label = get_tree().current_scene.get_node("CanvasLayer/GemLabel")
 
-var health = 3
+var health = Globals.player_health
 var start_position = Vector2(100, 300)
 var can_take_damage = true
 var is_hurt = false
@@ -21,6 +21,12 @@ var facing_direction = 1
 
 var coins = 0
 var gems = 0
+
+func _ready():
+	health = Globals.player_health
+	coin_label.text = "x " + str(Globals.coins)
+	gem_label.text = "x " + str(Globals.gems)
+	update_hearts()
 
 func _physics_process(delta):
 
@@ -62,6 +68,7 @@ func take_damage(enemy_position):
 	if can_take_damage == false:
 		return
 	health -= 1
+	Globals.player_health = health
 	update_hearts()
 	print("Health:", health)
 	can_take_damage = false
@@ -83,6 +90,7 @@ func take_damage(enemy_position):
 	if health <= 0:
 		position = Vector2(100, 300)
 		health = 3
+		Globals.player_health = 3
 		update_hearts()
 	await get_tree().create_timer(0.5).timeout
 	is_hurt = false
@@ -95,14 +103,12 @@ func _on_fall_2_body_entered(body: Node2D):
 		body.take_damage(global_position)
 		
 func collect_coin():
-	coins += 1
-	print("Coins:", coins)
-	coin_label.text = "x " + str(coins)
+	Globals.coins += 1
+	coin_label.text = "x " + str(Globals.coins)
 
 func collect_gem():
-	gems += 1
-	print("Gems:", gems)
-	gem_label.text = "x " + str(gems)
+	Globals.gems += 1
+	gem_label.text = "x " + str(Globals.gems)
 	
 func update_hearts():
 	heart1.visible = health >= 1
@@ -111,3 +117,5 @@ func update_hearts():
 
 func _on_settings_button_pressed():
 	get_tree().change_scene_to_file("res://scenes/settings_screen.tscn")
+	
+	
