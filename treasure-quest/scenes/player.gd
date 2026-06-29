@@ -50,7 +50,6 @@ func _physics_process(delta):
 	if (Input.is_action_just_pressed("jump") or mobile_jump_pressed) and is_on_floor():
 		velocity.y = JUMP_VELOCITY
 		$JumpSound.play()
-		mobile_jump_pressed = false
 	
 	if is_hurt:
 		move_and_slide()
@@ -157,3 +156,8 @@ func _on_crouch_button_button_down():
 
 func _on_crouch_button_button_up():
 	mobile_crouch = false
+
+func do_mobile_jump():
+	if is_on_floor():
+		velocity.y = JUMP_VELOCITY
+		$JumpSound.play()

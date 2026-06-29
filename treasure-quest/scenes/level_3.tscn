@@ -1728,45 +1728,29 @@ icon = ExtResource("34_ciptj")
 flat = true
 metadata/_edit_use_anchors_ = true
 
-[node name="LeftButton" type="Button" parent="CanvasLayer" unique_id=411679188]
-offset_left = 75.0
-offset_top = 428.0
-offset_right = 202.0
-offset_bottom = 521.0
-icon = ExtResource("35_1ke33")
-flat = true
-expand_icon = true
-metadata/_edit_use_anchors_ = true
+[node name="LeftButton" type="TouchScreenButton" parent="CanvasLayer" unique_id=510131544]
+position = Vector2(65, 430.00006)
+scale = Vector2(1.4727273, 1.4727273)
+texture_normal = ExtResource("35_1ke33")
+action = "left"
 
-[node name="RightButton" type="Button" parent="CanvasLayer" unique_id=1913347063]
-offset_left = 230.0
-offset_top = 428.0
-offset_right = 349.0
-offset_bottom = 530.0
-icon = ExtResource("36_mnu1b")
-flat = true
-expand_icon = true
-metadata/_edit_use_anchors_ = true
+[node name="RightButton" type="TouchScreenButton" parent="CanvasLayer" unique_id=1169744635]
+position = Vector2(236, 434.00003)
+scale = Vector2(1.6181822, 1.4181824)
+texture_normal = ExtResource("36_mnu1b")
+action = "right"
 
-[node name="JumpButton" type="Button" parent="CanvasLayer" unique_id=384041465]
-offset_left = 510.0
-offset_top = 428.0
-offset_right = 629.0
-offset_bottom = 532.0
-icon = ExtResource("37_be7ao")
-flat = true
-expand_icon = true
-metadata/_edit_use_anchors_ = true
+[node name="JumpButton" type="TouchScreenButton" parent="CanvasLayer" unique_id=1614415789]
+position = Vector2(555.00006, 431.00006)
+scale = Vector2(1.4727273, 1.3818182)
+texture_normal = ExtResource("37_be7ao")
+action = "jump"
 
-[node name="CrouchButton" type="Button" parent="CanvasLayer" unique_id=1097691923]
-offset_left = 670.0
-offset_top = 428.0
-offset_right = 805.0
-offset_bottom = 532.0
-icon = ExtResource("38_1x8o1")
-flat = true
-expand_icon = true
-metadata/_edit_use_anchors_ = true
+[node name="CrouchButton" type="TouchScreenButton" parent="CanvasLayer" unique_id=558593473]
+position = Vector2(687, 429)
+scale = Vector2(1.6181837, 1.4727271)
+texture_normal = ExtResource("38_1x8o1")
+action = "crouch"
 
 [node name="fall2" type="Area2D" parent="." unique_id=1403897937]
 
@@ -1798,7 +1782,7 @@ audio_bus_name = &"SFX"
 position = Vector2(2660, 245)
 audio_bus_name = &"SFX"
 
-[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." unique_id=708522913]
+[node name="music_player" type="AudioStreamPlayer" parent="." unique_id=708522913]
 stream = ExtResource("33_365g5")
 autoplay = true
 bus = &"Music"
@@ -1806,11 +1790,4 @@ parameters/looping = true
 
 [connection signal="body_entered" from="fall" to="Player" method="_on_fall_body_entered"]
 [connection signal="pressed" from="CanvasLayer/SettingsButton" to="." method="_on_settings_button_pressed"]
-[connection signal="button_down" from="CanvasLayer/LeftButton" to="Player" method="_on_left_button_button_down"]
-[connection signal="button_up" from="CanvasLayer/LeftButton" to="Player" method="_on_left_button_button_up"]
-[connection signal="button_down" from="CanvasLayer/RightButton" to="Player" method="_on_right_button_button_down"]
-[connection signal="button_up" from="CanvasLayer/RightButton" to="Player" method="_on_right_button_button_up"]
-[connection signal="pressed" from="CanvasLayer/JumpButton" to="Player" method="_on_jump_button_pressed"]
-[connection signal="button_down" from="CanvasLayer/CrouchButton" to="Player" method="_on_crouch_button_button_down"]
-[connection signal="button_up" from="CanvasLayer/CrouchButton" to="Player" method="_on_crouch_button_button_up"]
 [connection signal="body_entered" from="fall2" to="Player" method="_on_fall_2_body_entered"]
