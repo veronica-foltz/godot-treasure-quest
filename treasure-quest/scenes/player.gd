@@ -27,6 +27,8 @@ var mobile_right = false
 var mobile_jump = false
 var mobile_crouch = false
 
+var mobile_jump_pressed = false
+
 func _ready():
 	health = Globals.player_health
 	coin_label.text = "x " + str(Globals.coins)
@@ -45,10 +47,10 @@ func _physics_process(delta):
 	if not is_on_floor():
 		velocity.y += GRAVITY * delta
 	
-	if (Input.is_action_just_pressed("jump") or mobile_jump) and is_on_floor():
+	if (Input.is_action_just_pressed("jump") or mobile_jump_pressed) and is_on_floor():
 		velocity.y = JUMP_VELOCITY
 		$JumpSound.play()
-		mobile_jump = false
+		mobile_jump_pressed = false
 	
 	if is_hurt:
 		move_and_slide()
@@ -146,9 +148,9 @@ func _on_right_button_button_down():
 
 func _on_right_button_button_up():
 	mobile_right = false
-
+	
 func _on_jump_button_pressed():
-	mobile_jump = true
+	mobile_jump_pressed = true
 
 func _on_crouch_button_button_down():
 	mobile_crouch = true

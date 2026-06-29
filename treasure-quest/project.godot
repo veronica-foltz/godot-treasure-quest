@@ -23,6 +23,12 @@ buses/default_bus_layout="uid://cptftneuwrq71"
 
 Globals="*uid://uf6uxayr1okx"
 
+[display]
+
+window/size/viewport_width=960
+window/size/viewport_height=540
+window/stretch/mode="canvas_items"
+
 [input]
 
 jump={

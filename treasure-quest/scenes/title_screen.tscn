@@ -21,15 +21,15 @@ offset_right = 40.0
 offset_bottom = 40.0
 script = ExtResource("1_sa3yf")
 
+[node name="TextureRect" type="TextureRect" parent="." unique_id=1882813566]
+layout_mode = 0
+offset_right = 1153.0
+offset_bottom = 646.0
+
 [node name="Label" type="Label" parent="." unique_id=875223643]
 layout_mode = 0
 offset_right = 40.0
 offset_bottom = 23.0
-
-[node name="TextureRect" type="TextureRect" parent="Label" unique_id=1882813566]
-layout_mode = 0
-offset_right = 58.0
-offset_bottom = 40.0
 
 [node name="Music" type="AudioStreamPlayer2D" parent="." unique_id=2110437924]
 stream = ExtResource("3_s4lrb")
@@ -37,16 +37,16 @@ autoplay = true
 bus = &"Music"
 
 [node name="NewTitleScreen" type="Sprite2D" parent="." unique_id=1372293867]
-position = Vector2(574.75, 325)
-scale = Vector2(0.69016194, 0.68432206)
+position = Vector2(477.25, 270)
+scale = Vector2(0.5731853, 0.5677966)
 texture = ExtResource("3_mgrm8")
 
 [node name="Button" type="Button" parent="." unique_id=565724027]
 layout_mode = 0
-offset_left = 415.0
-offset_top = 376.0
-offset_right = 736.0
-offset_bottom = 445.0
+offset_left = 305.0
+offset_top = 295.0
+offset_right = 663.0
+offset_bottom = 385.0
 theme_override_styles/normal = SubResource("StyleBoxEmpty_s4lrb")
 theme_override_styles/pressed = SubResource("StyleBoxEmpty_mgrm8")
 theme_override_styles/hover = SubResource("StyleBoxEmpty_dc4i4")
@@ -54,10 +54,10 @@ theme_override_styles/focus = SubResource("StyleBoxEmpty_e54dn")
 
 [node name="SettingsButton" type="Button" parent="." unique_id=1104918280]
 layout_mode = 0
-offset_left = 1068.0
-offset_top = 579.0
-offset_right = 1141.0
-offset_bottom = 652.0
+offset_left = 870.0
+offset_top = 460.0
+offset_right = 943.0
+offset_bottom = 533.0
 theme_override_colors/font_color = Color(1, 1, 1, 1)
 theme_override_fonts/font = ExtResource("4_dc4i4")
 theme_override_font_sizes/font_size = 30
