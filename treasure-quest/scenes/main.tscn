@@ -1779,7 +1779,7 @@ position = Vector2(4506, 214)
 position = Vector2(4627, 349)
 
 [node name="frog2" parent="." unique_id=705512488 instance=ExtResource("11_eb6dy")]
-position = Vector2(2262, 494)
+position = Vector2(1970, 494)
 
 [node name="frog3" parent="." unique_id=803883919 instance=ExtResource("11_eb6dy")]
 position = Vector2(3689, 178)
@@ -1803,7 +1803,7 @@ position = Vector2(3041, 345)
 position = Vector2(2704, 378)
 
 [node name="Bee3" parent="." unique_id=823164614 instance=ExtResource("7_o6xl0")]
-position = Vector2(4194, -273)
+position = Vector2(4199, -292)
 
 [node name="saw4" parent="." unique_id=838631159 instance=ExtResource("16_0ld40")]
 position = Vector2(4730, -4)

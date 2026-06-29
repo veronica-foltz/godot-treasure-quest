@@ -12,4 +12,7 @@ func _process(delta: float) -> void:
 
 
 func _on_button_pressed():
+	Globals.coins = 0
+	Globals.gems = 0
+	Globals.player_health = 3
 	get_tree().change_scene_to_file("res://scenes/title_screen.tscn")

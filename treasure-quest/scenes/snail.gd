@@ -1,15 +1,20 @@
 extends Area2D
 
+@export var speed = 60
+@export var distance = 120
 
-# Called when the node enters the scene tree for the first time.
-func _ready() -> void:
-	pass # Replace with function body.
+var start_position
+var direction = -1
 
+func _ready():
+	start_position = position
+	$AnimatedSprite2D.flip_h = direction > 0
 
-# Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(delta: float) -> void:
-	pass
-
+func _process(delta):
+	position.x += speed * direction * delta
+	if abs(position.x - start_position.x) >= distance:
+		direction *= -1
+		$AnimatedSprite2D.flip_h = direction > 0
 
 func _on_body_entered(body):
 

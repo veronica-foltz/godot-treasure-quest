@@ -22,6 +22,11 @@ var facing_direction = 1
 var coins = 0
 var gems = 0
 
+var mobile_left = false
+var mobile_right = false
+var mobile_jump = false
+var mobile_crouch = false
+
 func _ready():
 	health = Globals.player_health
 	coin_label.text = "x " + str(Globals.coins)
@@ -31,20 +36,31 @@ func _ready():
 func _physics_process(delta):
 
 	var direction = Input.get_axis("left", "right")
+
+	if mobile_left:
+		direction = -1
+	elif mobile_right:
+		direction = 1
+	
 	if not is_on_floor():
 		velocity.y += GRAVITY * delta
-	if Input.is_action_just_pressed("jump") and is_on_floor():
+	
+	if (Input.is_action_just_pressed("jump") or mobile_jump) and is_on_floor():
 		velocity.y = JUMP_VELOCITY
 		$JumpSound.play()
+		mobile_jump = false
+	
 	if is_hurt:
 		move_and_slide()
 		return
+	
 	if direction != 0:
 		velocity.x = direction * SPEED
 		anim.flip_h = direction < 0
 	else:
 		velocity.x = 0
 	move_and_slide()
+	
 	if not is_on_floor():
 		anim.play("jump")
 	elif Input.is_action_pressed("crouch"):
@@ -75,7 +91,7 @@ func take_damage(enemy_position):
 	is_hurt = true
 	
 	$HurtSound.play()
-# Knockback away from enemy
+	# Knockback away from enemy
 
 	if enemy_position.x < global_position.x:
 		velocity.x = 200
@@ -118,4 +134,25 @@ func update_hearts():
 func _on_settings_button_pressed():
 	get_tree().change_scene_to_file("res://scenes/settings_screen.tscn")
 	
-	
+
+func _on_left_button_button_down():
+	mobile_left = true
+
+func _on_left_button_button_up():
+	mobile_left = false
+
+func _on_right_button_button_down():
+	mobile_right = true
+
+func _on_right_button_button_up():
+	mobile_right = false
+
+func _on_jump_button_pressed():
+	mobile_jump = true
+
+func _on_crouch_button_button_down():
+	mobile_crouch = true
+
+
+func _on_crouch_button_button_up() -> void:
+	pass # Replace with function body.
