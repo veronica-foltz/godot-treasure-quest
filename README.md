@@ -48,20 +48,6 @@ Treasure Quest is a 2D platformer built with the Godot Engine. Players navigate 
 
 - On-screen touch controls
 
-## 🚀 Running Locally
-
-1. Clone the repository.
-
-```bash
-
-git clone https://github.com/YOUR_USERNAME/treasure-quest.git
-
-```
-
-2. Open the project in **Godot 4.6** (or your current Godot version).
-
-3. Press **F5** to run the game.
-
 ## 📚 What I Learned
 
 This project helped me gain experience with:
