@@ -63,7 +63,7 @@ func _physics_process(delta):
 	
 	if not is_on_floor():
 		anim.play("jump")
-	elif Input.is_action_pressed("crouch"):
+	elif Input.is_action_pressed("crouch") or mobile_crouch:
 		anim.play("crouch")
 	elif direction != 0:
 		anim.play("walk")
@@ -153,6 +153,5 @@ func _on_jump_button_pressed():
 func _on_crouch_button_button_down():
 	mobile_crouch = true
 
-
-func _on_crouch_button_button_up() -> void:
-	pass # Replace with function body.
+func _on_crouch_button_button_up():
+	mobile_crouch = false

@@ -410,6 +410,30 @@ theme_override_font_sizes/font_size = 30
 icon = ExtResource("10_og1vs")
 flat = true
 
+[node name="LeftButton" type="Button" parent="CanvasLayer" unique_id=683334471]
+offset_left = 120.0
+offset_top = 535.0
+offset_right = 247.0
+offset_bottom = 628.0
+
+[node name="RightButton" type="Button" parent="CanvasLayer" unique_id=1476415817]
+offset_left = 295.0
+offset_top = 531.0
+offset_right = 409.0
+offset_bottom = 627.0
+
+[node name="JumpButton" type="Button" parent="CanvasLayer" unique_id=2018205690]
+offset_left = 700.0
+offset_top = 533.0
+offset_right = 814.0
+offset_bottom = 628.0
+
+[node name="CrouchButton" type="Button" parent="CanvasLayer" unique_id=1982170207]
+offset_left = 850.0
+offset_top = 533.0
+offset_right = 962.0
+offset_bottom = 626.0
+
 [node name="ExitDoor" parent="." unique_id=1702446062 instance=ExtResource("17_muem4")]
 position = Vector2(6151, 422)
 scale = Vector2(1.0760235, 1.1111112)
@@ -1894,3 +1918,10 @@ bus = &"Music"
 parameters/looping = true
 
 [connection signal="pressed" from="CanvasLayer/SettingsButton" to="." method="_on_settings_button_pressed"]
+[connection signal="button_down" from="CanvasLayer/LeftButton" to="Player" method="_on_left_button_button_down"]
+[connection signal="button_up" from="CanvasLayer/LeftButton" to="Player" method="_on_left_button_button_up"]
+[connection signal="button_down" from="CanvasLayer/RightButton" to="Player" method="_on_right_button_button_down"]
+[connection signal="button_up" from="CanvasLayer/RightButton" to="Player" method="_on_right_button_button_up"]
+[connection signal="pressed" from="CanvasLayer/JumpButton" to="Player" method="_on_jump_button_pressed"]
+[connection signal="button_down" from="CanvasLayer/CrouchButton" to="Player" method="_on_crouch_button_button_down"]
+[connection signal="button_up" from="CanvasLayer/CrouchButton" to="Player" method="_on_crouch_button_button_up"]

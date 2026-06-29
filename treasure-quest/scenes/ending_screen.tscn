@@ -2,6 +2,7 @@
 
 [ext_resource type="Script" uid="uid://10om1yyfr4sw" path="res://scenes/ending_screen.gd" id="1_4vp0n"]
 [ext_resource type="Texture2D" uid="uid://craoms3ukdxta" path="res://assets/images/endingScreen.png" id="1_61pod"]
+[ext_resource type="FontFile" uid="uid://c50doh5w62taq" path="res://assets/font/Unkempt/Unkempt-Bold.ttf" id="3_t4ahs"]
 
 [node name="EndingScreen" type="Control" unique_id=1255609217]
 layout_mode = 3
@@ -23,8 +24,40 @@ offset_right = 745.0
 offset_bottom = 472.0
 
 [node name="EndingScreen" type="Sprite2D" parent="." unique_id=124151860]
-position = Vector2(576.99994, 325.49997)
-scale = Vector2(0.6877989, 0.6918172)
+position = Vector2(576.00006, 322.49997)
+scale = Vector2(0.6866029, 0.6854411)
 texture = ExtResource("1_61pod")
 
+[node name="NameInput" type="LineEdit" parent="." unique_id=998156233]
+layout_mode = 0
+offset_left = 68.0
+offset_top = 436.0
+offset_right = 238.0
+offset_bottom = 507.0
+theme_override_fonts/font = ExtResource("3_t4ahs")
+theme_override_font_sizes/font_size = 20
+placeholder_text = " Enter your name"
+
+[node name="SaveScoreButton" type="Button" parent="." unique_id=1337576860]
+layout_mode = 0
+offset_left = 86.0
+offset_top = 531.0
+offset_right = 226.0
+offset_bottom = 590.0
+theme_override_fonts/font = ExtResource("3_t4ahs")
+theme_override_font_sizes/font_size = 20
+text = "Save Score"
+
+[node name="LeaderboardLabel" type="Label" parent="." unique_id=140830553]
+layout_mode = 0
+offset_left = 37.0
+offset_top = 24.0
+offset_right = 153.0
+offset_bottom = 76.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("3_t4ahs")
+theme_override_font_sizes/font_size = 32
+text = "Score: 0"
+
 [connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
+[connection signal="pressed" from="SaveScoreButton" to="." method="_on_save_score_button_pressed"]

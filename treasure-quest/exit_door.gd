@@ -12,4 +12,15 @@ func _on_body_entered(body):
 		if has_node("DoorSound"):
 			$DoorSound.play()
 		await get_tree().create_timer(0.3).timeout
+		
+		Globals.final_score = (Globals.coins * 10) + (Globals.gems * 50) + (Globals.player_health * 100)
+		
+		if next_level == "res://scenes/ending_screen.tscn":
+
+			Globals.final_score = (
+				Globals.coins * 10 +
+				Globals.gems * 50 +
+				Globals.player_health * 100
+	)
+
 		get_tree().change_scene_to_file(next_level)
